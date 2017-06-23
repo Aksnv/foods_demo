@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.foods-container {
+  clear: both;
+  width: 1180px;
+  margin: 0 auto;
+}
+
+
+/* Foods header */
+
+.foods-header__menu {
+  float: left;
+}
+
+.foods-header__personal {
+  float: right;
+}
+
+.foods-header__menu li,
+.foods-header__personal li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Foods top */
+
+.foods-top__logo {
+  float: left;
+}
+
+.foods-top__search {
+  float: right;
+}
+
+/* Foods content */
+
+.foods-content--left {
+  float: left;
+  width: 20%;
+}
+
+.foods-content--right {
+  float: right;
+  width: 80%;
+}
+
+/* Foods catalog */
+
+.foods-catalog {
+  
+}
+
+/* Foods slider */
+
+
+/* Foods bestsellers */
+
+.foods-bestsellers__goods-item {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Foods popular */
+
+.foods-popular__goods-item {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Foods footer */
+
+.foods-footer__block--1,
+.foods-footer__block--2,
+.foods-footer__block--3 {
+  float: left;
+}
+
+.foods-footer__block--4 {
+  float: right;
+}
+
+.foods-footer__social-links li {
+  display: inline-block;
+  vertical-align: top;
+}
