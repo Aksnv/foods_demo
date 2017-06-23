@@ -2,9 +2,242 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Foods - Главная страница магазина</title>
+  <title>Foods - Главная страница</title>
+  <link rel="stylesheet" type="text/css" href="../styles/styles.css">
 </head>
 <body>
-  
+  <header class="foods-header">
+    <div class="foods-container">
+      <nav class="foods-header__menu">
+        <ul>
+          <li><a href="#" class="foods-header__menu-catalog">Каталог</a></li>
+          <li><a href="#" class="foods-header__menu-payment">Оплата</a></li>
+          <li><a href="#" class="foods-header__menu-delivery">Доставка</a></li>
+          <li><a href="#" class="foods-header__menu-sales">Акции и скидки</a></li>
+        </ul>
+      </nav>
+      <div class="foods-header__personal">
+        <ul>
+          <li><a href="#" class="foods-header__personal-profile"><span class="foods-header__personal-profile--user-name">Игорь</span></a></li>
+          <li><a href="#" class="foods-header__personal-subscription">Подписка</a></li>
+          <li><a href="#" class="foods-header__personal-favorites">Избранное</a></li>
+          <li><a href="#" class="foods-header__personal-cart">Корзина</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="foods-container">
+    <div class="foods-top">
+      <div class="foods-top__logo">
+        <a href="#" class="foods-top__logo-image"></a>
+      </div>
+      <div class="foods-top__search">
+        <form class="foods-top__search-form" name="foods-top__search-form" method="" action="#">
+          <input type="search" name="foods-top__search-field" placeholder="Поиск по товарам">
+          <input type="submit" name="foods-top__search-submit">
+        </form>
+        <div class="foods-top__search-example">
+          <p>Например, <a href="#">осетрина к Новому году</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="foods-catalog">
+      <h3>Каталог</h3>
+      <ul>
+        <li><a href="#">Овощи и фрукты</a></li>
+        <li><a href="#">Молочная продукция</a></li>
+        <li><a href="#">Хлеб</a></li>
+        <li><a href="#">Сыры</a></li>
+        <li><a href="#">Икра</a></li>
+        <li><a href="#">Рыба</a></li>
+        <li><a href="#">Морепродукты</a></li>
+        <li><a href="#">Птица</a></li>
+        <li><a href="#">Мясо</a></li>
+        <li><a href="#">Полуфабрикаты</a></li>
+        <li><a href="#">Напитки</a></li>
+        <li><a href="#">Чай</a></li>
+        <li><a href="#">Кофе</a></li>
+      </ul>
+    </div>
+
+    <div class="foods-slider">
+      <div class="foods-slider__gallery">
+        <img src="" class="foods-slider__gallery-image foods-slider__gallery-image--1" alt="foods-slider__gallery-image--1">
+        <img src="" class="foods-slider__gallery-image foods-slider__gallery-image--2" alt="foods-slider__gallery-image--2">
+        <img src="" class="foods-slider__gallery-image foods-slider__gallery-image--3" alt="foods-slider__gallery-image--3">
+      </div>
+      <div class="foods-slider__pagination">
+        <ul>
+          <li><a href="#" class="foods-slider__pagination-image foods-slider__pagination-image--1"></a></li>
+          <li><a href="#" class="foods-slider__pagination-image foods-slider__pagination-image--2"></a></li>
+          <li><a href="#" class="foods-slider__pagination-image foods-slider__pagination-image--3"></a></li>
+        </ul>
+      </div>
+      <p>Любимые продукты всегда под рукой</p>
+      <p>Вы можете <a href="#">оформить подписку</a> на корзину с регулярной доставкой выбранных Вами продуктов</p>
+      <p>Моя корзина с доставкой на дом</p>
+    </div>
+
+    <div class="foods-bestsellers">
+      <h2>Хиты продаж</h2>
+      <div class="foods-bestsellers__pagination">
+        <a href="#" class="foods-bestsellers__pagination-button foods-bestsellers__pagination-button--left"></a>
+        <a href="#" class="foods-bestsellers__pagination-button foods-bestsellers__pagination-button--right"></a>
+      </div>
+      <div class="foods-bestsellers__goods">
+        <ul>
+          <li class="foods-bestsellers__goods-item foods-bestsellers__goods-item--1">
+            <img src="" alt="foods-bestsellers__goods-item--1">
+            <p class="foods-bestsellers__good-name">Икра красная горбуши малосоленая 250г</p>
+            <p class="foods-bestsellers__good-price">590 <span class="foods-bestsellers__good-price--discount">499 руб</span></p>
+            <a href="#" class="foods-bestsellers__good-buy">Купить</a>
+          </li>
+          <li class="foods-bestsellers__goods-item foods-bestsellers__goods-item--2">
+            <img src="" alt="foods-bestsellers__goods-item--2">
+            <p class="foods-bestsellers__good-name">Форель охлажденная озерная из Карелии ~ 1,2кг</p>
+            <p class="foods-bestsellers__good-price">450 <span class="foods-bestsellers__good-price--discount">349 руб</span></p>
+            <a href="#" class="foods-bestsellers__good-buy">Купить</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foods-popular">
+      <h2>Популярные товары</h2>
+      <div class="foods-popular__goods">
+        <ul>
+          <li class="foods-popular__goods-item foods-popular__goods-item--1">
+            <img src="" alt="foods-popular__goods-item--1">
+            <p class="foods-popular__good-category">Овощи и фрукты</p>
+            <p class="foods-popular__good-name">Помидоры Бакинские ~ 500г</p>
+            <p class="foods-popular__good-price">349 руб</p>
+            <p class="foods-popular__good-status">товар на складе</p>
+            <a href="#" class="foods-popular__good-buy">Купить</a>
+            <a href="#" class="foods-popular__good-favorite"></a>
+          </li>
+          <li class="foods-popular__goods-item foods-popular__goods-item--2">
+            <img src="" alt="foods-popular__goods-item--2">
+            <p class="foods-popular__good-category">Овощи и фрукты</p>
+            <p class="foods-popular__good-name">Картофель 2,5кг</p>
+            <p class="foods-popular__good-price">124 руб</p>
+            <p class="foods-popular__good-status">товар на складе</p>
+            <a href="#" class="foods-popular__good-buy">Купить</a>
+            <a href="#" class="foods-popular__good-favorite"></a>
+          </li>
+          <li class="foods-popular__goods-item foods-popular__goods-item--3">
+            <img src="" alt="foods-popular__goods-item--3">
+            <p class="foods-popular__good-category">Овощи и фрукты</p>
+            <p class="foods-popular__good-name">Лук репчатый 1кг</p>
+            <p class="foods-popular__good-price">349 руб</p>
+            <p class="foods-popular__good-status">товар на складе</p>
+            <a href="#" class="foods-popular__good-buy">Купить</a>
+            <a href="#" class="foods-popular__good-favorite"></a>
+          </li>
+          <li class="foods-popular__goods-item foods-popular__goods-item--4">
+            <img src="" alt="foods-popular__goods-item--4">
+            <p class="foods-popular__good-category">Овощи и фрукты</p>
+            <p class="foods-popular__good-name">Капуста белокочанная 1кг</p>
+            <p class="foods-popular__good-price">49 руб</p>
+            <p class="foods-popular__good-status">товар на складе</p>
+            <a href="#" class="foods-popular__good-buy">Купить</a>
+            <a href="#" class="foods-popular__good-favorite"></a>
+          </li>
+          <li class="foods-popular__goods-item foods-popular__goods-item--5">
+            <img src="" alt="foods-popular__goods-item--5">
+            <p class="foods-popular__good-category">Рыба</p>
+            <p class="foods-popular__good-name">Тунец филе кусочки 500г</p>
+            <p class="foods-popular__good-price">349 руб</p>
+            <p class="foods-popular__good-status">товар на складе</p>
+            <a href="#" class="foods-popular__good-buy">Купить</a>
+            <a href="#" class="foods-popular__good-favorite"></a>
+          </li>
+          <li class="foods-popular__goods-item foods-popular__goods-item--6">
+            <img src="" alt="foods-popular__goods-item--6">
+            <p class="foods-popular__good-category">Хлеб/p>
+            <p class="foods-popular__good-name">Хлеб Баденский 350г</p>
+            <p class="foods-popular__good-price">53 руб</p>
+            <p class="foods-popular__good-status">товар на складе</p>
+            <a href="#" class="foods-popular__good-buy">Купить</a>
+            <a href="#" class="foods-popular__good-favorite"></a>
+          </li>
+          <li class="foods-popular__goods-item foods-popular__goods-item--7">
+            <img src="" alt="foods-popular__goods-item--7">
+            <p class="foods-popular__good-category">Рыба</p>
+            <p class="foods-popular__good-name">Лосось дикий кета Чумиканская ~ 2,5кг</p>
+            <p class="foods-popular__good-price">349 руб</p>
+            <p class="foods-popular__good-status">товар на складе</p>
+            <a href="#" class="foods-popular__good-buy">Купить</a>
+            <a href="#" class="foods-popular__good-favorite"></a>
+          </li>
+          <li class="foods-popular__goods-item foods-popular__goods-item--8">
+            <img src="" alt="foods-popular__goods-item--8">
+            <p class="foods-popular__good-category">Напитки</p>
+            <p class="foods-popular__good-name">Компот вишневый с косточкой 1,47кг</p>
+            <p class="foods-popular__good-price">276 руб</p>
+            <p class="foods-popular__good-status">товар на складе</p>
+            <a href="#" class="foods-popular__good-buy">Купить</a>
+            <a href="#" class="foods-popular__good-favorite"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+    
+  <footer class="foods-footer">
+    <div class="foods-container">
+      <div class="foods-footer__block foods-footer__block--1">
+        <ul>
+          <li><a href="#">Поддержка</a></li>
+          <li><a href="#">support@pokupo.ru</a></li>
+          <li><a href="#">pokupo.ru</a></li>
+          <li>+7 395 220-15-68</li>
+          <li>ICQ: <a href="#">21511546151</a></li>
+          <li>Pokupo.Foods 2016</li>
+        </ul>
+      </div>
+      <div class="foods-footer__block foods-footer__block--2">
+        <ul>
+          <li><a href="#">Помощь</a></li>
+          <li><a href="#">Как покупать</a></li>
+          <li><a href="#">Как продавать</a></li>
+          <li><a href="#">Правила</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="foods-footer__block foods-footer__block--3">
+        <ul>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Оплата</a></li>
+          <li><a href="#">Возврат товара</a></li>
+          <li><a href="#">Публичная оферта</a></li>
+          <li><a href="#">Подарочные карты</a></li>
+        </ul>
+      </div>
+      <div class="foods-footer__block foods-footer__block--4">
+        <div class="foods-footer__social-links">
+          <ul>
+            <li><a href="#">Vkontakte</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Livejournal</a></li>
+            <li><a href="#">Habrahabr</a></li>
+            <li><a href="#">Google+</a></li>
+          </ul>
+        </div>
+        <div class="foods-footer__subscription">
+          <form class="foods-footer__subscription-form" name="foods-footer__subscription-form" method="" action="#">
+            <input type="email" name="foods-footer__subscription-field" placeholder="Ваш email">
+            <input type="submit" name="foods-footer__subscription-submit">
+          </form>
+        </div>
+        <div class="foods-footer__copyrights">
+          <p>Работает на основе технологии <a href="#">Pokupo</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
