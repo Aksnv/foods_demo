@@ -17,6 +17,15 @@ ul {
   list-style-type: none;
 }
 
+input:focus {
+  outline: none;
+}
+
+.inline-link {
+  text-decoration: underline;
+  color: #2e8231;
+}
+
 .foods-container {
   clear: both;
   width: 1180px;
@@ -115,14 +124,15 @@ ul {
 
 .foods-header__personal-cart::after {
   position: absolute;
-  top: 0;
+  top: 1px;
   right: -30px;
   content: "3";
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
   text-align: center;
-  background-color: red;
+  background-color: #cf453c;
   border-radius: 50%;
 }
 
@@ -132,15 +142,66 @@ ul {
   vertical-align: top;
 }
 
+
 /* Foods top */
 
-.foods-top__logo {
+.foods-top {
+  min-height: 172px;
+  background-color: #fff;
+}
+
+.foods-top__logo,
+.foods-top__search {
   float: left;
 }
 
-.foods-top__search {
-  float: right;
+.foods-top__logo {
+  margin-right: 63px;
 }
+
+.foods-top__logo-image {
+  display: block;
+  width: 134px;
+  height: 98px;
+  margin-top: 30px;
+  margin-left: 43px;
+  background-image: url("../images/logo/logo_foods.png");
+}
+
+.foods-top__search {
+  font-size: 15px;
+}
+
+.foods-top__search-form {
+  position: relative;
+  margin-top: 53px;
+}
+
+input[name="foods-top__search-field"] {
+  width: 910px;
+  height: 52px;
+  font-size: 15px;
+  margin-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 57px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[name="foods-top__search-submit"] {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 19px;
+  height: 19px;
+  background-image: url("../images/foods_sprite.fw.png");
+  background-position: -114px -59px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 
 /* Foods content */
 
