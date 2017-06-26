@@ -301,9 +301,35 @@ input[name="foods-top__search-submit"] {
 }
 
 .foods-catalog__goods-item--active {
+  position: relative;
+  width: 197px;
   background-color: #ffd33a;
   color: #fff;
   box-shadow: 0 1px 0 white, inset 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.foods-catalog__goods-item--active::before,
+.foods-catalog__goods-item--active::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 33px;
+  height: 20px;
+  background-color: #ffd33a;
+}
+
+.foods-catalog__goods-item--active::before {
+  top: 0;
+  right: -8px;
+  transform: skew(36deg);
+  box-shadow: 0 1px 0 white, inset 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.foods-catalog__goods-item--active::after {
+  height: 21px;
+  top: 20px;
+  right: -8px;
+  transform: skew(-36deg);
 }
 
 /* Foods slider */
