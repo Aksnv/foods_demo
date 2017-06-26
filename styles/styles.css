@@ -275,6 +275,7 @@ input[name="foods-top__search-submit"] {
 .foods-content--right {
   float: right;
   width: 80%;
+  padding-left: 4px;
 }
 
 /* Foods catalog */
@@ -333,6 +334,83 @@ input[name="foods-top__search-submit"] {
 }
 
 /* Foods slider */
+
+.foods-slider {
+  position: relative;
+}
+
+.foods-slider p {
+  position: absolute;
+  color: #fff;
+}
+
+.foods-slider__gallery {
+  padding-top: 9px;
+}
+
+.foods-slider__gallery-image--2,
+.foods-slider__gallery-image--3 {
+  display: none;
+}
+
+.foods-slider__promo-favorites {
+  top: 212px;
+  left: 29px;
+  width: 230px;
+  font-family: "Museo Sans Cyrl500";
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.foods-slider__promo-favorites b {
+  font-family: "Museo Sans Cyrl900";
+}
+
+.foods-slider__promo-subscription {
+  top: 279px;
+  left: 29px;
+  width: 380px;
+  font-family: "Museo Sans Cyrl500";
+  font-size: 15px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.foods-slider__promo-subscription .inline-link {
+  color: #fff;
+}
+
+.foods-slider__promo-cart {
+  position: absolute;
+  top: 196px;
+  right: 95px;
+  content: "";
+  display: block;
+  width: 245px;
+  height: 20px;
+  font-family: "Museo Sans Cyrl500";
+  font-size: 26px;
+  line-height: 28px;
+  text-align: center;
+  color: #fff;
+}
+
+.foods-slider__promo-cart b {
+  font-family: "Museo Sans Cyrl900";
+}
+
+.foods-slider__promo-cart::before {
+  position: absolute;
+  top: -103px;
+  right: 74px;
+  content: "";
+  display: block;
+  width: 95px;
+  height: 89px;
+  background-image: url("../images/foods_sprite.fw.png");
+  background-position: -7px -8px;
+  opacity: 0.9;
+}
 
 
 /* Foods bestsellers */
