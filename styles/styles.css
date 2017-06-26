@@ -1,3 +1,48 @@
+@font-face {
+    font-family: "Museo Sans Cyrl100";
+    src: url('../fonts/MuseoSansCyrl100.otf');
+    src: url('../fonts/museosanscyrl100-webfont.woff2') format('woff2'),
+         url('../fonts/museosanscyrl100-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Museo Sans Cyrl300";
+    src: url('../fonts/MuseoSansCyrl300.otf');
+    src: url('../fonts/museosanscyrl300-webfont.woff2') format('woff2'),
+         url('../fonts/museosanscyrl300-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Museo Sans Cyrl500";
+    src: url('../fonts/MuseoSansCyrl500.otf');
+    src: url('../fonts/museosanscyrl500-webfont.woff2') format('woff2'),
+         url('../fonts/museosanscyrl500-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Museo Sans Cyrl700";
+    src: url('../fonts/MuseoSansCyrl700.otf');
+    src: url('../fonts/museosanscyrl700-webfont.woff2') format('woff2'),
+         url('../fonts/museosanscyrl700-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Museo Sans Cyrl900";
+    src: url('../fonts/MuseoSansCyrl900.otf');
+    src: url('../fonts/museosanscyrl900-webfont.woff2') format('woff2'),
+         url('../fonts/museosanscyrl900-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +50,7 @@
 }
 
 body {
-  /* font-family: MuseoSansCyrl; */
-  font-family: sans-serif;
+  font-family: "Museo Sans Cyrl100";
   font-size: 13px;
   line-height: 25px;
   background-color: #f4f4f4;
