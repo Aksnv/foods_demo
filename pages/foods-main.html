@@ -160,10 +160,10 @@
             </li>
             <li class="foods-popular__goods-item foods-popular__goods-item--6">
               <img src="../images/pages/main/foods-popular__goods-item--6.jpg" alt="foods-popular__goods-item--6">
-              <p class="foods-popular__good-category">Хлеб/p>
+              <p class="foods-popular__good-category">Хлеб</p>
               <p class="foods-popular__good-name">Хлеб Баденский 350г</p>
               <p class="foods-popular__good-price">53 руб</p>
-              <p class="foods-popular__good-status">товар на складе</p>
+              <p class="foods-popular__good-status foods-popular__good-status--not-available">нет в наличии</p>
               <a href="#" class="foods-popular__good-buy">Купить</a>
               <a href="#" class="foods-popular__good-favorite"></a>
             </li>
@@ -195,12 +195,12 @@
     <div class="foods-container">
       <div class="foods-footer__block foods-footer__block--1">
         <ul>
-          <li><a href="#">Поддержка</a></li>
-          <li><a href="#">support@pokupo.ru</a></li>
-          <li><a href="#">pokupo.ru</a></li>
-          <li>+7 395 220-15-68</li>
-          <li>ICQ: <a href="#">21511546151</a></li>
-          <li>Pokupo.Foods 2016</li>
+          <li class="foods-footer__link foods-footer__link--support"><a href="#">Поддержка</a></li>
+          <li class="foods-footer__link foods-footer__link--email"><a href="#">support@pokupo.ru</a></li>
+          <li class="foods-footer__link foods-footer__link--skype"><a href="#">pokupo.ru</a></li>
+          <li class="foods-footer__link foods-footer__link--phone">+7 395 220-15-68</li>
+          <li class="foods-footer__link foods-footer__link--icq">ICQ: <a href="#">21511546151</a></li>
+          <li class="foods-footer__link foods-footer__link--copyright">Pokupo.Foods 2016</li>
         </ul>
       </div>
       <div class="foods-footer__block foods-footer__block--2">
@@ -233,9 +233,10 @@
           </ul>
         </div>
         <div class="foods-footer__subscription">
+          <p>Оформить подписку:</p>
           <form class="foods-footer__subscription-form" name="foods-footer__subscription-form" method="POST" action="#">
             <input type="email" name="foods-footer__subscription-field" placeholder="Ваш email">
-            <input type="submit" name="foods-footer__subscription-submit">
+            <input type="submit" name="foods-footer__subscription-submit" value="">
           </form>
         </div>
         <div class="foods-footer__copyrights">
