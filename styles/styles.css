@@ -61,6 +61,7 @@ ul {
 }
 
 img {
+  width: auto;
   max-width: 100%;
 }
 
@@ -429,29 +430,24 @@ input[name="foods-top__search-submit"] {
 /* Foods bestsellers */
 
 .foods-bestsellers {
-  margin-bottom: 30px;
-}
-
-.foods-bestsellers__goods li {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 16px;
-}
-
-.foods-bestsellers__goods li:nth-child(even) {
-  margin-right: 0;
+  margin-bottom: 54px;
 }
 
 .foods-bestsellers__goods-item {
   position: relative;
-  display: block;
+  display: inline-block;
+  vertical-align: top;
   width: 460px;
   height: 370px;
   text-decoration: none;
+  margin-right: 16px;
   background-color: white;
   color: #000;
   border-radius: 5px;
+}
+
+.foods-bestsellers__goods-item:nth-child(even) {
+  margin-right: 0;
 }
 
 .foods-bestsellers__goods-item::after {
@@ -462,6 +458,10 @@ input[name="foods-top__search-submit"] {
   font-family: "Museo Sans Cyrl900";
   font-size: 154px;
   color: #fff;
+}
+
+.foods-bestsellers__goods-item:hover {
+  cursor: pointer;
 }
 
 .foods-bestsellers__goods-item img {
@@ -507,10 +507,9 @@ input[name="foods-top__search-submit"] {
   color: #ea5906;
 }
 
-.foods-bestsellers__good-buy {
+.foods-bestsellers__good-buy,
+.foods-popular__good-buy {
   position: absolute;
-  bottom: 19px;
-  right: 30px;
   display: block;
   width: 119px;
   height: 30px;
@@ -525,11 +524,78 @@ input[name="foods-top__search-submit"] {
   box-shadow: 0 1px 0 #ba9101;
 }
 
+.foods-bestsellers__good-buy {
+  bottom: 19px;
+  right: 30px;
+}
+
 /* Foods popular */
 
 .foods-popular__goods-item {
+  position: relative;
   display: inline-block;
   vertical-align: top;
+  width: 220px;
+  height: 370px;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 16px;
+  margin-bottom: 20px;
+  background-color: white;
+  color: #000;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+
+.foods-popular__goods-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.foods-popular__goods-item:hover {
+  border: 2px solid #ffd33a;
+  cursor: pointer;
+}
+
+.foods-popular__goods-item img {
+  margin-bottom: 5px;
+}
+
+.foods-popular__good-category {
+  font-family: "Museo Sans Cyrl300";
+  font-size: 12px;
+  line-height: 26px;
+  opacity: 0.5;
+}
+
+.foods-popular__good-name {
+  min-height: 40px;
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 5px;
+  padding: 0 25px;
+}
+
+.foods-popular__good-price {
+  font-family: "Museo Sans Cyrl900";
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+
+.foods-popular__good-status {
+  font-family: "Museo Sans Cyrl300";
+  font-size: 12px;
+  line-height: 26px;
+}
+
+.foods-popular__good-buy {
+  display: none;
+  bottom: 20px;
+  right: 50px;
+}
+
+.foods-popular__goods-item:hover .foods-popular__good-buy {
+  display: block;
 }
 
 /* Foods footer */
