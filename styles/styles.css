@@ -302,7 +302,7 @@ input[name="foods-top__search-submit"] {
 
 .foods-content--left,
 .foods-content--right {
-  margin-bottom: 49px;
+  margin-bottom: 17px;
 }
 
 /* Foods catalog */
@@ -620,6 +620,14 @@ input[name="foods-top__search-submit"] {
 }
 
 /* Foods popular */
+
+.foods-popular {
+  margin-bottom: 32px;
+}
+
+.foods-popular + .foods-bestsellers {
+  margin-bottom: 32px;
+}
 
 .foods-popular__goods-item {
   position: relative;
