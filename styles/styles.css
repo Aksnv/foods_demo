@@ -302,7 +302,7 @@ input[name="foods-top__search-submit"] {
 
 .foods-content--left,
 .foods-content--right {
-  margin-bottom: 47px;
+  margin-bottom: 49px;
 }
 
 /* Foods catalog */
@@ -354,7 +354,7 @@ input[name="foods-top__search-submit"] {
 
 .foods-slider {
   position: relative;
-  margin-bottom: 49px;
+  margin-bottom: 52px;
 }
 
 .foods-slider p {
@@ -364,6 +364,18 @@ input[name="foods-top__search-submit"] {
 
 .foods-slider__gallery {
   padding-top: 9px;
+}
+
+.foods-slider__gallery-image {
+  width: 940px;
+  height: 370px;
+  background-repeat: no-repeat;
+  background-position: 50% top;
+  border-radius: 5px;
+}
+
+.foods-slider__gallery-image--1 {
+  background-image: url("../images/pages/main/foods-slider__gallery-image--1.png");
 }
 
 .foods-slider__gallery-image--2,
@@ -431,7 +443,7 @@ input[name="foods-top__search-submit"] {
 .foods-slider__pagination {
   position: absolute;
   right: 22px;
-  bottom: 33px;
+  bottom: 30px;
 }
 
 .foods-slider__pagination li {
@@ -464,7 +476,7 @@ input[name="foods-top__search-submit"] {
 
 .foods-bestsellers {
   position: relative;
-  margin-bottom: 54px;
+  margin-bottom: 52px;
 }
 
 .foods-bestsellers__pagination {
@@ -508,9 +520,20 @@ input[name="foods-top__search-submit"] {
   height: 370px;
   text-decoration: none;
   margin-right: 16px;
+  padding-top: 252px;
   background-color: white;
+  background-repeat: no-repeat;
+  background-position: 50% top;
   color: #000;
   border-radius: 5px;
+}
+
+.foods-bestsellers__goods-item--1 {
+  background-image: url(../images/pages/main/foods-bestsellers__goods-item--1.jpg);
+}
+
+.foods-bestsellers__goods-item--2 {
+  background-image: url(../images/pages/main/foods-bestsellers__goods-item--2.jpg);
 }
 
 .foods-bestsellers__goods-item:nth-child(even) {
@@ -602,12 +625,14 @@ input[name="foods-top__search-submit"] {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  width: 222px;
+  width: 220px;
   height: 370px;
   text-align: center;
   text-decoration: none;
-  margin-right: 14px;
+  margin-left: -1px;
+  margin-right: 18px;
   margin-bottom: 20px;
+  padding-top: 2px;
   background-color: white;
   color: #000;
   border: 2px solid transparent;
