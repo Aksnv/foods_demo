@@ -362,6 +362,10 @@ input[name="foods-top__search-submit"] {
   color: #fff;
 }
 
+.foods-slider--double-image p {
+  color: #000;
+}
+
 .foods-slider__gallery {
   padding-top: 9px;
 }
@@ -372,6 +376,10 @@ input[name="foods-top__search-submit"] {
   background-repeat: no-repeat;
   background-position: 50% top;
   border-radius: 5px;
+}
+
+.foods-slider__gallery-image:hover {
+  cursor: pointer;
 }
 
 .foods-slider__gallery-image--1 {
@@ -405,8 +413,18 @@ input[name="foods-top__search-submit"] {
   color: #fff;
 }
 
+.foods-slider--double-image .foods-slider__promo-subscription {
+  top: 313px;
+  line-height: 18px;
+  color: #a3a3a3;
+}
+ 
 .foods-slider__promo-subscription .inline-link {
   color: #fff;
+}
+
+.foods-slider--double-image .foods-slider__promo-subscription .inline-link {
+  color: #2e8231;
 }
 
 .foods-slider__promo-cart {
@@ -421,6 +439,16 @@ input[name="foods-top__search-submit"] {
   line-height: 28px;
   text-align: center;
   color: #fff;
+  opacity: 0.9;
+}
+
+.foods-slider--double-image .foods-slider__promo-cart {
+  top: 116px;
+  right: -8px;
+  font-size: 22px;
+  line-height: 24px;
+  color: #fff;
+  opacity: 0.9;
 }
 
 .foods-slider__promo-cart b {
@@ -437,6 +465,15 @@ input[name="foods-top__search-submit"] {
   height: 89px;
   background-image: url("../images/foods_sprite.fw.png");
   background-position: -7px -8px;
+  opacity: 0.9;
+}
+
+.foods-slider--double-image .foods-slider__promo-cart::before {
+  top: -87px;
+  right: 82px;
+  width: 81px;
+  height: 76px;
+  background-position: -210px -8px;
   opacity: 0.9;
 }
 
@@ -529,10 +566,18 @@ input[name="foods-top__search-submit"] {
 }
 
 .foods-bestsellers__goods-item--1 {
-  background-image: url(../images/pages/main/foods-bestsellers__goods-item--1.jpg);
+  background-image: url(../images/pages/main/foods-slider__gallery-image--2.jpg);
 }
 
 .foods-bestsellers__goods-item--2 {
+  background-image: url(../images/pages/main/foods-slider__gallery-image--3.jpg);
+}
+
+.foods-bestsellers__goods-item--3 {
+  background-image: url(../images/pages/main/foods-bestsellers__goods-item--1.jpg);
+}
+
+.foods-bestsellers__goods-item--4 {
   background-image: url(../images/pages/main/foods-bestsellers__goods-item--2.jpg);
 }
 
@@ -548,6 +593,10 @@ input[name="foods-top__search-submit"] {
   font-family: "Museo Sans Cyrl900";
   font-size: 154px;
   color: #fff;
+}
+
+.foods-bestsellers__goods-item--without-discount::after {
+  display: none;
 }
 
 .foods-bestsellers__goods-item:hover {
