@@ -909,13 +909,19 @@ input[name="foods-top__search-submit"] {
 /* Foods pagination */
 
 .foods-pagination {
-  margin-bottom: 64px;
+  position: relative;
+  top: -3px;
+  margin-bottom: 61px;
 }
 
 .foods-pagination li {
   display: inline-block;
   vertical-align: top;
   margin-right: 16px;
+}
+
+.foods-pagination li.ellipsis {
+  margin-right: 5px;
 }
 
 .foods-pagination__item {
@@ -935,6 +941,10 @@ input[name="foods-top__search-submit"] {
 
 .foods-pagination__item--active {
   background-color: #e9e9e7;
+}
+
+.foods-pagination__item--dotted {
+  margin-right: 5px;
 }
 
 .foods-pagination__item:hover {
