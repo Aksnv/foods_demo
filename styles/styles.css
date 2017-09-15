@@ -1071,6 +1071,7 @@ input[name="foods-top__search-submit"] {
 .product-card__tab {
   display: inline-block;
   vertical-align: top;
+  max-height: 35px;
   font-family: "Museo Sans Cyrl900";
   font-size: 22px;
   line-height: 26px;
@@ -1086,6 +1087,8 @@ input[name="foods-top__search-submit"] {
 }
 
 .product-card__tab--reviews span {
+  display: inline-block;
+  vertical-align: baseline;
   font-family: "Museo Sans Cyrl300";
   font-size: 17px;
 }
@@ -1127,6 +1130,108 @@ input[name="foods-top__search-submit"] {
 .product-card__characteristics tr > td:first-child span {
   padding-right: 3px;
   background-color: #fff;
+}
+
+.product-card__description p,
+.product-card__review p {
+  max-width: 650px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+}
+
+.product-card__reviews {
+  position: relative;
+  top: -5px;
+}
+
+.product-card__reviews-tab {
+  display: inline-block;
+  vertical-align: baseline;
+  font-size: 14px;
+  line-height: 19px;
+  text-decoration: none;
+  margin-right: 0px;
+  padding: 5px 11px;
+  color: black;
+}
+
+.product-card__reviews-tab--active {
+  border-bottom: none;
+  background-color: #e9e9e7;
+  color: #666;
+}
+
+.product-card__reviews-tab span {
+  border-bottom: 1px dotted #000;
+}
+
+.product-card__reviews-tab--active span {
+  border-bottom: none;
+}
+
+.product-card__review {
+  padding-top: 28px;
+}
+
+.product-card__review time {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 13px;
+  line-height: 20px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  color: #999;
+}
+
+.product-card__review time::before {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  content: "";
+  display: block;
+  width: 14px;
+  height: 9px;
+  background-image: url(../images/foods_sprite.fw.png);
+}
+
+.product-card__review--positive time::before {
+  background-position: -138px -59px;
+}
+
+.product-card__review--negative time::before {
+  background-position: -139px -75px;
+}
+
+.product-card__review-answer {
+  position: relative;
+  margin-top: 10px;
+  padding-left: 50px;
+}
+
+.product-card__review-answer::before {
+  position: absolute;
+  top: 6px;
+  left: 7px;
+  content: "";
+  display: block;
+  width: 2px;
+  height: 39px;
+  background-color: #e9e9e7;
+}
+
+.product-card__review-answer time {
+  padding-left: 6px;
+}
+
+.product-card__review-answer time::before {
+  display: none;
+}
+
+.product-card__review-answer strong {
+  line-height: 20px;
+  color: #000;
 }
 
 /* Foods footer */

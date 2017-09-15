@@ -13,3 +13,50 @@ $(".foods-popup__header-block--registration").click(function() {
   $(".foods-popup__form--registration").show();
   $(".foods-popup__form--enter").hide();
 });
+
+
+/* Foods product card - tabs */
+
+$(".product-card__tab").click(function(e) {
+  e.preventDefault();
+  for (var i = 0; i < $(".product-card__tab").length; i++) {
+    $($(".product-card__tab")[i]).removeClass("product-card__tab--active");
+  };
+  $(this).addClass("product-card__tab--active");
+
+  if ($(this).hasClass("product-card__tab--characteristics")) {
+    $(".product-card__characteristics").show();
+    $(".product-card__description").hide();
+    $(".product-card__reviews").hide();
+  } else if ($(this).hasClass("product-card__tab--description")) {
+    $(".product-card__characteristics").hide();
+    $(".product-card__description").show();
+    $(".product-card__reviews").hide();
+  } else {
+    $(".product-card__characteristics").hide();
+    $(".product-card__description").hide();
+    $(".product-card__reviews").show();
+  };
+});
+
+
+/* Foods product card reviews - tabs */
+
+$(".product-card__reviews-tab").click(function(e) {
+  e.preventDefault();
+  for (var i = 0; i < $(".product-card__reviews-tab").length; i++) {
+    $($(".product-card__reviews-tab")[i]).removeClass("product-card__reviews-tab--active");
+  };
+  $(this).addClass("product-card__reviews-tab--active");
+
+  if ($(this).hasClass("product-card__reviews-tab--all")) {
+    $(".product-card__review--positive").show();
+    $(".product-card__review--negative").show();
+  } else if ($(this).hasClass("product-card__reviews-tab--positive")) {
+    $(".product-card__review--positive").show();
+    $(".product-card__review--negative").hide();
+  } else {
+    $(".product-card__review--positive").hide();
+    $(".product-card__review--negative").show();
+  };
+});
