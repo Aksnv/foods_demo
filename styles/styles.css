@@ -856,7 +856,7 @@ input[name="foods-top__search-submit"] {
   vertical-align: top;
   font-family: "Museo Sans Cyrl500";
   font-size: 13px;
-  margin-right: 8px;
+  margin-right: 7px;
   color: #666;
 }
 
@@ -1233,6 +1233,10 @@ input[name="foods-top__search-submit"] {
   line-height: 20px;
   color: #000;
 }
+
+/* Foods cart */
+
+
 
 /* Foods footer */
 
