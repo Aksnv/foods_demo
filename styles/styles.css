@@ -82,6 +82,16 @@ input:focus {
   color: #2e8231;
 }
 
+.button {
+  display: block;
+  font-family: "Museo Sans Cyrl900";
+  text-align: center;
+  text-decoration: none;
+  background-color: #ffd33a;
+  color: black;
+  box-shadow: 0 1px 0 #ba9101;
+}
+
 ::-webkit-scrollbar {
   width: 4px;
   padding-right: 9px;
@@ -566,18 +576,11 @@ input[name="foods-top__search-submit"] {
 .foods-promo__product-buy,
 .foods-goods__product-buy {
   position: absolute;
-  display: block;
   width: 119px;
   height: 30px;
-  font-family: "Museo Sans Cyrl900";
   font-size: 13px;
   line-height: 30px;
-  text-align: center;
-  text-decoration: none;
-  background-color: #ffd33a;
-  color: black;
   border-radius: 15px;
-  box-shadow: 0 1px 0 #ba9101;
 }
 
 .foods-promo__product-buy {
@@ -1002,16 +1005,10 @@ input[name="foods-top__search-submit"] {
   display: inline-block;
   width: 187px;
   height: 50px;
-  font-family: "Museo Sans Cyrl900";
   font-size: 20px;
   line-height: 50px;
-  text-align: center;
-  text-decoration: none;
   margin-bottom: 15px;
-  background-color: #ffd33a;
-  color: black;
   border-radius: 25px;
-  box-shadow: 0 1px 0 #ba9101;
 }
 
 .product-card__action-status {
