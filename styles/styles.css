@@ -1282,6 +1282,34 @@ input[name="foods-top__search-submit"] {
   border-radius: 5px;
 }
 
+.foods-cart__item--empty {
+  position: relative;
+  min-height: 320px;
+  text-align: center;
+}
+
+.foods-cart__item--empty::after {
+  position: absolute;
+  top: 81px;
+  left: calc(50% - 47px);
+  content: "";
+  display: block;
+  width: 95px;
+  height: 89px;
+  background-image: url("../images/foods_sprite.fw.png");
+  background-position: -203px -89px;
+}
+
+.foods-cart__item--empty p {
+  position: absolute;
+  left: calc(50% - 78px);
+  top: 184px;
+  width: 152px;
+  font-size: 26px;
+  line-height: 28px;
+  color: #d6d6d6;
+}
+
 .foods-cart__item li {
   display: table-cell;
   vertical-align: middle;
@@ -1425,6 +1453,30 @@ input[name="foods-top__search-submit"] {
   font-size: 20px;
   line-height: 50px;
   border-radius: 25px;
+}
+
+/* Foods subscription */
+
+.foods-subscription {
+  margin-top: 45px;
+}
+
+.foods-subscription h3 {
+  padding-left: 0;
+}
+
+.foods-subscription h3 + .foods-cart {
+  padding-top: 8px;
+}
+
+.foods-subscription_promo {
+  margin-bottom: 20px;
+}
+
+.foods-subscription_promo p {
+  font-size: 13px;
+  line-height: 20px;
+  color: black;
 }
 
 /* Foods footer */
