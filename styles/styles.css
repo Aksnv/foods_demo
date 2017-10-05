@@ -1272,7 +1272,8 @@ input[name="foods-top__search-submit"] {
   padding-bottom: 39px;
 }
 
-.foods-cart__item {
+.foods-cart__item,
+.address-info__item {
   display: table;
   width: 100%;
   min-height: 100px;
@@ -1280,6 +1281,16 @@ input[name="foods-top__search-submit"] {
   background-color: #fff;
   color: black;
   border-radius: 5px;
+}
+
+.address-info__item {
+  margin-bottom: 14px;
+}
+
+.foods-cart__item ul, 
+.address-info__item ul {
+  display: table;
+  min-height: 100px;
 }
 
 .foods-cart__item--empty {
@@ -1310,7 +1321,8 @@ input[name="foods-top__search-submit"] {
   color: #d6d6d6;
 }
 
-.foods-cart__item li {
+.foods-cart__item li,
+.address-info__item li {
   display: table-cell;
   vertical-align: middle;
 }
@@ -1319,10 +1331,11 @@ input[name="foods-top__search-submit"] {
   padding-left: 30px;
 }
 
-.foods-cart__item-delete button {
+.foods-cart__item-delete button,
+.address-info__item-delete button {
   width: 14px;
   height: 13px;
-  background-position: -163px -84px;
+  background-position: -164px -84px;
 }
 
 .foods-cart__item-image {
@@ -1542,9 +1555,12 @@ input[name="foods-top__search-submit"] {
 
 .personal__address {
   display: none;
+  position: relative;
+  top: -6px;
 }
 
-.profile-actions__action-button {
+.profile-actions__action-button,
+.address-actions__action-button {
   position: relative;
   display: inline-block;
   height: 40px;
@@ -1561,7 +1577,12 @@ input[name="foods-top__search-submit"] {
   box-shadow: none;
 }
 
-.profile-actions__action-button::before {
+.address-actions__action-button {
+  margin-bottom: 0;
+}
+
+.profile-actions__action-button::before,
+.address-actions__action-button::before {
   position: absolute;
   content: "";
   display: block;
@@ -1584,25 +1605,52 @@ input[name="foods-top__search-submit"] {
   background-position: -303px -29px;
 }
 
-.personal__profile-edit {
+.address-actions__action-button--add {
+  width: 220px;
+}
+
+.address-actions__action-button--add::before {
+  top: -2px;
+  left: 41px;
+  content: "+";
+  font-family: "Museo Sans Cyrl500";
+  font-size: 22px;
+  background-image: none;
+}
+
+.personal__profile-edit,
+.personal__address-edit {
   display: none;
+}
+
+.personal__profile-edit {
   margin-top: 10px;
 }
 
+.personal__address-edit {
+  margin-top: 12px;
+}
+
 .personal__profile-edit--left,
-.personal__profile-edit--right {
+.personal__profile-edit--right,
+.personal__address-edit--left,
+.personal__address-edit--right {
   float: left;
 }
 
-.personal__profile-edit--left {
+.personal__profile-edit--left,
+.personal__address-edit--left {
+  width: 480px;
   margin-right: 121px;
 }
 
-.profile-edit__form {
+.profile-edit__form,
+.address-edit__form {
   overflow: hidden;
 }
 
-.profile-edit__form label {
+.profile-edit__form label,
+.address-edit__form label {
   display: block;
   font-family: "Museo Sans Cyrl900";
   font-size: 14px;
@@ -1611,6 +1659,7 @@ input[name="foods-top__search-submit"] {
 }
 
 .profile-edit__form input[type="text"],
+.address-edit__form input[type="text"],
 .profile-edit__form textarea {
   width: 480px;
   height: 50px;
@@ -1623,6 +1672,11 @@ input[name="foods-top__search-submit"] {
   border-radius: 5px;
 }
 
+.address-edit__form input[type="text"] {
+  margin-bottom: 29px;
+  padding-left: 11px;
+}
+
 .profile-edit__form textarea {
   height: 152px;
   margin-bottom: 46px;
@@ -1633,7 +1687,9 @@ input[name="foods-top__search-submit"] {
 }
 
 .profile-edit__form-submit,
-.profile-edit__form-reset {
+.profile-edit__form-reset,
+.address-edit__form-submit,
+.address-edit__form-reset {
   display: inline-block;
   vertical-align: top;
   width: 220px;
@@ -1646,12 +1702,134 @@ input[name="foods-top__search-submit"] {
   cursor: pointer;
 }
 
-.profile-edit__form-reset {
+.profile-edit__form-reset,
+.address-edit__form-reset {
   margin-right: 37px;
   background-color: #ebebed;
   box-shadow: 0 1px 0 #cacaca;
 }
 
+.address-edit__form-house,
+.address-edit__form-building,
+.address-edit__form-flat {
+  float: left;
+}
+
+.address-edit__form-house label,
+.address-edit__form-building label,
+.address-edit__form-flat label,
+.address-edit__form-house input[type="text"],
+.address-edit__form-building input[type="text"],
+.address-edit__form-flat input[type="text"] {
+  width: 148px;
+}
+
+.address-edit__form-house input[type="text"],
+.address-edit__form-building input[type="text"] {
+  margin-right: 18px;
+}
+
+.address-edit__form input[type="text"].address-edit__form-phone {
+  margin-bottom: 51px;
+}
+
+.personal__address-info {
+  margin-bottom: 45px;
+}
+
+.address-info__item--active .address-info__item-flag span {
+  background-color: #ffd33a;
+  border: none;
+}
+
+.address-info__item-flag {
+  width: 66px;
+  padding-left: 22px;
+  padding-top: 5px;
+}
+
+.address-info__item-flag span {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+
+.address-info__item-information {
+  width: 800px;
+}
+
+.address-info__item-information p {
+  font-family: "Museo Sans Cyrl300";
+  font-size: 14px;
+  line-height: 20px;
+  padding-top: 6px;
+  color: black;
+}
+
+.address-info__name,
+.address-info__phone {
+  position: relative;
+  padding-right: 10px;
+}
+
+.address-info__name::after,
+.address-info__phone::after {
+  position: absolute;
+  top: 6px;
+  right: 2px;
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.address-info__address {
+  display: block;
+}
+
+.address-info__item-edit {
+  position: relative;
+  padding-left: 52px;
+}
+
+.address-info__item-edit::before {
+  position: absolute;
+  top: 43%;
+  left: 28px;
+  content: "";
+  display: block;
+  width: 17px;
+  height: 14px;
+  background-image: url("../images/foods_sprite.fw.png");
+  background-position: -303px -8px;
+}
+
+.address-info__item-edit:hover::before {
+  background-position: -324px -8px;
+}
+
+.address-info__item-edit button {
+  font-family: "Museo Sans Cyrl900";
+  font-size: 15px;
+  line-height: 24px;
+  color: #999;
+}
+
+.address-info__item-edit:hover button {
+  color: #2e8231;
+}
+
+.address-info__item-delete {
+  padding-left: 44px;
+}
+
+.personal__address-actions {
+  margin-bottom: 32px;
+}
 
 
 /* Foods footer */

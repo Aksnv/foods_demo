@@ -96,3 +96,20 @@ $(".profile-edit__form-reset").click(function(e) {
   $(".personal__profile-actions").show();
   $(".personal__profile-edit").hide();
 });
+
+
+/* Foods personal - address edit */
+
+$(".address-actions__action-button--add").click(function(e) {
+  e.preventDefault();
+  $(".personal__address-info").hide();
+  $(".personal__address-actions").hide();
+  $(".personal__address-edit").show();
+});
+
+$(".address-edit__form-reset").click(function(e) {
+  e.preventDefault();
+  $(".personal__address-info").show();
+  $(".personal__address-actions").show();
+  $(".personal__address-edit").hide();
+});
