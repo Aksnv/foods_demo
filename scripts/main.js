@@ -60,3 +60,22 @@ $(".product-card__reviews-tab").click(function(e) {
     $(".product-card__review--negative").show();
   };
 });
+
+
+/* Foods personal - tabs */
+
+$(".personal__tab").click(function(e) {
+  e.preventDefault();
+  for (var i = 0; i < $(".personal__tab").length; i++) {
+    $($(".personal__tab")[i]).removeClass("personal__tab--active");
+  };
+  $(this).addClass("personal__tab--active");
+
+  if ($(this).hasClass("personal__tab--profile")) {
+    $(".personal__profile").show();
+    $(".personal__address").hide();
+  } else {
+    $(".personal__profile").hide();
+    $(".personal__address").show();
+  };
+});

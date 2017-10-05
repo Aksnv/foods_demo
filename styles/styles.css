@@ -1479,6 +1479,113 @@ input[name="foods-top__search-submit"] {
   color: black;
 }
 
+/* Foods personal */
+
+.foods-personal {
+  min-height: 493px;
+}
+
+.personal__tabs {
+  clear: both;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 44px;
+  padding-top: 6px;
+  border-bottom: 1px solid #ccc;
+}
+
+.personal__tab {
+  display: inline-block;
+  vertical-align: top;
+  max-height: 35px;
+  font-family: "Museo Sans Cyrl900";
+  font-size: 22px;
+  line-height: 26px;
+  text-decoration: none;
+  margin-right: 28px;
+  padding-bottom: 5px;
+  color: #666;
+}
+
+.personal__tab--active {
+  color: #2e8231;
+  border-bottom: 4px solid #2e8231;
+}
+
+.personal__tab--address {
+  margin-right: 0;
+}
+
+.personal__profile {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.personal__profile table {
+  margin-bottom: 22px;
+}
+
+.personal__profile td {
+  font-size: 13px;
+  line-height: 38px;
+  color: #666;
+}
+
+.personal__profile tr > td:first-child {
+  width: 73px;
+}
+
+.personal__profile tr > td:last-child {
+  font-size: 14px;
+  color: #000;
+}
+
+.personal__address {
+  display: none;
+}
+
+.profile-actions__action-button {
+  position: relative;
+  display: inline-block;
+  height: 40px;
+  font-size: 14px;
+  line-height: 37px;
+  margin-right: 8px;
+  margin-bottom: 15px;
+  padding-left: 46px;
+  padding-right: 30px;
+  background-color: transparent;
+  color: #999;
+  border: 1px solid #999;
+  border-radius: 20px;
+  box-shadow: none;
+}
+
+.profile-actions__action-button::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url("../images/foods_sprite.fw.png");
+}
+
+.profile-actions__action-button--edit::before {
+  top: 12px;
+  left: 20px;
+  width: 17px;
+  height: 14px;
+  background-position: -303px -8px;
+}
+
+.profile-actions__action-button--change::before {
+  top: 12px;
+  left: 28px;
+  width: 11px;
+  height: 13px;
+  background-position: -303px -29px;
+}
+
+
+
 /* Foods footer */
 
 .foods-footer {
