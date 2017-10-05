@@ -79,3 +79,20 @@ $(".personal__tab").click(function(e) {
     $(".personal__address").show();
   };
 });
+
+
+/* Foods personal - profile edit */
+
+$(".profile-actions__action-button--edit").click(function(e) {
+  e.preventDefault();
+  $(".personal__profile-info").hide();
+  $(".personal__profile-actions").hide();
+  $(".personal__profile-edit").show();
+});
+
+$(".profile-edit__form-reset").click(function(e) {
+  e.preventDefault();
+  $(".personal__profile-info").show();
+  $(".personal__profile-actions").show();
+  $(".personal__profile-edit").hide();
+});

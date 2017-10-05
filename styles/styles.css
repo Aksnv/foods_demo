@@ -1521,21 +1521,21 @@ input[name="foods-top__search-submit"] {
   line-height: 18px;
 }
 
-.personal__profile table {
+.personal__profile-info table {
   margin-bottom: 22px;
 }
 
-.personal__profile td {
+.personal__profile-info td {
   font-size: 13px;
   line-height: 38px;
   color: #666;
 }
 
-.personal__profile tr > td:first-child {
+.personal__profile-info tr > td:first-child {
   width: 73px;
 }
 
-.personal__profile tr > td:last-child {
+.personal__profile-info tr > td:last-child {
   font-size: 14px;
   color: #000;
 }
@@ -1582,6 +1582,74 @@ input[name="foods-top__search-submit"] {
   width: 11px;
   height: 13px;
   background-position: -303px -29px;
+}
+
+.personal__profile-edit {
+  display: none;
+  margin-top: 10px;
+}
+
+.personal__profile-edit--left,
+.personal__profile-edit--right {
+  float: left;
+}
+
+.personal__profile-edit--left {
+  margin-right: 121px;
+}
+
+.profile-edit__form {
+  overflow: hidden;
+}
+
+.profile-edit__form label {
+  display: block;
+  font-family: "Museo Sans Cyrl900";
+  font-size: 14px;
+  padding-bottom: 7px;
+  color: #000;
+}
+
+.profile-edit__form input[type="text"],
+.profile-edit__form textarea {
+  width: 480px;
+  height: 50px;
+  font-family: "Museo Sans Cyrl300";
+  margin-bottom: 27px;
+  padding-left: 19px;
+  padding-right: 19px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.profile-edit__form textarea {
+  height: 152px;
+  margin-bottom: 46px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  outline: none;
+  resize: none;
+}
+
+.profile-edit__form-submit,
+.profile-edit__form-reset {
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  height: 50px;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.profile-edit__form-reset {
+  margin-right: 37px;
+  background-color: #ebebed;
+  box-shadow: 0 1px 0 #cacaca;
 }
 
 

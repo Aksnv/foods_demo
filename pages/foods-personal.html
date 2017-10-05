@@ -58,9 +58,9 @@
         <h1>Личные данные</h1>
         <div class="foods-subsection">
           <ul>
-            <li><a href="#" class="foods-subsection__item">Личные данные</a></li>
+            <li><a href="#" class="foods-subsection__item foods-subsection__item--active">Личные данные</a></li>
             <li><a href="#" class="foods-subsection__item">Корзина</a></li>
-            <li><a href="#" class="foods-subsection__item foods-subsection__item--active">Подписка на продукты</a></li>
+            <li><a href="#" class="foods-subsection__item">Подписка на продукты</a></li>
             <li><a href="#" class="foods-subsection__item">Прошлые покупки</a></li>
             <li><a href="#" class="foods-subsection__item">Избранное</a></li>
           </ul>
@@ -75,28 +75,50 @@
           </div>
 
           <div class="personal__profile">
-            <table>
-              <tr>
-                <td><span>Имя:</span></td>
-                <td>Игорь</td>
-              </tr>
-              <tr>
-                <td><span>Почта:</span></td>
-                <td>user@mail.com</td>
-              </tr>
-              <tr>
-                <td><span>Телефон:</span></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td><span>Адрес:</span></td>
-                <td></td>
-              </tr>
-            </table>
+            <div class="personal__profile-info">
+              <table>
+                <tr>
+                  <td><span>Имя:</span></td>
+                  <td>Игорь</td>
+                </tr>
+                <tr>
+                  <td><span>Почта:</span></td>
+                  <td>user@mail.com</td>
+                </tr>
+                <tr>
+                  <td><span>Телефон:</span></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><span>Адрес:</span></td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
             <div class="personal__profile-actions">
               <a href="#" class="profile-actions__action-button profile-actions__action-button--edit button">Редактировать данные</a>
               <a href="#" class="profile-actions__action-button profile-actions__action-button--change button">Сменить пароль</a>
-            </div>            
+            </div>
+            <div class="personal__profile-edit">
+              <form name="profile-edit__form" class="profile-edit__form" action="#" method="GET">
+                <div class="personal__profile-edit--left">
+                  <label>Имя</label>
+                  <input type="text" name="profile-edit__form-name" placeholder="Игорь">
+                  <label>Почта</label>
+                  <input type="text" name="profile-edit__form-mail" placeholder="user@mail.com">
+                  <label>Телефон</label>
+                  <input type="text" name="profile-edit__form-phone">
+                </div>
+                <div class="personal__profile-edit--right">
+                  <label>Адрес</label>
+                  <textarea name="profile-edit__form-address"></textarea>
+                  <div class="profile-edit__form-action">
+                    <input type="reset" name="profile-edit__form-reset" class="button profile-edit__form-reset" value="Отмена">
+                    <input type="submit" name="profile-edit__form-submit" class="button profile-edit__form-submit" value="Сохранить">
+                  </div>
+                </div>
+              </form>
+            </div> 
           </div>
           <div class="personal__address">
             <p>Не являюсь маркетологом, книгу прочел для саморазвития, но почерпнул много интересного. Считаю стоит прочесть всем кто увлекается деловой литературой и маркетингом в особенности.</p>
