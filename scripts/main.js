@@ -28,14 +28,22 @@ $(".product-card__tab").click(function(e) {
     $(".product-card__characteristics").show();
     $(".product-card__description").hide();
     $(".product-card__reviews").hide();
+    $(".product-card__delivery").hide();
   } else if ($(this).hasClass("product-card__tab--description")) {
     $(".product-card__characteristics").hide();
     $(".product-card__description").show();
     $(".product-card__reviews").hide();
-  } else {
+    $(".product-card__delivery").hide();
+  } else if ($(this).hasClass("product-card__tab--reviews")) {
     $(".product-card__characteristics").hide();
     $(".product-card__description").hide();
     $(".product-card__reviews").show();
+    $(".product-card__delivery").hide();
+  } else {
+    $(".product-card__characteristics").hide();
+    $(".product-card__description").hide();
+    $(".product-card__reviews").hide();
+    $(".product-card__delivery").show();
   };
 });
 

@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: "Museo Sans Cyrl100";
     src: url('../fonts/MuseoSansCyrl100.otf');
     src: url('../fonts/museosanscyrl100-webfont.woff2') format('woff2'),
@@ -39,6 +39,51 @@
     src: url('../fonts/MuseoSansCyrl900.otf');
     src: url('../fonts/museosanscyrl900-webfont.woff2') format('woff2'),
          url('../fonts/museosanscyrl900-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: "Museo Sans Cyrl100";
+    src: url('https://seller.pokupo.ru/api/fonts/MuseoSansCyrl100.otf');
+    src: url('https://seller.pokupo.ru/api/fonts/museosanscyrl100-webfont.woff2') format('woff2'),
+         url('https://seller.pokupo.ru/api/fonts/museosanscyrl100-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Museo Sans Cyrl300";
+    src: url('https://seller.pokupo.ru/api/fonts/MuseoSansCyrl300.otf');
+    src: url('https://seller.pokupo.ru/api/fonts/museosanscyrl300-webfont.woff2') format('woff2'),
+         url('https://seller.pokupo.ru/api/fonts/museosanscyrl300-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Museo Sans Cyrl500";
+    src: url('https://seller.pokupo.ru/api/fonts/MuseoSansCyrl500.otf');
+    src: url('https://seller.pokupo.ru/api/fonts/museosanscyrl500-webfont.woff2') format('woff2'),
+         url('https://seller.pokupo.ru/api/fonts/museosanscyrl500-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Museo Sans Cyrl700";
+    src: url('https://seller.pokupo.ru/api/fonts/MuseoSansCyrl700.otf');
+    src: url('https://seller.pokupo.ru/api/fonts/museosanscyrl700-webfont.woff2') format('woff2'),
+         url('https://seller.pokupo.ru/api/fonts/museosanscyrl700-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Museo Sans Cyrl900";
+    src: url('https://seller.pokupo.ru/api/fonts/MuseoSansCyrl900.otf');
+    src: url('https://seller.pokupo.ru/api/fonts/museosanscyrl900-webfont.woff2') format('woff2'),
+         url('https://seller.pokupo.ru/api/fonts/museosanscyrl900-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -1125,7 +1170,8 @@ input[name="foods-top__search-submit"] {
 }
 
 .product-card__description,
-.product-card__reviews {
+.product-card__reviews,
+.product-card__delivery {
   display: none;
 }
 
@@ -1164,7 +1210,8 @@ input[name="foods-top__search-submit"] {
 }
 
 .product-card__description p,
-.product-card__review p {
+.product-card__review p,
+.product-card__delivery p {
   max-width: 650px;
   font-size: 14px;
   line-height: 20px;
@@ -2138,11 +2185,11 @@ input[name="foods-footer__subscription-submit"]:hover {
 }
 
 .foods-popup__header-block--enter {
-  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .foods-popup__header-block--registration {
-  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 .foods-popup__header-block--action {
@@ -2199,7 +2246,7 @@ input[name="foods-footer__subscription-submit"]:hover {
   color: #28282c;
 }
 
-.foods-popup__form--registration {
+.foods-popup__form--enter {
   display: none;
 }
 
