@@ -1006,6 +1006,7 @@ input[name="foods-top__search-submit"] {
 }
 
 .foods-pagination__item {
+  position: relative;
   display: inline-block;
   vertical-align: top;
   height: 49px;
@@ -1026,6 +1027,28 @@ input[name="foods-top__search-submit"] {
 
 .foods-pagination__item--dotted {
   margin-right: 5px;
+}
+
+.foods-pagination__item--back::before,
+.foods-pagination__item--forward::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 17px;
+  background-image: url("../images/foods_sprite.fw.png");
+  background-position: -184px -122px;
+}
+
+.foods-pagination__item--back::before {
+  top: 17px;
+  left: 21px;
+}
+
+.foods-pagination__item--forward::before {
+  top: 19px;
+  left: 23px;
+  transform: rotate(180deg);
 }
 
 .foods-pagination__item:hover {
@@ -1876,6 +1899,89 @@ input[name="foods-top__search-submit"] {
 
 .personal__address-actions {
   margin-bottom: 32px;
+}
+
+/* Foods favorites */
+
+.foods-goods--favorites {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.foods-goods--favorites .foods-goods__product-item:nth-child(n) {
+  margin-right: 18px;
+}
+
+.foods-goods--favorites .foods-goods__product-item:nth-child(5n) {
+  margin-right: 0;
+}
+
+.foods-goods--favorites .foods-goods__product-favorite:hover {
+  background-position: -160px -125px;
+}
+
+.foods-goods--favorites .foods-goods__product-favorite:hover::after {
+  position: absolute;
+  top: -6px;
+  left: 31px;
+  content: "Убрать из избранного";
+  display: block;
+  width: 153px;
+  height: 30px;
+  font-size: 13px;
+  line-height: 30px;
+  background-color: white;
+  color: black;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.foods-goods--favorites .foods-goods__product-favorite:hover::before {
+  position: absolute;
+  top: 5px;
+  left: 27px;
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  transform: rotate(45deg);
+  z-index: 1;
+}
+
+.foods-pagination--favorites {
+  position: static;
+  display: block;
+  width: 638px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.foods-pagination--favorites li {
+  margin-right: 17px;
+}
+
+.foods-pagination--favorites li.ellipsis {
+  margin-right: 14px;
+}
+
+.foods-pagination--favorites li:last-child {
+  margin-right: 0;
+}
+
+.foods-pagination--favorites .foods-pagination__item {
+  width: 53px;
+  height: 53px;
+  text-align: center;
+  line-height: 53px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+}
+
+.foods-pagination--favorites .foods-pagination__item:hover {
+  border: none;
+  background-color: #ffd33a;
+  box-shadow: 0 1px 0 white, inset 0 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 
