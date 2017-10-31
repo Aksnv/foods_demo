@@ -1066,6 +1066,33 @@ input[name="foods-top__search-submit"] {
   border: 1px solid #ffd33a;
 }
 
+.pagination_main {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.pagination_main a {
+  position: relative;
+  font-family: "Museo Sans Cyrl900";
+  font-size: 13px;
+  font-weight: 900;
+  text-decoration: none; 
+  text-transform: uppercase;  
+  color: #000;
+}
+
+.pagination_main a::before {
+  position: absolute;  
+  top: -8px; 
+  left: -40px; 
+  content: ""; 
+  display: block;
+  width: 30px; 
+  height: 31px; 
+  background-image: url("../images/foods_sprite.fw.png");
+  background-position: -303px -48px;
+}
+
 /* Foods product card */
 
 .foods-content--product-card {
