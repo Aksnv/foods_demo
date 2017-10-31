@@ -1380,6 +1380,32 @@ input[name="foods-top__search-submit"] {
   padding-bottom: 39px;
 }
 
+.cart-seller {
+  position: relative; 
+  margin-bottom: 30px; 
+  padding-left: 65px;
+}
+
+.cart-seller::before {
+  position: absolute;  
+  top: 2px; 
+  left: 23px;
+  content: ""; 
+  display: block; 
+  width: 27px; 
+  height: 35px; 
+  background-image: url("../images/foods_sprite.fw.png"); 
+  background-position: -306px -84px;
+}
+
+.cart-seller a {
+  display: block; 
+  font-family: "Museo Sans Cyrl300"; 
+  font-size: 20px; 
+  line-height: 28px; 
+  color: #2e8231;
+}
+
 .foods-cart__item,
 .address-info__item {
   display: table;
