@@ -378,6 +378,10 @@ input[name="foods-top__search-submit"] {
 
 /* Foods content */
 
+.foods-content {
+  position: relative;
+}
+
 .foods-content h1 {
   font-family: "Museo Sans Cyrl900";
   font-size: 40px;
@@ -2090,6 +2094,20 @@ input[name="foods-top__search-submit"] {
 .foods-text img {
   display: block;
   margin-bottom: 56px;
+}
+
+/* Foods order */
+
+.exit-button--order {
+  padding-top: 7px;
+}
+
+.exit-button--order::after {
+  top: 7px;
+}
+
+.foods-section--order h1 {
+  text-align: center;
 }
 
 /* Foods footer */
