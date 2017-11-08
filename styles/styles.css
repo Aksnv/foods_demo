@@ -1616,11 +1616,11 @@ input[name="foods-top__search-submit"] {
   padding-top: 8px;
 }
 
-.foods-subscription_promo {
+.foods-subscription__promo {
   margin-bottom: 20px;
 }
 
-.foods-subscription_promo p {
+.foods-subscription__promo p {
   font-size: 13px;
   line-height: 20px;
   color: black;
@@ -2048,6 +2048,17 @@ input[name="foods-top__search-submit"] {
   box-shadow: 0 1px 0 white, inset 0 1px 1px rgba(0, 0, 0, 0.3);
 }
 
+/* Foods delivery */
+
+.foods-text__promo {
+  margin-bottom: 20px;
+}
+
+.foods-text__promo p {
+  font-size: 13px;
+  line-height: 20px;
+  color: black;
+}
 
 /* Foods footer */
 
