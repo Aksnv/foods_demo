@@ -2108,6 +2108,142 @@ input[name="foods-top__search-submit"] {
 
 .foods-section--order h1 {
   text-align: center;
+  margin-bottom: 34px;
+}
+
+.foods-order {
+  min-height: 493px;
+  text-align: center;
+}
+
+.order__tabs {
+  clear: both;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 44px;
+  padding-top: 6px;
+  border-bottom: 1px solid #ccc;
+}
+
+.order__tab {
+  display: inline-block;
+  vertical-align: top;
+  max-height: 35px;
+  font-family: "Museo Sans Cyrl900";
+  font-size: 22px;
+  line-height: 26px;
+  text-decoration: none;
+  margin-right: 38px;
+  padding-bottom: 5px;
+  color: #666;
+}
+
+.order__tab--active {
+  color: #2e8231;
+  border-bottom: 4px solid #2e8231;
+}
+
+.order__tab--confirmation {
+  margin-right: 0;
+}
+
+.order-delivery__form--left,
+.order-delivery__form--right {
+  float: left;
+}
+
+.order-delivery__form--left {
+  width: 480px;
+  margin-right: 121px;
+}
+
+.order-delivery__form--right {
+  width: 480px;
+}
+
+.order-delivery__form {
+  overflow: hidden;
+  text-align: left;
+}
+
+.order-delivery__form h3 {
+  text-align: center;
+}
+
+.order-delivery__form label {
+  display: block;
+  font-family: "Museo Sans Cyrl900";
+  font-size: 14px;
+  padding-bottom: 7px;
+  color: #000;
+}
+
+.order-delivery__form input[type="text"] {
+  width: 480px;
+  height: 50px;
+  font-family: "Museo Sans Cyrl300";
+  margin-bottom: 29px;
+  padding-left: 11px;
+  padding-right: 19px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.delivery-payment__form-submit,
+.delivery-payment__form-reset {
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  height: 50px;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.delivery-payment__form-reset {
+  margin-right: 37px;
+  background-color: #ebebed;
+  box-shadow: 0 1px 0 #cacaca;
+}
+
+.order-delivery__form-house,
+.order-delivery__form-building,
+.order-delivery__form-flat,
+.order-delivery__form-date,
+.order-delivery__form-time {
+  float: left;
+}
+
+.order-delivery__form-house label,
+.order-delivery__form-building label,
+.order-delivery__form-flat label,
+.order-delivery__form-house input[type="text"],
+.order-delivery__form-building input[type="text"],
+.order-delivery__form-flat input[type="text"],
+.order-delivery__form-date label,
+.order-delivery__form-date input[type="text"],
+.order-delivery__form-time label,
+.order-delivery__form-time input[type="text"] {
+  width: 148px;
+}
+
+.order-delivery__form-house input[type="text"],
+.order-delivery__form-building input[type="text"],
+.order-delivery__form-date input[type="text"],
+.order-delivery__form-time input[type="text"] {
+  margin-right: 18px;
+}
+
+.order-delivery__form-time input[name="order-delivery__form-time--from"] {
+  margin-right: 5px;
+}
+
+.order-delivery__form-time input[name="order-delivery__form-time--to"] {
+  margin-right: 0;
 }
 
 /* Foods footer */
