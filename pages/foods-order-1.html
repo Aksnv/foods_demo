@@ -102,15 +102,63 @@
                 <div class="order-delivery__form-time">
                   <label>Время доставки</label>
                   <input type="text" name="order-delivery__form-time--from" placeholder="с 12:00">
-                  <span>- </span>
+                  <span>&ndash; </span>
                   <input type="text" name="order-delivery__form-time--to" placeholder="до 12:30">
                 </div>
               </div>
             </section>
 
+            <section class="order-payment__form">
+              <h3>Способ оплаты</h3>
+              <ul class="order-payment__method">
+                <li>
+                  <a href="#" class="order-payment__method-item order-payment__method-item--cash">
+                    <p><img src="../images/logo/payment/cash.png" alt=""></p>
+                    <p>Оплата наличными курьеру</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="order-payment__method-item order-payment__method-item--card order-payment__method-item--active">
+                    <p><img src="../images/logo/payment/card.png" alt=""></p>
+                    <p>Оплата банковской картой</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="order-payment__method-item order-payment__method-item--mobile">
+                    <p><img src="../images/logo/payment/phone.png" alt=""></p>
+                    <p>Оплата с мобильного телефона</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="order-payment__method-item order-payment__method-item--visa">
+                    <p><img src="../images/logo/payment/visa.png" alt=""></p>
+                    <p>Банковской картой на сайте</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="order-payment__method-item order-payment__method-item--qiwi">
+                    <p><img src="../images/logo/payment/qiwi.png" alt=""></p>
+                    <p>Через Qiwi</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="order-payment__method-item order-payment__method-item--webmoney">
+                    <p><img src="../images/logo/payment/webmoney.png" alt=""></p>
+                    <p>Через Webmoney</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="order-payment__method-item order-payment__method-item--alfa">
+                    <p><img src="../images/logo/payment/alfa.png" alt=""></p>
+                    <p>Через Альфа-клик</p>
+                  </a>
+                </li>
+              </ul>
+            </section>
+
             <div class="delivery-payment__form-action">
               <input type="reset" name="delivery-payment__form-reset" class="button delivery-payment__form-reset" value="Отмена">
-              <input type="submit" name="delivery-payment__form-submit" class="button delivery-payment__form-submit" value="Добавить">
+              <input type="submit" name="delivery-payment__form-submit" class="button delivery-payment__form-submit" value="Оформить">
             </div>
 
           </form>

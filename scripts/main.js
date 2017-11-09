@@ -121,3 +121,14 @@ $(".address-edit__form-reset").click(function(e) {
   $(".personal__address-actions").show();
   $(".personal__address-edit").hide();
 });
+
+
+/* Foods order - payment method */
+
+$(".order-payment__method-item").click(function(e) {
+  e.preventDefault();
+  for (var i = 0; i < $(".order-payment__method-item").length; i++) {
+    $($(".order-payment__method-item")[i]).removeClass("order-payment__method-item--active");
+  }
+  $(this).addClass("order-payment__method-item--active");
+});

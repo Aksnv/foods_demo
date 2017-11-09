@@ -2120,7 +2120,7 @@ input[name="foods-top__search-submit"] {
   clear: both;
   display: inline-block;
   vertical-align: top;
-  margin-bottom: 44px;
+  margin-bottom: 71px;
   padding-top: 6px;
   border-bottom: 1px solid #ccc;
 }
@@ -2154,6 +2154,7 @@ input[name="foods-top__search-submit"] {
 
 .order-delivery__form--left {
   width: 480px;
+  margin-left: 49px;
   margin-right: 121px;
 }
 
@@ -2164,10 +2165,13 @@ input[name="foods-top__search-submit"] {
 .order-delivery__form {
   overflow: hidden;
   text-align: left;
+  margin-bottom: 64px;
 }
 
 .order-delivery__form h3 {
   text-align: center;
+  margin-bottom: 40px;
+  padding-left: 0;
 }
 
 .order-delivery__form label {
@@ -2190,6 +2194,91 @@ input[name="foods-top__search-submit"] {
   border-radius: 5px;
 }
 
+.order-payment__form h3 {
+  margin-bottom: 35px;
+  padding-left: 0;
+}
+
+.order-payment__method {
+  margin-bottom: 80px;
+  border-bottom: 1px solid #ccc;
+}
+
+.order-payment__method li {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 16px;
+}
+
+.order-payment__method li:last-child {
+  margin-right: 0;
+}
+
+.order-payment__method a {
+  display: block;
+  width: 152px;
+  height: 137px;
+  text-decoration: none;
+  color: #010101;
+  opacity: 0.5;
+}
+
+.order-payment__method a.order-payment__method-item--active {
+  border-bottom: 4px solid #2e8231;
+  opacity: 1;
+}
+
+.order-payment__method-item img {
+  position: relative;
+}
+
+.order-payment__method-item--cash img {
+  top: 8px;
+}
+
+.order-payment__method-item--card img {
+  top: 7px;
+}
+
+.order-payment__method-item--mobile img {
+  top: 2px;
+}
+
+.order-payment__method-item--qiwi img {
+  top: 4px;
+}
+
+.order-payment__method p {
+  width: 152px;
+  font-family: "Museo Sans Cyrl900";
+  font-size: 14px;
+  text-align: center;
+}
+
+.order-payment__method p:first-child {
+  display: table-cell;
+  vertical-align: middle;
+  height: 53px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.order-payment__method p:nth-child(2) {
+  line-height: 18px;
+  padding-top: 12px;
+  padding-bottom: 15px;
+}
+
+.order-payment__method img {
+  vertical-align: middle;
+  width: auto;
+  max-height: 53px;
+}
+
+.delivery-payment__form-action {
+  margin-bottom: 90px;
+}
+
 .delivery-payment__form-submit,
 .delivery-payment__form-reset {
   display: inline-block;
@@ -2208,6 +2297,10 @@ input[name="foods-top__search-submit"] {
   margin-right: 37px;
   background-color: #ebebed;
   box-shadow: 0 1px 0 #cacaca;
+}
+
+.delivery-payment__form-submit {
+  margin-right: 47px;
 }
 
 .order-delivery__form-house,
@@ -2239,7 +2332,7 @@ input[name="foods-top__search-submit"] {
 }
 
 .order-delivery__form-time input[name="order-delivery__form-time--from"] {
-  margin-right: 5px;
+  margin-right: 2px;
 }
 
 .order-delivery__form-time input[name="order-delivery__form-time--to"] {
