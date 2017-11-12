@@ -72,7 +72,8 @@
             
             <section class="order-delivery__form">
               <h3>Адрес доставки</h3>
-              <div class="order-delivery__form--left">
+
+              <!-- <div class="order-delivery__form--left">
                 <label>Город</label>
                 <input type="text" name="order-delivery__form-city" placeholder="Иркутск">
                 <label>Улица</label>
@@ -95,15 +96,108 @@
                 <input type="text" name="order-delivery__form-name" placeholder="Сибилев Игорь Николаевич">
                 <label>Телефон получателя</label>
                 <input type="text" name="order-delivery__form-phone" class="order-delivery__form-phone">
-                <div class="order-delivery__form-date">
-                  <label>Дата доставки</label>
-                  <input type="text" name="order-delivery__form-date" placeholder="31.01.2017">
+                <div class="order-delivery__form-datetime">
+                  <div class="order-delivery__form-date">
+                    <label>Дата доставки</label>
+                    <input type="text" name="order-delivery__form-date" placeholder="31.01.2017">
+                  </div>
+                  <div class="order-delivery__form-time">
+                    <label>Время доставки</label>
+                    <input type="text" name="order-delivery__form-time--from" placeholder="с 12:00">
+                    <span>&ndash; </span>
+                    <input type="text" name="order-delivery__form-time--to" placeholder="до 12:30">
+                  </div>
                 </div>
-                <div class="order-delivery__form-time">
-                  <label>Время доставки</label>
-                  <input type="text" name="order-delivery__form-time--from" placeholder="с 12:00">
-                  <span>&ndash; </span>
-                  <input type="text" name="order-delivery__form-time--to" placeholder="до 12:30">
+              </div> -->
+
+              <div class="personal__address" style="display: block;">
+                <div class="personal__address-info" style="">
+                  <ul>
+                    <li class="address-info__item address-info__item--1">
+                      <ul>
+                        <li class="address-info__item-flag">
+                          <input type="radio" name="address-info__item-flag" id="address-info__item-flag--1" checked="checked">
+                          <label for="address-info__item-flag--1"></label>
+                        </li>
+                        <li class="address-info__item-information">
+                          <p>
+                            <span class="address-info__name">Сибилев Игорь Николаевич</span>
+                            <span class="address-info__phone">79040912701</span>
+                            <span class="address-info__email">user@inbox.ru</span>
+                            <span class="address-info__address">308000, Белгородская область, Белгород, ул. Попова, 76 а</span>
+                          </p>
+                        </li>
+                        <li class="address-info__item-edit"><button>Редактировать данные</button></li>
+                        <li class="address-info__item-delete"><button></button></li>
+                      </ul>
+                    </li>
+
+                    <li class="address-info__item address-info__item--2">
+                      <ul>
+                        <li class="address-info__item-flag">
+                          <input type="radio" name="address-info__item-flag" id="address-info__item-flag--2">
+                          <label for="address-info__item-flag--2"></label>
+                        </li>
+                        <li class="address-info__item-information">
+                          <p>
+                            <span class="address-info__name">Сибилев Игорь Николаевич</span>
+                            <span class="address-info__phone">79040912701</span>
+                            <span class="address-info__email">user@inbox.ru</span>
+                            <span class="address-info__address">308000, Белгородская область, Белгород, ул. Попова, 76 а</span>
+                          </p>
+                        </li>
+                        <li class="address-info__item-edit"><button>Редактировать данные</button></li>
+                        <li class="address-info__item-delete"><button></button></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="personal__address-actions" style="">
+                  <div class="order-delivery__form-datetime">
+                    <div class="order-delivery__form-date">
+                      <label>Дата доставки</label>
+                      <input type="text" name="order-delivery__form-date" placeholder="31.01.2017">
+                    </div>
+                    <div class="order-delivery__form-time">
+                      <label>Время доставки</label>
+                      <input type="text" name="order-delivery__form-time--from" placeholder="с 12:00">
+                      <span>&ndash; </span>
+                      <input type="text" name="order-delivery__form-time--to" placeholder="до 12:30">
+                    </div>
+                  </div>
+                  <a href="#" class="address-actions__action-button address-actions__action-button--add button">Добавить адрес</a>
+                </div>
+                <div class="personal__address-edit" style="display: none;">
+                  <form name="address-edit__form" class="address-edit__form" action="#" method="GET">
+                    <div class="personal__address-edit--left">
+                      <label>Город</label>
+                      <input type="text" name="address-edit__form-city" placeholder="Иркутск">
+                      <label>Улица</label>
+                      <input type="text" name="address-edit__form-street" placeholder="Ленина">
+                      <div class="address-edit__form-house">
+                        <label>Дом</label>
+                        <input type="text" name="address-edit__form-house" placeholder="15">
+                      </div>
+                      <div class="address-edit__form-building">
+                        <label>Корпус</label>
+                        <input type="text" name="address-edit__form-building">
+                      </div>
+                      <div class="address-edit__form-flat">
+                        <label>Квартира/Офис</label>
+                        <input type="text" name="address-edit__form-flat" placeholder="35">
+                      </div>
+                    </div>
+                    <div class="personal__address-edit--right">
+                      <label>ФИО получателя</label>
+                      <input type="text" name="address-edit__form-name" placeholder="Сибилев Игорь Николаевич">
+                      <label>Телефон получателя</label>
+                      <input type="text" name="address-edit__form-phone" class="address-edit__form-phone">
+                      <div class="address-edit__form-action">
+                        <input type="reset" name="address-edit__form-reset" class="button address-edit__form-reset" value="Отмена">
+                        <input type="submit" name="address-edit__form-submit" class="button address-edit__form-submit" value="Добавить">
+                      </div>
+                    </div>
+                  </form>
                 </div>
               </div>
             </section>
@@ -156,9 +250,9 @@
               </ul>
             </section>
 
-            <div class="delivery-payment__form-action">
-              <input type="reset" name="delivery-payment__form-reset" class="button delivery-payment__form-reset" value="Отмена">
-              <input type="submit" name="delivery-payment__form-submit" class="button delivery-payment__form-submit" value="Оформить">
+            <div class="order__form-action">
+              <input type="reset" name="order__form-reset" class="button order__form-reset" value="Отмена">
+              <input type="submit" name="order__form-submit" class="button order__form-submit" value="Оформить">
             </div>
 
           </form>
