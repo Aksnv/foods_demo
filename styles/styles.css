@@ -2433,12 +2433,16 @@ input[name="foods-top__search-submit"] {
   margin-bottom: 21px;
 }
 
+.confirmation__form-address .personal__address {
+  position: static;
+}
+
 .confirmation__form-address h3 {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .confirmation__form-address .personal__address-info {
-  margin-bottom: 24px;
+  margin-bottom: 30px;
 }
 
 .confirmation__form-address .address-info__item-information {
@@ -2462,6 +2466,65 @@ input[name="foods-top__search-submit"] {
 
 .confirmation__form-address .address-info__item-phone span::after {
   display: none;
+}
+
+.confirmation__form-delivery {
+  margin-bottom: 25px;
+}
+
+.confirmation__form-delivery h3 {
+  margin-bottom: 24px;
+}
+
+.confirmation-form__item {
+  display: table;
+  width: 100%;
+  min-height: 100px;
+  text-align: left;
+  margin-bottom: 10px;
+  background-color: #fff;
+  color: black;
+  border-radius: 5px;
+}
+
+.confirmation-form__item li {
+  display: table-cell;
+  vertical-align: middle;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 14px;
+  line-height: 20px;
+  padding-top: 6px;
+  color: black;
+}
+
+.confirmation-form__item-image {
+  width: 124px;
+  line-height: 14px;
+  padding-left: 56px;
+}
+
+.confirmation-form__item-place {
+  width: 339px;
+}
+
+.confirmation-form__item .confirmation-form__item-place {
+  padding-top: 0;
+}
+
+.confirmation-form__item-date {
+  width: 195px;
+}
+
+.confirmation-form__item-time {
+  width: 408px;
+}
+
+.confirmation-form__item span {
+  font-family: "Museo Sans Cyrl900";
+}
+
+.confirmation-form__item-price span {
+  font-size: 18px;
 }
 
 /* Foods footer */
