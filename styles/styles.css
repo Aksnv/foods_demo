@@ -2441,7 +2441,28 @@ input[name="foods-top__search-submit"] {
   margin-bottom: 24px;
 }
 
+.confirmation__form-address .address-info__item-information {
+  width: 658px;
+  text-align: left;
+  padding-left: 55px;
+}
 
+.confirmation__form-address .address-info__item-phone {
+  font-family: "Museo Sans Cyrl300";
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+  padding-top: 6px;
+  color: black;
+}
+
+.confirmation__form-address .address-info__item-phone span {
+  font-family: "Museo Sans Cyrl900";
+}
+
+.confirmation__form-address .address-info__item-phone span::after {
+  display: none;
+}
 
 /* Foods footer */
 
