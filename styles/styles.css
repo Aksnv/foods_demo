@@ -2497,7 +2497,7 @@ input[name="foods-top__search-submit"] {
   color: black;
 }
 
-.confirmation-form__item-image {
+.confirmation__form-delivery .confirmation-form__item-image {
   width: 124px;
   line-height: 14px;
   padding-left: 56px;
@@ -2525,6 +2525,49 @@ input[name="foods-top__search-submit"] {
 
 .confirmation-form__item-price span {
   font-size: 18px;
+}
+
+.confirmation__form-payment {
+  margin-bottom: 27px;
+}
+
+.confirmation__form-payment h3 {
+  margin-bottom: 24px;
+}
+
+.confirmation__form-payment .confirmation-form__item-image {
+  width: 180px;
+  padding-left: 56px;
+  padding-right: 18px;
+  padding-bottom: 12px;
+}
+
+.confirmation-form__item-method {
+  width: 812px;
+  padding-bottom: 5px;
+}
+
+.confirmation__form-payment .confirmation-form__item-commission {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.confirmation__form-total {
+  font-family: "Museo Sans Cyrl300";
+  font-size: 15px;
+  line-height: 18px;
+  text-align: right;
+  margin-bottom: 13px;
+  padding-right: 43px;
+  color: black;
+}
+
+.confirmation__form-total span {
+  display: block;
+  font-family: "Museo Sans Cyrl900";
+  font-size: 24px;
+  line-height: 55px;
+  margin-bottom: 29px;
 }
 
 /* Foods footer */
