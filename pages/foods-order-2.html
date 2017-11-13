@@ -70,20 +70,105 @@
 
           <form name="confirmation__form" method="POST" action="#" class="confirmation__form">
             <section class="confirmation__form-order">
-              <h3>Заказ №1234 от 31.01.2017</h3>
+              <h3>Заказ 1234 от 31.01.2017</h3>
+              <div class="foods-cart">
+                <ul>
+                  <li class="foods-cart__item foods-cart__item--1">
+                    <ul>
+                      <li class="foods-cart__item-image">
+                        <img src="../images/pages/cart/foods-goods__product-item-2--min.jpg" alt="foods-goods__product-item-2--min">
+                      </li>
+                      <li class="foods-cart__item-product">
+                        <p class="foods-goods__product-category">Овощи и фрукты</p>
+                        <p class="foods-goods__product-name">Картофель 2,5кг</p>
+                      </li>
+                      <li class="foods-cart__item-quantity">
+                        <p>Количество<br> товара: <span>5 кг</span></p>
+                      </li>
+                      <li class="foods-cart__item-price">124 руб</li>
+                    </ul>
+                  </li>
+
+                  <li class="foods-cart__item foods-cart__item--2">
+                    <ul>
+                      <li class="foods-cart__item-image">
+                        <img src="../images/pages/cart/foods-goods__product-item-7--min.jpg" alt="foods-goods__product-item-7--min">
+                      </li>
+                      <li class="foods-cart__item-product">
+                        <p class="foods-goods__product-category">Рыба</p>
+                        <p class="foods-goods__product-name">Лосось дикий кета Чумиканская ~ 2,5кг</p>
+                      </li>
+                      <li class="foods-cart__item-quantity">
+                        <p>Количество<br> товара: <span>2 упаковки</span></p>
+                      </li>
+                      <li class="foods-cart__item-price">845 руб</li>
+                    </ul>
+                  </li>
+
+                  <li class="foods-cart__item foods-cart__item--3">
+                    <ul>
+                      <li class="foods-cart__item-image">
+                        <img src="../images/pages/cart/foods-goods__product-item-12--min.jpg" alt="foods-goods__product-item-12--min">
+                      </li>
+                      <li class="foods-cart__item-product">
+                        <p class="foods-goods__product-category">Полуфабрикаты</p>
+                        <p class="foods-goods__product-name">Зразы с сыром куриные ~700г</p>
+                      </li>
+                      <li class="foods-cart__item-quantity">
+                        <p>Количество<br> товара: <span>0.5 л</span></p>
+                      </li>
+                      <li class="foods-cart__item-price">324 руб</li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <div class="foods-cart__result">
+                  <p class="foods-cart__result-quantity">Итого <span>3</span> товара на сумму:</p>
+                  <p class="foods-cart__result-price">1293 руб</p>
+                </div>
+              </div>
             </section>
+
             <section class="confirmation__form-address">
               <h3>Адрес доставки и получатель</h3>
+
+              <div class="personal__address" style="display: block;">
+                <div class="personal__address-info" style="">
+                  <ul>
+                    <li class="address-info__item address-info__item--2">
+                      <ul>
+                        <li class="address-info__item-flag">
+                          <input type="radio" name="address-info__item-flag" id="address-info__item-flag--2">
+                          <label for="address-info__item-flag--2"></label>
+                        </li>
+                        <li class="address-info__item-information">
+                          <p>
+                            <span class="address-info__name">Сибилев Игорь Николаевич</span>
+                            <span class="address-info__phone">79040912701</span>
+                            <span class="address-info__email">user@inbox.ru</span>
+                            <span class="address-info__address">308000, Белгородская область, Белгород, ул. Попова, 76 а</span>
+                          </p>
+                        </li>
+                        <li class="address-info__item-edit"><button>Редактировать данные</button></li>
+                        <li class="address-info__item-delete"><button></button></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
             </section>
+
             <section class="confirmation__form-delivery">
               <h3>Доставка</h3>
             </section>
+
             <section class="confirmation__form-payment">
               <h3>Способ оплаты</h3>
             </section>
 
             <div class="order__form-action">
-              <input type="reset" name="order__form-reset" class="button order__form-reset" value="Отмена">
+              <input type="reset" name="order__form-reset" class="button order__form-reset" value="Назад">
               <input type="submit" name="order__form-submit" class="button order__form-submit" value="Оформить">
             </div>
 

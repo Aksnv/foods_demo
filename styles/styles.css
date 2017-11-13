@@ -1971,6 +1971,7 @@ input[name="foods-top__search-submit"] {
   font-family: "Museo Sans Cyrl900";
   font-size: 15px;
   line-height: 24px;
+  background-size: 0;
   color: #999;
 }
 
@@ -2388,6 +2389,56 @@ input[name="foods-top__search-submit"] {
 
 .order-delivery__form-time input[name="order-delivery__form-time--to"] {
   margin-right: 0;
+}
+
+.confirmation__form h3 {
+  margin-bottom: 48px;
+  padding-left: 0;
+}
+
+.confirmation__form .foods-cart {
+  text-align: left;
+  padding-bottom: 0;
+}
+
+.confirmation__form .foods-cart__item-image {
+  padding-left: 50px;
+}
+
+.confirmation__form .foods-cart__item-product {
+  width: 469px;
+  padding-left: 52px;
+}
+
+.confirmation__form .foods-cart__item-quantity {
+  width: 160px;
+}
+
+.confirmation__form .foods-cart__item-quantity p {
+  font-family: "Museo Sans Cyrl500";
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.confirmation__form .foods-cart__item-quantity span {
+  display: inline;
+  font-family: "Museo Sans Cyrl900";
+}
+
+.confirmation__form .foods-cart__item-price {
+  padding-left: 279px;
+}
+
+.confirmation__form .foods-cart__result-price {
+  margin-bottom: 21px;
+}
+
+.confirmation__form-address h3 {
+  margin-bottom: 30px;
+}
+
+.confirmation__form-address .personal__address-info {
+  margin-bottom: 24px;
 }
 
 
