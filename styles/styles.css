@@ -898,7 +898,52 @@ input[name="foods-top__search-submit"] {
   width: 18px;
   height: 17px;
   background-image: url("../images/foods_sprite.fw.png");
+}
+
+.foods-goods__product-favorite--in {
+  display: block;
+  background-position: -160px -125px;
+}
+
+.foods-goods__product-favorite--out {
   background-position: -161px -35px;
+}
+
+.foods-goods__product-favorite--in:hover::before,
+.foods-goods__product-favorite--out:hover::before {
+  position: absolute;
+  top: 5px;
+  left: 27px;
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  transform: rotate(45deg);
+  z-index: 1;
+}
+
+.foods-goods__product-favorite--in:hover::after,
+.foods-goods__product-favorite--out:hover::after {
+  position: absolute;
+  top: -6px;
+  left: 31px;
+  display: block;
+  width: 153px;
+  height: 30px;
+  font-size: 13px;
+  line-height: 30px;
+  background-color: white;
+  color: black;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.foods-goods__product-favorite--in:hover::after {
+  content: "Убрать из избранного";
+}
+
+.foods-goods__product-favorite--out:hover::after {
+  content: "Добавить в избранное";
 }
 
 .foods-goods__product-item:hover .foods-goods__product-buy,
@@ -1518,9 +1563,54 @@ input[name="foods-top__search-submit"] {
 }
 
 .foods-cart__item-favorites button {
+  position: relative;
   width: 18px;
   height: 17px;
+}
+
+.foods-cart__item-favorites--in button {
+  background-position: -160px -125px;
+}
+
+.foods-cart__item-favorites--out button {
   background-position: -161px -35px;
+}
+
+.foods-cart__item-favorites--in button:hover::before,
+.foods-cart__item-favorites--out button:hover::before {
+  position: absolute;
+  top: 5px;
+  left: 27px;
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  transform: rotate(45deg);
+  z-index: 1;
+}
+
+.foods-cart__item-favorites--in button:hover::after,
+.foods-cart__item-favorites--out button:hover::after {
+  position: absolute;
+  top: -6px;
+  left: 31px;
+  display: block;
+  width: 153px;
+  height: 30px;
+  font-size: 13px;
+  line-height: 30px;
+  background-color: white;
+  color: black;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.foods-cart__item-favorites--in button:hover::after {
+  content: "Убрать из избранного";
+}
+
+.foods-cart__item-favorites--out button:hover::after {
+  content: "Добавить в избранное";
 }
 
 .foods-cart__item-subscription {
@@ -2000,38 +2090,6 @@ input[name="foods-top__search-submit"] {
 
 .foods-goods--favorites .foods-goods__product-item:nth-child(5n) {
   margin-right: 0;
-}
-
-.foods-goods--favorites .foods-goods__product-favorite:hover {
-  background-position: -160px -125px;
-}
-
-.foods-goods--favorites .foods-goods__product-favorite:hover::after {
-  position: absolute;
-  top: -6px;
-  left: 31px;
-  content: "Убрать из избранного";
-  display: block;
-  width: 153px;
-  height: 30px;
-  font-size: 13px;
-  line-height: 30px;
-  background-color: white;
-  color: black;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-}
-
-.foods-goods--favorites .foods-goods__product-favorite:hover::before {
-  position: absolute;
-  top: 5px;
-  left: 27px;
-  content: "";
-  display: block;
-  width: 8px;
-  height: 8px;
-  background-color: #fff;
-  transform: rotate(45deg);
-  z-index: 1;
 }
 
 .foods-pagination--favorites {

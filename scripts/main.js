@@ -132,3 +132,27 @@ $(".order-payment__method-item").click(function(e) {
   }
   $(this).addClass("order-payment__method-item--active");
 });
+
+
+/* Foods - add/remove favorites button */
+
+$(".foods-goods__product-favorite").click(function(e) {
+  e.preventDefault();
+  if ($(this).hasClass("foods-goods__product-favorite--in")) {
+    $(this).removeClass("foods-goods__product-favorite--in");
+    $(this).addClass("foods-goods__product-favorite--out");
+  } else {
+    $(this).removeClass("foods-goods__product-favorite--out");
+    $(this).addClass("foods-goods__product-favorite--in");
+  }
+});
+
+$(".foods-cart__item-favorites button").click(function() {
+  if ($(this).parent().hasClass("foods-cart__item-favorites--in")) {
+    $(this).parent().removeClass("foods-cart__item-favorites--in");
+    $(this).parent().addClass("foods-cart__item-favorites--out");
+  } else {
+    $(this).parent().removeClass("foods-cart__item-favorites--out");
+    $(this).parent().addClass("foods-cart__item-favorites--in");
+  }
+});
