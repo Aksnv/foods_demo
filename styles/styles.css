@@ -1522,7 +1522,12 @@ input[name="foods-top__search-submit"] {
 }
 
 .foods-cart__item-image {
+  width: 158px;
   padding-left: 30px;
+}
+
+.foods-cart__item-delete + .foods-cart__item-image {
+  width: 138px;
 }
 
 .foods-cart__item-image img {
@@ -1635,8 +1640,11 @@ input[name="foods-top__search-submit"] {
 .foods-cart__item-quantity span {
   display: inline-block;
   vertical-align: bottom;
-  line-height: 30px;
   padding-bottom: 2px;
+}
+
+.foods-cart__item-quantity button + span {
+  line-height: 30px;
 }
 
 .foods-cart__item-quantity .increase,
@@ -1893,7 +1901,8 @@ input[name="foods-top__search-submit"] {
 
 .profile-edit__form input[type="text"],
 .address-edit__form input[type="text"],
-.profile-edit__form textarea {
+.profile-edit__form textarea,
+.address-edit__form select {
   width: 480px;
   height: 50px;
   font-family: "Museo Sans Cyrl300";
@@ -1903,6 +1912,7 @@ input[name="foods-top__search-submit"] {
   background-color: white;
   border: 1px solid #ccc;
   border-radius: 5px;
+  outline: none;
 }
 
 .address-edit__form input[type="text"] {
