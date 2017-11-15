@@ -272,7 +272,7 @@ input:focus {
   background-position: -112px -8px;
 }
 
-.foods-header__personal-item--cart span {
+.foods-header__personal-item--cart span + span {
   position: absolute;
   top: 0;
   right: -27px;
