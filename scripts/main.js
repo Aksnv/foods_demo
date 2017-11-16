@@ -156,3 +156,14 @@ $(".foods-cart__item-favorites button").click(function() {
     $(this).parent().addClass("foods-cart__item-favorites--in");
   }
 });
+
+
+/* jQuery Form Styler activation */
+
+(function($) {
+$(function() {
+
+  $('select').styler();
+    
+});
+})(jQuery);
