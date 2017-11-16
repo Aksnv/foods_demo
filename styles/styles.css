@@ -1039,12 +1039,84 @@ input[name="foods-top__search-submit"] {
   text-transform: uppercase;
   margin-bottom: 34px;
   padding-left: 32px;
-  color: black;
-  opacity: 0.5;
+  color: #666;
 }
 
 .foods-sorter__form label {
-  margin-right: 12px;
+  margin-right: 14px;
+}
+
+.foods-sorter__form .jq-selectbox {
+  position: relative;
+  top: -1px;
+  width: auto;
+  height: 14px;
+  background-color: transparent;
+  border: none;
+}
+
+.foods-sorter__form .jq-selectbox select {
+  width: 1px;
+  height: 1px;
+}
+
+.foods-sorter__form .jq-selectbox.focused {
+  border: none;
+} 
+
+.foods-sorter__form .jq-selectbox__select-text {
+  overflow: visible;
+  position: relative;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: none;
+  padding: 0;
+  color: #2e8231;
+  border-bottom: 1px dotted #2e8231;
+}
+
+.foods-sorter__form .jq-selectbox__select-text::after {
+  position: absolute;
+  top: 3px;
+  right: -17px;
+  content: "";
+  display: block;
+  width: 13px;
+  height: 8px;
+  background-image: url("../images/foods_sprite.fw.png");
+  background-position: -325px -32px;
+}
+
+.foods-sorter__form .jq-selectbox.opened .jq-selectbox__select-text::after {
+  transform: rotate(180deg);
+}
+
+.foods-sorter__form .jq-selectbox__dropdown {
+  bottom: -88px!important;
+}
+
+.foods-sorter__form .jq-selectbox__dropdown ul {
+  width: auto;
+}
+
+.foods-sorter__form .jq-selectbox li {
+  width: 170px;
+  min-height: 42px;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: none;
+  padding: 0;
+  padding-top: 13px;
+  padding-left: 9px;
+  background-color: #fff;
+  color: #666;
+}
+
+.foods-sorter__form .jq-selectbox li:hover {
+  background-color: #ffd33a;
+  color: #fff;
 }
 
 /* Foods pagination */
