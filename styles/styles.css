@@ -2845,6 +2845,116 @@ input[name="foods-top__search-submit"] {
   background-position: -103px -152px;
 }
 
+.foods-certificate__action {
+  position: relative;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.foods-certificate__action::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 939px;
+  height: 6px;
+  background-image: url("../images/pages/certificate/foods-certificate__line.png");
+}
+
+.foods-certificate__quantity {
+  position: relative;
+  left: -8px;
+  width: 108px;
+  font-family: "Museo Sans Cyrl900";
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.foods-certificate__quantity .increase, 
+.foods-certificate__quantity .decrease {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  font-family: "Museo Sans Cyrl700";
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  background-color: #cbcbcb;
+  border-radius: 50%;
+}
+
+.foods-certificate__quantity .decrease {
+  float: left;
+  margin-right: 15px;
+}
+
+.foods-certificate__quantity .increase {
+  float: right;
+  margin-left: 15px;
+}
+
+.foods-certificate__quantity span {
+  display: inline-block;
+  vertical-align: bottom;
+  padding-bottom: 2px;
+}
+
+.foods-certificate__quantity button + span {
+  line-height: 30px;
+}
+
+.foods-certificate__action-buttons,
+.foods-certificate__action-buttons a {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.foods-certificate__action-buttons .product-card__action-subscription,
+.foods-certificate__action-buttons .product-card__action-favorite {
+  padding-top: 16px;
+}
+
+.foods-certificate__action-buttons .product-card__action-subscription,
+.foods-certificate__action-buttons .product-card__action-buy {
+  margin-right: 27px;
+}
+
+.foods-certificate__action-buttons .product-card__action-favorite::before {
+  top: 16px;
+  left: -2px;
+}
+
+.foods-certificate__action-buttons .product-card__action-subscription::before {
+  top: 14px;
+  left: -8px;
+}
+
+.foods-certificate__status .product-card__action-status {
+  padding-right: 15px;
+}
+
+.foods-certificate__text {
+  line-height: 19px;
+  padding-top: 26px;
+  padding-left: 27px;
+  padding-right: 80px;
+  padding-bottom: 36px;
+}
+
+.foods-certificate + .foods__product-card {
+  padding-top: 20px;
+}
+
+.foods-certificate + .foods__product-card .product-card__tabs {
+  padding-top: 0;
+}
+
+
 /* Foods footer */
 
 .foods-footer {
