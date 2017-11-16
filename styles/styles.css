@@ -88,6 +88,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Georgia Bold Italic";
+    src: url('../fonts/georgiaBoldItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -2713,6 +2720,23 @@ input[name="foods-top__search-submit"] {
   font-size: 24px;
   line-height: 55px;
   margin-bottom: 29px;
+}
+
+/* Foods certificate */
+
+.foods-certificate__outer {
+  width: 940px;
+  min-height: 720px;
+  padding-top: 50px;
+  background-image: url("../images/pages/certificate/foods-certificate__bg.png");
+}
+
+.foods-certificate__inner {
+  width: 840px;
+  min-height: 620px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 5px;
 }
 
 /* Foods footer */
