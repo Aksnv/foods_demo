@@ -2727,6 +2727,7 @@ input[name="foods-top__search-submit"] {
 .foods-certificate__outer {
   width: 940px;
   min-height: 720px;
+  margin-top: 20px;
   padding-top: 50px;
   background-image: url("../images/pages/certificate/foods-certificate__bg.png");
 }
@@ -2737,6 +2738,111 @@ input[name="foods-top__search-submit"] {
   margin: 0 auto;
   background-color: white;
   border-radius: 5px;
+}
+
+.foods-certificate__inner h1 {
+  font-family: "Georgia Bold Italic";
+  font-size: 60px;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 68px;
+  padding-top: 44px;
+}
+
+.foods-certificate__image,
+.foods-certificate__content {
+  float: left;
+}
+
+.foods-certificate__image {
+  width: 435px;
+  text-align: center;
+  margin-right: 7px;
+}
+
+.foods-certificate__image img {
+  max-width: 400px;
+}
+
+.foods-certificate__content {
+  width: 290px;
+  padding-top: 37px;
+}
+
+.foods-certificate__content h2 {
+  font-family: "Museo Sans Cyrl900";
+  font-size: 30px;
+  margin-bottom: 9px;
+}
+
+.foods-certificate__content p {
+  font-family: "Museo Sans Cyrl300";
+  font-size: 13px;
+  line-height: 20px;
+  color: #666;
+}
+
+.foods-certificate__content .foods-certificate__id {
+  font-family: "Museo Sans Cyrl300";
+  font-size: 15px;
+  line-height: 18px;
+  margin-bottom: 28px;
+  color: #000;
+}
+
+.foods-certificate__content .foods-certificate__saler {
+  font-family: "Museo Sans Cyrl100";
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 11px;
+  color: #28282c;
+}
+
+.foods-certificate__content .foods-certificate__price {
+  font-family: "Museo Sans Cyrl900";
+  font-size: 35px;
+  line-height: 26px;
+  margin-bottom: 48px;
+  padding-top: 20px;
+  color: #000;
+}
+
+.foods-certificate__social li {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 1px;
+}
+
+.foods-certificate__social-item {
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-image: url("../images/foods_sprite.fw.png");
+}
+
+.foods-certificate__social-item--vk {
+  background-position: -7px -152px;
+}
+
+.foods-certificate__social-item--ok {
+  background-position: -55px -152px;
+}
+
+.foods-certificate__social-item--tw {
+  background-position: -31px -152px;
+}
+
+.foods-certificate__social-item--fb {
+  background-position: -128px -152px;
+}
+
+.foods-certificate__social-item--mm {
+  background-position: -80px -152px;
+}
+
+.foods-certificate__social-item--lj {
+  background-position: -103px -152px;
 }
 
 /* Foods footer */
