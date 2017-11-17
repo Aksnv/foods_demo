@@ -2757,17 +2757,20 @@ input[name="foods-top__search-submit"] {
 }
 
 .foods-certificate__image {
-  width: 435px;
+  width: 382px;
   text-align: center;
-  margin-right: 7px;
+  margin-right: 56px;
+  padding-left: 50px;
 }
 
 .foods-certificate__image img {
-  max-width: 400px;
+  width: auto;
+  max-width: 332px;
+  max-height: 382px;
 }
 
 .foods-certificate__content {
-  width: 290px;
+  width: 350px;
   padding-top: 37px;
 }
 
