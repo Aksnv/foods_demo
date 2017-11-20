@@ -36,11 +36,63 @@
       <div class="foods-top__search">
         <form class="foods-top__search-form" name="foods-top__search-form" method="GET" action="#">
           <input type="search" name="foods-top__search-field" placeholder="Поиск по товарам">
+          <input type="reset" name="foods-top__search-reset" value="">
           <input type="submit" name="foods-top__search-submit" value="">
         </form>
+        <button class="advanced-search__button">Расширенный поиск</button>
         <div class="foods-top__search-example">
           <p>Например, <a href="#" class="inline-link">осетрина к Новому году</a></p>
         </div>
+
+        <form name="advanced-search__form" method="GET" action="#" class="advanced-search__form">
+          <ul>
+            <li>
+              <select>
+                <option>Все категории</option>
+                <option>Овощи и фрукты</option>
+                <option>Молочная продукция</option>
+              </select>
+            </li>
+            <li>
+              <select>
+                <option>Тип товара</option>
+                <option>Любой тип товара</option>
+              </select>
+            </li>
+            <li>
+              <select>
+                <option>Продавец</option>
+                <option>Любой продавец</option>
+              </select>
+            </li>
+            <li>
+              <select>
+                <option>Любое из слов</option>
+                <option>Все слова</option>
+              </select>
+            </li>
+            <li>
+              <input type="text" name="advanced-search__key-words" placeholder="Ключевые слова">
+            </li>
+            <li>
+              <input type="text" name="advanced-search__exclude-words" placeholder="Исключить слова">
+            </li>
+            <li class="advanced-search__range">
+              <p>Цена 
+                <input type="text" name="advanced-search__min-price" id="advanced-search__min-price" readonly=""> — 
+                <input type="number" name="advanced-search__max-price" id="advanced-search__max-price" readonly="">
+              </p>
+              <div class="advanced-search__price-range"></div>
+            </li>
+            <li>
+              <input type="submit" name="advanced-search__submit" value="Начать расширенный поиск">
+            </li>
+            <li>
+              <input type="reset" name="advanced-search__reset" value="Отмена">
+            </li>
+          </ul>
+        </form>
+          
       </div>
     </div>
   </div>

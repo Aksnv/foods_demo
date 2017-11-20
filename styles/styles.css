@@ -348,7 +348,7 @@ input:focus {
 }
 
 input[name="foods-top__search-field"] {
-  width: 910px;
+  width: 684px;
   height: 52px;
   font-size: 15px;
   margin-bottom: 17px;
@@ -357,6 +357,10 @@ input[name="foods-top__search-field"] {
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 5px;
+}
+
+input[name="foods-top__search-field"]:focus {
+  border: 1px solid #2e8231;
 }
 
 input[name="foods-top__search-field"]::-webkit-input-placeholder {
