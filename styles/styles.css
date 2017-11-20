@@ -143,6 +143,10 @@ input:focus {
   color: #2e8231;
 }
 
+.inline-link:hover {
+  color: #ffd33a;
+}
+
 .button {
   display: block;
   font-family: "Museo Sans Cyrl900";
