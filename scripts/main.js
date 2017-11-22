@@ -158,6 +158,19 @@ $(".foods-cart__item-favorites button").click(function() {
 });
 
 
+/* Foods - advanced search */
+
+$(".foods-top .advanced-search__button").click(function() {
+  if ($(this).hasClass("advanced-search__button--active")) {
+    $(".foods-top .advanced-search__form").slideUp();
+    $(this).removeClass("advanced-search__button--active");
+  } else {
+    $(".foods-top .advanced-search__form").slideDown();
+    $(this).addClass("advanced-search__button--active");
+  } 
+});
+
+
 /* jQuery Form Styler activation */
 
 (function($) {

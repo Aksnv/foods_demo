@@ -348,7 +348,21 @@ input:focus {
 
 .foods-top__search-form {
   position: relative;
+  display: inline-block;
+  vertical-align: top;
   margin-top: 55px;
+  margin-right: 6px;
+}
+
+.foods-top__search-form::after {
+  position: absolute;
+  top: 11px;
+  right: 51px;
+  content: "";
+  display: block;
+  width: 1px;
+  height: 30px;
+  background-color: #d0d4d8;
 }
 
 input[name="foods-top__search-field"] {
@@ -391,24 +405,250 @@ input[name="foods-top__search-field"]::-ms-input-placeholder {
   opacity: 0.5;
 }
 
-input[name="foods-top__search-submit"] {
+input[name="foods-top__search-submit"],
+input[name="foods-top__search-reset"] {
   position: absolute;
+  display: block;
+  background-image: url("../images/foods_sprite.fw.png");
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+input[name="foods-top__search-submit"] {
   top: 18px;
   right: 18px;
   width: 19px;
   height: 19px;
-  background-image: url("../images/foods_sprite.fw.png");
+  background-position: -8px -176px;
+}
+
+input[name="foods-top__search-submit"]:hover,
+input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-submit"]:hover {
+  background-position: -31px -176px;
+}
+
+input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-submit"] {
   background-position: -114px -59px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
+}
+
+input[name="foods-top__search-reset"] {
+  top: 20px;
+  right: 66px;
+  width: 12px;
+  height: 12px;
+  background-position: -57px -180px;
+}
+
+input[name="foods-top__search-reset"]:hover,
+input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-reset"]:hover {
+  background-position: -76px -180px;
+}
+
+input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-reset"] {
+  background-position: -96px -179px;
 }
 
 .foods-top__search-example p {
   font-family: "Museo Sans Cyrl300";
   font-size: 15px;
   line-height: 18px;
+  margin-bottom: 30px;
   color: #000;
+}
+
+/* Foods top - Advanced search */
+
+.foods-top .advanced-search__button {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 216px;
+  height: 52px;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 15px;
+  line-height: 50px;
+  margin-top: 55px;
+  padding-left: 30px;
+  background-image: none;
+  background-color: #2e8231;
+  color: white;
+  border: 1px solid #2e8231;
+  border-radius: 5px;
+}
+
+.foods-top .advanced-search__button:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ffd33a;
+}
+
+.foods-top .advanced-search__button::before {
+  position: absolute;
+  top: 17px;
+  left: 16px;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 16px;
+  background-image: url("../images/foods_sprite.fw.png");
+  background-position: -120px -176px;
+}
+
+.foods-top .advanced-search__button:hover::before {
+  background-position: -152px -175px;
+}
+
+.foods-top .advanced-search__form {
+  clear: both;
+  display: none;
+  padding-top: 40px;
+  background-color: #fff;
+  border-top: 2px solid #f4f4f4;
+}
+
+.foods-top .advanced-search__form h2 {
+  font-family: "Museo Sans Cyrl900";
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  margin-bottom: 34px;
+  color: #000;
+}
+
+.foods-top .advanced-search__form ul {
+  padding-left: 60px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+}
+
+.foods-top .advanced-search__form li {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 17px;
+  margin-bottom: 6px;
+}
+
+.foods-top .advanced-search__form .jq-selectbox,
+.foods-top .advanced-search__form input[type="text"] {
+  position: relative;
+  width: 340px;
+  height: 50px;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 14px;
+  line-height: 50px;
+  background-color: white;
+  color: #28282c;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.foods-top .advanced-search__form .jq-selectbox::before {
+  position: absolute;
+  top: 9px;
+  right: 40px;
+  content: "";
+  display: block;
+  width: 1px;
+  height: 30px;
+  background-color: #d0d4d8;
+}
+
+.foods-top .advanced-search__form .jq-selectbox::after {
+  position: absolute;
+  top: 21px;
+  right: 14px;
+  content: "";
+  display: block;
+  width: 12px;
+  height: 6px;
+  background-image: url("../images/foods_sprite.fw.png");
+  background-position: -159px -163px;
+  transform: rotate(0deg);
+}
+
+.foods-top .advanced-search__form .jq-selectbox.opened::after {
+  transform: rotate(180deg);
+}
+
+.foods-top .advanced-search__form .jq-selectbox__dropdown ul {
+  width: 340px;
+  max-height: 102px;
+  padding: 0;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.foods-top .advanced-search__form .jq-selectbox__dropdown li {
+  display: block;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.foods-top .advanced-search__form .jq-selectbox__select-text {
+  padding-left: 10px;
+}
+
+.foods-top .advanced-search__form input[type="text"] {
+  padding-left: 10px;
+  padding-right: 40px;
+  margin-bottom: 14px;
+}
+
+.foods-top .advanced-search__form input[type="text"]::-webkit-input-placeholder {
+  color: #939395;
+}
+
+.foods-top .advanced-search__form input[type="text"]:-ms-input-placeholder {
+  color: #939395;
+}
+
+.foods-top .advanced-search__form input[type="text"]::-ms-input-placeholder {
+  color: #939395;
+}
+
+.foods-top .advanced-search__form .jq-selectbox select {
+  width: 340px;
+}
+
+.foods-top .advanced-search__form input[name="advanced-search__min-price"],
+.foods-top .advanced-search__form input[name="advanced-search__max-price"] {
+  width: 100px;
+}
+
+.foods-top .advanced-search__form input[name="advanced-search__min-price"] {
+  margin-left: 20px;
+  margin-right: 32px;
+}
+
+.foods-top .advanced-search__form input[name="advanced-search__max-price"] {
+  margin-left: 35px;
+  margin-right: 0;
+}
+
+.foods-top .advanced-search__form input[name="advanced-search__submit"],
+.foods-top .advanced-search__form input[name="advanced-search__reset"] {
+  height: 50px;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 18px;
+  line-height: 50px;
+  color: #000;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.foods-top .advanced-search__form input[name="advanced-search__submit"] {
+  width: 460px;
+  background-color: #ffb33a;
+  box-shadow: 0 1px 0 #ba9101;
+}
+
+.foods-top .advanced-search__form input[name="advanced-search__reset"] {
+  width: 220px;
+  background-color: #cacaca;
+  box-shadow: 0 1px 0 #9d9999;
 }
 
 /* Foods content */
@@ -484,12 +724,20 @@ input[name="foods-top__search-submit"] {
   color: #666;
 }
 
+.foods-catalog__goods-item:hover {
+  color: #2e8231;
+}
+
 .foods-catalog__goods-item--active {
   position: relative;
   width: 197px;
   background-color: #ffd33a;
   color: #fff;
   box-shadow: 0 1px 0 white, inset 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.foods-catalog__goods-item--active:hover {
+  color: #fff;
 }
 
 .foods-catalog__goods-item--active::before,
@@ -1014,11 +1262,19 @@ input[name="foods-top__search-submit"] {
   color: #2e8231;
 }
 
+.foods-breadcrumbs a:hover {
+  color: #ffb33a;
+}
+
 .foods-breadcrumbs a::after {
   position: absolute;
   top: 0;
   right: -10px;
   content: "/";
+}
+
+.foods-breadcrumbs a:hover::after {
+  color: #666;
 }
 
 /* Foods subsection */
