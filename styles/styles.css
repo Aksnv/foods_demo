@@ -614,16 +614,50 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 .foods-top .advanced-search__form input[name="advanced-search__min-price"],
 .foods-top .advanced-search__form input[name="advanced-search__max-price"] {
   width: 100px;
+  margin-bottom: 10px;
 }
 
 .foods-top .advanced-search__form input[name="advanced-search__min-price"] {
-  margin-left: 20px;
+  margin-left: 16px;
   margin-right: 32px;
 }
 
 .foods-top .advanced-search__form input[name="advanced-search__max-price"] {
   margin-left: 35px;
   margin-right: 0;
+}
+
+.advanced-search__range > p span {
+  font-family: "Museo Sans Cyrl900";
+  font-size: 14px;
+  color: #010101;
+}
+
+.advanced-search__price-range {
+  width: 285px;
+  height: 2px;
+  margin-left: 56px;
+  background-color: #f4f4f4;
+}
+
+.advanced-search__price-range.ui-widget.ui-widget-content {
+  border: none;
+}
+
+.advanced-search__price-range .ui-slider-handle {
+  top: 2px;
+  display: block;
+  width: 14px;
+  height: 17px;
+  background-image: url("../images/foods_sprite.fw.png");
+  background-position: -176px -152px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.advanced-search__price-range .ui-slider-range {
+  background-color: #ffd33a;
 }
 
 .foods-top .advanced-search__form input[name="advanced-search__submit"],

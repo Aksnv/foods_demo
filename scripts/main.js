@@ -171,6 +171,24 @@ $(".foods-top .advanced-search__button").click(function() {
 });
 
 
+/* Foods - advanced search - slider range (jQuery UI) */
+
+$( function() {
+    $( ".advanced-search__price-range" ).slider({
+      range: true,
+      min: 100,
+      max: 9999,
+      values: [ 100, 5000 ],
+      slide: function( event, ui ) {
+        $( "#advanced-search__min-price" ).val( ui.values[ 0 ] );
+        $( "#advanced-search__max-price" ).val( ui.values[ 1 ] );
+      }
+    });
+    $( "#advanced-search__min-price" ).val( $( ".advanced-search__price-range" ).slider( "values", 0 ) );
+    $( "#advanced-search__max-price" ).val( $( ".advanced-search__price-range" ).slider( "values", 1 ) );
+  } );
+
+
 /* jQuery Form Styler activation */
 
 (function($) {
