@@ -683,14 +683,22 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 
 .foods-top .advanced-search__form input[name="advanced-search__submit"] {
   width: 460px;
-  background-color: #ffb33a;
+  background-color: #ffd33a;
   box-shadow: 0 1px 0 #ba9101;
+}
+
+.foods-top .advanced-search__form input[name="advanced-search__submit"]:hover {
+  background-color: #ffb33a;
 }
 
 .foods-top .advanced-search__form input[name="advanced-search__reset"] {
   width: 220px;
-  background-color: #cacaca;
+  background-color: #ebebed;
   box-shadow: 0 1px 0 #9d9999;
+}
+
+.foods-top .advanced-search__form input[name="advanced-search__reset"]:hover {
+  background-color: #dbdbdd;
 }
 
 /* Foods content */
