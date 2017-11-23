@@ -3786,12 +3786,36 @@ input[name="foods-footer__subscription-submit"]:hover {
 
 .foods-popup {
   position: fixed;
-  top: 10%;
+  top: 20%;
   left: calc(50% - 265px);
   width: 530px;
   /* min-height: 441px; */
   background-color: white;
   border-radius: 5px;
+}
+
+.foods-popup__close-button {
+  position: absolute;
+  top: -35px;
+  right: 22px;
+  display: block;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 14px;
+  line-height: 20px;
+  color: #a2a2a2;
+  background-image: none;
+}
+
+.foods-popup__close-button::after {
+  position: absolute;
+  top: 3px;
+  right: -22px;
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-image: url("../images/foods_sprite.fw.png");
+  background-position: -101px -200px;
 }
 
 /* Foods popup - enter/registration */
@@ -3826,7 +3850,7 @@ input[name="foods-footer__subscription-submit"]:hover {
   padding-left: 50px;
   padding-top: 55px;
   padding-right: 49px;
-  padding-bottom: 45px;
+  padding-bottom: 27px;
 }
 
 .foods-popup__form label {
@@ -3884,26 +3908,39 @@ input[name="foods-footer__subscription-submit"]:hover {
   font-size: 14px;
   line-height: 20px;
   text-align: center;
+  margin-bottom: 17px;
   color: #333;
-  opacity: 0.5;
 }
 
-input.foods-popup__form-submit {
+input.foods-popup__form-submit,
+input.foods-popup__form-reset {
   display: block;
   font-family: "Museo Sans Cyrl300";
   font-size: 18px;
   line-height: 50px;
   text-align: center;
-  background-color: #ffd33a;
   color: black;
   border: none;
   border-radius: 25px;
-  box-shadow: 0 1px 0 #ba9101;
   cursor: pointer;
+}
+
+input.foods-popup__form-submit {
+  background-color: #ffd33a;
+  box-shadow: 0 1px 0 #ba9101;
+}
+
+input.foods-popup__form-reset {
+  background-color: #ebebed;
+  box-shadow: 0 1px 0 #cacaca;
 }
 
 input.foods-popup__form-submit:hover {
   background-color: #ffb33a;
+}
+
+input.foods-popup__form-reset:hover {
+  background-color: #dbdbdd;
 }
 
 input.foods-popup__form-submit--enter {
@@ -3922,4 +3959,93 @@ input.foods-popup__form-submit--registration {
   margin-top: 17px;
 }
 
+/* Foods popup - reset password */
+
+.foods-popup__header-block--single {
+  float: none;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+input.foods-popup__form-submit--double,
+input.foods-popup__form-reset--double {
+  display: inline-block;
+  width: 210px;
+}
+
+input.foods-popup__form-submit--double {
+  margin-right: 7px;
+}
+
+.foods-popup__content-message {
+  padding-top: 135px;
+  padding-bottom: 64px;
+}
+
+.foods-popup__content-message p {
+  position: relative;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  color: #28282c;
+}
+
+.foods-popup__content-message p::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url("../images/foods_sprite.fw.png");
+}
+
+.foods-popup__content-message--email p::before {
+  left: calc(50% - 28px);
+  top: -65px;
+  width: 56px;
+  height: 40px;
+  background-position: -244px -184px;
+}
+
+.foods-popup__content-message--success p::before {
+  left: calc(50% - 24px);
+  top: -65px;
+  width: 49px;
+  height: 40px;
+  background-position: -308px -124px;
+}
+
+.foods-popup__content-message--success {
+  padding-bottom: 106px;
+}
+
+.foods-popup__content-message--error p::before {
+  left: calc(50% - 25px);
+  top: -75px;
+  width: 50px;
+  height: 50px;
+  background-position: -308px -168px;
+}
+
+.foods-popup__content-message--error {
+  padding-top: 155px;
+  padding-bottom: 86px;
+}
+
+
+/* Foods popup - create password */
+
+.foods-popup__form--password-create p {
+  font-family: "Museo Sans Cyrl300";
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 17px;
+  color: #333;
+}
+
+input.foods-popup__form-submit--password-create {
+  margin-bottom: 18px;
+}
 

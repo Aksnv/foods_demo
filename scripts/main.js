@@ -1,3 +1,11 @@
+/* Foods popup - close button */
+
+$(".foods-popup__close-button").click(function() {
+  $(".foods-overlay").hide();
+  $(".foods-popup").hide();
+});
+
+
 /* Foods popup - enter / registration */
 
 $(".foods-popup__header-block--enter").click(function() {
