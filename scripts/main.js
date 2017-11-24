@@ -172,9 +172,13 @@ $(".foods-top .advanced-search__button").click(function() {
   if ($(this).hasClass("advanced-search__button--active")) {
     $(".foods-top .advanced-search__form").slideUp();
     $(this).removeClass("advanced-search__button--active");
+    $(".foods-top__search").removeClass("foods-top__search--active");
+    $(".foods-content .foods-section--search-results:nth-of-type(1) .foods-search__results").removeClass("foods-search__results--active");
   } else {
     $(".foods-top .advanced-search__form").slideDown();
     $(this).addClass("advanced-search__button--active");
+    $(".foods-top__search").addClass("foods-top__search--active");
+    $(".foods-content .foods-section--search-results:nth-of-type(1) .foods-search__results").addClass("foods-search__results--active");
   } 
 });
 

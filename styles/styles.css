@@ -328,7 +328,7 @@ input:focus {
 
 .foods-top {
   min-height: 172px;
-  margin-bottom: 31px;
+  margin-bottom: 33px;
   background-color: #fff;
 }
 
@@ -351,6 +351,8 @@ input:focus {
 }
 
 .foods-top__search {
+  position: relative;
+  min-height: 172px;
   font-size: 15px;
 }
 
@@ -372,6 +374,12 @@ input:focus {
 
 .foods-top__search-quantity span {
   font-family: "Museo Sans Cyrl900";
+}
+
+.foods-top__search--active .foods-top__search-quantity {
+  position: absolute;
+  left: -241px;
+  bottom: -377px;
 }
 
 .foods-top__search-form {
@@ -794,8 +802,12 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 
 .foods-search__results {
   font-size: 13px;
-  padding-top: 7px;
+  padding-top: 5px;
   color: #333;
+}
+
+.foods-search__results--active {
+  padding-top: 38px;
 }
 
 .foods-search__query {
