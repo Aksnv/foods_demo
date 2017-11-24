@@ -181,6 +181,22 @@
               <p>Всего: <span>1413 руб</span></p>
             </div>
 
+            <div class="confirmation__form-notes">
+              <h3>Примечания</h3>
+              <form name="notes__form" action="#" method="GET" class="notes__form">
+                <div class="notes__form--left">
+                  <label>Присылать СМС о состоянии заказа</label>
+                  <input type="text" name="notes__form-phone" placeholder="Телефон покупателя">
+                  <label>Присылать уведомления о состоянии заказа на почту</label>
+                  <input type="text" name="notes__form-email" placeholder="Email покупателя">
+                </div>
+                <div class="notes__form--right">
+                  <label>Примечания к заказу</label>
+                  <textarea class="notes__form-note" placeholder="Текст примечания"></textarea>
+                </div>
+              </form>
+            </div>
+
             <div class="order__form-action">
               <input type="reset" name="order__form-reset" class="button order__form-reset" value="Назад">
               <input type="submit" name="order__form-submit" class="button order__form-submit" value="Оформить">
