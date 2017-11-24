@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>Foods - Оформление заказа (шаг 1)</title>
   <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="../styles/jquery.formstyler.css">
+  <link rel="stylesheet" type="text/css" href="../styles/jquery-ui.css">
   <link rel="stylesheet" type="text/css" href="../styles/styles.css">
 </head>
 <body>
@@ -183,18 +185,16 @@
 
             <div class="confirmation__form-notes">
               <h3>Примечания</h3>
-              <form name="notes__form" action="#" method="GET" class="notes__form">
-                <div class="notes__form--left">
-                  <label>Присылать СМС о состоянии заказа</label>
-                  <input type="text" name="notes__form-phone" placeholder="Телефон покупателя">
-                  <label>Присылать уведомления о состоянии заказа на почту</label>
-                  <input type="text" name="notes__form-email" placeholder="Email покупателя">
-                </div>
-                <div class="notes__form--right">
-                  <label>Примечания к заказу</label>
-                  <textarea class="notes__form-note" placeholder="Текст примечания"></textarea>
-                </div>
-              </form>
+              <div class="notes__form--left">
+                <label>Присылать СМС о состоянии заказа</label>
+                <input type="text" name="notes__form-phone" placeholder="Телефон покупателя">
+                <label>Присылать уведомления о состоянии заказа на почту</label>
+                <input type="text" name="notes__form-email" placeholder="Email покупателя">
+              </div>
+              <div class="notes__form--right">
+                <label>Примечания к заказу</label>
+                <textarea class="notes__form-note" placeholder="Текст примечания" ></textarea>
+              </div>
             </div>
 
             <div class="order__form-action">
@@ -266,6 +266,8 @@
   </footer>
 
   <script src="../scripts/jquery-3.2.1.min.js"></script>
+  <script src="../scripts/jquery.formstyler.min.js"></script>
+  <script src="../scripts/jquery-ui.js"></script>
   <script src="../scripts/main.js"></script>
 </body>
 </html>

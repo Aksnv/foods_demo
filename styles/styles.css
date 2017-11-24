@@ -3232,7 +3232,7 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   font-size: 15px;
   line-height: 18px;
   text-align: right;
-  margin-bottom: 13px;
+  margin-bottom: 5px;
   padding-right: 43px;
   color: black;
 }
@@ -3242,7 +3242,68 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   font-family: "Museo Sans Cyrl900";
   font-size: 24px;
   line-height: 55px;
-  margin-bottom: 29px;
+  margin-bottom: 0;
+}
+
+.confirmation__form-notes {
+  overflow: hidden;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.notes__form--left,
+.notes__form--right {
+  float: left;
+}
+
+.notes__form--left {
+  margin-left: 49px;
+  margin-right: 120px;
+}
+
+.confirmation__form-notes h3 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.confirmation__form-notes label {
+  display: block;
+  font-family: "Museo Sans Cyrl900";
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #010101;
+}
+
+.confirmation__form-notes input[type="text"],
+.confirmation__form-notes textarea {
+  width: 480px;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: white;
+  color: #28282c;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.confirmation__form-notes input[type="text"] {
+  height: 50px;
+  line-height: 48px;
+  margin-bottom: 28px;
+}
+
+.confirmation__form-notes textarea {
+  height: 152px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  resize: none;
+}
+
+.confirmation__form-notes input[type="text"]:focus,
+.confirmation__form-notes textarea:focus {
+  border: 1px solid #2e8231;
+  outline: none;
 }
 
 /* Foods certificate */
