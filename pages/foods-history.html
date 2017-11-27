@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>Foods - Прошлые покупки</title>
   <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="../styles/jquery.formstyler.css">
+  <link rel="stylesheet" type="text/css" href="../styles/jquery-ui.css">
   <link rel="stylesheet" type="text/css" href="../styles/styles.css">
 </head>
 <body>
@@ -71,14 +73,15 @@
         <div class="foods-history">
 
           <div class="foods-history__top">
+            <a href="#" class="refresh-button refresh-button--top">Обновить данные</a>
             <div class="store-select">
+              <label>Магазин: </label>
               <select>
                 <option>Pokupo</option>
                 <option>Foods</option>
                 <option>Magazine</option>
               </select>
             </div>
-            <a href="#" class="refresh-button"></a>
           </div>
 
           <div class="foods-orders">
@@ -86,8 +89,8 @@
               <li class="foods-orders__header">
                 <ul>
                   <li class="foods-orders__item-checkbox">
-                    <input type="checkbox" name="foods-orders__item-checkbox">
-                    <label></label>
+                    <input type="checkbox" name="foods-orders__item-checkbox" id="foods-orders__item-checkbox--all">
+                    <label for="foods-orders__item-checkbox--all"></label>
                   </li>
                   <li class="foods-orders__item-order">Заказ</li>
                   <li class="foods-orders__item-seller">Продавец</li>
@@ -100,11 +103,11 @@
               <li class="foods-orders__item foods-orders__item--1">
                 <ul>
                   <li class="foods-orders__item-checkbox">
-                    <input type="checkbox" name="foods-orders__item-checkbox">
-                    <label></label>
+                    <input type="checkbox" name="foods-orders__item-checkbox" id="foods-orders__item-checkbox--1">
+                    <label for="foods-orders__item-checkbox--1"></label>
                   </li>
                   <li class="foods-orders__item-order">Заказ №07612911-0034 от 12 августа 2017</li>
-                  <li class="foods-orders__item-seller">Magazine</li>
+                  <li class="foods-orders__item-seller"><a href="#">Magazine</a></li>
                   <li class="foods-orders__item-price">124 руб</li>
                   <li class="foods-orders__item-status foods-orders__item-status--is-formed">Формируется</li>
                   <li class="foods-orders__item-payment foods-orders__item-payment--waiting-review">Ожидает проверки</li>
@@ -118,11 +121,11 @@
               <li class="foods-orders__item foods-orders__item--2">
                 <ul>
                   <li class="foods-orders__item-checkbox">
-                    <input type="checkbox" name="foods-orders__item-checkbox">
-                    <label></label>
+                    <input type="checkbox" name="foods-orders__item-checkbox" id="foods-orders__item-checkbox--2">
+                    <label for="foods-orders__item-checkbox--2"></label>
                   </li>
                   <li class="foods-orders__item-order">Заказ №07612911-0034 от 12 августа 2017</li>
-                  <li class="foods-orders__item-seller">Magazine</li>
+                  <li class="foods-orders__item-seller"><a href="#">Magazine</a></li>
                   <li class="foods-orders__item-price">845 руб</li>
                   <li class="foods-orders__item-status foods-orders__item-status--new">Новый</li>
                   <li class="foods-orders__item-payment foods-orders__item-payment--waiting-payment">Ожидает оплаты</li>
@@ -137,11 +140,11 @@
               <li class="foods-orders__item foods-orders__item--3">
                 <ul>
                   <li class="foods-orders__item-checkbox">
-                    <input type="checkbox" name="foods-orders__item-checkbox">
-                    <label></label>
+                    <input type="checkbox" name="foods-orders__item-checkbox" id="foods-orders__item-checkbox--3">
+                    <label for="foods-orders__item-checkbox--3"></label>
                   </li>
                   <li class="foods-orders__item-order">Заказ №07612911-0034 от 12 августа 2017</li>
-                  <li class="foods-orders__item-seller">Magazine</li>
+                  <li class="foods-orders__item-seller"><a href="#">Magazine</a></li>
                   <li class="foods-orders__item-price">324 руб</li>
                   <li class="foods-orders__item-status foods-orders__item-status--canceled">Отменен</li>
                   <li class="foods-orders__item-payment foods-orders__item-payment--canceled">Отменен</li>
@@ -156,12 +159,12 @@
           </div>
 
           <div class="foods-history__bottom">
-            <div class="foods-orders__general-actions">
+            <a href="#" class="refresh-button refresh-button--bottom">Обновить данные</a>
+            <div class="foods-orders__item-actions foods-orders__item-actions--all">
               <a href="#" class="foods-orders__item-actions--cart"></a>
               <a href="#" class="foods-orders__item-actions--repeat"></a>
               <a href="#" class="foods-orders__item-actions--cancel"></a>
             </div>
-            <a href="#" class="refresh-button"></a>
           </div>
 
         </div>
@@ -226,6 +229,8 @@
   </footer>
 
   <script src="../scripts/jquery-3.2.1.min.js"></script>
+  <script src="../scripts/jquery.formstyler.min.js"></script>
+  <script src="../scripts/jquery-ui.js"></script>
   <script src="../scripts/main.js"></script>
 </body>
 </html>

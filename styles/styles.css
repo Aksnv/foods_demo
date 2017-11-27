@@ -3625,10 +3625,459 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   padding-top: 0;
 }
 
-
 /* Foods history */
 
+.foods-history {
+  padding-top: 30px;
+  padding-bottom: 45px;
+}
 
+.store-select label {
+  display: inline-block;
+  vertical-align: top;
+  font-family: "Museo Sans Cyrl900";
+  font-size: 14px;
+  line-height: 48px;
+  margin-right: 15px;
+  color: #010101;
+}
+
+.store-select .jq-selectbox {
+  width: 320px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.store-select .jq-selectbox__select::before {
+  position: absolute;
+  top: 9px;
+  right: 40px;
+  content: "";
+  display: block;
+  width: 1px;
+  height: 30px;
+  background-color: #d0d4d8;
+}
+
+.store-select .jq-selectbox__select::after {
+  position: absolute;
+  top: 22px;
+  right: 14px;
+  content: "";
+  display: block;
+  width: 12px;
+  height: 6px;
+  background-image: url("../images/foods_sprite.fw.png");
+  background-position: -159px -163px;
+}
+
+.store-select .jq-selectbox.opened .jq-selectbox__select::after {
+  transform: rotate(180deg);
+}
+
+.store-select .jq-selectbox__select-text {
+  font-family: "Museo Sans Cyrl300";
+  font-size: 14px;
+  line-height: 48px;
+  padding-left: 10px;
+  padding-right: 50px;
+  color: #28282c;
+}
+
+.store-select .jq-selectbox.opened .jq-selectbox__trigger {
+  position: absolute;
+  top: 0;
+  right: -1px;
+  display: block;
+  width: 42px;
+  height: 48px;
+  background-color: #d0d4d8;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.store-select .jq-selectbox__dropdown {
+  top: 45px!important;
+}
+
+.store-select .jq-selectbox__dropdown ul {
+  width: 320px;
+  max-height: 155px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.store-select .jq-selectbox__dropdown li {
+  font-family: "Museo Sans Cyrl300";
+  font-size: 14px;
+  line-height: 48px;
+  padding-left: 10px;
+  padding-right: 50px;
+  color: #28282c;
+}
+
+.refresh-button {
+  float: right;
+  position: relative;
+  display: block;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 18px;
+  line-height: 26px;
+  text-decoration: none;
+  color: black;
+}
+
+.refresh-button--top {
+  top: 12px;
+}
+
+.refresh-button:hover {
+  color: #ffd33a;
+}
+
+.refresh-button::before {
+  position: absolute;
+  top: 2px;
+  left: -31px;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 22px;
+  background-image: url("../images/foods_sprite.fw.png");
+  background-position: -91px -220px;
+}
+
+.refresh-button:hover::before {
+  background-position: -63px -220px;
+}
+
+.foods-orders {
+  padding-top: 19px;
+  padding-bottom: 31px;
+}
+
+.foods-orders__header {
+  font-family: "Museo Sans Cyrl300";
+  font-size: 13px;
+  color: #333;
+}
+
+.foods-orders__item {
+  min-height: 100px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.foods-orders__header li,
+.foods-orders__item li {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.foods-orders__header li {
+  height: 50px;
+}
+
+.foods-orders__item li {
+  height: 100px;
+}
+
+.foods-orders__item-checkbox {
+  position: relative;
+  width: 56px;
+}
+
+.foods-orders__item-checkbox input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.foods-orders__item-checkbox input[type="checkbox"] + label {
+  position: absolute;
+  top: 42px;
+  left: 20px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+}
+
+.foods-orders__item-checkbox input[type="checkbox"] + label[for="foods-orders__item-checkbox--all"] {
+  top: 16px;
+}
+
+.foods-orders__item-checkbox input[type="checkbox"]:checked + label {
+  background-color: #ffd33a;
+  border: 1px solid #ffd33a;
+}
+
+.foods-orders__item-checkbox input[type="checkbox"]:checked + label:before {
+  position: absolute;
+  top: 4px;
+  left: 2px;
+  content: "";
+  display: block;
+  width: 9px;
+  height: 6px;
+  background-image: url("../images/foods_sprite.fw.png");
+  background-position: -160px -152px;
+}
+
+.foods-orders__item-order {
+  width: 180px;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 15px;
+  line-height: 18px;
+  color: #000;
+}
+
+.foods-orders__item-seller {
+  width: 240px;
+  padding-left: 55px;
+  
+}
+
+.foods-orders__item-seller a {
+  text-decoration: none;
+  color: #2e8231;
+}
+
+.foods-orders__item-seller a:hover {
+  color: #ffd33a;
+}
+
+.foods-orders__item-price {
+  width: 156px;
+  font-family: "Museo Sans Cyrl900";
+  font-size: 18px;
+  line-height: 26px;
+  color: #000;
+}
+
+.foods-orders__item-status {
+  position: relative;
+  width: 173px;
+  padding-left: 26px;
+}
+
+.foods-orders__item-status::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url("../images/foods_sprite.fw.png");
+}
+
+.foods-orders__item-status--is-formed::before {
+  top: 37px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-position: -220px -208px;
+}
+
+.foods-orders__item-status--new::before {
+  top: 38px;
+  left: -2px;
+  width: 24px;
+  height: 19px;
+  background-position: -198px -182px;
+}
+
+.foods-orders__item-status--canceled::before {
+  top: 41px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-position: -182px -197px;
+}
+
+.foods-orders__item-payment {
+  position: relative;
+  width: 195px;
+  padding-left: 23px;
+}
+
+.foods-orders__item-payment::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url("../images/foods_sprite.fw.png");
+}
+
+.foods-orders__item-payment--waiting-review::before {
+  top: 41px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-position: -201px -212px;
+}
+
+.foods-orders__item-payment--waiting-payment::before {
+  top: 41px;
+  left: 2px;
+  width: 12px;
+  height: 18px;
+  background-position: -224px -184px;
+}
+
+.foods-orders__item-payment--canceled::before {
+  top: 41px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-position: -182px -197px;
+}
+
+.foods-orders__header .foods-orders__item-status,
+.foods-orders__header .foods-orders__item-payment {
+  padding-left: 0;
+}
+
+.foods-orders__header .foods-orders__item-order,
+.foods-orders__header .foods-orders__item-seller,
+.foods-orders__header .foods-orders__item-price,
+.foods-orders__header .foods-orders__item-status,
+.foods-orders__header .foods-orders__item-payment {
+  font-family: "Museo Sans Cyrl300";
+  font-size: 13px;
+  color: #333;
+}
+
+.foods-orders__item-actions {
+  width: 149px;
+}
+
+.foods-orders__item-actions a {
+  float: left;
+  position: relative;
+  display: block;
+  margin-right: 19px;
+  background-image: url("../images/foods_sprite.fw.png");
+}
+
+.foods-orders__item-actions a.foods-orders__item-actions--delete {
+  float: right;
+  margin-right: 0;
+}
+
+.foods-orders__item-actions a:hover::before {
+  position: absolute;
+  top: 33px;
+  left: -35px;
+  content: "";
+  display: block;
+  min-width: 61px;
+  height: 30px;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  padding: 0 7px;
+  background-color: #ebebed;
+  color: #28282c;
+  border-radius: 5px;
+}
+
+.foods-orders__item-actions a:hover::after {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: #ebebed;
+  transform: rotate(45deg);
+}
+
+.foods-orders__item-actions--delete {
+  width: 14px;
+  height: 14px;
+  background-position: -164px -84px;
+}
+
+.foods-orders__item-actions--delete:hover {
+  background-position: -9px -199px;
+}
+
+.foods-orders__item-actions a.foods-orders__item-actions--delete:hover::before {
+  content: "Удалить";
+}
+
+.foods-orders__item-actions--edit {
+  width: 17px;
+  height: 14px;
+  background-position: -303px -8px;
+}
+
+.foods-orders__item-actions--edit:hover {
+  background-position: -179px -217px;
+}
+
+.foods-orders__item-actions a.foods-orders__item-actions--edit:hover::before {
+  content: "Редактировать";
+}
+
+.foods-orders__item-actions--cancel {
+  width: 16px;
+  height: 16px;
+  background-position: -137px -198px;
+}
+
+.foods-orders__item-actions--cancel:hover {
+  background-position: -137px -216px;
+}
+
+.foods-orders__item-actions a.foods-orders__item-actions--cancel:hover::before {
+  content: "Отменить";
+}
+
+.foods-orders__item-actions--cart {
+  width: 18px;
+  height: 14px;
+  background-position: -156px -199px;
+}
+
+.foods-orders__item-actions--cart:hover {
+  background-position: -157px -217px;
+}
+
+.foods-orders__item-actions a.foods-orders__item-actions--cart:hover::before {
+  content: "В корзину";
+}
+
+.foods-orders__item-actions--repeat {
+  width: 12px;
+  height: 14px;
+  background-position: -121px -200px;
+}
+
+.foods-orders__item-actions--repeat:hover {
+  background-position: -121px -218px;
+}
+
+.foods-orders__item-actions a.foods-orders__item-actions--repeat:hover::before {
+  content: "Повторить";
+}
+
+.foods-history__bottom {
+  overflow: hidden;
+}
+
+.foods-orders__item-actions--all {
+  position: relative;
+  top: 5px;
+  left: 2px;
+}
+
+.foods-orders__item-actions--all a:hover::before,
+.foods-orders__item-actions--all a:hover::after {
+  display: none;
+}
 
 /* Foods footer */
 
