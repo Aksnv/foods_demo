@@ -3805,7 +3805,7 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   border: 1px solid #ccc;
 }
 
-.foods-orders__item-checkbox input[type="checkbox"] + label[for="foods-orders__item-checkbox--all"] {
+.foods-orders__item-checkbox input[type="checkbox"] + label[for="foods-orders__checkbox--all"] {
   top: 16px;
 }
 

@@ -201,6 +201,24 @@ $( function() {
   } );
 
 
+/* Foods history - all checkbox checked */
+
+$("label[for='foods-orders__checkbox--all']").click(function(e) {
+  e.preventDefault();
+  if ($(this).hasClass("foods-orders__checkbox--all-checked")) {
+    for (var i = 0; i < $(".foods-orders__checkbox").length; i++) {
+      $($(".foods-orders__checkbox")[i]).removeAttr("checked");
+    }
+    $(this).removeClass("foods-orders__checkbox--all-checked");
+  } else {
+    for (var i = 0; i < $(".foods-orders__checkbox").length; i++) {
+      $($(".foods-orders__checkbox")[i]).attr("checked", "checked");
+    }
+    $(this).addClass("foods-orders__checkbox--all-checked");
+  }
+});
+
+
 /* jQuery Form Styler activation */
 
 (function($) {
