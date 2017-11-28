@@ -78,6 +78,19 @@ $(".product-card__reviews-tab").click(function(e) {
 });
 
 
+/* Foods product card reviews - form */
+
+$(".product-card__reviews-button").click(function() {
+  $(".add-review-form").toggleClass("add-review-form--open");
+  $(this).hide();
+});
+
+$(".add-review-form__reset").click(function() {
+  $(".add-review-form").toggleClass("add-review-form--open");
+  $(".product-card__reviews-button").show();
+});
+
+
 /* Foods personal - tabs */
 
 $(".personal__tab").click(function(e) {

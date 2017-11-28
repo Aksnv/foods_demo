@@ -1676,7 +1676,7 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   margin-bottom: 42px;
   padding: 30px;
   padding-right: 0;
-  padding-bottom: 55px;
+  padding-bottom: 0;
   background-color: #fff;
   border-radius: 5px;
 }
@@ -1876,9 +1876,16 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   color: #666;
 }
 
+.product-card__characteristics,
+.product-card__description,
+.product-card__delivery {
+  padding-bottom: 55px;
+}
+
 .product-card__reviews {
   position: relative;
   top: -5px;
+  padding-bottom: 25px;
 }
 
 .product-card__reviews-tab {
@@ -1968,6 +1975,180 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 .product-card__review-answer strong {
   line-height: 20px;
   color: #000;
+}
+
+.product-card__reviews-button {
+  width: 220px;
+  height: 40px;
+  font-family: "Museo Sans Cyrl900";
+  font-size: 14px;
+  text-align: center;
+  line-height: 38px;
+  margin-top: 35px;
+  color: #999;
+  background-image: none;
+  border: 1px solid #999;
+  border-radius: 20px;
+  outline: none;
+}
+
+.product-card__reviews-button:hover {
+  color: #2e8231;
+  border: 1px solid #2e8231;
+}
+
+.add-review-form {
+  display: none;
+  width: 700px;
+  height: 288px;
+  padding-top: 18px;
+}
+
+.add-review-form--open {
+  display: block;
+}
+
+.add-review-form h3 {
+  float: left;
+  font-family: "Museo Sans Cyrl900";
+  font-size: 22px;
+  margin-top: 23px;
+  padding-left: 0;
+  color: #000;
+}
+
+.add-review-form__rating {
+  float: right;
+  margin-top: 23px;
+  padding-right: 40px;
+}
+
+.add-review-form__rating p {
+  float: left;
+  font-family: "Museo Sans Cyrl900";
+  font-size: 14px;
+  margin-top: 7px;
+  margin-right: 24px;
+  color: #000;
+}
+
+.add-review-form__rating-option {
+  float: left;
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline;
+  width: 129px;
+  height: 29px;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 14px;
+  line-height: 29px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.add-review-form__rating-option--positive::after,
+.add-review-form__rating-option--negative::after {
+  position: absolute;
+  top: 23px;
+  left: 18px;
+  content: "";
+  display: block;
+  width: 95px;
+  height: 1px;
+  border-bottom: 1px dotted #28282c;
+}
+
+.add-review-form__rating-option--negative::after {
+  left: 20px;
+  width: 90px;
+}
+
+.add-review-form input[type="radio"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.add-review-form input[type="radio"]:checked + .add-review-form__rating-option--positive {
+  background-color: #88ab0c;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.add-review-form input[type="radio"]:checked + .add-review-form__rating-option--negative {
+  background-color: #cf453c;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.add-review-form input[type="radio"]:checked + .add-review-form__rating-option--positive::after,
+.add-review-form input[type="radio"]:checked + .add-review-form__rating-option--negative::after {
+  display: none;
+}
+
+.add-review-form__comment {
+  clear: both;
+  width: 100%;
+  max-width: 660px;
+  height: 126px;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 13px;
+  margin-bottom: 17px;
+  padding: 15px 10px;
+  background-color: white;
+  color: #28282c;
+  border: 1px solid #d0d4d8;
+  border-radius: 5px;
+  resize: none;
+}
+
+.add-review-form__comment:focus {
+  outline: none;
+}
+
+.add-review-form__comment::-webkit-input-placeholder {
+  color: #939395;
+}
+
+.add-review-form__comment:-ms-input-placeholder {
+  color: #939395;
+}
+
+.add-review-form__comment::-ms-input-placeholder {
+  color: #939395;
+}
+
+.add-review-form__submit,
+.add-review-form__reset {
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  height: 50px;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.add-review-form__submit {
+  margin-right: 37px;
+}
+
+.add-review-form__submit:hover {
+  background-color: #ffb33a;
+}
+
+.add-review-form__reset {
+  margin-right: 37px;
+  background-color: #ebebed;
+  box-shadow: 0 1px 0 #cacaca;
+}
+
+.add-review-form__reset:hover {
+  background-color: #dbdbdd;
 }
 
 /* Foods cart */
@@ -4305,7 +4486,23 @@ input[name="foods-footer__subscription-field"] {
   border-radius: 5px;
 }
 
-input[name="foods-footer__subscription-field"]::placeholder {
+input[name="foods-footer__subscription-field"]::-webkit-input-placeholder {
+  font-family: "Museo Sans Cyrl700";
+  font-size: 13px;
+  line-height: 42px;
+  color: #28282c;
+  opacity: 0.5;
+}
+
+input[name="foods-footer__subscription-field"]:-ms-input-placeholder {
+  font-family: "Museo Sans Cyrl700";
+  font-size: 13px;
+  line-height: 42px;
+  color: #28282c;
+  opacity: 0.5;
+}
+
+input[name="foods-footer__subscription-field"]::-ms-input-placeholder {
   font-family: "Museo Sans Cyrl700";
   font-size: 13px;
   line-height: 42px;
