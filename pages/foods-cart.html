@@ -22,7 +22,7 @@
           <li><a href="#" class="foods-header__personal-item foods-header__personal-item--user-name">Игорь</a></li>
           <li><a href="#" class="foods-header__personal-item foods-header__personal-item--subscription">Подписка</a></li>
           <li><a href="#" class="foods-header__personal-item foods-header__personal-item--favorites">Избранное</a></li>
-          <li><a href="#" class="foods-header__personal-item foods-header__personal-item--cart"><span>Корзина</span> <span>3</span></a>
+          <li><a href="#" class="foods-header__personal-item foods-header__personal-item--cart foods-header__personal-item--active"><span>Корзина</span> <span>3</span></a>
         </ul>
       </div>
     </div>
@@ -72,7 +72,7 @@
           <a href="#" class="delete-all-button">Удалить все</a>
           <div class="cart-seller">
             <p>
-              <span>Продавец</span> 
+              <span>Продавец</span> <span class="seller-status--online">online</span>
               <a href="#">Foods</a>
             </p>
           </div>
@@ -152,9 +152,99 @@
           </ul>
 
           <div class="foods-cart__result">
+            <a href="#" class="foods-cart__result-checkout button">Оформить заказ</a>
             <p class="foods-cart__result-quantity">Итого <span>3</span> товара на сумму:</p>
             <p class="foods-cart__result-price">1293 руб</p>
+          </div>
+        </div>
+
+        <div class="foods-cart">
+          <a href="#" class="delete-all-button">Удалить все</a>
+          <div class="cart-seller">
+            <p>
+              <span>Продавец</span> <span class="seller-status--offline">offline</span>
+              <a href="#">Magazine</a>
+            </p>
+          </div>
+
+          <ul>
+            <li class="foods-cart__item foods-cart__item--1">
+              <ul>
+                <li class="foods-cart__item-delete"><button></button></li>
+                <li class="foods-cart__item-image">
+                  <img src="../images/pages/cart/foods-goods__product-item-2--min.jpg" alt="foods-goods__product-item-2--min">
+                </li>
+                <li class="foods-cart__item-product">
+                  <p class="foods-goods__product-category">Овощи и фрукты</p>
+                  <p class="foods-goods__product-name">Картофель 2,5кг</p>
+                </li>
+                <li class="foods-cart__item-delivery">
+                  <p>Ближайшая доставка: <time>31 дек</time></p>
+                </li>
+                <li class="foods-cart__item-favorites foods-cart__item-favorites--in"><button></button></li>
+                <li class="foods-cart__item-subscription"><button></button></li>
+                <li class="foods-cart__item-quantity">
+                  <button class="decrease">-</button>
+                  <span>1</span>
+                  <button class="increase">+</button>
+                </li>
+                <li class="foods-cart__item-price">124 руб</li>
+              </ul>
+            </li>
+
+            <li class="foods-cart__item foods-cart__item--2">
+              <ul>
+                <li class="foods-cart__item-delete"><button></button></li>
+                <li class="foods-cart__item-image">
+                  <img src="../images/pages/cart/foods-goods__product-item-7--min.jpg" alt="foods-goods__product-item-7--min">
+                </li>
+                <li class="foods-cart__item-product">
+                  <p class="foods-goods__product-category">Рыба</p>
+                  <p class="foods-goods__product-name">Лосось дикий кета Чумиканская ~ 2,5кг</p>
+                </li>
+                <li class="foods-cart__item-delivery">
+                  <p>Ближайшая доставка: <time>31 дек</time></p>
+                </li>
+                <li class="foods-cart__item-favorites foods-cart__item-favorites--out"><button></button></li>
+                <li class="foods-cart__item-subscription"><button></button></li>
+                <li class="foods-cart__item-quantity">
+                  <button class="decrease">-</button>
+                  <span>1</span>
+                  <button class="increase">+</button>
+                </li>
+                <li class="foods-cart__item-price">845 руб</li>
+              </ul>
+            </li>
+
+            <li class="foods-cart__item foods-cart__item--3">
+              <ul>
+                <li class="foods-cart__item-delete"><button></button></li>
+                <li class="foods-cart__item-image">
+                  <img src="../images/pages/cart/foods-goods__product-item-12--min.jpg" alt="foods-goods__product-item-12--min">
+                </li>
+                <li class="foods-cart__item-product">
+                  <p class="foods-goods__product-category">Полуфабрикаты</p>
+                  <p class="foods-goods__product-name">Зразы с сыром куриные ~700г</p>
+                </li>
+                <li class="foods-cart__item-delivery">
+                  <p>Ближайшая доставка: <time>31 дек</time></p>
+                </li>
+                <li class="foods-cart__item-favorites foods-cart__item-favorites--in"><button></button></li>
+                <li class="foods-cart__item-subscription"><button></button></li>
+                <li class="foods-cart__item-quantity">
+                  <button class="decrease">-</button>
+                  <span>1</span>
+                  <button class="increase">+</button>
+                </li>
+                <li class="foods-cart__item-price">324 руб</li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="foods-cart__result">
             <a href="#" class="foods-cart__result-checkout button">Оформить заказ</a>
+            <p class="foods-cart__result-quantity">Итого <span>3</span> товара на сумму:</p>
+            <p class="foods-cart__result-price">1293 руб</p>
           </div>
         </div>
       </section>
