@@ -22,6 +22,12 @@ $(".foods-popup__header-block--registration").click(function() {
   $(".foods-popup__form--enter").hide();
 });
 
+/* Foods header - cart */
+
+$(".foods-header__personal-item--cart").click(function(e) {
+  e.preventDefault();
+  $(".foods-header__cart").toggleClass("foods-header__cart--active");
+});
 
 /* Foods product card - tabs */
 
