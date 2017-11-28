@@ -331,6 +331,34 @@ input:focus {
   background-color: #28a42c;
 }
 
+.foods-header__cart {
+  position: absolute;
+  top: 58px;
+  right: 113px;
+  width: 372px;
+  height: 423px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 101;
+}
+
+.foods-header__cart .foods-cart__item > div {
+  float: left;
+}
+
+.foods-header__cart .foods-cart__item-product {
+  width: 150px;
+}
+
+.foods-header__cart .foods-cart__item-price {
+  padding-left: 0;
+}
+
+.foods-header__cart .foods-cart__item-quantity {
+  width: 140px;
+}
+
 /* Foods top */
 
 .foods-top {
