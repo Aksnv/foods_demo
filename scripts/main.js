@@ -161,6 +161,14 @@ $(".order-payment__method-item").click(function(e) {
 });
 
 
+/* Foods order - show/hide hint */
+
+$(".payment-method__hint-icon").click(function(e) {
+  e.preventDefault();
+  $(this).toggleClass("payment-method__hint-icon--active");
+});
+
+
 /* Foods - add/remove favorites button */
 
 $(".foods-goods__product-favorite").click(function(e) {

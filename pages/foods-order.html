@@ -65,23 +65,14 @@
         
         <div class="foods-order">
           
-          <form name="confirmation__form" method="POST" action="#" class="confirmation__form">
+          <form name="confirmation__form" method="POST" action="#" class="confirmation__form confirmation__form--order-view">
             <section class="confirmation__form-order">
               <h3># 1234 от 31.01.2017</h3>
               
               <section class="confirmation__form-details">
-                <div class="confirmation__form-details--left">
-                  <ul>
-                    <li class="order-details__seller">Продавец: <span>Gifts</span></li>
-                    <li class="order-details__status">Статус: <span>Новый, ожидает оплаты</span></li>
-                    <li class="order-details__delivery">Доставка: <span>Доставка по Иркутску и ИО: 100 руб</span></li>
-                    <li class="order-details__payment">Способ оплаты: <span>Оплата через Visa PayU: 0 руб</span></li>
-                    <li class="order-details__result">Всего: <span>1257 руб</span></li>
-                  </ul>
-                </div>
                 <div class="confirmation__form-details--right">
                   <div class="payment-method__hint">
-                    <div href="#" class="payment-method__hint-icon">?</div>
+                    <a href="#" class="payment-method__hint-icon">?</a>
                     <div class="payment-method__hint-text">
                       <h3>Visa QIWI Wallet</h3>
                       <a href="https://qiwi.ru/">https://qiwi.ru/</a>
@@ -96,9 +87,19 @@
                     <p>Комиссия: <span>0 руб</span></p>
                   </div>
                 </div>
+                <div class="confirmation__form-details--left">
+                  <ul>
+                    <li class="order-details__seller">Продавец: <span>Gifts</span></li>
+                    <li class="order-details__status">Статус: <span>Новый, ожидает оплаты</span></li>
+                    <li class="order-details__delivery">Доставка: <span>Доставка по Иркутску и ИО: 100 руб</span></li>
+                    <li class="order-details__payment">Способ оплаты: <span>Оплата через Visa PayU: 0 руб</span></li>
+                    <li class="order-details__result">Всего: <span>1257 руб</span></li>
+                  </ul>
+                </div>
               </section>
 
               <div class="foods-cart">
+                <h3>Товары</h3>
                 <ul>
                   <li class="foods-cart__item foods-cart__item--1">
                     <ul>
@@ -197,7 +198,7 @@
 
             <div class="order__form-action">
               <input type="reset" name="order__form-reset" class="button order__form-reset" value="Отменить">
-              <input type="reset" name="order__form-reset" class="button order__form-reset" value="Обновить">
+              <input type="submit" name="order__form-update" class="button order__form-update" value="Обновить">
               <input type="submit" name="order__form-submit" class="button order__form-submit" value="Оплатить заказ">
             </div>
 
