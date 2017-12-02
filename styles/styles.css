@@ -3758,6 +3758,11 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   outline: none;
 }
 
+.confirmation__form-details {
+  background-color: white;
+  border-radius: 5px;
+}
+
 /* Foods certificate */
 
 .foods-certificate__outer {

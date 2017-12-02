@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Foods - Просмотр заказа</title>
+  <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="../styles/jquery.formstyler.css">
+  <link rel="stylesheet" type="text/css" href="../styles/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+</head>
+<body>
+  <header class="foods-header">
+    <div class="foods-container">
+      <nav class="foods-header__menu">
+        <ul>
+          <li><a href="#" class="foods-header__menu-item foods-header__menu-item--catalog">Каталог</a></li>
+          <li><a href="#" class="foods-header__menu-item foods-header__menu-item--payment">Оплата</a></li>
+          <li><a href="#" class="foods-header__menu-item foods-header__menu-item--delivery">Доставка</a></li>
+          <li><a href="#" class="foods-header__menu-item foods-header__menu-item--sales">Акции и скидки</a></li>
+        </ul>
+      </nav>
+      <div class="foods-header__personal">
+        <ul>
+          <li><a href="#" class="foods-header__personal-item foods-header__personal-item--user-name">Игорь</a></li>
+          <li><a href="#" class="foods-header__personal-item foods-header__personal-item--subscription">Подписка</a></li>
+          <li><a href="#" class="foods-header__personal-item foods-header__personal-item--favorites">Избранное</a></li>
+          <li><a href="#" class="foods-header__personal-item foods-header__personal-item--cart"><span>Корзина</span> <span>3</span></a>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="foods-container">
+    <div class="foods-top">
+      <div class="foods-top__logo">
+        <a href="#" class="foods-top__logo-image"></a>
+      </div>
+      <div class="foods-top__search">
+        <form class="foods-top__search-form" name="foods-top__search-form" method="GET" action="#">
+          <input type="search" name="foods-top__search-field" placeholder="Поиск по товарам">
+          <input type="submit" name="foods-top__search-submit" value="">
+        </form>
+        <div class="foods-top__search-example">
+          <p>Например, <a href="#" class="inline-link">осетрина к Новому году</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foods-container">
+    <div class="foods-content">
+      
+      <a href="#" class="exit-button exit-button--order">Выход</a>
+
+      <div class="foods-breadcrumbs">
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Корзина</a></li>
+          <li>Оплата заказа</li>
+        </ul>
+      </div>
+
+      <section class="foods-section foods-section--order">
+        <h1>Оплата заказа</h1>
+        
+        <div class="foods-order">
+          
+          <form name="confirmation__form" method="POST" action="#" class="confirmation__form">
+            <section class="confirmation__form-order">
+              <h3># 1234 от 31.01.2017</h3>
+              
+              <section class="confirmation__form-details">
+                <div class="confirmation__form-details--left">
+                  <ul>
+                    <li class="order-details__seller">Продавец: <span>Gifts</span></li>
+                    <li class="order-details__status">Статус: <span>Новый, ожидает оплаты</span></li>
+                    <li class="order-details__delivery">Доставка: <span>Доставка по Иркутску и ИО: 100 руб</span></li>
+                    <li class="order-details__payment">Способ оплаты: <span>Оплата через Visa PayU: 0 руб</span></li>
+                    <li class="order-details__result">Всего: <span>1257 руб</span></li>
+                  </ul>
+                </div>
+                <div class="confirmation__form-details--right">
+                  <div class="payment-method__hint">
+                    <div href="#" class="payment-method__hint-icon">?</div>
+                    <div class="payment-method__hint-text">
+                      <h3>Visa QIWI Wallet</h3>
+                      <a href="https://qiwi.ru/">https://qiwi.ru/</a>
+                      <p>Система приема и обработки платежей Visa QIWI Walletэто шлюз для платежей из различных систем, в процессе оплаты предоставляется выбор любого способов оплаты, которых насчитывается более 30.</p>
+                    </div>
+                  </div>
+                  <div class="payment-method__image">
+                    <img src="../images/logo/payment/visa.png" alt="Visa QIWI Wallet">
+                  </div>
+                  <div class="payment-method__description">
+                    <p>Скорость: <span>до 10 минут</span></p>
+                    <p>Комиссия: <span>0 руб</span></p>
+                  </div>
+                </div>
+              </section>
+
+              <div class="foods-cart">
+                <ul>
+                  <li class="foods-cart__item foods-cart__item--1">
+                    <ul>
+                      <li class="foods-cart__item-image">
+                        <img src="../images/pages/cart/foods-goods__product-item-2--min.jpg" alt="foods-goods__product-item-2--min">
+                      </li>
+                      <li class="foods-cart__item-product">
+                        <p class="foods-goods__product-category">Овощи и фрукты</p>
+                        <p class="foods-goods__product-name">Картофель 2,5кг</p>
+                      </li>
+                      <li class="foods-cart__item-quantity">
+                        <p>Количество<br> товара: <span>5 кг</span></p>
+                      </li>
+                      <li class="foods-cart__item-price">124 руб</li>
+                    </ul>
+                  </li>
+
+                  <li class="foods-cart__item foods-cart__item--2">
+                    <ul>
+                      <li class="foods-cart__item-image">
+                        <img src="../images/pages/cart/foods-goods__product-item-7--min.jpg" alt="foods-goods__product-item-7--min">
+                      </li>
+                      <li class="foods-cart__item-product">
+                        <p class="foods-goods__product-category">Рыба</p>
+                        <p class="foods-goods__product-name">Лосось дикий кета Чумиканская ~ 2,5кг</p>
+                      </li>
+                      <li class="foods-cart__item-quantity">
+                        <p>Количество<br> товара: <span>2 упаковки</span></p>
+                      </li>
+                      <li class="foods-cart__item-price">845 руб</li>
+                    </ul>
+                  </li>
+
+                  <li class="foods-cart__item foods-cart__item--3">
+                    <ul>
+                      <li class="foods-cart__item-image">
+                        <img src="../images/pages/cart/foods-goods__product-item-12--min.jpg" alt="foods-goods__product-item-12--min">
+                      </li>
+                      <li class="foods-cart__item-product">
+                        <p class="foods-goods__product-category">Полуфабрикаты</p>
+                        <p class="foods-goods__product-name">Зразы с сыром куриные ~700г</p>
+                      </li>
+                      <li class="foods-cart__item-quantity">
+                        <p>Количество<br> товара: <span>0.5 л</span></p>
+                      </li>
+                      <li class="foods-cart__item-price">324 руб</li>
+                    </ul>
+                  </li>
+                </ul>
+
+              </div>
+            </section>
+
+            <section class="confirmation__form-address">
+              <h3>Адрес доставки и получатель</h3>
+
+              <div class="personal__address" style="display: block;">
+                <div class="personal__address-info" style="">
+                  <ul>
+                    <li class="address-info__item">
+                      <ul>
+                        <li class="address-info__item-information">
+                          <p>
+                            <span class="address-info__name">Сибилев Игорь Николаевич</span>
+                            <span class="address-info__email">user@inbox.ru</span>
+                            <span class="address-info__address">308000, Белгородская область, Белгород, ул. Попова, 76 а</span>
+                          </p>
+                        </li>
+                        <li class="address-info__item-phone">
+                          <p>Телефон для связи<br>
+                            <span class="address-info__phone">+79040912701</span>
+                          </p>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </section>
+
+            <section class="confirmation__form-delivery">
+              <h3>Доставка</h3>
+              <ul class="confirmation-form__item confirmation-form__item--delivery">
+                <li class="confirmation-form__item-image"><img src="../images/logo/delivery/post.png" alt="post"></li>
+                <li class="confirmation-form__item-place">Доставка по Иркутску и ИО</li>
+                <li class="confirmation-form__item-date">Дата<br> <span>31.01.2017</span></li>
+                <li class="confirmation-form__item-time">Время<br> <span>с 12:00 до 12:30</span></li>
+                <li class="confirmation-form__item-price"><span>100 руб</span></li>
+              </ul>
+            </section>
+
+            <div class="confirmation__form-total">
+              <p>Итого к оплате: <span>1413 руб</span></p>
+            </div>
+
+            <div class="order__form-action">
+              <input type="reset" name="order__form-reset" class="button order__form-reset" value="Отменить">
+              <input type="reset" name="order__form-reset" class="button order__form-reset" value="Обновить">
+              <input type="submit" name="order__form-submit" class="button order__form-submit" value="Оплатить заказ">
+            </div>
+
+          </form>
+
+        </div>
+      </section>
+
+    </div>
+  </div>
+    
+  <footer class="foods-footer">
+    <div class="foods-container">
+      <div class="foods-footer__block foods-footer__block--1">
+        <ul>
+          <li class="foods-footer__link foods-footer__link--support"><a href="#">Поддержка</a></li>
+          <li class="foods-footer__link foods-footer__link--email"><a href="#">support@pokupo.ru</a></li>
+          <li class="foods-footer__link foods-footer__link--skype"><a href="#">pokupo.ru</a></li>
+          <li class="foods-footer__link foods-footer__link--phone">+7 395 220-15-68</li>
+          <li class="foods-footer__link foods-footer__link--icq">ICQ: <a href="#">21511546151</a></li>
+          <li class="foods-footer__link foods-footer__link--copyright">Pokupo.Foods 2016</li>
+        </ul>
+      </div>
+      <div class="foods-footer__block foods-footer__block--2">
+        <ul>
+          <li><a href="#">Помощь</a></li>
+          <li><a href="#">Как покупать</a></li>
+          <li><a href="#">Как продавать</a></li>
+          <li><a href="#">Правила</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="foods-footer__block foods-footer__block--3">
+        <ul>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Оплата</a></li>
+          <li><a href="#">Возврат товара</a></li>
+          <li><a href="#">Публичная оферта</a></li>
+          <li><a href="#">Подарочные карты</a></li>
+        </ul>
+      </div>
+      <div class="foods-footer__block foods-footer__block--4">
+        <div class="foods-footer__social-links">
+          <ul>
+            <li><a href="#" class="foods-footer__social-link foods-footer__social-link--vk">Vkontakte</a></li>
+            <li><a href="#" class="foods-footer__social-link foods-footer__social-link--fb">Facebook</a></li>
+            <li><a href="#" class="foods-footer__social-link foods-footer__social-link--tw">Twitter</a></li>
+            <li><a href="#" class="foods-footer__social-link foods-footer__social-link--lj">Livejournal</a></li>
+            <li><a href="#" class="foods-footer__social-link foods-footer__social-link--hh">Habrahabr</a></li>
+            <li><a href="#" class="foods-footer__social-link foods-footer__social-link--gp">Google+</a></li>
+          </ul>
+        </div>
+        <div class="foods-footer__subscription">
+          <p>Оформить подписку:</p>
+          <form class="foods-footer__subscription-form" name="foods-footer__subscription-form" method="POST" action="#">
+            <input type="email" name="foods-footer__subscription-field" placeholder="Ваш email">
+            <input type="submit" name="foods-footer__subscription-submit" value="">
+          </form>
+        </div>
+        <div class="foods-footer__copyrights">
+          <p>Работает на основе технологии <a href="#">Pokupo</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../scripts/jquery-3.2.1.min.js"></script>
+  <script src="../scripts/jquery.formstyler.min.js"></script>
+  <script src="../scripts/jquery-ui.js"></script>
+  <script src="../scripts/main.js"></script>
+</body>
+</html>
