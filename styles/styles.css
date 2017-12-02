@@ -4362,14 +4362,15 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 .foods-orders__item-seller {
   width: 240px;
   padding-left: 55px;
-  
 }
 
+.foods-orders__item-order a,
 .foods-orders__item-seller a {
   text-decoration: none;
   color: #2e8231;
 }
 
+.foods-orders__item-order a:hover,
 .foods-orders__item-seller a:hover {
   color: #ffd33a;
 }
