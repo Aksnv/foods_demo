@@ -4404,7 +4404,8 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   background-position: -220px -208px;
 }
 
-.foods-orders__item-status--new::before {
+.foods-orders__item-status--new::before,
+.foods-orders__item-status--received::before {
   top: 38px;
   left: -2px;
   width: 24px;
@@ -4418,6 +4419,30 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   width: 16px;
   height: 16px;
   background-position: -182px -197px;
+}
+
+.foods-orders__item-status--in-processing::before {
+  top: 40px;
+  left: 0px;
+  width: 18px;
+  height: 18px;
+  background-position: -32px -225px;
+}
+
+.foods-orders__item-status--shipped::before {
+  top: 42px;
+  left: -2px;
+  width: 22px;
+  height: 15px;
+  background-position: -120px -240px;
+}
+
+.foods-orders__item-status--received-by-buyer::before {
+  top: 43px;
+  left: 1px;
+  width: 16px;
+  height: 15px;
+  background-position: -8px -236px;
 }
 
 .foods-orders__item-payment {
@@ -4455,6 +4480,39 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   width: 16px;
   height: 16px;
   background-position: -182px -197px;
+}
+
+.foods-orders__item-payment--paid::before {
+  top: 38px;
+  left: -2px;
+  width: 24px;
+  height: 19px;
+  background-position: -198px -182px;
+}
+
+.foods-orders__item-payment--refund::before,
+.foods-orders__item-payment--returned::before {
+  top: 44px;
+  left: -3px;
+  width: 16px;
+  height: 13px;
+  background-position: -8px -218px;
+}
+
+.foods-orders__item-payment--expected-confirmation::before {
+  top: 41px;
+  left: -2px;
+  width: 16px;
+  height: 16px;
+  background-position: -149px -239px;
+}
+
+.foods-orders__item-status--partially-paid::before {
+  top: 41px;
+  left: -2px;
+  width: 16px;
+  height: 16px;
+  background-position: -173px -238px;
 }
 
 .foods-orders__header .foods-orders__item-status,
