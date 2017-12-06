@@ -3869,6 +3869,10 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   margin-bottom: 26px;
 }
 
+.payment-method__image img {
+  max-height: 86px;
+}
+
 .payment-method__description {
   padding-left: 32px;
 }
