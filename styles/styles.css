@@ -3536,7 +3536,8 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 }
 
 .confirmation__form .foods-cart__item-product {
-  width: 469px;
+  /* width: 469px; */
+  width: 363px;
   padding-left: 52px;
 }
 
@@ -3555,8 +3556,33 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   font-family: "Museo Sans Cyrl900";
 }
 
+.foods-cart__item-file {
+  width: 175px;
+  padding-left: 30px; 
+}
+
+.foods-cart__item-file a {
+  color: #2e8231;
+}
+
+.foods-cart__item-file a:hover {
+  color: #ffd33a;
+}
+
+.foods-cart__item-certificate {
+  width: 180px;
+  padding-left: 30px;  
+}
+
+.foods-cart__item-file b, 
+.foods-cart__item-file span:last-child, 
+.foods-cart__item-certificate span {
+  font-family: "Museo Sans Cyrl900";
+}
+
 .confirmation__form .foods-cart__item-price {
-  padding-left: 279px;
+  /* padding-left: 279px; */
+  padding-left: 30px;
 }
 
 .confirmation__form .foods-cart__result-price {

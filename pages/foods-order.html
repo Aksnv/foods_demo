@@ -113,6 +113,15 @@
                       <li class="foods-cart__item-quantity">
                         <p>Количество<br> товара: <span>5 кг</span></p>
                       </li>
+                      <li class="foods-cart__item-file">
+                        <span data-bind="i18n:'orderList.mess50'">Скачиваний</span> <b data-bind="text: $data.count_upload">0</b> <span data-bind="i18n:'orderList.mess51'">из</span> <b data-bind="text: $data.max_upload">∞</b>
+                        <p></p><a data-bind="attr: {href: $data.upload_file}, i18n: 'orderList.mess53'" class="btn btn-sm" href="https://seller.pokupo.ru/upload/10372/573dcc6faf89ed6b26495e9858e91a53d0b37ee2">Загрузить</a>
+                        <span data-bind="text: $data.size_file">48.88 кБ</span>
+                      </li>
+                      <li class="foods-cart__item-certificate">
+                        <tag data-bind="i18n: 'orderList.mess82'">№ сертификата</tag>:<br>
+                        <span data-bind="text: certificate_num">PKP-1208189-b6ru</span>
+                      </li>
                       <li class="foods-cart__item-price">124 руб</li>
                     </ul>
                   </li>
@@ -129,6 +138,8 @@
                       <li class="foods-cart__item-quantity">
                         <p>Количество<br> товара: <span>2 упаковки</span></p>
                       </li>
+                      <li class="foods-cart__item-file"></li>
+                      <li class="foods-cart__item-certificate"></li>
                       <li class="foods-cart__item-price">845 руб</li>
                     </ul>
                   </li>
@@ -145,6 +156,8 @@
                       <li class="foods-cart__item-quantity">
                         <p>Количество<br> товара: <span>0.5 л</span></p>
                       </li>
+                      <li class="foods-cart__item-file"></li>
+                      <li class="foods-cart__item-certificate"></li>
                       <li class="foods-cart__item-price">324 руб</li>
                     </ul>
                   </li>
