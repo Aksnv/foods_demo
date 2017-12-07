@@ -3526,6 +3526,12 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   padding-left: 0;
 }
 
+.confirmation__form .foods-cart h3 {
+  text-align: center;
+  margin-bottom: 24px;
+  padding-top: 14px;
+} 
+
 .confirmation__form .foods-cart {
   text-align: left;
   padding-bottom: 0;
@@ -3908,12 +3914,6 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   line-height: 20px;
 }
 
-.confirmation__form-details + .foods-cart h3 {
-  text-align: center;
-  margin-bottom: 24px;
-  padding-top: 14px;
-}
-
 .confirmation__form--order-view .confirmation__form-address h3 {
   padding-top: 20px;
 }
@@ -3923,7 +3923,78 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   margin-bottom: 30px;
   padding-top: 12px;
   padding-right: 0;
+}
 
+.foods-order__payment-instruction {
+  font-size: 15px;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-left: 55px;
+}
+
+.payment-instruction__button {
+  position: relative;
+  margin-right: 60px;
+  color: #2e8231;
+  border-bottom: 1px dotted #2e8231;
+  cursor: pointer;
+}
+
+.payment-instruction__button::after {
+  position: absolute;
+  top: 4px;
+  right: -15px;
+  content: "";
+  display: block;
+  border: 5px solid transparent;
+  border-top: 7px solid #2e8231;
+}
+
+.payment-instruction__button--active::after {
+  top: -1px;
+  transform: rotate(180deg);
+}
+
+.payment-instruction__print {
+  position: relative;
+  border-bottom: 1px solid #666;
+  cursor: pointer;
+}
+
+.payment-instruction__print::before {
+  position: absolute;
+  top: -3px;
+  left: -29px;
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/foods_sprite.fw.png");
+  background-position: -200px -232px;
+}
+
+.payment-instruction__description {
+  display: none;
+  font-size: 13px;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  border-left: 1px solid #2e8231;
+}
+
+.payment-instruction__description p {
+  margin-bottom: 10px;
+}
+
+.payment-instruction__description p:last-child {
+  margin-bottom: 0;
+}
+
+.payment-instruction__description--visible {
+  display: block;
 }
 
 /* Foods certificate */

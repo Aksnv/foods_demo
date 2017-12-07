@@ -161,11 +161,20 @@ $(".order-payment__method-item").click(function(e) {
 });
 
 
-/* Foods order - show/hide hint */
+/* Foods order - hint */
 
 $(".payment-method__hint-icon").click(function(e) {
   e.preventDefault();
   $(this).toggleClass("payment-method__hint-icon--active");
+});
+
+
+/* Foods order - payment instruction */
+
+$(".payment-instruction__button").click(function(e) {
+  e.preventDefault();
+  $(".payment-instruction__description").toggleClass("payment-instruction__description--visible");
+  $(this).toggleClass("payment-instruction__button--active");
 });
 
 
