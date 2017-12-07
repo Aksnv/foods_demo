@@ -1444,6 +1444,18 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   border-radius: 5px;
 }
 
+.foods-goods__product-item::before {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  content: "";
+  display: none;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
 .foods-goods__product-item:nth-child(4n) {
   margin-right: 0;
 }
@@ -1451,6 +1463,10 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 .foods-goods__product-item:hover {
   border: 2px solid #ffd33a;
   cursor: pointer;
+}
+
+.foods-goods__product-item:hover::before {
+  display: block;
 }
 
 .foods-goods__product-item img {
