@@ -734,10 +734,39 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   color: #000;
 }
 
+.foods-top .advanced-search__form h3 {
+  position: relative;
+  font-family: "Museo Sans Cyrl900";
+  font-size: 14px;
+  text-align: left;
+  margin-bottom: 14px;
+  padding-left: 60px;
+  color: #000;
+}
+
+.foods-top .advanced-search__form h3::after {
+  position: absolute;
+  top: 9px;
+  left: 284px;
+  content: "";
+  display: block;
+  width: 837px;
+  height: 1px;
+  background-color: #ebebed;
+}
+
 .foods-top .advanced-search__form ul {
   padding-left: 60px;
   padding-right: 40px;
   padding-bottom: 40px;
+}
+
+.foods-top .advanced-search__form h2 + ul {
+  padding-bottom: 0;
+}
+
+.foods-top .advanced-search__form h3 + ul {
+  padding-bottom: 20px;
 }
 
 .foods-top .advanced-search__form li {
@@ -745,6 +774,10 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   vertical-align: top;
   margin-right: 17px;
   margin-bottom: 6px;
+}
+
+.foods-top .advanced-search__form li.advanced-search__range {
+  margin-bottom: 30px;
 }
 
 .foods-top .advanced-search__form .jq-selectbox,
@@ -5076,6 +5109,7 @@ input[name="foods-footer__subscription-submit"]:hover {
   min-height: 100%;
   background-color: #313131;
   opacity: 0.9;
+  z-index: 100;
 }
 
 /* Foods popup */
@@ -5088,6 +5122,7 @@ input[name="foods-footer__subscription-submit"]:hover {
   /* min-height: 441px; */
   background-color: white;
   border-radius: 5px;
+  z-index: 101;
 }
 
 .foods-popup__close-button {
