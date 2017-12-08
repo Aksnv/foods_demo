@@ -218,9 +218,41 @@ input:focus {
   float: left;
 }
 
+.foods-header__menu-button {
+  position: absolute;
+  top: 52px;
+  right: 0;
+  display: none;
+  width: 20px;
+  height: 14px;
+  background-image: url("../images/foods_sprite.fw.png");
+  background-position: -230px -234px;
+  z-index: 1;
+}
+
+.foods-header__menu-button:hover {
+  background-position: -280px -234px;
+}
+
 .foods-header__personal {
   float: right;
   /* margin-right: 57px; */
+}
+
+.foods-header__personal-button {
+  position: absolute;
+  top: 49px;
+  right: 51px;
+  display: none;
+  width: 16px;
+  height: 20px;
+  background-image: url("../images/foods_sprite.fw.png");
+  background-position: -256px -231px;
+  z-index: 1;
+}
+
+.foods-header__personal-button:hover {
+  background-position: -308px -231px;
 }
 
 .foods-header__menu li,
@@ -5379,4 +5411,88 @@ input.foods-popup__form-submit--double {
 input.foods-popup__form-submit--password-create {
   margin-bottom: 18px;
 }
+
+
+/* Diffrent display layout styles */
+
+@media screen and (max-width: 1240px) {
+
+  .foods-container {
+    overflow: visible;
+    position: relative;
+    width: 690px;
+  }
+
+  /* Foods header */
+
+  .foods-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 140px;
+    background-color: #fff;
+  } 
+  
+  .foods-header__menu ul,
+  .foods-header__personal ul {
+    display: none;
+  }
+
+  .foods-header__menu-button,
+  .foods-header__personal-button {
+    display: block;
+  }
+    
+  /* Foods top */
+
+  .foods-top {
+    min-height: 140px;
+  }
+
+  .foods-top__logo {
+    margin-right: 20px;
+  }
+
+  .foods-top__logo-image {
+    width: 69px;
+    height: 52px;
+    margin-left: 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .foods-top__search {
+    min-height: 140px;
+  }
+
+  .foods-top__search-form {
+    margin-top: 32px;
+  }
+
+  input[name="foods-top__search-field"] {
+    width: 501px;
+  }
+
+  .foods-top .advanced-search__button {
+    display: none;
+  }
+  
+
+  /* Foods content */
+
+  .foods-content--left {
+    display: none;
+  }
+
+  .foods-content--right {
+    float: none;
+    width: 100%;
+    padding-left: 0;
+  }
+
+
+}
+
+
 
