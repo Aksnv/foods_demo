@@ -5609,6 +5609,40 @@ input.foods-popup__form-submit--password-create {
     margin-bottom: 32px;
   }
 
+  /* Foods footer */
+
+  .foods-footer {
+    padding-bottom: 20px;
+    border-top: 1px solid #ccc;
+  }
+
+  .foods-footer .foods-container {
+    overflow: hidden;
+    border-top: none;
+  }
+
+  .foods-footer__block--1 {
+    width: 258px;
+  }
+
+  .foods-footer__block--2 {
+    width: 175px;
+  }
+
+  .foods-footer__block--3 {
+    display: none;
+  }
+
+  .foods-footer__social-links {
+    margin-bottom: 50px;
+  }
+
+  .foods-footer__copyrights {
+    position: absolute;
+    bottom: 10px;
+    left: 38px;
+  }
+
 
 }
 
