@@ -61,6 +61,22 @@ $(".product-card__tab").click(function(e) {
   };
 });
 
+$(window).resize(function() {
+  if ($(".foods-container").css("width") <= "690px") {
+    $(".product-card__tab--delivery").text("Доставка");
+  } else {
+    $(".product-card__tab--delivery").text("Условия доставки");
+  }
+});
+
+$(document).ready(function() {
+  if ($(".foods-container").css("width") <= "690px") {
+    $(".product-card__tab--delivery").text("Доставка");
+  } else {
+    $(".product-card__tab--delivery").text("Условия доставки");
+  }
+});
+
 
 /* Foods product card reviews - tabs */
 
