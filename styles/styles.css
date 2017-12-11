@@ -627,6 +627,10 @@ input[name="foods-top__search-field"] {
   border-radius: 5px;
 }
 
+input[name="foods-top__search-field"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
 input[name="foods-top__search-field"]:focus {
   border: 1px solid #2e8231;
 }
