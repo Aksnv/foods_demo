@@ -22,12 +22,52 @@ $(".foods-popup__header-block--registration").click(function() {
   $(".foods-popup__form--enter").hide();
 });
 
+
 /* Foods header - cart */
 
 $(".foods-header__personal-item--cart").click(function(e) {
   e.preventDefault();
   $(".foods-header__cart").toggleClass("foods-header__cart--active");
 });
+
+
+/* Foods top - search */
+
+$(".foods-top--dark .foods-top__search-submit").click(function(e) {
+  if ($(this).hasClass("foods-top__search-submit--button")) {
+    e.preventDefault();
+    $(".foods-top__search-form").addClass("foods-top__search-form--visible");
+    $(".foods-top--dark input[name='foods-top__search-field']").show();
+    $(".foods-top--dark input[name='foods-top__search-reset']").show();
+    $(this).removeClass("foods-top__search-submit--button");
+  } else {
+    setTimeout(submitForm, 100);
+  }
+    
+  function submitForm() {
+    $(".foods-top__search-form").submit();
+  };
+});
+
+$(document).click(function (e) {
+  var searchForm = $(".foods-top__search-form--visible");
+  if ((!searchForm.is(e.target)) && (searchForm.has(e.target).length === 0) && ($(".foods-container").css("width") == "690px")) {
+    $(searchForm).removeClass("foods-top__search-form--visible");
+    $(".foods-top--dark .foods-top__search-form::after").hide();
+    $(".foods-top--dark input[name='foods-top__search-field']").hide();
+    $(".foods-top--dark input[name='foods-top__search-reset']").hide();
+    $(".foods-top__search-submit").addClass("foods-top__search-submit--button");
+  }
+});
+
+$(window).resize(function() {
+  if ($(".foods-container").css("width") == "1180px") {
+    $(".foods-top").removeClass("foods-top--dark");
+  } else {
+    $(".foods-top").addClass("foods-top--dark");
+  }
+});
+
 
 /* Foods product card - tabs */
 
@@ -62,7 +102,7 @@ $(".product-card__tab").click(function(e) {
 });
 
 $(window).resize(function() {
-  if ($(".foods-container").css("width") <= "690px") {
+  if ($(".foods-container").css("width") == "690px") {
     $(".product-card__tab--delivery").text("Доставка");
   } else {
     $(".product-card__tab--delivery").text("Условия доставки");
@@ -70,7 +110,7 @@ $(window).resize(function() {
 });
 
 $(document).ready(function() {
-  if ($(".foods-container").css("width") <= "690px") {
+  if ($(".foods-container").css("width") == "690px") {
     $(".product-card__tab--delivery").text("Доставка");
   } else {
     $(".product-card__tab--delivery").text("Условия доставки");
@@ -112,6 +152,36 @@ $(".add-review-form__reset").click(function() {
   $(".product-card__reviews-button").show();
 });
 
+
+/* Foods subsection - buttons */
+
+$(window).resize(function() {
+  if ($(".foods-container").css("width") == "690px") {
+    $(".foods-subsection__item").text("");
+    $(".exit-button").text("user@mail.com");
+  } else {
+    $(".foods-subsection__item--personal").text("Личные данные");
+    $(".foods-subsection__item--cart").text("Корзина");
+    $(".foods-subsection__item--subscription").text("Подписка на продукты");
+    $(".foods-subsection__item--history").text("Прошлые покупки");
+    $(".foods-subsection__item--favorites").text("Избранное");
+    $(".exit-button").text("Выход");
+  }
+});
+
+$(document).ready(function() {
+  if ($(".foods-container").css("width") == "690px") {
+    $(".foods-subsection__item").text("");
+    $(".exit-button").text("user@mail.com");
+  } else {
+    $(".foods-subsection__item--personal").text("Личные данные");
+    $(".foods-subsection__item--cart").text("Корзина");
+    $(".foods-subsection__item--subscription").text("Подписка на продукты");
+    $(".foods-subsection__item--history").text("Прошлые покупки");
+    $(".foods-subsection__item--favorites").text("Избранное");
+    $(".exit-button").text("Выход");
+  }
+});
 
 /* Foods personal - tabs */
 
