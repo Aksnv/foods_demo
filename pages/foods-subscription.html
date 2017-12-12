@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <title>Foods - Подписка на продукты</title>
   <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="../styles/jquery.formstyler.css">
+  <link rel="stylesheet" type="text/css" href="../styles/jquery-ui.css">
   <link rel="stylesheet" type="text/css" href="../styles/styles.css">
 </head>
 <body>
-  <header class="foods-header">
+  <header class="foods-header foods-header--dark">
     <div class="foods-container">
       <nav class="foods-header__menu">
         <ul>
@@ -16,37 +18,104 @@
           <li><a href="#" class="foods-header__menu-item foods-header__menu-item--delivery">Доставка</a></li>
           <li><a href="#" class="foods-header__menu-item foods-header__menu-item--sales">Акции и скидки</a></li>
         </ul>
+        <button class="foods-header__menu-button"></button>
       </nav>
       <div class="foods-header__personal">
         <ul>
           <li><a href="#" class="foods-header__personal-item foods-header__personal-item--user-name">Игорь</a></li>
-          <li><a href="#" class="foods-header__personal-item foods-header__personal-item--subscription">Подписка</a></li>
+          <li><a href="#" class="foods-header__personal-item foods-header__personal-item--subscription foods-header__personal-item--active">Подписка</a></li>
           <li><a href="#" class="foods-header__personal-item foods-header__personal-item--favorites">Избранное</a></li>
           <li><a href="#" class="foods-header__personal-item foods-header__personal-item--cart"><span>Корзина</span> <span>3</span></a>
         </ul>
+        <button class="foods-header__personal-button"></button>
       </div>
     </div>
   </header>
 
   <div class="foods-container">
-    <div class="foods-top">
+    <div class="foods-top foods-top--dark">
       <div class="foods-top__logo">
         <a href="#" class="foods-top__logo-image"></a>
       </div>
       <div class="foods-top__search">
         <form class="foods-top__search-form" name="foods-top__search-form" method="GET" action="#">
           <input type="search" name="foods-top__search-field" placeholder="Поиск по товарам">
-          <input type="submit" name="foods-top__search-submit" value="">
+          <input type="reset" name="foods-top__search-reset" value="">
+          <input type="submit" name="foods-top__search-submit" class="foods-top__search-submit foods-top__search-submit--button" value="">
         </form>
+        <button class="advanced-search__button">Расширенный поиск</button>
         <div class="foods-top__search-example">
           <p>Например, <a href="#" class="inline-link">осетрина к Новому году</a></p>
-        </div>
+        </div>          
       </div>
+      <form name="advanced-search__form" method="GET" action="#" class="advanced-search__form">
+        <h2>Расширенный поиск</h2>
+        <ul>
+          <li>
+            <select>
+              <option>Все категории</option>
+              <option>Овощи и фрукты</option>
+              <option>Молочная продукция</option>
+            </select>
+          </li>
+          <li>
+            <select>
+              <option>Тип товара</option>
+              <option>Любой тип товара</option>
+            </select>
+          </li>
+          <li>
+            <select>
+              <option>Продавец</option>
+              <option>Любой продавец</option>
+            </select>
+          </li>
+          <li>
+            <select>
+              <option>Любое из слов</option>
+              <option>Все слова</option>
+            </select>
+          </li>
+          <li>
+            <input type="text" name="advanced-search__key-words" placeholder="Ключевые слова">
+          </li>
+          <li>
+            <input type="text" name="advanced-search__exclude-words" placeholder="Исключить слова">
+          </li>
+        </ul>
+          
+        <h3>Дополнительные параметры</h3>
+        <ul>
+          <li>
+            <input type="text" name="advanced-search__author" placeholder="Автор">
+          </li>
+          <li>
+            <input type="text" name="advanced-search__publishing-house" placeholder="Издательство">
+          </li>
+          <li>
+            <input type="text" name="advanced-search__cover" placeholder="Переплет">
+          </li>
+
+          <li class="advanced-search__range">
+            <p><span>Цена</span> 
+              <input type="text" name="advanced-search__min-price" id="advanced-search__min-price" readonly=""> — 
+              <input type="text" name="advanced-search__max-price" id="advanced-search__max-price" readonly="">
+            </p>
+            <div class="advanced-search__price-range"></div>
+          </li>
+          <li>
+            <input type="submit" name="advanced-search__submit" class="button" value="Начать расширенный поиск">
+          </li>
+          <li>
+            <input type="reset" name="advanced-search__reset" class="button" value="Отмена">
+          </li>
+        </ul>
+      </form>
     </div>
   </div>
 
   <div class="foods-container">
-    <div class="foods-content">
+    <div class="foods-content foods-content--dark">
       
       <div class="foods-breadcrumbs">
         <ul>
@@ -57,13 +126,13 @@
 
       <section class="foods-section">
         <h1>Подписка на продукты</h1>
-        <div class="foods-subsection">
+        <div class="foods-subsection foods-subsection--mobile">
           <ul>
-            <li><a href="#" class="foods-subsection__item">Личные данные</a></li>
-            <li><a href="#" class="foods-subsection__item">Корзина</a></li>
-            <li><a href="#" class="foods-subsection__item foods-subsection__item--active">Подписка на продукты</a></li>
-            <li><a href="#" class="foods-subsection__item">Прошлые покупки</a></li>
-            <li><a href="#" class="foods-subsection__item">Избранное</a></li>
+            <li><a href="#" class="foods-subsection__item foods-subsection__item--personal">Личные данные</a></li>
+            <li><a href="#" class="foods-subsection__item foods-subsection__item--cart">Корзина</a></li>
+            <li><a href="#" class="foods-subsection__item foods-subsection__item--subscription foods-subsection__item--active">Подписка на продукты</a></li>
+            <li><a href="#" class="foods-subsection__item foods-subsection__item--history">Прошлые покупки</a></li>
+            <li><a href="#" class="foods-subsection__item foods-subsection__item--favorites">Избранное</a></li>
           </ul>
           <a href="#" class="exit-button">Выход</a>
         </div>
@@ -109,7 +178,7 @@
                     <p>Ближайшая доставка: <time>31 дек</time></p>
                   </li>
                   <li class="foods-cart__item-favorites foods-cart__item-favorites--out"><button></button></li>
-                  <li class="foods-cart__item-subscription"><button></button></li>
+                  <!-- <li class="foods-cart__item-subscription"><button></button></li> -->
                   <li class="foods-cart__item-quantity">
                     <button class="decrease">-</button>
                     <span>1</span>
@@ -133,7 +202,7 @@
                     <p>Ближайшая доставка: <time>31 дек</time></p>
                   </li>
                   <li class="foods-cart__item-favorites foods-cart__item-favorites--in"><button></button></li>
-                  <li class="foods-cart__item-subscription"><button></button></li>
+                  <!-- <li class="foods-cart__item-subscription"><button></button></li> -->
                   <li class="foods-cart__item-quantity">
                     <button class="decrease">-</button>
                     <span>1</span>
@@ -157,7 +226,7 @@
                     <p>Ближайшая доставка: <time>31 дек</time></p>
                   </li>
                   <li class="foods-cart__item-favorites foods-cart__item-favorites--out"><button></button></li>
-                  <li class="foods-cart__item-subscription"><button></button></li>
+                  <!-- <li class="foods-cart__item-subscription"><button></button></li> -->
                   <li class="foods-cart__item-quantity">
                     <button class="decrease">-</button>
                     <span>1</span>
@@ -237,6 +306,8 @@
   </footer>
 
   <script src="../scripts/jquery-3.2.1.min.js"></script>
+  <script src="../scripts/jquery.formstyler.min.js"></script>
+  <script src="../scripts/jquery-ui.js"></script>
   <script src="../scripts/main.js"></script>
 </body>
 </html>

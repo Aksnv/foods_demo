@@ -6021,6 +6021,7 @@ input.foods-popup__form-submit--password-create {
     left: 31px;
     bottom: 24px;
     padding-left: 0;
+    z-index: 2;
   }
 
   .foods-cart__item-subscription {
@@ -6028,6 +6029,7 @@ input.foods-popup__form-submit--password-create {
     left: 68px;
     bottom: 24px;
     padding-left: 0;
+    z-index: 1;
   }
 
   .foods-cart__item-quantity {
@@ -6039,6 +6041,24 @@ input.foods-popup__form-submit--password-create {
   .foods-cart__item-price {
     padding-top: 52px;
     padding-left: 87px;
+  }
+
+  /* Foods subscription */
+
+  .foods-subscription {
+    margin-top: 26px;
+  }
+
+  .foods-cart__item--empty {
+    min-height: 585px;
+  }
+
+  .foods-cart__item--empty p {
+    top: 320px;
+  }
+
+  .foods-cart__item--empty::after {
+    top: 218px;
   }
 
 
