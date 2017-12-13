@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="../styles/styles.css">
 </head>
 <body>
-  <header class="foods-header">
+  <header class="foods-header foods-header--dark">
     <div class="foods-container">
       <nav class="foods-header__menu">
         <ul>
@@ -16,37 +16,104 @@
           <li><a href="#" class="foods-header__menu-item foods-header__menu-item--delivery">Доставка</a></li>
           <li><a href="#" class="foods-header__menu-item foods-header__menu-item--sales">Акции и скидки</a></li>
         </ul>
+        <button class="foods-header__menu-button"></button>
       </nav>
       <div class="foods-header__personal">
         <ul>
-          <li><a href="#" class="foods-header__personal-item foods-header__personal-item--user-name">Игорь</a></li>
+          <li><a href="#" class="foods-header__personal-item foods-header__personal-item--user-name foods-header__personal-item--active">Игорь</a></li>
           <li><a href="#" class="foods-header__personal-item foods-header__personal-item--subscription">Подписка</a></li>
           <li><a href="#" class="foods-header__personal-item foods-header__personal-item--favorites">Избранное</a></li>
           <li><a href="#" class="foods-header__personal-item foods-header__personal-item--cart"><span>Корзина</span> <span>3</span></a>
         </ul>
+        <button class="foods-header__personal-button"></button>
       </div>
     </div>
   </header>
 
   <div class="foods-container">
-    <div class="foods-top">
+    <div class="foods-top foods-top--dark">
       <div class="foods-top__logo">
         <a href="#" class="foods-top__logo-image"></a>
       </div>
       <div class="foods-top__search">
         <form class="foods-top__search-form" name="foods-top__search-form" method="GET" action="#">
           <input type="search" name="foods-top__search-field" placeholder="Поиск по товарам">
-          <input type="submit" name="foods-top__search-submit" value="">
+          <input type="reset" name="foods-top__search-reset" value="">
+          <input type="submit" name="foods-top__search-submit" class="foods-top__search-submit foods-top__search-submit--button" value="">
         </form>
+        <button class="advanced-search__button">Расширенный поиск</button>
         <div class="foods-top__search-example">
           <p>Например, <a href="#" class="inline-link">осетрина к Новому году</a></p>
-        </div>
+        </div>          
       </div>
+      <form name="advanced-search__form" method="GET" action="#" class="advanced-search__form">
+        <h2>Расширенный поиск</h2>
+        <ul>
+          <li>
+            <select>
+              <option>Все категории</option>
+              <option>Овощи и фрукты</option>
+              <option>Молочная продукция</option>
+            </select>
+          </li>
+          <li>
+            <select>
+              <option>Тип товара</option>
+              <option>Любой тип товара</option>
+            </select>
+          </li>
+          <li>
+            <select>
+              <option>Продавец</option>
+              <option>Любой продавец</option>
+            </select>
+          </li>
+          <li>
+            <select>
+              <option>Любое из слов</option>
+              <option>Все слова</option>
+            </select>
+          </li>
+          <li>
+            <input type="text" name="advanced-search__key-words" placeholder="Ключевые слова">
+          </li>
+          <li>
+            <input type="text" name="advanced-search__exclude-words" placeholder="Исключить слова">
+          </li>
+        </ul>
+          
+        <h3>Дополнительные параметры</h3>
+        <ul>
+          <li>
+            <input type="text" name="advanced-search__author" placeholder="Автор">
+          </li>
+          <li>
+            <input type="text" name="advanced-search__publishing-house" placeholder="Издательство">
+          </li>
+          <li>
+            <input type="text" name="advanced-search__cover" placeholder="Переплет">
+          </li>
+
+          <li class="advanced-search__range">
+            <p><span>Цена</span> 
+              <input type="text" name="advanced-search__min-price" id="advanced-search__min-price" readonly=""> — 
+              <input type="text" name="advanced-search__max-price" id="advanced-search__max-price" readonly="">
+            </p>
+            <div class="advanced-search__price-range"></div>
+          </li>
+          <li>
+            <input type="submit" name="advanced-search__submit" class="button" value="Начать расширенный поиск">
+          </li>
+          <li>
+            <input type="reset" name="advanced-search__reset" class="button" value="Отмена">
+          </li>
+        </ul>
+      </form>
     </div>
   </div>
 
   <div class="foods-container">
-    <div class="foods-content">
+    <div class="foods-content foods-content--dark">
       
       <a href="#" class="exit-button exit-button--order">Выход</a>
 
@@ -60,6 +127,17 @@
 
       <section class="foods-section foods-section--order">
         <h1>Оформление заказа</h1>
+
+        <div class="foods-subsection foods-subsection--order foods-subsection--mobile">
+          <ul>
+            <li><a href="#" class="foods-subsection__item foods-subsection__item--personal">Личные данные</a></li>
+            <li><a href="#" class="foods-subsection__item foods-subsection__item--cart foods-subsection__item--active">Корзина</a></li>
+            <li><a href="#" class="foods-subsection__item foods-subsection__item--subscription">Подписка на продукты</a></li>
+            <li><a href="#" class="foods-subsection__item foods-subsection__item--history">Прошлые покупки</a></li>
+            <li><a href="#" class="foods-subsection__item foods-subsection__item--favorites">Избранное</a></li>
+          </ul>
+          <a href="#" class="exit-button">Выход</a>
+        </div>
         
         <div class="foods-order">
           
@@ -183,7 +261,7 @@
                         <input type="text" name="address-edit__form-building">
                       </div>
                       <div class="address-edit__form-flat">
-                        <label>Квартира/Офис</label>
+                        <label>Квартира</label>
                         <input type="text" name="address-edit__form-flat" placeholder="35">
                       </div>
                     </div>
@@ -204,44 +282,48 @@
 
             <section class="order-payment__form">
               <h3>Способ оплаты</h3>
+              <div class="foods-carousel">
+                <a href="#" class="foods-carousel-button foods-carousel-button--left foods-carousel-button--disabled"></a>
+                <a href="#" class="foods-carousel-button foods-carousel-button--right"></a>
+              </div>
               <ul class="order-payment__method">
-                <li>
+                <li class="order-payment__method--1">
                   <a href="#" class="order-payment__method-item order-payment__method-item--cash">
                     <p><img src="../images/logo/payment/cash.png" alt=""></p>
                     <p>Оплата наличными курьеру</p>
                   </a>
                 </li>
-                <li>
+                <li class="order-payment__method--2">
                   <a href="#" class="order-payment__method-item order-payment__method-item--card order-payment__method-item--active">
                     <p><img src="../images/logo/payment/card.png" alt=""></p>
                     <p>Оплата банковской картой</p>
                   </a>
                 </li>
-                <li>
+                <li class="order-payment__method--3">
                   <a href="#" class="order-payment__method-item order-payment__method-item--mobile">
                     <p><img src="../images/logo/payment/phone.png" alt=""></p>
                     <p>Оплата с мобильного телефона</p>
                   </a>
                 </li>
-                <li>
+                <li class="order-payment__method--4">
                   <a href="#" class="order-payment__method-item order-payment__method-item--visa">
                     <p><img src="../images/logo/payment/visa.png" alt=""></p>
                     <p>Банковской картой на сайте</p>
                   </a>
                 </li>
-                <li>
+                <li class="order-payment__method--5">
                   <a href="#" class="order-payment__method-item order-payment__method-item--qiwi">
                     <p><img src="../images/logo/payment/qiwi.png" alt=""></p>
                     <p>Через Qiwi</p>
                   </a>
                 </li>
-                <li>
+                <li class="order-payment__method--6">
                   <a href="#" class="order-payment__method-item order-payment__method-item--webmoney">
                     <p><img src="../images/logo/payment/webmoney.png" alt=""></p>
                     <p>Через Webmoney</p>
                   </a>
                 </li>
-                <li>
+                <li class="order-payment__method--7">
                   <a href="#" class="order-payment__method-item order-payment__method-item--alfa">
                     <p><img src="../images/logo/payment/alfa.png" alt=""></p>
                     <p>Через Альфа-клик</p>

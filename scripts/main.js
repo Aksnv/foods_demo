@@ -262,6 +262,36 @@ $(".order-payment__method-item").click(function(e) {
   $(this).addClass("order-payment__method-item--active");
 });
 
+$(".order-payment__form .foods-carousel-button--right").click(function(e) {
+  e.preventDefault();
+  if ($(".foods-container").css("width") == "690px") {
+    $(this).addClass("foods-carousel-button--disabled");
+    $(".order-payment__form .foods-carousel-button--left").removeClass("foods-carousel-button--disabled");
+    $(".order-payment__method li.order-payment__method--1").hide();
+    $(".order-payment__method li.order-payment__method--2").hide();
+    $(".order-payment__method li.order-payment__method--3").hide();
+    $(".order-payment__method li.order-payment__method--4").hide();
+    $(".order-payment__method li.order-payment__method--5").css("display", "inline-block");
+    $(".order-payment__method li.order-payment__method--6").css("display", "inline-block");
+    $(".order-payment__method li.order-payment__method--7").css("display", "inline-block");
+  }
+});
+
+$(".order-payment__form .foods-carousel-button--left").click(function(e) {
+  e.preventDefault();
+  if ($(".foods-container").css("width") == "690px") {
+    $(this).addClass("foods-carousel-button--disabled");
+    $(".order-payment__form .foods-carousel-button--right").removeClass("foods-carousel-button--disabled");
+    $(".order-payment__method li.order-payment__method--5").hide();
+    $(".order-payment__method li.order-payment__method--6").hide();
+    $(".order-payment__method li.order-payment__method--7").hide();
+    $(".order-payment__method li.order-payment__method--1").css("display", "inline-block");
+    $(".order-payment__method li.order-payment__method--2").css("display", "inline-block");
+    $(".order-payment__method li.order-payment__method--3").css("display", "inline-block");
+    $(".order-payment__method li.order-payment__method--4").css("display", "inline-block");
+  }
+});
+
 
 /* Foods order - hint */
 

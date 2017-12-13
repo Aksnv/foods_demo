@@ -1709,6 +1709,10 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   margin-bottom: 34px;
 }
 
+.foods-subsection--order {
+  display: none;
+}
+
 .foods-subsection li {
   display: inline-block;
   vertical-align: top;
@@ -3465,6 +3469,10 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 .order-payment__form h3 {
   margin-bottom: 35px;
   padding-left: 0;
+}
+
+.order-payment__form .foods-carousel {
+  display: none;
 }
 
 .order-payment__method {
@@ -5882,6 +5890,10 @@ input.foods-popup__form-submit--password-create {
     right: 0px;
   }
 
+  .foods-subsection--order {
+    display: block;
+  }
+
   /* Foods sorter */
 
   .foods-sorter {
@@ -6191,14 +6203,80 @@ input.foods-popup__form-submit--password-create {
     margin-right: 0;
   }
 
-  /* Foods text */
+  /* Foods delivery */
 
   .foods-section--delivery::after {
     display: none;
   }
 
+  /* Foods text */
+
   .foods-text img {
     margin-bottom: 36px;
+  }
+
+  /* Foods order */
+
+  .foods-content--dark .foods-section--order h1 {
+    margin-bottom: 33px;
+  }
+
+  .order__tabs {
+    margin-bottom: 42px;
+  }
+
+  .personal__address-actions .order-delivery__form-datetime {
+    float: none;
+  }
+
+  .order-delivery__form .personal__address-edit {
+    margin-bottom: 107px;
+    padding-left: 10px;
+  }
+
+  .order-delivery__form input[type="text"] {
+    width: 320px;
+  }
+
+  .order-delivery__form-date label, 
+  .order-delivery__form-date input[type="text"], 
+  .order-delivery__form-time label, 
+  .order-delivery__form-time input[type="text"] {
+    width: 148px;
+  }
+
+  .order-delivery__form .address-edit__form-house label, 
+  .order-delivery__form .address-edit__form-building label, 
+  .order-delivery__form .address-edit__form-flat label, 
+  .order-delivery__form .address-edit__form-house input[type="text"], 
+  .order-delivery__form .address-edit__form-building input[type="text"], 
+  .order-delivery__form .address-edit__form-flat input[type="text"] {
+    width: 100px;
+  }
+
+  .order-payment__form {
+    position: relative;
+  }
+
+  .order-payment__form .foods-carousel {
+    display: block;
+  }
+
+  .order-payment__form .foods-carousel-button--left {
+    top: 5px;
+    left: -332px;
+    right: auto;
+  }
+
+  .order-payment__form .foods-carousel-button--right {
+    top: 5px;
+    right: -332px;
+  }
+
+  .order-payment__method li.order-payment__method--5,
+  .order-payment__method li.order-payment__method--6,
+  .order-payment__method li.order-payment__method--7 {
+    display: none;
   }
 
 
