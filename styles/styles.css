@@ -1586,6 +1586,19 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   background-image: url("../images/foods_sprite.fw.png");
 }
 
+/* .foods-goods__product-favorite--delete {
+  left: 200px;
+  top: 7px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-position: -88px -200px;
+}
+
+.foods-goods__product-favorite--delete:hover {
+  background-position: -27px -200px;
+} */
+
 .foods-goods__product-favorite--in {
   display: block;
   background-position: -160px -125px;
@@ -1622,6 +1635,7 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   background-color: white;
   color: black;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  z-index: 2;
 }
 
 .foods-goods__product-favorite--in:hover::after {
@@ -6164,6 +6178,17 @@ input.foods-popup__form-submit--password-create {
 
   .address-edit__form-reset {
     margin-right: 30px;
+  }
+
+  /* Foods favorites */
+
+  .foods-goods--favorites .foods-goods__product-item:nth-child(n),
+  .foods-goods--favorites .foods-goods__product-item:nth-child(5n) {
+    margin-right: 13px;
+  }
+
+  .foods-goods--favorites .foods-goods__product-item:nth-child(3n+3) {
+    margin-right: 0;
   }
 
 
