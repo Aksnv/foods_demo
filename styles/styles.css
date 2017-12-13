@@ -6191,6 +6191,16 @@ input.foods-popup__form-submit--password-create {
     margin-right: 0;
   }
 
+  /* Foods text */
+
+  .foods-section--delivery::after {
+    display: none;
+  }
+
+  .foods-text img {
+    margin-bottom: 36px;
+  }
+
 
 }
 
