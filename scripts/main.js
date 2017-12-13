@@ -60,12 +60,54 @@ $(document).click(function (e) {
   }
 });
 
-$(window).resize(function() {
+/*$(window).resize(function() {
   if ($(".foods-container").css("width") == "1180px") {
     $(".foods-top").removeClass("foods-top--dark");
   } else {
     $(".foods-top").addClass("foods-top--dark");
   }
+});*/
+
+
+/* Foods slider */
+
+function foodsSlider() {
+  for (var i = 0; i < $(".foods-slider__gallery-image").length; i++) {
+    if ($($(".foods-slider__gallery-image")[i]).hasClass("foods-slider__gallery-image--active")) {
+      if (i == 3) {
+        $($(".foods-slider__gallery-image")[i]).removeClass("foods-slider__gallery-image--active");
+        $($(".foods-slider__gallery-image")[0]).addClass("foods-slider__gallery-image--active");
+        for (var j = 0; j < $(".foods-slider__pagination-button").length; j++) {
+          $($(".foods-slider__pagination-button")[j]).removeClass("foods-slider__pagination-button--active");
+        }
+        $($(".foods-slider__pagination-button")[i]).removeClass("foods-slider__pagination-button--active");
+        $($(".foods-slider__pagination-button")[0]).addClass("foods-slider__pagination-button--active");
+        break;
+      } else {
+        $($(".foods-slider__gallery-image")[i]).removeClass("foods-slider__gallery-image--active");
+        $($(".foods-slider__gallery-image")[i + 1]).addClass("foods-slider__gallery-image--active");
+        for (var j = 0; j < $(".foods-slider__pagination-button").length; j++) {
+          $($(".foods-slider__pagination-button")[j]).removeClass("foods-slider__pagination-button--active");
+        }
+        $($(".foods-slider__pagination-button")[i]).removeClass("foods-slider__pagination-button--active");
+        $($(".foods-slider__pagination-button")[i + 1]).addClass("foods-slider__pagination-button--active");
+        break;
+      }
+    }
+  }
+};
+
+setInterval(foodsSlider, 3000);
+
+$(".foods-slider__pagination-button").click(function(e) {
+  e.preventDefault();
+  for (var i = 0; i < $(".foods-slider__pagination-button").length; i++) {
+    $($(".foods-slider__pagination-button")[i]).removeClass("foods-slider__pagination-button--active");
+    $($(".foods-slider__gallery-image")[i]).removeClass("foods-slider__gallery-image--active");
+  }
+  $(this).addClass("foods-slider__pagination-button--active");
+  var num = $(this).attr("class").charAt(65);
+  $($(".foods-slider__gallery-image")[num - 1]).addClass("foods-slider__gallery-image--active");
 });
 
 
@@ -156,7 +198,7 @@ $(".add-review-form__reset").click(function() {
 /* Foods subsection - buttons */
 
 $(window).resize(function() {
-  if ($(".foods-container").css("width") == "690px") {
+  if (($(".foods-container").css("width") == "690px") && ($(".foods-top").hasClass("foods-top--dark"))) {
     $(".foods-subsection__item").text("");
     $(".exit-button").text("user@mail.com");
   } else {
@@ -170,7 +212,7 @@ $(window).resize(function() {
 });
 
 $(document).ready(function() {
-  if ($(".foods-container").css("width") == "690px") {
+  if (($(".foods-container").css("width") == "690px") && ($(".foods-top").hasClass("foods-top--dark"))) {
     $(".foods-subsection__item").text("");
     $(".exit-button").text("user@mail.com");
   } else {
