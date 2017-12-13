@@ -6061,6 +6061,111 @@ input.foods-popup__form-submit--password-create {
     top: 218px;
   }
 
+  /* Foods personal */
+
+  .foods-tabs {
+    text-align: center;
+  }
+
+  .personal__tabs {
+    margin-bottom: 34px;
+    padding-top: 27px;
+  }
+
+  .foods-personal {
+    padding-left: 8px;
+  }
+
+  .profile-actions__action-button {
+    width: 320px;
+    margin-right: 30px;
+  }
+
+  .profile-actions__action-button--change {
+    margin-right: 0;
+  }
+
+  .profile-actions__action-button--edit::before {
+    left: 63px;
+  }
+
+  .profile-actions__action-button--change::before {
+    left: 90px;
+  }
+
+  .personal__profile-edit--left {
+    width: 670px;
+  }
+
+  .profile-edit__form input[type="text"], 
+  .profile-edit__form textarea {
+    width: 670px;
+  }
+
+  .profile-edit__form textarea {
+    margin-bottom: 25px;
+  }
+
+  .profile-edit__form-action {
+    margin-bottom: 40px;
+  }
+
+  .profile-edit__form-submit, .profile-edit__form-reset {
+    width: 320px;
+  }
+
+  .profile-edit__form-reset {
+    margin-right: 30px;
+  }
+
+  .address-info__item-delete {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .personal__address-edit--left {
+    width: 320px;
+    margin-right: 30px;
+  }
+
+  .personal__address-edit--right {
+    width: 320px;
+  }
+
+  .address-edit__form input[type="text"], 
+  .address-edit__form select {
+    width: 320px;
+  }
+
+  .address-edit__form-house label, 
+  .address-edit__form-building label, 
+  .address-edit__form-flat label, 
+  .address-edit__form-house input[type="text"], 
+  .address-edit__form-building input[type="text"], 
+  .address-edit__form-flat input[type="text"] {
+    width: 100px;
+  }
+
+  .address-edit__form-house input[type="text"], 
+  .address-edit__form-building input[type="text"] {
+    margin-right: 10px;
+  }
+
+  .personal__address-edit--right .address-edit__form-action {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+  }
+
+  .address-edit__form-submit, 
+  .address-edit__form-reset {
+    width: 320px;
+  }
+
+  .address-edit__form-reset {
+    margin-right: 30px;
+  }
+
 
 }
 

@@ -235,6 +235,22 @@ $(".address-edit__form-reset").click(function(e) {
   $(".personal__address-edit").hide();
 });
 
+$(window).resize(function() {
+  if ($(".foods-container").css("width") == "690px") {
+    $(".address-info__item-edit button").text("Редактировать");
+  } else {
+    $(".address-info__item-edit button").text("Редактировать данные");
+  }
+});
+
+$(document).ready(function() {
+  if ($(".foods-container").css("width") == "690px") {
+    $(".address-info__item-edit button").text("Редактировать");
+  } else {
+    $(".address-info__item-edit button").text("Редактировать данные");
+  }
+});
+
 
 /* Foods order - payment method */
 
