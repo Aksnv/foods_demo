@@ -6684,6 +6684,10 @@ input.foods-popup__form-submit--password-create {
     margin-right: 0;
   }
 
+  .order__form-reset, 
+  .order__form-update {
+    margin-right: 10px;
+  }
 
 }
 
