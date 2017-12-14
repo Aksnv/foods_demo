@@ -4515,6 +4515,10 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   border-radius: 5px;
 }
 
+.foods-orders__item ul {
+  display: table;
+}
+
 .foods-orders__header li,
 .foods-orders__item li {
   display: table-cell;
@@ -4756,7 +4760,7 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   float: left;
   position: relative;
   display: block;
-  margin-right: 19px;
+  margin-right: 17px;
   background-image: url("../images/foods_sprite.fw.png");
 }
 
@@ -6393,6 +6397,126 @@ input.foods-popup__form-submit--password-create {
   .order-payment__method li.order-payment__method--6,
   .order-payment__method li.order-payment__method--7 {
     display: none;
+  }
+
+  .foods-orders {
+    padding-top: 28px;
+  }
+
+  .foods-orders__header {
+    display: none;
+  }
+
+  .foods-orders__item {
+    min-height: 129px;
+  }
+
+  .foods-orders__item ul {
+    display: block;
+  }
+
+  .foods-orders__item li {
+    display: inline-block;
+    vertical-align: top;
+    height: auto;
+  }
+
+  .foods-orders__item-checkbox {
+    width: 33px;
+    padding-left: 10px;
+  }
+
+  .foods-orders__item-checkbox input[type="checkbox"] + label {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .foods-orders__item-order {
+    width: 300px;
+    margin-bottom: 38px;
+    padding-top: 16px;
+  }
+
+  .foods-orders__item-seller {
+    width: 164px;
+    padding-top: 16px;
+    padding-left: 22px;
+  }
+
+  .foods-orders__item-price {
+    padding-top: 10px;
+  }
+
+  .foods-orders__item-status {
+    width: 168px;
+    padding-left: 64px;
+  }
+
+  .foods-orders__item-status::before {
+    top: -5px;
+    left: 37px;
+  }
+
+  .foods-orders__item-payment {
+    width: 186px;
+  }
+
+  .foods-orders__item-payment::before {
+    top: 0;
+  }
+
+  .foods-orders__item-actions {
+    position: relative;
+    top: -13px;
+    width: 320px;
+  }
+
+  .foods-orders__item-actions span {
+    display: inline-block;
+    vertical-align: top;
+    width: 60px;
+    height: 40px;
+    line-height: 44px;
+    text-align: center;
+    margin-right: 10px;
+    background-color: #ebebed;
+  }
+
+  .foods-orders__item-actions a {
+    float: none;
+    display: inline-block;
+    margin-right: 0;
+  }
+
+  .foods-orders__item-actions a.foods-orders__item-actions--delete {
+    position: absolute;
+    top: -49px;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    background-position: -88px -200px;
+  }
+
+  .foods-orders__item-actions a.foods-orders__item-actions--delete:hover {
+    background-position: -27px -200px;
+  }
+
+  .foods-orders__item-actions a.foods-orders__item-actions--delete:hover::before,
+  .foods-orders__item-actions a.foods-orders__item-actions--delete:hover::after {
+    display: none;
+  }
+
+  .foods-history__bottom .foods-orders__item-actions {
+    top: 5px;
+    width: 149px;
+  }
+
+  .foods-history__bottom .foods-orders__item-actions a {
+    float: left;
+    display: block;
+    margin-right: 17px;
   }
 
 
