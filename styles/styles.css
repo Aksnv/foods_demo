@@ -3681,6 +3681,7 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 
 .foods-cart__item-file {
   width: 175px;
+  line-height: 20px;
   padding-left: 30px; 
 }
 
@@ -3694,6 +3695,7 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 
 .foods-cart__item-certificate {
   width: 180px;
+  line-height: 20px;
   padding-left: 30px;  
 }
 
@@ -6453,17 +6455,63 @@ input.foods-popup__form-submit--password-create {
     padding-left: 64px;
   }
 
-  .foods-orders__item-status::before {
+  .foods-orders__item-status--is-formed::before {
     top: -5px;
     left: 37px;
+  }
+
+  .foods-orders__item-status--new::before, 
+  .foods-orders__item-status--received::before {
+    top: -3px;
+    left: 36px;
+  }
+
+  .foods-orders__item-status--in-processing::before {
+    top: -2px;
+    left: 38px;
+  }
+
+  .foods-orders__item-status--shipped::before {
+    top: 1px;
+    left: 37px;
+  }
+
+  .foods-orders__item-status--canceled::before {
+    top: -1px;
+    left: 39px;
+  }
+
+  .foods-orders__item-status--received-by-buyer::before {
+    top: 1px;
+    left: 39px;
   }
 
   .foods-orders__item-payment {
     width: 186px;
   }
 
-  .foods-orders__item-payment::before {
-    top: 0;
+  .foods-orders__item-payment--waiting-review::before,
+  .foods-orders__item-payment--canceled::before,
+  .foods-orders__item-payment--expected-confirmation::before,
+  .foods-orders__item-status--partially-paid::before {
+    top: -1px;
+    left: -1px;
+  }
+
+  .foods-orders__item-payment--waiting-payment::before {
+    top: -1px;
+    left: 1px;
+  }
+
+  .foods-orders__item-payment--paid::before {
+    top: -4px;
+    left: -5px;
+  }
+
+  .foods-orders__item-payment--refund::before, 
+  .foods-orders__item-payment--returned::before {
+    top: 2px;
+    left: -2px;
   }
 
   .foods-orders__item-actions {
@@ -6517,6 +6565,123 @@ input.foods-popup__form-submit--password-create {
     float: left;
     display: block;
     margin-right: 17px;
+  }
+
+  .confirmation__form .foods-cart__item,
+  .confirmation__form .foods-cart__item ul {
+    min-height: 100px;
+  }
+
+  .confirmation__form .foods-cart__item li {
+    vertical-align: middle;
+  }
+
+  .confirmation__form .foods-cart__item-image {
+    width: 90px;
+    padding-left: 10px;
+  }
+
+  .confirmation__form .foods-cart__item-product {
+    width: 164px;
+    padding-top: 0;
+    padding-left: 10px;
+    padding-right: 5px;
+  }
+
+  .confirmation__form .foods-cart__item-quantity,
+  .confirmation__form .foods-cart__item-price {
+    position: static;
+  }
+
+  .confirmation__form .foods-cart__item-quantity {
+    width: 100px;
+    text-align: left;
+    padding-left: 0;
+  }
+
+  .confirmation__form .foods-cart__item-file,
+  .confirmation__form .foods-cart__item-certificate {
+    padding-left: 0;
+  }
+
+  .confirmation__form .foods-cart__item-file {
+    width: 140px;
+  }
+
+  .confirmation__form .foods-cart__item-certificate {
+    width: 140px;
+  }
+
+  .confirmation__form .foods-cart__item-price {
+    width: 90px;
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  .foods-order .foods-cart__result-quantity,
+  .foods-order .foods-cart__result-price {
+    padding-right: 28px;
+  }
+
+  .confirmation__form-address .address-info__item-information {
+    width: 540px;
+    padding-left: 30px;
+  }
+
+  .confirmation__form-delivery .confirmation-form__item-image {
+    width: 100px;
+    padding-left: 31px;
+  }
+
+  .confirmation-form__item-place {
+    width: 145px;
+  }
+
+  .confirmation-form__item-date {
+    padding-left: 64px;
+  }
+
+  .confirmation-form__item-time {
+    width: 150px;
+  }
+
+  .confirmation-form__item-price {
+    width: 100px;
+  }
+
+  .confirmation__form-payment .confirmation-form__item-image {
+    width: 155px;
+    padding-left: 32px;
+  }
+
+  .confirmation-form__item-method {
+    width: 360px;
+  }
+
+  .confirmation__form-total {
+    padding-right: 28px;
+  }
+
+  .confirmation__form-notes {
+    margin-bottom: 30px;
+  }
+
+  .notes__form--left {
+    margin-left: 10px;
+    margin-right: 30px;
+  }
+
+  .confirmation__form-notes input[type="text"], 
+  .confirmation__form-notes textarea {
+    width: 320px;
+  }
+
+  .order__form-action {
+    margin-bottom: 70px;
+  }
+
+  .order__form-submit {
+    margin-right: 0;
   }
 
 

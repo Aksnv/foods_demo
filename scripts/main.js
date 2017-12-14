@@ -326,6 +326,24 @@ $(".order-payment__form .foods-carousel-button--left").click(function(e) {
   }
 });
 
+/* Foods order - notes */
+
+$(window).resize(function() {
+  if ($(".foods-container").css("width") == "690px") {
+    $(".confirmation__form-notes label:nth-of-type(2)").text("Уведомления о состоянии заказа на почту");
+  } else {
+    $(".confirmation__form-notes label:nth-of-type(2)").text("Присылать уведомления о состоянии заказа на почту");
+  }
+});
+
+$(document).ready(function() {
+  if ($(".foods-container").css("width") == "690px") {
+    $(".confirmation__form-notes label:nth-of-type(2)").text("Уведомления о состоянии заказа на почту");
+  } else {
+    $(".confirmation__form-notes label:nth-of-type(2)").text("Присылать уведомления о состоянии заказа на почту");
+  }
+});
+
 
 /* Foods order - hint */
 
@@ -390,6 +408,18 @@ $(".foods-top .advanced-search__button").click(function() {
     $(".foods-top__search").addClass("foods-top__search--active");
     $(".foods-content .foods-section--search-results:nth-of-type(1) .foods-search__results").addClass("foods-search__results--active");
   } 
+});
+
+$(window).resize(function() {
+  if ($(".foods-container").css("width") == "690px") {
+    $(".foods-top .advanced-search__form").hide();
+    $(".foods-top--search-results .foods-top__search").removeClass("foods-top__search--active");
+    $(".foods-search__results").removeClass("foods-search__results--active");
+    $(".foods-top--search-results .advanced-search__button").removeClass("advanced-search__button--active");
+  } else {
+    $(".foods-top--search .foods-top__search").removeClass("foods-top__search--active");
+    $(".foods-top--search .advanced-search__button").removeClass("advanced-search__button--active");
+  }
 });
 
 
