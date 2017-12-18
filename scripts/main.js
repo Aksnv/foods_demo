@@ -49,7 +49,7 @@ $(".foods-top--dark .foods-top__search-submit").click(function(e) {
   };
 });
 
-$(document).click(function (e) {
+$(document).click(function(e) {
   var searchForm = $(".foods-top__search-form--visible");
   if ((!searchForm.is(e.target)) && (searchForm.has(e.target).length === 0) && ($(".foods-container").css("width") == "690px")) {
     $(searchForm).removeClass("foods-top__search-form--visible");
@@ -455,6 +455,22 @@ $("label[for='foods-orders__checkbox--all']").click(function(e) {
       $($(".foods-orders__checkbox")[i]).attr("checked", "checked");
     }
     $(this).addClass("foods-orders__checkbox--all-checked");
+  }
+});
+
+
+/* Foods footer - subscription form */
+
+$(".foods-footer__subscription-button").click(function() {
+  $(this).hide();
+  $(".foods-footer__subscription-form").addClass("foods-footer__subscription-form--visible");
+});
+
+$(document).click(function(e) {
+  var subscriptionForm = $(".foods-footer__subscription-form");
+  if ((!$(".foods-footer__subscription-button").is(e.target)) && (!subscriptionForm.is(e.target)) && (subscriptionForm.has(e.target).length === 0) && ($(".foods-container").css("width") == "320px")) {
+    $(subscriptionForm).removeClass("foods-footer__subscription-form--visible");
+    $(".foods-footer__subscription-button").show();
   }
 });
 
