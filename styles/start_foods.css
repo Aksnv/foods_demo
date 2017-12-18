@@ -1,0 +1,173 @@
+@font-face {
+  font-family: "Museo Sans Cyrl500";
+  src: url('https://seller.pokupo.ru/api/fonts/MuseoSansCyrl500.otf');
+  src: url('https://seller.pokupo.ru/api/fonts/museosanscyrl500-webfont.woff2') format('woff2'),
+       url('https://seller.pokupo.ru/api/fonts/museosanscyrl500-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Global styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, article, aside, footer, header, hgroup, main, nav, section {
+  display: block;
+} 
+
+body {
+  position: relative;
+  font-family: "Museo Sans Cyrl500";
+  font-size: 13px;
+  background-color: #f4f4f4;
+  color: #666;
+}
+
+ul {
+  list-style: none;
+} 
+
+.foods-container {
+  clear: both;
+  overflow: hidden;
+  width: 1180px;
+  margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  padding-right: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  color: #ffd33a;
+  background: #ffd33a;
+}
+
+/* Footer */
+
+.foods-footer {
+  clear: both;
+}
+
+.foods-footer .foods-container {
+  padding-top: 21px;
+  padding-bottom: 30px;
+  border-top: 1px solid #ccc;
+}
+
+.foods-footer__block--1, 
+.foods-footer__block--2, 
+.foods-footer__block--3 {
+  float: left;
+}
+
+.foods-footer__block--1 {
+  width: 241px;
+  padding-left: 25px;
+}
+
+.foods-footer__block--2 {
+  width: 239px;
+}
+
+.foods-footer__block--4 {
+  float: right;
+  width: 255px;
+}
+
+.foods-footer__social-links {
+  margin-top: 8px;
+  margin-bottom: 39px;
+  padding-left: 34px;
+}
+
+.foods-footer__subscription {
+  padding-left: 35px;
+}
+
+.foods-footer__copyrights p {
+  position: relative;
+  font-size: 13px;
+  line-height: 25px;
+  color: #666;
+}
+
+.foods-footer__copyrights p::before {
+  position: absolute;
+  top: 5px;
+  left: -41px;
+  content: "";
+  display: block;
+  width: 30px;
+  height: 15px;
+  background-image: url("/images/logo/b71d6c6…/logo_pokupo--small.png");
+}
+
+.foods-footer__block a {
+  font-size: 13px;
+  line-height: 25px;
+  text-decoration: none;
+  color: #666;
+}
+
+.foods-footer__copyrights a {
+  color: #2e8231;
+  text-decoration: underline;
+}
+
+
+/* Various displays styles */
+
+@media screen and (max-width: 1240px) {
+
+  .foods-container {
+    overflow: visible;
+    position: relative;
+    width: 690px;
+  }
+
+  /* Footer */
+
+  .foods-footer {
+    padding-bottom: 20px;
+    border-top: 1px solid #ccc;
+  }
+
+  .foods-footer .foods-container {
+    overflow: hidden;
+    border-top: none;
+  }
+
+  .foods-footer__block--1 {
+    width: 258px;
+  }
+
+  .foods-footer__block--2 {
+    width: 175px;
+  }
+
+  .foods-footer__block--3 {
+    display: none;
+  }
+
+  .foods-footer__social-links {
+    margin-bottom: 50px;
+  }
+
+  .foods-footer__copyrights {
+    position: absolute;
+    bottom: 10px;
+    left: 38px;
+  }
+
+}
+
