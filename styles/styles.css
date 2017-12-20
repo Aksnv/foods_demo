@@ -3354,6 +3354,10 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   text-align: center;
 }
 
+.foods-order--authorization {
+  min-height: auto;
+}
+
 .order__tabs {
   clear: both;
   display: inline-block;
@@ -3589,7 +3593,8 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 }
 
 .order__form-submit {
-  margin-right: 47px;
+  /* margin-right: 47px; */
+  margin-right: 0;
 }
 
 .order__form-submit:hover {
@@ -3867,12 +3872,17 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   margin-right: 120px;
 }
 
+.confirmation__form-authorization {
+  margin-bottom: 20px;
+}
+
 .confirmation__form-notes h3 {
   text-align: center;
   margin-bottom: 40px;
 }
 
-.confirmation__form-notes label {
+.confirmation__form-notes label,
+.confirmation__form-authorization label {
   display: block;
   font-family: "Museo Sans Cyrl900";
   font-size: 14px;
@@ -3881,6 +3891,7 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 }
 
 .confirmation__form-notes input[type="text"],
+.confirmation__form-authorization input[type="text"],
 .confirmation__form-notes textarea {
   width: 480px;
   font-family: "Museo Sans Cyrl300";
@@ -3893,7 +3904,8 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   border-radius: 5px;
 }
 
-.confirmation__form-notes input[type="text"] {
+.confirmation__form-notes input[type="text"],
+.confirmation__form-authorization input[type="text"] {
   height: 50px;
   line-height: 48px;
   margin-bottom: 28px;
