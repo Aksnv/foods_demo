@@ -275,6 +275,32 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-subm
   background-color: #dbdbdd;
 }
 
+.payment-instruction__button {
+  color: #fc922c;
+  border-bottom: 1px dotted #fc922c;
+}
+
+.payment-instruction__button::after {
+  border-top: 7px solid #fc922c;
+}
+
+.payment-instruction__description {
+  border-left: 1px solid #fc922c;
+}
+
+/* Foods - Search results */
+
+.foods-search__results a {
+  color: #fc922c;
+}
+
+/* Foods history */
+
+.foods-orders__item-order a, 
+.foods-orders__item-seller a {
+  color: #fc922c;
+}
+
 /* Foods footer */
 
 .foods-footer__link--support a,
@@ -289,4 +315,26 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-subm
   background-position: -7px -279px;
 }
 
+/* Foods popup - enter/registration */
+
+.foods-popup__header-block {
+  background-color: #a32b47; 
+}
+
+.foods-popup__header-block--action {
+  background-color: #e2204d;
+}
+
+input.foods-popup__form-submit {
+  background-color: #a32b47;
+  color: #fff;
+}
+
+input.foods-popup__form-submit:hover {
+  background-color: #7c2237;
+}
+
+.foods-popup__form input:focus {
+  border: 1px solid #a32b47;
+}
 
