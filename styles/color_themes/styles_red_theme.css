@@ -1,0 +1,153 @@
+.inline-link {
+  color: #fc922c;
+}
+
+.button {
+  background-color: #a32b47;
+  color: #fff;
+}
+
+.button:hover {
+  background-color: #7c2237;
+}
+
+/* Foods header */
+
+.foods-header {
+  background-color: #a32b47;
+}
+
+.foods-header__menu-item--active,
+.foods-header__personal-item--active {
+  background-color: #e2204d;
+}
+
+.foods-header__personal-item--cart span + span {
+  background-color: #fc922c;
+}
+
+/* Foods top */
+
+.foods-top__logo-image {
+  background-image: url("../../images/logo/color_themes/logo_foods_red.png");
+}
+
+input[name="foods-top__search-field"]:focus {
+  border: 1px solid #a32b47;
+}
+
+input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-reset"] {
+  background-position: -33px -303px;
+}
+
+input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-submit"] {
+  background-position: -8px -296px;
+}
+
+.foods-top .advanced-search__button {
+  background-color: #a32b47;
+  border: 1px solid #a32b47;
+}
+
+.foods-top .advanced-search__button:hover {
+  border: 1px solid #fc922c;
+}
+
+.advanced-search__price-range .ui-slider-range {
+  background-color: #fc922c;
+}
+
+.advanced-search__price-range .ui-slider-handle {
+  background-position: -48px -255px;
+}
+
+.foods-top .advanced-search__form input[name="advanced-search__submit"] {
+  background-color: #a32b47;
+  color: #fff;
+}
+
+.foods-top .advanced-search__form input[name="advanced-search__submit"]:hover {
+  background-color: #7c2237;
+}
+
+/* Foods catalog */
+
+.foods-catalog__goods-item--active,
+.foods-catalog__goods-item--active::before, 
+.foods-catalog__goods-item--active::after {
+  background-color: #fc922c;
+}
+
+/* Foods promo */
+
+.foods-promo .inline-link {
+  color: #fc922c;
+}
+
+/* Foods carousel */
+
+.foods-carousel-button {
+  background-position: -35px -280px;
+}
+
+.foods-carousel-button--left.foods-carousel-button--disabled:hover,
+.foods-carousel-button--right.foods-carousel-button--disabled:hover {
+  background-position: -35px -280px;
+}
+
+/* Foods goods */
+
+.foods-goods__product-item:hover {
+  border: 2px solid #fc922c;
+}
+
+.foods-goods__product-item:hover .foods-goods__product-buy:hover {
+  background-color: #7c2237;
+}
+
+/* Foods breadcrumbs */
+
+.foods-breadcrumbs a {
+  color: #fc922c;
+}
+
+.foods-breadcrumbs a::after {
+  color: #666;
+}
+
+/* Foods subsection */
+
+.foods-subsection__item {
+  border: 1px solid #a32b47;
+}
+
+.foods-subsection__item--active {
+  background-color: #a32b47;
+}
+
+/* Foods sorter */
+
+.foods-sorter__form .jq-selectbox__select-text {
+  color: #fc922c;
+  border-bottom: 1px dotted #fc922c;
+}
+
+.foods-sorter__form .jq-selectbox__select-text::after {
+  background-position: -50px -280px;
+}
+
+/* Foods footer */
+
+.foods-footer__link--support a,
+.foods-footer__link--email a,
+.foods-footer__link--skype a,
+.foods-footer__link--icq a,
+.foods-footer__copyrights a {
+  color: #fc922c;
+}
+
+.foods-footer__subscription-form::before {
+  background-position: -7px -279px;
+}
+
+
