@@ -3919,6 +3919,7 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 }
 
 .confirmation__form-notes input[type="text"]:focus,
+.confirmation__form-authorization input[type="text"]:focus,
 .confirmation__form-notes textarea:focus {
   border: 1px solid #2e8231;
   outline: none;

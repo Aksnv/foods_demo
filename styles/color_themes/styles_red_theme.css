@@ -235,6 +235,46 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-subm
   background-position: -93px -249px;
 }
 
+/* Foods order */
+
+.order__tab--active {
+  color: #fc922c;
+  border-bottom: 4px solid #fc922c;
+}
+
+.order__tab--active:hover {
+  color: #fc922c;
+}
+
+.order-delivery__form input[type="text"]:focus {
+  border: 1px solid #a32b47;
+}
+
+.order-payment__method a.order-payment__method-item--active {
+  border-bottom: 4px solid #fc922c;
+}
+
+.foods-cart__item-file a {
+  color: #fc922c;
+}
+
+.confirmation__form-notes input[type="text"]:focus, 
+.confirmation__form-authorization input[type="text"]:focus,
+.confirmation__form-notes textarea:focus {
+  border: 1px solid #a32b47;
+}
+
+.order__form-reset, 
+.order__form-update {
+  background-color: #ebebed;
+  color: #000;
+}
+
+.order__form-reset:hover, 
+.order__form-update:hover {
+  background-color: #dbdbdd;
+}
+
 /* Foods footer */
 
 .foods-footer__link--support a,
