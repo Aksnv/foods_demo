@@ -181,6 +181,60 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-subm
   color: #fc922c;
 }
 
+/* Foods personal */
+
+.personal__tab--active {
+  color: #fc922c;
+  border-bottom: 4px solid #fc922c;
+}
+
+.personal__tab--active:hover {
+  color: #fc922c;
+}
+
+.profile-actions__action-button, 
+.address-actions__action-button {
+  background-color: transparent;
+  color: #999;
+}
+
+.profile-actions__action-button:hover, 
+.address-actions__action-button:hover {
+  background-color: transparent;
+  color: #fc922c;
+  border: 1px solid #fc922c;
+}
+
+.profile-edit__form input[type="text"]:focus, 
+.address-edit__form input[type="text"]:focus, 
+.profile-edit__form textarea:focus {
+  border: 1px solid #a32b47;
+}
+
+.profile-edit__form-reset, 
+.address-edit__form-reset {
+  background-color: #ebebed;
+  color: #000;
+}
+
+.profile-edit__form-reset:hover, 
+.address-edit__form-reset:hover {
+  background-color: #dbdbdd;
+}
+
+.address-info__item-edit:hover button {
+  color: #fc922c;
+}
+
+.profile-actions__action-button--edit:hover::before,
+.address-info__item-edit:hover::before {
+  background-position: -71px -249px;
+}
+
+.profile-actions__action-button--change:hover::before {
+  background-position: -93px -249px;
+}
+
 /* Foods footer */
 
 .foods-footer__link--support a,
