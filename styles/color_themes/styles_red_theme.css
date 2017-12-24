@@ -136,6 +136,27 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-subm
   background-position: -50px -280px;
 }
 
+/* Foods product card */
+
+.product-card__action-favorite,
+.product-card__action-subscription {
+  color: #fc922c;
+}
+
+.product-card__tab--active {
+  color: #fc922c;
+  border-bottom: 4px solid #fc922c;
+}
+
+.product-card__tab--active:hover {
+  color: #fc922c;
+}
+
+.product-card__reviews-button:hover {
+  color: #fc922c;
+  border: 1px solid #fc922c;
+}
+
 /* Foods footer */
 
 .foods-footer__link--support a,
