@@ -1,3 +1,5 @@
+/* Foods red theme styles */
+
 .inline-link {
   color: #fc922c;
 }
@@ -286,6 +288,64 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-subm
 
 .payment-instruction__description {
   border-left: 1px solid #fc922c;
+}
+
+.refresh-button::before {
+  background-position: -51px -294px;
+}
+
+.foods-orders__item-status--is-formed::before {
+  background-position: -123px -306px;
+}
+
+.foods-orders__item-status--new::before, 
+.foods-orders__item-status--received::before {
+  background-position: -100px -287px;
+}
+
+.foods-orders__item-status--canceled::before {
+  background-position: -78px -288px;
+}
+
+.foods-orders__item-status--in-processing::before {
+  background-position: -128px -284px;
+}
+
+.foods-orders__item-status--shipped::before {
+  background-position: -152px -286px;
+}
+
+.foods-orders__item-status--received-by-buyer::before {
+  background-position: -92px -267px;
+}
+
+.foods-orders__item-payment--waiting-review::before {
+  background-position: -152px -307px;
+}
+
+.foods-orders__item-payment--waiting-payment::before {
+  background-position: -181px -286px;
+}
+
+.foods-orders__item-payment--canceled::before {
+  background-position: -78px -288px;
+}
+
+.foods-orders__item-payment--paid::before {
+  background-position: -100px -287px;
+}
+
+.foods-orders__item-payment--refund::before, 
+.foods-orders__item-payment--returned::before {
+  background-position: -70px -270px;
+}
+
+.foods-orders__item-payment--expected-confirmation::before {
+  background-position: -79px -310px;
+}
+
+.foods-orders__item-status--partially-paid::before {
+  background-position: -100px -309px;
 }
 
 /* Foods - Search results */
