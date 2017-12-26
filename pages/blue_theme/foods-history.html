@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Foods - Прошлые покупки</title>
+  <link rel="icon" type="image/x-icon" href="../../images/icons/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="../../styles/jquery.formstyler.css">
+  <link rel="stylesheet" type="text/css" href="../../styles/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="../../styles/styles.css">
+  <link rel="stylesheet" type="text/css" href="../../styles/color_themes/styles_blue_theme.css">
+</head>
+<body>
+  <header class="foods-header foods-header--dark">
+    <div class="foods-container">
+      <nav class="foods-header__menu">
+        <ul>
+          <li><a href="#" class="foods-header__menu-item foods-header__menu-item--catalog">Каталог</a></li>
+          <li><a href="#" class="foods-header__menu-item foods-header__menu-item--payment">Оплата</a></li>
+          <li><a href="#" class="foods-header__menu-item foods-header__menu-item--delivery">Доставка</a></li>
+          <li><a href="#" class="foods-header__menu-item foods-header__menu-item--sales">Акции и скидки</a></li>
+        </ul>
+        <button class="foods-header__menu-button"></button>
+      </nav>
+      <div class="foods-header__personal">
+        <ul>
+          <li><a href="#" class="foods-header__personal-item foods-header__personal-item--user-name foods-header__personal-item--active">Игорь</a></li>
+          <li><a href="#" class="foods-header__personal-item foods-header__personal-item--subscription">Подписка</a></li>
+          <li><a href="#" class="foods-header__personal-item foods-header__personal-item--favorites">Избранное</a></li>
+          <li><a href="#" class="foods-header__personal-item foods-header__personal-item--cart"><span>Корзина</span> <span>3</span></a>
+        </ul>
+        <button class="foods-header__personal-button"></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="foods-container">
+    <div class="foods-top foods-top--dark">
+      <div class="foods-top__logo">
+        <a href="#" class="foods-top__logo-image"></a>
+      </div>
+      <div class="foods-top__search">
+        <form class="foods-top__search-form" name="foods-top__search-form" method="GET" action="#">
+          <input type="search" name="foods-top__search-field" placeholder="Поиск по товарам">
+          <input type="reset" name="foods-top__search-reset" value="">
+          <input type="submit" name="foods-top__search-submit" class="foods-top__search-submit foods-top__search-submit--button" value="">
+        </form>
+        <button class="advanced-search__button">Расширенный поиск</button>
+        <div class="foods-top__search-example">
+          <p>Например, <a href="#" class="inline-link">осетрина к Новому году</a></p>
+        </div>          
+      </div>
+      <form name="advanced-search__form" method="GET" action="#" class="advanced-search__form">
+        <h2>Расширенный поиск</h2>
+        <ul>
+          <li>
+            <select>
+              <option>Все категории</option>
+              <option>Овощи и фрукты</option>
+              <option>Молочная продукция</option>
+            </select>
+          </li>
+          <li>
+            <select>
+              <option>Тип товара</option>
+              <option>Любой тип товара</option>
+            </select>
+          </li>
+          <li>
+            <select>
+              <option>Продавец</option>
+              <option>Любой продавец</option>
+            </select>
+          </li>
+          <li>
+            <select>
+              <option>Любое из слов</option>
+              <option>Все слова</option>
+            </select>
+          </li>
+          <li>
+            <input type="text" name="advanced-search__key-words" placeholder="Ключевые слова">
+          </li>
+          <li>
+            <input type="text" name="advanced-search__exclude-words" placeholder="Исключить слова">
+          </li>
+        </ul>
+          
+        <h3>Дополнительные параметры</h3>
+        <ul>
+          <li>
+            <input type="text" name="advanced-search__author" placeholder="Автор">
+          </li>
+          <li>
+            <input type="text" name="advanced-search__publishing-house" placeholder="Издательство">
+          </li>
+          <li>
+            <input type="text" name="advanced-search__cover" placeholder="Переплет">
+          </li>
+
+          <li class="advanced-search__range">
+            <p><span>Цена</span> 
+              <input type="text" name="advanced-search__min-price" id="advanced-search__min-price" readonly=""> — 
+              <input type="text" name="advanced-search__max-price" id="advanced-search__max-price" readonly="">
+            </p>
+            <div class="advanced-search__price-range"></div>
+          </li>
+          <li>
+            <input type="submit" name="advanced-search__submit" class="button" value="Начать расширенный поиск">
+          </li>
+          <li>
+            <input type="reset" name="advanced-search__reset" class="button" value="Отмена">
+          </li>
+        </ul>
+      </form>
+    </div>
+  </div>
+
+  <div class="foods-container">
+    <div class="foods-content foods-content--dark">
+      
+      <div class="foods-breadcrumbs">
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li>Прошлые покупки</li>
+        </ul>
+      </div>
+
+      <section class="foods-section">
+        <h1>Прошлые покупки</h1>
+        <div class="foods-subsection foods-subsection--mobile">
+          <ul>
+            <li><a href="#" class="foods-subsection__item foods-subsection__item--personal">Личные данные</a></li>
+            <li><a href="#" class="foods-subsection__item foods-subsection__item--cart">Корзина</a></li>
+            <li><a href="#" class="foods-subsection__item foods-subsection__item--subscription">Подписка на продукты</a></li>
+            <li><a href="#" class="foods-subsection__item foods-subsection__item--history foods-subsection__item--active">Прошлые покупки</a></li>
+            <li><a href="#" class="foods-subsection__item foods-subsection__item--favorites">Избранное</a></li>
+          </ul>
+          <a href="#" class="exit-button">Выход</a>
+        </div>
+        
+        <div class="foods-history">
+
+          <div class="foods-history__top">
+            <a href="#" class="refresh-button refresh-button--top">Обновить данные</a>
+            <div class="store-select">
+              <label>Магазин: </label>
+              <select>
+                <option>Pokupo</option>
+                <option>Foods</option>
+                <option>Magazine</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="foods-orders">
+            <ul>
+              <li class="foods-orders__header">
+                <ul>
+                  <li class="foods-orders__item-checkbox">
+                    <input type="checkbox" name="foods-orders__checkbox" class="foods-orders__checkbox" id="foods-orders__checkbox--all">
+                    <label for="foods-orders__checkbox--all"></label>
+                  </li>
+                  <li class="foods-orders__item-order">Заказ</li>
+                  <li class="foods-orders__item-seller">Продавец</li>
+                  <li class="foods-orders__item-price">К оплате</li>
+                  <li class="foods-orders__item-status">Статус</li>
+                  <li class="foods-orders__item-payment">Оплата</li>
+                  <li class="foods-orders__item-actions">Действия</li>
+                </ul>
+              </li>
+              <li class="foods-orders__item foods-orders__item--1">
+                <ul>
+                  <li class="foods-orders__item-checkbox">
+                    <input type="checkbox" name="foods-orders__checkbox" class="foods-orders__checkbox" id="foods-orders__checkbox--1">
+                    <label for="foods-orders__checkbox--1"></label>
+                  </li>
+                  <li class="foods-orders__item-order"><a href="#">Заказ №07612911-0034 от 12 августа 2017</a></li>
+                  <li class="foods-orders__item-seller"><a href="#">Magazine</a></li>
+                  <li class="foods-orders__item-price">124 руб</li>
+                  <li class="foods-orders__item-status foods-orders__item-status--is-formed">Формируется</li>
+                  <li class="foods-orders__item-payment foods-orders__item-payment--waiting-review">Ожидает проверки</li>
+                  <li class="foods-orders__item-actions">
+                    <a href="#" class="foods-orders__item-actions--delete"></a>
+                    <span><a href="#" class="foods-orders__item-actions--edit"></a></span>
+                    <span><a href="#" class="foods-orders__item-actions--cancel"></a></span>
+                  </li>
+                </ul>
+              </li>
+              <li class="foods-orders__item foods-orders__item--2">
+                <ul>
+                  <li class="foods-orders__item-checkbox">
+                    <input type="checkbox" name="foods-orders__checkbox" class="foods-orders__checkbox" id="foods-orders__checkbox--2">
+                    <label for="foods-orders__checkbox--2"></label>
+                  </li>
+                  <li class="foods-orders__item-order"><a href="#">Заказ №07612911-0034 от 12 августа 2017</a></li>
+                  <li class="foods-orders__item-seller"><a href="#">Magazine</a></li>
+                  <li class="foods-orders__item-price">845 руб</li>
+                  <li class="foods-orders__item-status foods-orders__item-status--new">Новый</li>
+                  <li class="foods-orders__item-payment foods-orders__item-payment--waiting-payment">Ожидает оплаты</li>
+                  <li class="foods-orders__item-actions">
+                    <a href="#" class="foods-orders__item-actions--delete"></a>
+                    <span><a href="#" class="foods-orders__item-actions--cart"></a></span>
+                    <span><a href="#" class="foods-orders__item-actions--repeat"></a></span>
+                    <span><a href="#" class="foods-orders__item-actions--cancel"></a></span>
+                  </li>
+                </ul>
+              </li>
+              <li class="foods-orders__item foods-orders__item--3">
+                <ul>
+                  <li class="foods-orders__item-checkbox">
+                    <input type="checkbox" name="foods-orders__checkbox" class="foods-orders__checkbox" id="foods-orders__checkbox--3">
+                    <label for="foods-orders__checkbox--3"></label>
+                  </li>
+                  <li class="foods-orders__item-order"><a href="#">Заказ №07612911-0034 от 12 августа 2017</a></li>
+                  <li class="foods-orders__item-seller"><a href="#">Magazine</a></li>
+                  <li class="foods-orders__item-price">324 руб</li>
+                  <li class="foods-orders__item-status foods-orders__item-status--canceled">Отменен</li>
+                  <li class="foods-orders__item-payment foods-orders__item-payment--canceled">Отменен</li>
+                  <li class="foods-orders__item-actions">
+                    <a href="#" class="foods-orders__item-actions--delete"></a>
+                    <span><a href="#" class="foods-orders__item-actions--cart"></a></span>
+                    <span><a href="#" class="foods-orders__item-actions--repeat"></a></span>
+                  </li>
+                </ul>
+              </li>
+              <li class="foods-orders__item foods-orders__item--4">
+                <ul>
+                  <li class="foods-orders__item-checkbox">
+                    <input type="checkbox" name="foods-orders__checkbox" class="foods-orders__checkbox" id="foods-orders__checkbox--4">
+                    <label for="foods-orders__checkbox--4"></label>
+                  </li>
+                  <li class="foods-orders__item-order"><a href="#">Заказ №07612911-0034 от 12 августа 2017</a></li>
+                  <li class="foods-orders__item-seller"><a href="#">Magazine</a></li>
+                  <li class="foods-orders__item-price">324 руб</li>
+                  <li class="foods-orders__item-status foods-orders__item-status--in-processing">В обработке</li>
+                  <li class="foods-orders__item-payment foods-orders__item-payment--paid">Оплачен</li>
+                  <li class="foods-orders__item-actions">
+                    <a href="#" class="foods-orders__item-actions--delete"></a>
+                    <span><a href="#" class="foods-orders__item-actions--cart"></a></span>
+                    <span><a href="#" class="foods-orders__item-actions--repeat"></a></span>
+                  </li>
+                </ul>
+              </li>
+              <li class="foods-orders__item foods-orders__item--5">
+                <ul>
+                  <li class="foods-orders__item-checkbox">
+                    <input type="checkbox" name="foods-orders__checkbox" class="foods-orders__checkbox" id="foods-orders__checkbox--5">
+                    <label for="foods-orders__checkbox--5"></label>
+                  </li>
+                  <li class="foods-orders__item-order"><a href="#">Заказ №07612911-0034 от 12 августа 2017</a></li>
+                  <li class="foods-orders__item-seller"><a href="#">Magazine</a></li>
+                  <li class="foods-orders__item-price">324 руб</li>
+                  <li class="foods-orders__item-status foods-orders__item-status--shipped">Отправлен</li>
+                  <li class="foods-orders__item-payment foods-orders__item-payment--refund">Возврат оплаты</li>
+                  <li class="foods-orders__item-actions">
+                    <a href="#" class="foods-orders__item-actions--delete"></a>
+                    <span><a href="#" class="foods-orders__item-actions--cart"></a></span>
+                    <span><a href="#" class="foods-orders__item-actions--repeat"></a></span>
+                  </li>
+                </ul>
+              </li>
+              <li class="foods-orders__item foods-orders__item--6">
+                <ul>
+                  <li class="foods-orders__item-checkbox">
+                    <input type="checkbox" name="foods-orders__checkbox" class="foods-orders__checkbox" id="foods-orders__checkbox--6">
+                    <label for="foods-orders__checkbox--6"></label>
+                  </li>
+                  <li class="foods-orders__item-order"><a href="#">Заказ №07612911-0034 от 12 августа 2017</a></li>
+                  <li class="foods-orders__item-seller"><a href="#">Magazine</a></li>
+                  <li class="foods-orders__item-price">324 руб</li>
+                  <li class="foods-orders__item-status foods-orders__item-status--received">Получен</li>
+                  <li class="foods-orders__item-payment foods-orders__item-payment--expected-confirmation">Ожидает подтверждения</li>
+                  <li class="foods-orders__item-actions">
+                    <a href="#" class="foods-orders__item-actions--delete"></a>
+                    <span><a href="#" class="foods-orders__item-actions--cart"></a></span>
+                    <span><a href="#" class="foods-orders__item-actions--repeat"></a></span>
+                  </li>
+                </ul>
+              </li>
+              <li class="foods-orders__item foods-orders__item--7">
+                <ul>
+                  <li class="foods-orders__item-checkbox">
+                    <input type="checkbox" name="foods-orders__checkbox" class="foods-orders__checkbox" id="foods-orders__checkbox--7">
+                    <label for="foods-orders__checkbox--7"></label>
+                  </li>
+                  <li class="foods-orders__item-order"><a href="#">Заказ №07612911-0034 от 12 августа 2017</a></li>
+                  <li class="foods-orders__item-seller"><a href="#">Magazine</a></li>
+                  <li class="foods-orders__item-price">324 руб</li>
+                  <li class="foods-orders__item-status foods-orders__item-status--received-by-buyer">Получен покупателем</li>
+                  <li class="foods-orders__item-payment foods-orders__item-status--partially-paid">Частично оплачен</li>
+                  <li class="foods-orders__item-actions">
+                    <a href="#" class="foods-orders__item-actions--delete"></a>
+                    <span><a href="#" class="foods-orders__item-actions--cart"></a></span>
+                    <span><a href="#" class="foods-orders__item-actions--repeat"></a></span>
+                  </li>
+                </ul>
+              </li>
+              <li class="foods-orders__item foods-orders__item--8">
+                <ul>
+                  <li class="foods-orders__item-checkbox">
+                    <input type="checkbox" name="foods-orders__checkbox" class="foods-orders__checkbox" id="foods-orders__checkbox--8">
+                    <label for="foods-orders__checkbox--8"></label>
+                  </li>
+                  <li class="foods-orders__item-order"><a href="#">Заказ №07612911-0034 от 12 августа 2017</a></li>
+                  <li class="foods-orders__item-seller"><a href="#">Magazine</a></li>
+                  <li class="foods-orders__item-price">324 руб</li>
+                  <li class="foods-orders__item-status foods-orders__item-status--received">Получен</li>
+                  <li class="foods-orders__item-payment foods-orders__item-payment--returned">Возвращен</li>
+                  <li class="foods-orders__item-actions">
+                    <a href="#" class="foods-orders__item-actions--delete"></a>
+                    <span><a href="#" class="foods-orders__item-actions--cart"></a></span>
+                    <span><a href="#" class="foods-orders__item-actions--repeat"></a></span>
+                    <span><a href="#" class="foods-orders__item-actions--edit"></a></span>
+                    <span><a href="#" class="foods-orders__item-actions--cancel"></a></span>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="foods-history__bottom">
+            <a href="#" class="refresh-button refresh-button--bottom">Обновить данные</a>
+            <div class="foods-orders__item-actions foods-orders__item-actions--all">
+              <a href="#" class="foods-orders__item-actions--cart"></a>
+              <a href="#" class="foods-orders__item-actions--repeat"></a>
+              <a href="#" class="foods-orders__item-actions--cancel"></a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </div>
+    
+  <footer class="foods-footer">
+    <div class="foods-container">
+      <div class="foods-footer__block foods-footer__block--1">
+        <ul>
+          <li class="foods-footer__link foods-footer__link--support"><a href="#">Поддержка</a></li>
+          <li class="foods-footer__link foods-footer__link--email"><a href="#">support@pokupo.ru</a></li>
+          <li class="foods-footer__link foods-footer__link--skype"><a href="#">pokupo.ru</a></li>
+          <li class="foods-footer__link foods-footer__link--phone">+7 395 220-15-68</li>
+          <li class="foods-footer__link foods-footer__link--icq">ICQ: <a href="#">21511546151</a></li>
+          <li class="foods-footer__link foods-footer__link--copyright">Pokupo.Foods 2016</li>
+        </ul>
+      </div>
+      <div class="foods-footer__block foods-footer__block--2">
+        <ul>
+          <li><a href="#">Помощь</a></li>
+          <li><a href="#">Как покупать</a></li>
+          <li><a href="#">Как продавать</a></li>
+          <li><a href="#">Правила</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="foods-footer__block foods-footer__block--3">
+        <ul>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Оплата</a></li>
+          <li><a href="#">Возврат товара</a></li>
+          <li><a href="#">Публичная оферта</a></li>
+          <li><a href="#">Подарочные карты</a></li>
+        </ul>
+      </div>
+      <div class="foods-footer__block foods-footer__block--4">
+        <div class="foods-footer__social-links">
+          <ul>
+            <li><a href="#" class="foods-footer__social-link foods-footer__social-link--vk">Vkontakte</a></li>
+            <li><a href="#" class="foods-footer__social-link foods-footer__social-link--fb">Facebook</a></li>
+            <li><a href="#" class="foods-footer__social-link foods-footer__social-link--tw">Twitter</a></li>
+            <li><a href="#" class="foods-footer__social-link foods-footer__social-link--lj">Livejournal</a></li>
+            <li><a href="#" class="foods-footer__social-link foods-footer__social-link--hh">Habrahabr</a></li>
+            <li><a href="#" class="foods-footer__social-link foods-footer__social-link--gp">Google+</a></li>
+          </ul>
+        </div>
+        <div class="foods-footer__subscription">
+          <p>Оформить подписку:</p>
+          <form class="foods-footer__subscription-form" name="foods-footer__subscription-form" method="POST" action="#">
+            <input type="email" name="foods-footer__subscription-field" placeholder="Ваш email">
+            <input type="submit" name="foods-footer__subscription-submit" value="">
+          </form>
+        </div>
+        <div class="foods-footer__copyrights">
+          <p>Работает на основе технологии <a href="#">Pokupo</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../scripts/jquery-3.2.1.min.js"></script>
+  <script src="../../scripts/jquery.formstyler.min.js"></script>
+  <script src="../../scripts/jquery-ui.js"></script>
+  <script src="../../scripts/main.js"></script>
+</body>
+</html>
