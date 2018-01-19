@@ -1321,6 +1321,50 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   background-color: #ffb33a;
 }
 
+/* Foods news */
+
+.foods-news__block {
+  display: inline-block;
+  vertical-align: top;
+  width: 222px;
+  margin-right: 14px;
+  margin-bottom: 20px;
+}
+
+.foods-news__block:nth-child(4n+4),
+.foods-news__block:last-child {
+  margin-right: 0;
+}
+
+.foods-news__block time {
+  display: block;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 12px;
+  margin-bottom: 6px;
+  color: black;
+  opacity: 0.5;
+}
+
+.foods-news__block a {
+  display: block;
+  height: 120px;
+  margin-bottom: 14px;
+}
+
+.foods-news__block img {
+  width: auto;
+  max-width: 220px;
+  height: auto;
+  max-height: 120px;
+}
+
+.foods-news__block p {
+  font-family: "Museo Sans Cyrl300";
+  font-size: 15px;
+  line-height: 18px;
+  color: black;
+}
+
 /* Foods slider */
 
 .foods-slider {
