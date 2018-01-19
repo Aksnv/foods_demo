@@ -1321,50 +1321,6 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   background-color: #ffb33a;
 }
 
-/* Foods news */
-
-.foods-news__block {
-  display: inline-block;
-  vertical-align: top;
-  width: 222px;
-  margin-right: 14px;
-  margin-bottom: 20px;
-}
-
-.foods-news__block:nth-child(4n+4),
-.foods-news__block:last-child {
-  margin-right: 0;
-}
-
-.foods-news__block time {
-  display: block;
-  font-family: "Museo Sans Cyrl300";
-  font-size: 12px;
-  margin-bottom: 6px;
-  color: black;
-  opacity: 0.5;
-}
-
-.foods-news__block a {
-  display: block;
-  height: 120px;
-  margin-bottom: 14px;
-}
-
-.foods-news__block img {
-  width: auto;
-  max-width: 220px;
-  height: auto;
-  max-height: 120px;
-}
-
-.foods-news__block p {
-  font-family: "Museo Sans Cyrl300";
-  font-size: 15px;
-  line-height: 18px;
-  color: black;
-}
-
 /* Foods slider */
 
 .foods-slider {
@@ -4888,6 +4844,127 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 .foods-orders__item-actions--all a:hover::after {
   display: none;
 }
+
+/* Foods news */
+
+.foods-news__block {
+  display: inline-block;
+  vertical-align: top;
+  width: 222px;
+  margin-right: 14px;
+  margin-bottom: 20px;
+}
+
+.foods-news__block:nth-child(4n+4),
+.foods-news__block:last-child {
+  margin-right: 0;
+}
+
+.foods-news__block time {
+  display: block;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 12px;
+  margin-bottom: 6px;
+  color: black;
+  opacity: 0.5;
+}
+
+.foods-news__block a {
+  display: block;
+  height: 120px;
+  margin-bottom: 14px;
+}
+
+.foods-news__block img {
+  width: auto;
+  max-width: 220px;
+  height: auto;
+  max-height: 120px;
+}
+
+.foods-news__block p {
+  font-family: "Museo Sans Cyrl300";
+  font-size: 15px;
+  line-height: 18px;
+  color: black;
+}
+
+.foods-section--news h1 {
+  margin-bottom: 30px;
+}
+
+.foods-section--news ul {
+  margin-bottom: 39px;
+}
+
+.foods-news__item {
+  overflow: hidden;
+  width: 100%;
+  min-height: 280px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.foods-news__item-image {
+  width: 280px;
+}
+
+.foods-news__item-image--left {
+  float: left;
+  margin-right: 20px;
+}
+
+.foods-news__item-image--right {
+  float: right;
+  margin-left: 20px;
+}
+
+.foods-news__item-image a {
+  display: table-cell;
+  vertical-align: middle;
+  width: 280px;
+  height: 280px;
+  text-align: center;
+}
+
+.foods-news__item-image img {
+  display: block; 
+  width: auto;
+  max-width: 280px;
+  height: auto;
+  max-height: 280px;
+  margin: 0 auto;
+}
+
+.foods-news__item-content {
+  float: left;
+  width: 880px;
+  padding-top: 38px;
+  padding-left: 20px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+}
+
+.foods-news__item-content h3 {
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+
+.foods-news__item-content time {
+  display: block;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 12px;
+  margin-bottom: 18px;
+  color: #000;
+  opacity: 0.5;
+}
+
+.foods-news__item-content p {
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
 
 /* Foods footer */
 
