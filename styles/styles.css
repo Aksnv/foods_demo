@@ -4920,7 +4920,7 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   margin-left: 20px;
 }
 
-.foods-news__item-image a {
+.foods-news__item-image {
   display: table-cell;
   vertical-align: middle;
   width: 280px;
@@ -4962,8 +4962,22 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 
 .foods-news__item-content p {
   line-height: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
+
+.foods-news__item--page {
+  background-color: transparent;
+}
+
+.foods-news__item--page .foods-news__item-content {
+  padding-top: 0;
+  padding-right: 65px;
+  padding-bottom: 10px;
+}
+
+.foods-news__item--page .foods-news__item-image img {
+  margin-left: 0;
+} 
 
 
 /* Foods footer */
