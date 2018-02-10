@@ -46,9 +46,9 @@
 
 /* Foods top */
 
-.foods-top__logo-image {
+/* .foods-top__logo-image {
   background-image: url("../../images/logo/color_themes/logo_foods_red.png");
-}
+} */
 
 input[name="foods-top__search-field"]:focus {
   border: 1px solid #a32b47;
@@ -94,6 +94,12 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-subm
 .foods-catalog__goods-item--active::before, 
 .foods-catalog__goods-item--active::after {
   background-color: #fc922c;
+}
+
+/* Foods slider */
+
+.foods-slider__gallery {
+  background-color: #a32b47;
 }
 
 /* Foods promo */
@@ -376,6 +382,10 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-subm
 
 /* Foods certificate */
 
+.foods-certificate__outer {
+  background-image: url("../../images/pages/color_themes/certificate/foods-certificate__bg_red.png");
+}
+
 .foods-certificate__action-buttons .product-card__action-favorite:hover::before {
   background-position: -161px -35px;
 }
@@ -440,3 +450,21 @@ input.foods-popup__form-submit:hover {
   border: 1px solid #a32b47;
 }
 
+/* Diffrent display layout styles */
+
+@media screen and (max-width: 1239px) {
+
+  .foods-header {
+    background-color: #fff;
+  }
+
+  .foods-header--dark,
+  .foods-top--dark {
+    background-color: #a32b47;
+  }
+
+  .foods-certificate__outer {
+    background-image: url("../../images/pages/color_themes/certificate/foods-certificate__bg_red-750.png");
+  }
+
+}

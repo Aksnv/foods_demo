@@ -558,7 +558,19 @@ input:focus {
   height: 98px;
   margin-top: 32px;
   margin-left: 43px;
-  background-image: url("../images/logo/logo_foods.png");
+  /* background-image: url("../images/logo/logo_foods.png"); */
+}
+
+.foods-top__logo-image--white {
+  display: none;
+}
+
+.foods-top__logo-image img {
+  display: block;
+  width: auto;
+  max-width: 134px;
+  height: auto;
+  max-height: 98px;
 }
 
 .foods-top__search {
@@ -5647,8 +5659,22 @@ input.foods-popup__form-submit--password-create {
     background-repeat: no-repeat;
   }
 
-  .foods-top--dark .foods-top__logo-image {
+  .foods-top__logo-image img {
+    max-width: 69px;
+    max-height: 52px;
+  }
+
+  .foods-top .foods-top__logo-image img.foods-top__logo-image--white,
+  .foods-top--dark .foods-top__logo-image img {
+    display: none;
+  }
+
+  /* .foods-top--dark .foods-top__logo-image {
     background-image: url("../images/logo/logo_foods--white.png");
+  } */
+
+  .foods-top--dark .foods-top__logo-image img.foods-top__logo-image--white {
+    display: block;
   }
 
   .foods-top__search {
