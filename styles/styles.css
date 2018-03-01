@@ -1,48 +1,3 @@
-/* @font-face {
-    font-family: "Museo Sans Cyrl100";
-    src: url('../fonts/MuseoSansCyrl100.otf');
-    src: url('../fonts/museosanscyrl100-webfont.woff2') format('woff2'),
-         url('../fonts/museosanscyrl100-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Museo Sans Cyrl300";
-    src: url('../fonts/MuseoSansCyrl300.otf');
-    src: url('../fonts/museosanscyrl300-webfont.woff2') format('woff2'),
-         url('../fonts/museosanscyrl300-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Museo Sans Cyrl500";
-    src: url('../fonts/MuseoSansCyrl500.otf');
-    src: url('../fonts/museosanscyrl500-webfont.woff2') format('woff2'),
-         url('../fonts/museosanscyrl500-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Museo Sans Cyrl700";
-    src: url('../fonts/MuseoSansCyrl700.otf');
-    src: url('../fonts/museosanscyrl700-webfont.woff2') format('woff2'),
-         url('../fonts/museosanscyrl700-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Museo Sans Cyrl900";
-    src: url('../fonts/MuseoSansCyrl900.otf');
-    src: url('../fonts/museosanscyrl900-webfont.woff2') format('woff2'),
-         url('../fonts/museosanscyrl900-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-} */
-
 @font-face {
     font-family: "Museo Sans Cyrl100";
     src: url('https://seller.pokupo.ru/api/fonts/MuseoSansCyrl100.otf');
@@ -88,12 +43,12 @@
     font-style: normal;
 }
 
-@font-face {
+/* @font-face {
     font-family: "Georgia Bold Italic";
     src: url('../fonts/georgiaBoldItalic.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
+} */
 
 * {
   margin: 0;
@@ -189,6 +144,10 @@ input:focus {
   background-position: -179px -176px;
 }
 
+.hidden {
+  display: none;
+}
+
 ::-webkit-scrollbar {
   width: 4px;
   padding-right: 9px;
@@ -236,6 +195,7 @@ input:focus {
 
 .foods-header__personal {
   float: right;
+  /* margin-right: 57px; */
 }
 
 .foods-header__personal-button {
@@ -268,6 +228,8 @@ input:focus {
   font-size: 16px;
   line-height: 58px;
   text-decoration: none;
+  /* margin-top: 17px; */
+    /* margin-right: 27px; */
   padding-left: 13px;
   padding-right: 14px;
   color: #fff;
@@ -333,7 +295,7 @@ input:focus {
   background-position: -112px -8px;
 }
 
-.foods-header__personal-item--cart span + span {
+/* .foods-header__personal-item--cart span + span {
   position: absolute;
   top: 17px;
   right: 12px;
@@ -348,20 +310,36 @@ input:focus {
 
 .foods-header__personal-item--cart:hover span + span {
   color: #fff;
-}
+} */
 
 .foods-header__personal-item:hover,
 .foods-header__personal-item--active {
   background-color: #28a42c;
 }
 
+.circles-menu__num {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  line-height: 24px;
+  text-align: center;
+  margin-left: 2px;
+  background-color: #cf453c;
+  border-radius: 50%;
+}
+
+.foods-header__personal-item:hover .circles-menu__num {
+  color: white;
+}
+
 .foods-header__cart {
   position: absolute;
   top: 58px;
   right: 113px;
-  display: none;
+  /* display: none; */
   width: 372px;
-  height: 423px;
+  /* height: 423px; */
+  padding-bottom: 20px;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -402,7 +380,9 @@ input:focus {
 
 .foods-header__cart .foods-cart__item-image img {
   width: auto;
-  height: 60px;
+  height: auto;
+  max-width: 60px;
+  max-height: 60px;
 }
 
 .foods-header__cart .foods-cart__item-product {
@@ -427,7 +407,8 @@ input:focus {
 }
 
 .foods-header__cart .foods-cart__item-price {
-  width: 163px;
+  /* width: 163px; */
+  width: 152px;
   padding-left: 0;
 }
 
@@ -456,7 +437,8 @@ input:focus {
 }
 
 .foods-header__cart .foods-cart__item-quantity {
-  width: 80px;
+  /* width: 80px; */
+  width: 90px;
   padding-left: 0;
 }
 
@@ -489,6 +471,10 @@ input:focus {
 
 .foods-header__cart .foods-cart__result-quantity span {
   font-family: "Museo Sans Cyrl900";
+}
+
+.foods-header__cart .foods-cart__result-quantity span:last-child span {
+  font-family: "Museo Sans Cyrl500";
 }
 
 .foods-header__cart .foods-cart__result-price {
@@ -561,16 +547,16 @@ input:focus {
   /* background-image: url("../images/logo/logo_foods.png"); */
 }
 
-.foods-top__logo-image--white {
-  display: none;
-}
-
 .foods-top__logo-image img {
   display: block;
   width: auto;
   max-width: 134px;
   height: auto;
   max-height: 98px;
+}
+
+.foods-top__logo-image .foods-top__logo-image--white {
+  display: none;
 }
 
 .foods-top__search {
@@ -1350,14 +1336,21 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 }
 
 .foods-slider__gallery {
+  /* padding-top: 9px; */
   background-color: #2e8231;
   border-radius: 5px;
 }
 
 .foods-slider__gallery-image {
+  /* width: 940px;
+  height: 370px;
+  background-repeat: no-repeat;
+  background-position: 50% top;
+  border-radius: 5px;  */
   display: none;
   width: auto;
   max-height: 370px;
+  text-align: center;
   margin: 0 auto;
 }
 
@@ -1367,6 +1360,19 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 
 .foods-slider__gallery-image:hover {
   cursor: pointer;
+}
+
+/* .foods-slider__gallery-image--1 {
+    background-image: url("/images/pages/main/0b97cdd27992286fbf7aba7dc44c8f0796715449/foods-slider__gallery-image-1.png");
+}
+
+.foods-slider__gallery-image--2,
+.foods-slider__gallery-image--3 {
+    display: none;
+} */
+
+.foods-slider__gallery-image img {
+  max-height: 370px;
 }
 
 .foods-slider .promo-text--header {
@@ -1450,7 +1456,7 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   width: 11px;
   height: 18px;
   background-image: url("../images/foods_sprite.fw.png");
-  background-position: -140px -35px;
+  background-position: -140px -34px;
 }
 
 .foods-carousel-button--left {
@@ -1467,7 +1473,7 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 
 .foods-carousel-button--right {
   position: relative;
-  top: 12px;
+  top: 11px;
   right: 1px;
 }
 
@@ -1489,6 +1495,11 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 }
 
 /* Foods goods */
+
+.foods-goods {
+  position: relative;
+  /* z-index: 1; */
+}
 
 .foods-goods__product-item {
   position: relative;
@@ -1534,7 +1545,15 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 }
 
 .foods-goods__product-item img {
+  max-height: 200px;
   margin-bottom: 5px;
+}
+
+.foods-goods__product-item > a:nth-child(1) {
+  display: table-cell;
+  vertical-align: middle;
+  width: 216px;
+  height: 208px;
 }
 
 .foods-goods__product-category {
@@ -1544,12 +1563,21 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   opacity: 0.5;
 }
 
+.foods-goods__product-category a {
+  text-decoration: none;
+}
+
 .foods-goods__product-name {
   min-height: 40px;
   font-size: 15px;
   line-height: 20px;
   margin-bottom: 5px;
   padding: 0 25px;
+}
+
+.foods-goods__product-name a {
+  text-decoration: none;
+  color: #000;
 }
 
 .foods-goods__product-price {
@@ -1580,6 +1608,19 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   height: 17px;
   background-image: url("../images/foods_sprite.fw.png");
 }
+
+/* .foods-goods__product-favorite--delete {
+  left: 200px;
+  top: 7px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-position: -88px -200px;
+}
+
+.foods-goods__product-favorite--delete:hover {
+  background-position: -27px -200px;
+} */
 
 .foods-goods__product-favorite--in {
   display: block;
@@ -1620,13 +1661,13 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   z-index: 2;
 }
 
-.foods-goods__product-favorite--in:hover::after {
+/* .foods-goods__product-favorite--in:hover::after {
   content: "Убрать из избранного";
 }
 
 .foods-goods__product-favorite--out:hover::after {
   content: "Добавить в избранное";
-}
+} */
 
 .foods-goods__product-item:hover .foods-goods__product-buy,
 .foods-goods__product-item:hover .foods-goods__product-favorite {
@@ -1701,6 +1742,7 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   font-family: "Museo Sans Cyrl500";
   font-size: 13px;
   margin-right: 7px;
+  margin-bottom: 10px;
   color: #666;
 }
 
@@ -1867,6 +1909,11 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   border-radius: 5px;
 }
 
+.foods-pagination__item a {
+  text-decoration: none;
+  color: #010101;
+}
+
 .foods-pagination__item--active {
   background-color: #e9e9e7;
 }
@@ -1961,6 +2008,65 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   margin-right: 162px;
   padding-top: 19px;
   padding-left: 31px;
+}
+
+.product-card__image img {
+    max-width: 340px;
+    max-height: 300px;
+}
+
+.product-img-mob {
+    display: block;
+    width: 340px;
+    height: 132px;
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.product-img-mob a {
+    position: relative;
+    display: inline-block;
+    width: 98px;
+    height: 98px;
+    margin-left: 4px;
+    text-decoration: none;
+    border: 4px solid transparent;
+}
+
+.product-img-mob a:first-child {
+    margin-left: 0;
+}
+
+.product-img-mob a.active {
+    border: 4px solid #ffb800;
+    opacity: 0.5;
+}
+
+.product-img-mob .img-fon {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.product-img-mob img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 90px;
+    max-height: 90px;
+    margin: auto;
+    z-index: 10;
+}
+
+.product-img-fon {
+    display: block;
+    width: 340px;
+    height: 300px;
 }
 
 .product-card__action {
@@ -2095,6 +2201,11 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   vertical-align: baseline;
   font-family: "Museo Sans Cyrl300";
   font-size: 17px;
+}
+
+.product-card__tab > span:first-child {
+    font-family: "Museo Sans Cyrl900";
+    font-size: 22px;
 }
 
 .product-card__description,
@@ -2578,6 +2689,7 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 
 .foods-cart__item-image {
   width: 158px;
+  text-align: center;
   padding-left: 30px;
 }
 
@@ -2586,7 +2698,10 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 }
 
 .foods-cart__item-image img {
+  max-width: 108px;
+  max-height: 90px;
   vertical-align: bottom;
+  cursor: pointer;
 }
 
 .foods-cart__item-product {
@@ -2603,6 +2718,7 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   min-height: auto;
   margin: 0;
   padding: 0;
+  cursor: pointer;
 }
 
 .foods-cart__item-delivery {
@@ -2669,14 +2785,14 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
 }
 
-.foods-cart__item-favorites--in button:hover::after {
+/* .foods-cart__item-favorites--in button:hover::after {
   content: "Убрать из избранного";
 }
 
 .foods-cart__item-favorites--out button:hover::after {
   content: "Добавить в избранное";
 }
-
+ */
 .foods-cart__item-subscription {
   padding-left: 20px;
 }
@@ -2692,6 +2808,7 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 }
 
 .foods-cart__item-quantity {
+  /* width: 139px; */
   width: 152px;
   font-family: "Museo Sans Cyrl900";
   font-size: 18px;
@@ -2703,6 +2820,7 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 .foods-cart__item-quantity span {
   display: inline-block;
   vertical-align: bottom;
+  line-height: 30px;
   padding-bottom: 2px;
 }
 
@@ -2725,12 +2843,14 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 
 .foods-cart__item-quantity .decrease {
   float: left;
-  margin-right: 15px;
+  /* margin-right: 15px; */
+    margin-right: 5px;
 }
 
 .foods-cart__item-quantity .increase {
   float: right;
-  margin-left: 15px;
+  /* margin-left: 15px; */
+    margin-left: 5px;
 }
 
 .foods-cart__item-quantity .increase:hover, 
@@ -2745,6 +2865,14 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   padding-left: 105px;
 }
 
+.foods-cart__item-measure {
+    font-family: "Museo Sans Cyrl300";
+    font-size: 12px;
+    line-height: 20px;
+    color: #000;
+    opacity: 0.5;
+}
+
 .foods-cart__result {
   text-align: right;
   padding-top: 12px;
@@ -2753,9 +2881,9 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 .foods-cart__result-quantity {
   font-family: "Museo Sans Cyrl300";
   font-size: 15px;
-  line-height: 23px;
-  margin-bottom: 0;
-  padding-right: 27px;
+  line-height: 18px;
+  margin-bottom: 13px;
+  padding-right: 43px;
   color: black;
 }
 
@@ -2770,7 +2898,7 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   font-size: 24px;
   line-height: 26px;
   margin-bottom: 26px;
-  padding-right: 27px;
+  padding-right: 43px;
   color: black;
 }
 
@@ -2779,13 +2907,13 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 }
 
 .foods-cart__result-checkout {
-  float: right;
+  /* float: right; */
   display: inline-block;
   width: 247px;
   height: 50px;
   font-size: 20px;
   line-height: 50px;
-  margin-left: 37px;
+  /* margin-left: 37px; */
   border-radius: 25px;
 }
 
@@ -2908,6 +3036,7 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   border: 1px solid #999;
   border-radius: 20px;
   box-shadow: none;
+  cursor: pointer;
 }
 
 .address-actions__action-button {
@@ -2965,6 +3094,17 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   background-image: none;
 }
 
+.profile-actions__action-button--submit {
+    display: block;
+    width: 170px;
+    padding-left: 30px;
+}
+/*
+.personal__profile-edit,
+.personal__address-edit {
+    display: none;
+}*/
+
 .personal__profile-edit,
 .personal__address-edit {
   display: none;
@@ -3001,12 +3141,23 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   display: block;
   font-family: "Museo Sans Cyrl900";
   font-size: 14px;
+  margin-top: 20px;
   padding-bottom: 7px;
   color: #000;
 }
 
+.address-edit__form label[for="makeDefault"] {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0;
+  margin-left: 5px;
+  margin-bottom: 29px;
+}
+
 .profile-edit__form input[type="text"],
 .address-edit__form input[type="text"],
+.profile-edit__form input[type="email"],
+.profile-edit__form input[type="password"],
 .profile-edit__form textarea,
 .address-edit__form select {
   width: 480px;
@@ -3032,6 +3183,12 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   padding-left: 11px;
 }
 
+.profile-edit__form input[type="text"],
+.address-edit__form input[type="text"],
+.address-edit__form select {
+  margin-bottom: 7px;
+}
+
 .profile-edit__form textarea {
   height: 152px;
   margin-bottom: 46px;
@@ -3039,6 +3196,18 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   padding-bottom: 15px;
   outline: none;
   resize: none;
+}
+
+.address-edit__form select {
+    padding-left: 11px;
+}
+
+.profile-edit__form .pseudo-link {
+    display: inline-block;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    color: #2e8231;
+    cursor: pointer;
 }
 
 .profile-edit__form-submit,
@@ -3051,6 +3220,8 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   height: 50px;
   font-family: "Museo Sans Cyrl300";
   font-size: 18px;
+  margin-top: 27px;
+  margin-bottom: 27px;
   border: none;
   border-radius: 25px;
   line-height: 50px;
@@ -3229,6 +3400,38 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   margin-right: 0;
 }
 
+.foods-goods--favorites .foods-goods__product-favorite:hover {
+    background-position: -160px -125px;
+}
+
+.foods-goods--favorites .foods-goods__product-favorite:hover::after {
+    position: absolute;
+    top: -6px;
+    left: 31px;
+    /*content: "Убрать из избранного";*/
+    display: block;
+    width: 153px;
+    height: 30px;
+    font-size: 13px;
+    line-height: 30px;
+    background-color: white;
+    color: black;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.foods-goods--favorites .foods-goods__product-favorite:hover::before {
+    position: absolute;
+    top: 5px;
+    left: 27px;
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
 .foods-pagination--favorites {
   position: static;
   display: block;
@@ -3372,9 +3575,25 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   margin-right: 0;
 }
 
+/* .order-delivery__form--left,
+.order-delivery__form--right {
+  float: left;
+}
+
+.order-delivery__form--left {
+  width: 480px;
+  margin-left: 49px;
+  margin-right: 121px;
+}
+
+.order-delivery__form--right {
+  width: 480px;
+} */
+
 .order-delivery__form {
   overflow: hidden;
   text-align: left;
+  /* margin-bottom: 64px; */
 }
 
 .order-delivery__form h3 {
@@ -3384,6 +3603,7 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 }
 
 .order-delivery__form label {
+  position: relative;
   display: block;
   font-family: "Museo Sans Cyrl900";
   font-size: 14px;
@@ -3623,6 +3843,7 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 }
 
 .confirmation__form .foods-cart__item-product {
+  /* width: 469px; */
   width: 363px;
   padding-left: 52px;
 }
@@ -3669,6 +3890,7 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 }
 
 .confirmation__form .foods-cart__item-price {
+  /* padding-left: 279px; */
   padding-left: 30px;
 }
 
@@ -3882,6 +4104,63 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   outline: none;
 }
 
+.foods-order .confidentiality-message {
+    clear: both;
+    text-align: center;
+}
+
+.foods-order .private-link input[type="checkbox"],
+.foods-order .rules-link input[type="checkbox"] {
+    visibility: hidden;
+}
+
+.foods-order .private-link,
+.foods-order .rules-link {
+    text-align: center;
+}
+
+.foods-order .private-link label,
+.foods-order .rules-link label {
+    position: relative;
+    top: 3px;
+    left: -5px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.foods-order .private-link a,
+.foods-order .rules-link a {
+    color: #2e8231;
+}
+
+.foods-order .private-link a:hover,
+.foods-order .rules-link a:hover {
+    color: #ffd33a;
+}
+
+.foods-order .private-link input[type="checkbox"]:checked + label,
+.foods-order .rules-link input[type="checkbox"]:checked + label {
+    background-color: #ffd33a;
+    border: 1px solid #ffd33a;
+}
+
+.foods-order .private-link input[type="checkbox"]:checked + label::before,
+.foods-order .rules-link input[type="checkbox"]:checked + label::before {
+    position: absolute;
+    top: 4px;
+    left: 2px;
+    content: "";
+    display: block;
+    width: 9px;
+    height: 6px;
+    background-image: url("images/foods_sprite.fw.png");
+    background-position: -160px -152px;
+}
+
 .confirmation__form-details {
   min-height: 220px;
   font-size: 15px;
@@ -4003,6 +4282,12 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   line-height: 20px;
 }
 
+/* .confirmation__form-details + .foods-cart h3 {
+    text-align: center;
+    margin-bottom: 24px;
+    padding-top: 14px;
+} */
+
 .confirmation__form--order-view .confirmation__form-address h3 {
   padding-top: 20px;
 }
@@ -4098,6 +4383,7 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 }
 
 .foods-certificate__inner {
+  overflow: hidden;
   width: 840px;
   min-height: 620px;
   margin: 0 auto;
@@ -4128,14 +4414,37 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 }
 
 .foods-certificate__image img {
-  width: auto;
-  max-width: 332px;
-  max-height: 382px;
+  /* width: auto;
+    max-width: 332px;
+    max-height: 382px; */
+    max-width: 100%; 
+    max-height: 100%;
+}
+
+.foods-certificate__image .product-img-fon {
+    width: 332px;
+    height: 309px;
+    text-align: center;
+}
+
+.foods-certificate__image .product-img-fon .block_gallery > img {
+    width: auto;
+    max-width: 293px;
+    max-height: 306px;
+}
+
+.foods-certificate__image .product-img-mob {
+    width: 332px;
+}
+
+.foods-certificate__image .product-img-mob img {
+    max-width: 90px;
 }
 
 .foods-certificate__content {
   width: 350px;
   padding-top: 37px;
+  padding-bottom: 40px;
 }
 
 .foods-certificate__content h2 {
@@ -4991,7 +5300,6 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   margin-left: 0;
 } 
 
-
 /* Foods footer */
 
 .foods-footer {
@@ -5413,8 +5721,12 @@ input[name="foods-footer__subscription-submit"]:hover {
   color: #28282c;
 }
 
+/*.foods-popup__form--enter {
+    display: none;
+}*/
+
 .foods-popup__form--enter {
-  display: none;
+    display: block;
 }
 
 .foods-popup__form--registration p {
@@ -5547,7 +5859,6 @@ input.foods-popup__form-submit--double {
   padding-bottom: 86px;
 }
 
-
 /* Foods popup - create password */
 
 .foods-popup__form--password-create p {
@@ -5562,7 +5873,6 @@ input.foods-popup__form-submit--double {
 input.foods-popup__form-submit--password-create {
   margin-bottom: 18px;
 }
-
 
 /* Diffrent display layout styles */
 
@@ -6927,5 +7237,155 @@ input.foods-popup__form-submit--password-create {
 
 }
 
+/* Увеличение картинки при клике по ней */
 
+.certificate__image img {
+    max-width: 290px;
+    cursor: pointer;
+}
 
+.image-increase {
+    position: fixed;
+    top: 5%;
+    left: 25%;
+    display: none;
+    width: 50%;
+    height: 90%;
+    text-align: center;
+    z-index: 101;
+}
+
+.image-increase img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+.image-increase--active {
+    display: block;
+    pointer-events: none;
+}
+
+.image-increase--active img {
+    pointer-events: auto;
+}
+
+.image-increase__button {
+    position: absolute;
+    display: block;
+    font-size: 40px;
+    line-height: 40px;
+    color: #fff;
+    border: none;
+    outline: none;
+    pointer-events: auto;
+    background: none;
+}
+
+.image-increase__button--disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.image-increase__close-button {
+    top: 0;
+    right: -40%;
+    width: 24px;
+    height: 24px;
+}
+
+.image-increase__close-button::before,
+.image-increase__close-button::after,
+.image-increase__back-button::before,
+.image-increase__back-button::after,
+.image-increase__forward-button::before,
+.image-increase__forward-button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+}
+
+.image-increase__close-button::before,
+.image-increase__close-button::after {
+    top: 10px;
+    left: -3px;
+}
+
+.image-increase__close-button:hover::before,
+.image-increase__close-button:hover::after,
+.image-increase__back-button:hover::before,
+.image-increase__back-button:hover::after,
+.image-increase__forward-button:hover::before,
+.image-increase__forward-button:hover::after {
+    box-shadow: 0 0 15px #fff;
+}
+
+.image-increase__button--disabled:hover::before,
+.image-increase__button--disabled:hover::after {
+    box-shadow: none;
+}
+
+.image-increase__close-button::before,
+.image-increase__back-button::before,
+.image-increase__forward-button::before {
+    transform: rotate(45deg);
+}
+
+.image-increase__close-button::after,
+.image-increase__back-button::after,
+.image-increase__forward-button::after {
+    transform: rotate(-45deg);
+}
+
+.image-increase__back-button {
+    top: 50%;
+    left: -40%;
+}
+
+.image-increase__forward-button {
+    top: 50%;
+    right: -40%;
+}
+
+.image-increase__back-button,
+.image-increase__forward-button {
+    width: 24px;
+    height: 47px;
+}
+
+.image-increase__back-button::before,
+.image-increase__forward-button::after {
+    top: 32px;
+    left: -3px;
+}
+
+.image-increase__back-button::after,
+.image-increase__forward-button::before {
+    top: 12px;
+    left: -3px;
+}
+
+.image-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.7;
+    z-index: 100;
+}
+
+.image-overlay--active {
+    display: block;
+    cursor: default!important;
+}
+
+/* END - Увеличение картинки при клике по ней */
