@@ -29,7 +29,7 @@ body {
 
 ul {
   list-style: none;
-} 
+}
 
 .foods-container {
   clear: both;
@@ -50,6 +50,12 @@ ul {
 ::-webkit-scrollbar-thumb {
   color: #ffd33a;
   background: #ffd33a;
+}
+
+/* Header */
+
+.foods-header__personal {
+  visibility: visible!important;
 }
 
 /* Footer */
@@ -92,6 +98,10 @@ ul {
 
 .foods-footer__subscription {
   padding-left: 35px;
+}
+
+.foods-footer__copyrights {
+  visibility: visible!important;
 }
 
 .foods-footer__copyrights p {
