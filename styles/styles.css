@@ -6278,6 +6278,30 @@ input.foods-popup__form-submit--password-create {
   background-color: #ffa800;
 }
 
+/* Начисление бонусов, списание бонусов */
+
+.foods-popup.openbonus-popup--3 .popup__bottom {
+  padding-top: 36px;
+  padding-bottom: 31px;
+}
+
+.foods-popup.openbonus-popup--3 p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 43px;
+  color: black;
+  opacity: 0.8;
+}
+
+.foods-popup.openbonus-popup--3 .submit {
+  margin-top: 22px;
+  padding: 0 63px;
+}
+
+
+
 /* Diffrent display layout styles */
 
 @media screen and (max-width: 1239px) {
