@@ -6124,6 +6124,10 @@ input.foods-popup__form-submit--password-create {
   border-top-right-radius: 5px;
 }
 
+.foods-popup.openbonus-popup--2 .popup__top--write-off {
+  background-color: #e0b10e;
+}
+
 .foods-popup.openbonus-popup--2 .popup__top h1 {
   position: relative;
   font-family: "Museo Sans Cyrl900";
