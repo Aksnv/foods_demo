@@ -6278,7 +6278,7 @@ input.foods-popup__form-submit--password-create {
   background-color: #ffa800;
 }
 
-/* Начисление бонусов, списание бонусов */
+/* Начисление/списание бонусов */
 
 .foods-popup.openbonus-popup--3 .popup__bottom {
   padding-top: 36px;
@@ -6300,6 +6300,29 @@ input.foods-popup__form-submit--password-create {
   padding: 0 63px;
 }
 
+/* Начисление/списание бонусов успешно завершено */
+
+.foods-popup.openbonus-popup--5 .popup__bottom {
+  padding-top: 114px;
+  padding-bottom: 101px;
+}
+
+.foods-popup.openbonus-popup--5 strong {
+  display: block;
+  font-family: "Museo Sans Cyrl900";
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #28a42c;
+}
+
+.foods-popup.openbonus-popup--5 p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-top: 0;
+  color: black;
+}
 
 
 /* Diffrent display layout styles */
