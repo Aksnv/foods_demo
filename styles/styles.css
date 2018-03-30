@@ -6392,6 +6392,343 @@ input.foods-popup__form-submit--password-create {
   color: black;
 }
 
+/* Бонусная программа (нет карты) */
+
+.foods-section .bonus-programm__image,
+.foods-section .bonus-programm__content {
+  float: left;
+  margin-bottom: 90px;
+}
+
+.foods-section .bonus-programm__image {
+  position: relative;
+  width: 408px;
+  padding-top: 14px;
+}
+
+.foods-section .bonus-programm__image img {
+  position: relative;
+  left: -8px;
+}
+
+.foods-section .bonus-programm__content {
+  width: 660px;
+  padding-top: 70px;
+  padding-left: 65px;
+}
+
+.foods-section .bonus-programm__content h3 {
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+
+.foods-section .bonus-programm__content p {
+  font-size: 13px;
+  line-height: 20px;
+  color: #2b2121;
+}
+
+.bonus-programm__button {
+  clear: both;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  min-width: 258px;
+  height: 60px;
+  font-family: "Museo Sans Cyrl900";
+  font-size: 17px;
+  line-height: 60px;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-left: 66px;
+  margin-bottom: 20px;
+  padding: 0 54px;
+  color: #000!important;
+  border-radius: 30px;
+}
+
+/* Бонусная программа (есть карта) */
+
+.bonus-programm--login img {
+  top: -10px;
+  left: -19px;
+}
+
+.bonus-programm__image p {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #fff; 
+}
+
+.bonus-programm__card-number {
+  position: absolute;
+  top: 54px;
+  left: 30px;
+}
+
+.bonus-programm__available-bonuses {
+  position: absolute;
+  top: 92px;
+  left: 30px;
+}
+
+.bonus-programm__available-bonuses > span:first-child {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: none;
+  margin-bottom: 7px;
+}
+
+.bonus-programm--login .bonus-programm__content {
+  padding-top: 49px;
+  padding-left: 31px;
+}
+
+.bonus-programm--login .bonus-programm__content h2 {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+
+.bonus-programm--login .bonus-programm__content p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+
+.bonus-programm--login .bonus-programm__content strong {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.bonus-programm--login .bonus-programm__content button {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding-left: 28px;
+  color: #999;
+  border: none;
+  outline: none;
+}
+
+.bonus-programm--login .bonus-programm__content button::before {
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  content: "";
+  display: block;
+  width: 17px;
+  height: 14px;
+  background-image: url("../images/sprite.png");
+  background-position: -207px -322px;
+}
+
+.bonus-programm--login .bonus-programm__content button:hover {
+  color: #ffa800;
+}
+
+.bonus-programm--login .bonus-programm__content button:hover::before {
+  background-position: -208px -303px;
+}
+
+.bonus-programm__personal {
+  display: none;
+}
+
+.bonus-programm__personal--visible {
+  display: block;
+  clear: both;
+  padding-top: 20px;
+}
+
+.bonus-programm--login .bonus-card__form {
+  overflow: hidden;
+}
+
+.bonus-programm--login .bonus-card__form h2 {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 25px;
+  padding-left: 17px;
+}
+
+.bonus-programm--login .bonus-card__form--left,
+.bonus-programm--login .bonus-card__form--right {
+  float: left;
+}
+
+.bonus-programm--login .bonus-card__form--left {
+  margin-right: 38px;
+}
+
+.bonus-programm--login .bonus-card__form--right {
+  width: 470px;
+}
+
+.bonus-programm--login .bonus-card__form label {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 6px;
+  padding-left: 18px;
+  color: #666;
+}
+
+.bonus-programm--login .bonus-card__form label > span {
+  color: #ed1c24;
+}
+
+.bonus-programm--login .bonus-card__form input[type="text"] {
+  width: 470px;
+  max-width: 470px;
+  height: 60px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 54px;
+  margin-bottom: 22px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #ededed;
+  color: #000;
+  border: 3px solid #ededed;
+}
+
+.bonus-programm--login .bonus-card__form input[type="text"]:focus {
+  border: 3px solid #ff5a00;
+}
+
+.bonus-programm--login .bonus-card__form .choose-gender {
+  padding-top: 21px;
+  padding-bottom: 20px;
+}
+
+.bonus-programm--login .bonus-card__form .choose-gender label,
+.bonus-programm--login .bonus-card__form .choose-gender input {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.bonus-programm--login .bonus-card__form .choose-gender label {
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 70px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.bonus-programm--login .bonus-card__form .choose-gender label.gender--female {
+  padding-left: 105px;
+}
+
+.bonus-programm--login .bonus-card__form .choose-gender label::before {
+  position: absolute;
+  top: -9px;
+  left: 13px;
+  content: "";
+  display: block;
+  width: 38px;
+  height: 39px;
+  background-image: url("../images/sprite.png");
+}
+
+.bonus-programm--login .bonus-card__form .choose-gender label.gender--male::before {
+  width: 36px;
+  background-position: -132px -280px;
+}
+
+.bonus-programm--login .bonus-card__form .choose-gender label.gender--female::before {
+  left: 46px;
+  background-position: -56px -280px;
+}
+
+.bonus-programm--login .bonus-card__form .choose-gender label::after {
+  position: absolute;
+  top: -21px;
+  left: 1px;
+  content: "";
+  display: block;
+  width: 58px;
+  height: 58px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+}
+
+.bonus-programm--login .bonus-card__form .choose-gender label.gender--female::after {
+  left: 36px;
+}
+
+.bonus-programm--login .bonus-card__form input[type="radio"] {
+  display: none;
+}
+
+.bonus-programm--login .bonus-card__form input[type="radio"]:checked + label {
+  color: #000;
+}
+
+.bonus-programm--login .bonus-card__form input[type="radio"]:checked + label::after {
+  border-color: #099342;
+}
+
+.bonus-programm--login .bonus-card__form input[type="radio"]:checked + label.gender--male::before {
+  background-position: -168px -280px;
+}
+
+.bonus-programm--login .bonus-card__form input[type="radio"]:checked + label.gender--female::before {
+  background-position: -94px -280px;
+}
+
+.bonus-programm--login .bonus-card__form .submit,
+.bonus-programm--login .bonus-card__form .reset {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 52px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: transparent;
+  color: #000;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.bonus-programm--login .bonus-card__form .submit {
+  margin-right: 25px;
+  padding: 0 64px;
+  border: 4px solid #ffa800;
+}
+
+.bonus-programm--login .bonus-card__form .reset {
+  padding: 0 45px;
+  border: 4px solid #efece7;
+}
+
+.bonus-programm--login .bonus-card__form .submit:hover {
+  background-color: #ffa800;
+}
+
+.bonus-programm--login .bonus-card__form .reset:hover {
+  background-color: #efece7;
+}
+
 
 /* Diffrent display layout styles */
 

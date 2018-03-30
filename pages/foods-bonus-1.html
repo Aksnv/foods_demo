@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Foods - Корзина</title>
+  <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="../styles/jquery.formstyler.css">
+  <link rel="stylesheet" type="text/css" href="../styles/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+  <link rel="stylesheet" type="text/css" href="../styles/color_themes/styles_default_theme.css">
+</head>
+<body>
+  <header class="foods-header foods-header--dark">
+    <div class="foods-container">
+      <nav class="foods-header__menu">
+        <ul>
+          <li><a href="#" class="foods-header__menu-item foods-header__menu-item--catalog">Каталог</a></li>
+          <li><a href="#" class="foods-header__menu-item foods-header__menu-item--payment">Оплата</a></li>
+          <li><a href="#" class="foods-header__menu-item foods-header__menu-item--delivery">Доставка</a></li>
+          <li><a href="#" class="foods-header__menu-item foods-header__menu-item--sales">Акции и скидки</a></li>
+        </ul>
+        <button class="foods-header__menu-button"></button>
+      </nav>
+      <div class="foods-header__personal">
+        <ul>
+          <li><a href="#" class="foods-header__personal-item foods-header__personal-item--user-name">Игорь</a></li>
+          <li><a href="#" class="foods-header__personal-item foods-header__personal-item--bonuses foods-header__personal-item--active">Бонусы</a></li>
+          <li><a href="#" class="foods-header__personal-item foods-header__personal-item--subscription">Подписка</a></li>
+          <li><a href="#" class="foods-header__personal-item foods-header__personal-item--favorites">Избранное</a></li>
+          <li><a href="#" class="foods-header__personal-item foods-header__personal-item--cart">
+          <span>Корзина</span><sup class="circles-menu__num">3</sup></a></li>
+        </ul>
+        <button class="foods-header__personal-button"></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="foods-container">
+    <div class="foods-top foods-top--dark">
+      <div class="foods-top__logo">
+        <a href="#" class="foods-top__logo-image">
+          <img src="../images/logo/logo_foods.png">
+          <img class="foods-top__logo-image--white" src="../images/logo/logo_foods--white.png">
+        </a>
+      </div>
+      <div class="foods-top__search">
+        <form class="foods-top__search-form" name="foods-top__search-form" method="GET" action="#">
+          <input type="search" name="foods-top__search-field" placeholder="Поиск по товарам">
+          <input type="reset" name="foods-top__search-reset" value="">
+          <input type="submit" name="foods-top__search-submit" class="foods-top__search-submit foods-top__search-submit--button" value="">
+        </form>
+        <button class="advanced-search__button">Расширенный поиск</button>
+        <div class="foods-top__search-example">
+          <p>Например, <a href="#" class="inline-link">осетрина к Новому году</a></p>
+        </div>          
+      </div>
+      <form name="advanced-search__form" method="GET" action="#" class="advanced-search__form">
+        <h2>Расширенный поиск</h2>
+        <ul>
+          <li>
+            <select>
+              <option>Все категории</option>
+              <option>Овощи и фрукты</option>
+              <option>Молочная продукция</option>
+            </select>
+          </li>
+          <li>
+            <select>
+              <option>Тип товара</option>
+              <option>Любой тип товара</option>
+            </select>
+          </li>
+          <li>
+            <select>
+              <option>Продавец</option>
+              <option>Любой продавец</option>
+            </select>
+          </li>
+          <li>
+            <select>
+              <option>Любое из слов</option>
+              <option>Все слова</option>
+            </select>
+          </li>
+          <li>
+            <input type="text" name="advanced-search__key-words" placeholder="Ключевые слова">
+          </li>
+          <li>
+            <input type="text" name="advanced-search__exclude-words" placeholder="Исключить слова">
+          </li>
+        </ul>
+          
+        <h3>Дополнительные параметры</h3>
+        <ul>
+          <li>
+            <input type="text" name="advanced-search__author" placeholder="Автор">
+          </li>
+          <li>
+            <input type="text" name="advanced-search__publishing-house" placeholder="Издательство">
+          </li>
+          <li>
+            <input type="text" name="advanced-search__cover" placeholder="Переплет">
+          </li>
+
+          <li class="advanced-search__range">
+            <p><span>Цена</span> 
+              <input type="text" name="advanced-search__min-price" id="advanced-search__min-price" readonly=""> — 
+              <input type="text" name="advanced-search__max-price" id="advanced-search__max-price" readonly="">
+            </p>
+            <div class="advanced-search__price-range"></div>
+          </li>
+          <li>
+            <input type="submit" name="advanced-search__submit" class="button" value="Начать расширенный поиск">
+          </li>
+          <li>
+            <input type="reset" name="advanced-search__reset" class="button" value="Отмена">
+          </li>
+        </ul>
+      </form>
+    </div>
+  </div>
+
+  <div class="foods-container">
+    <div class="foods-content foods-content--dark">
+      
+      <div class="foods-breadcrumbs">
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li>Бонусная программа</li>
+        </ul>
+      </div>
+
+      <section class="foods-section">
+        <h1>Бонусная программа</h1>
+        <div class="bonus-programm__image">
+          <img src="../images/pages/openbonus/card--grey.png" alt="Бонусная карта">
+          <a href="#" class="button bonus-programm__button">Получить карту</a>
+        </div>
+        <div class="bonus-programm__content">
+          <h3>Копите бонусы и оплачивайте ими покупки</h3>
+          <p>Копите бонусы и оплачивайте ими покупки Бонусная карта позволит вам копить бонусы, начисляемые после каждой покупки на вышу карту с индивидуальным номером. Количество накопленных бонусов, вы в любой момент сможете посмотреть в личном кабинете, в разделе «Бонусная программа»  Совершая покупку, вы сможете расплачиваться накопленными бонусами или продолжать их копить, для более выгодной скидки.</p>
+        </div>
+      </section>
+
+    </div>
+  </div>
+    
+  <footer class="foods-footer">
+    <div class="foods-container">
+      <div class="foods-footer__block foods-footer__block--1">
+        <ul>
+          <li class="foods-footer__link foods-footer__link--support"><a href="#">Поддержка</a></li>
+          <li class="foods-footer__link foods-footer__link--email"><a href="#">support@pokupo.ru</a></li>
+          <li class="foods-footer__link foods-footer__link--skype"><a href="#">pokupo.ru</a></li>
+          <li class="foods-footer__link foods-footer__link--phone">+7 395 220-15-68</li>
+          <li class="foods-footer__link foods-footer__link--icq">ICQ: <a href="#">21511546151</a></li>
+          <li class="foods-footer__link foods-footer__link--copyright">Pokupo.Foods 2016</li>
+        </ul>
+      </div>
+      <div class="foods-footer__block foods-footer__block--2">
+        <ul>
+          <li><a href="#">Помощь</a></li>
+          <li><a href="#">Как покупать</a></li>
+          <li><a href="#">Как продавать</a></li>
+          <li><a href="#">Правила</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="foods-footer__block foods-footer__block--3">
+        <ul>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Оплата</a></li>
+          <li><a href="#">Возврат товара</a></li>
+          <li><a href="#">Публичная оферта</a></li>
+          <li><a href="#">Подарочные карты</a></li>
+        </ul>
+      </div>
+      <div class="foods-footer__block foods-footer__block--4">
+        <div class="foods-footer__social-links">
+          <ul>
+            <li><a href="#" class="foods-footer__social-link foods-footer__social-link--vk">Vkontakte</a></li>
+            <li><a href="#" class="foods-footer__social-link foods-footer__social-link--fb">Facebook</a></li>
+            <li><a href="#" class="foods-footer__social-link foods-footer__social-link--tw">Twitter</a></li>
+            <li><a href="#" class="foods-footer__social-link foods-footer__social-link--lj">Livejournal</a></li>
+            <li><a href="#" class="foods-footer__social-link foods-footer__social-link--hh">Habrahabr</a></li>
+            <li><a href="#" class="foods-footer__social-link foods-footer__social-link--gp">Google+</a></li>
+          </ul>
+        </div>
+        <div class="foods-footer__subscription">
+          <p>Оформить подписку:</p>
+          <form class="foods-footer__subscription-form" name="foods-footer__subscription-form" method="POST" action="#">
+            <input type="email" name="foods-footer__subscription-field" placeholder="Ваш email">
+            <input type="submit" name="foods-footer__subscription-submit" value="">
+          </form>
+        </div>
+        <div class="foods-footer__copyrights">
+          <p>Работает на основе технологии <a href="#">Pokupo</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../scripts/jquery-3.2.1.min.js"></script>
+  <script src="../scripts/jquery.formstyler.min.js"></script>
+  <script src="../scripts/jquery-ui.js"></script>
+  <script src="../scripts/main.js"></script>
+</body>
+</html>
