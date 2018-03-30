@@ -330,6 +330,14 @@ input:focus {
   background-position: -104px -336px;
 }
 
+.foods-header__personal-item--bonuses-registered::before {
+  top: 19px;
+  left: 8px;
+  width: 22px;
+  height: 17px;
+  background-position: -131px -337px;
+}
+
 .foods-header__personal-item--subscription::before {
   top: 17px;
   left: 12px;
@@ -2965,7 +2973,8 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   padding-top: 12px;
 }
 
-.foods-cart__result-quantity {
+.foods-cart__result-quantity,
+.foods-cart__result-text {
   display: inline-block;
   font-family: "Museo Sans Cyrl300";
   font-size: 15px;
@@ -2981,7 +2990,9 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   padding-right: 47px;
 }
 
-.foods-cart__result-price {
+.foods-cart__result-price,
+.foods-cart__result-discount,
+.foods-cart__result-discount-price {
   display: inline-block;
   font-family: "Museo Sans Cyrl900";
   font-size: 24px;
@@ -2989,6 +3000,31 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   margin-bottom: 7px;
   padding-right: 43px;
   color: black;
+}
+
+.foods-cart__result--bonuses .foods-cart__result-price,
+.foods-cart__result--bonuses .foods-cart__result-discount {
+  min-width: 210px;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.foods-cart__result--bonuses .foods-cart__result-discount {
+  margin-bottom: 21px;
+}
+
+.foods-cart__result--bonuses .foods-cart__result-discount-price {
+  min-width: 210px;
+  margin-bottom: 27px;
+}
+
+.foods-cart__result--bonuses .foods-cart__result-text {
+  padding-right: 0;
+}
+
+.foods-cart__result--bonuses .foods-cart__result-price,
+.foods-cart__result--bonuses .foods-cart__result-text {
+  margin-bottom: 0;
 }
 
 .foods-order .foods-cart__result-price {
@@ -3007,16 +3043,21 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 .foods-cart__result-checkout {
   /* float: right; */
   display: inline-block;
-  width: 247px;
+  min-width: 247px;
   height: 50px;
   font-size: 20px;
   line-height: 50px;
   /* margin-left: 37px; */
+  padding: 0 25px;
   border-radius: 25px;
 }
 
 .foods-cart__result-checkout:hover {
   background-color: #ffb33a;
+}
+
+.foods-cart__result-checkout--with-bonuses {
+  margin-right: 5px;
 }
 
 /* Foods subscription */
