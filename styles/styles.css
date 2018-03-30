@@ -322,6 +322,14 @@ input:focus {
   background-position: -140px -8px;
 }
 
+.foods-header__personal-item--bonuses::before {
+  top: 17px;
+  left: 8px;
+  width: 21px;
+  height: 20px;
+  background-position: -104px -336px;
+}
+
 .foods-header__personal-item--subscription::before {
   top: 17px;
   left: 12px;
@@ -2958,10 +2966,11 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 }
 
 .foods-cart__result-quantity {
+  display: inline-block;
   font-family: "Museo Sans Cyrl300";
   font-size: 15px;
   line-height: 18px;
-  margin-bottom: 13px;
+  margin-bottom: 7px;
   padding-right: 43px;
   color: black;
 }
@@ -2973,16 +2982,26 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 }
 
 .foods-cart__result-price {
+  display: inline-block;
   font-family: "Museo Sans Cyrl900";
   font-size: 24px;
   line-height: 26px;
-  margin-bottom: 26px;
+  margin-bottom: 7px;
   padding-right: 43px;
   color: black;
 }
 
 .foods-order .foods-cart__result-price {
   padding-right: 47px;
+}
+
+.foods-cart__result-bonus {
+  font-family: "Museo Sans Cyrl300";
+  font-size: 15px;
+  line-height: 18px;
+  margin-bottom: 28px;
+  padding-right: 43px;
+  color: black;
 }
 
 .foods-cart__result-checkout {
