@@ -6320,6 +6320,10 @@ input.foods-popup__form-submit--password-create {
   color: #28a42c;
 }
 
+.foods-popup.openbonus-popup--5 .popup__bottom--write-off strong {
+  color: #e0b10e;
+}
+
 .foods-popup.openbonus-popup--5 p {
   font-size: 16px;
   line-height: 24px;
