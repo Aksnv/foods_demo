@@ -6070,7 +6070,6 @@ input.foods-popup__form-submit--password-create {
   margin-bottom: 20px;
   padding: 0 55px;
   color: #000;
-  /* border: 4px solid #ffa800; */
   border-radius: 30px;
 }
 
@@ -6101,6 +6100,182 @@ input.foods-popup__form-submit--password-create {
   line-height: 20px;
   text-decoration: underline;
   color: #2e8231;
+}
+
+/* Получение бонусной карты */
+
+.foods-popup.openbonus-popup--2 {
+  position: absolute;
+  /* position: fixed; */
+  top: 5%;
+  left: calc(50% - 265px);
+  width: 530px;
+  background-color: white;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.3);
+  z-index: 101;
+}
+
+.foods-popup.openbonus-popup--2 .popup__top {
+  position: relative;
+  height: 180px;
+  padding-top: 134px;
+  background-color: #28a42c;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.foods-popup.openbonus-popup--2 .popup__top h1 {
+  position: relative;
+  font-family: "Museo Sans Cyrl900";
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: white;
+}
+
+.foods-popup.openbonus-popup--2 .popup__top h1::after {
+  position: absolute;
+  top: -108px;
+  left: calc(50% - 47px);
+  content: "";
+  display: block;
+  width: 95px;
+  height: 95px;
+  background-image: url("../images/foods_sprite.fw.png");
+  background-position: -7px -332px;
+}
+
+.foods-popup.openbonus-popup--2 .popup__bottom {
+  padding-top: 57px;
+  padding-left:50px;
+  padding-right:50px;
+  padding-bottom: 41px;
+}
+
+.foods-popup.openbonus-popup--2 .popup__bottom label {
+  display: block;
+  font-family: "Museo Sans Cyrl900";
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #000;
+}
+
+.foods-popup.openbonus-popup--2 .popup__bottom label > span {
+  color: #ed1c24;
+}
+
+.foods-popup.openbonus-popup--2 .popup__bottom input[type="text"] {
+  width: 430px;
+  height: 50px;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 14px;
+  line-height: 48px;
+  margin-bottom: 28px;
+  padding-left: 17px;
+  padding-right: 17px;
+  background-color: transparent;
+  color: #28282c;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.foods-popup.openbonus-popup--2 .popup__bottom input[type="text"]:focus {
+  border: 1px solid #2e8231;
+  outline: none;
+}
+
+.foods-popup.openbonus-popup--2 .choose-gender {
+  position: relative;
+  top: -3px;
+  padding-bottom: 22px;
+}
+
+.foods-popup.openbonus-popup--2 .choose-gender label,
+.foods-popup.openbonus-popup--2 .choose-gender input {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.foods-popup.openbonus-popup--2 .choose-gender label {
+  position: relative;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 18px;
+  padding-left: 103px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.foods-popup.openbonus-popup--2 .choose-gender label.gender--female {
+  padding-left: 81px;
+}
+
+.foods-popup.openbonus-popup--2 .choose-gender label::before {
+  position: absolute;
+  top: 4px;
+  left: 64px;
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.foods-popup.openbonus-popup--2 .choose-gender label.gender--female::before {
+  left: 42px;
+}
+
+.foods-popup.openbonus-popup--2 .choose-gender label::after {
+  position: absolute;
+  top: -4px;
+  left: 56px;
+  content: "";
+  display: block;
+  width: 26px;
+  height: 26px;
+  border: 1px solid #e3e3e3;
+  border-radius: 50%;
+}
+
+.foods-popup.openbonus-popup--2 .choose-gender label.gender--female::after {
+  left: 34px;
+}
+
+.foods-popup.openbonus-popup--2 input[type="radio"] {
+  display: none;
+}
+
+.foods-popup.openbonus-popup--2 input[type="radio"]:checked + label {
+  color: #000;
+}
+
+.foods-popup.openbonus-popup--2 input[type="radio"]:checked + label::after {
+  background-color: #28a42c;
+  border: 1px solid #28a42c;
+}
+
+.foods-popup.openbonus-popup--2 .submit {
+  position: relative;
+  display: block;
+  width: 430px;
+  height: 50px;
+  font-family: "Museo Sans Cyrl900";
+  font-size: 18px;
+  line-height: 50px;
+  text-decoration: none;
+  margin: 0 auto;
+  margin-top: 32px;
+  margin-bottom: 20px;
+  padding: 0 70px;
+  color: #000;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.foods-popup.openbonus-popup--2 .submit:hover {
+  background-color: #ffa800;
 }
 
 /* Diffrent display layout styles */
