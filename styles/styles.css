@@ -199,6 +199,10 @@ input:focus {
   background-position: -179px -176px;
 } */
 
+.exit-button--bonuses {
+  top: -6px;
+}
+
 .hidden {
   display: none;
 }
@@ -6428,7 +6432,7 @@ input.foods-popup__form-submit--password-create {
   color: #2b2121;
 }
 
-.bonus-programm__button {
+.foods-section .bonus-programm__button {
   clear: both;
   position: relative;
   display: inline-block;
@@ -6449,12 +6453,16 @@ input.foods-popup__form-submit--password-create {
 
 /* Бонусная программа (есть карта) */
 
-.bonus-programm--login img {
-  top: -10px;
-  left: -19px;
+.foods-section .bonus-programm--login .bonus-programm__image {
+  width: 429px;
 }
 
-.bonus-programm__image p {
+.foods-section .bonus-programm--login img {
+  top: -10px;
+  left: -17px;
+}
+
+.foods-section .bonus-programm__image p {
   font-size: 20px;
   font-weight: 600;
   line-height: 18px;
@@ -6462,19 +6470,19 @@ input.foods-popup__form-submit--password-create {
   color: #fff; 
 }
 
-.bonus-programm__card-number {
+.foods-section .bonus-programm__card-number {
   position: absolute;
-  top: 54px;
-  left: 30px;
+  top: 69px;
+  left: 35px;
 }
 
-.bonus-programm__available-bonuses {
+.foods-section .bonus-programm__available-bonuses {
   position: absolute;
-  top: 92px;
-  left: 30px;
+  top: 107px;
+  left: 35px;
 }
 
-.bonus-programm__available-bonuses > span:first-child {
+.foods-section .bonus-programm__available-bonuses > span:first-child {
   display: inline-block;
   vertical-align: top;
   font-size: 13px;
@@ -6484,79 +6492,93 @@ input.foods-popup__form-submit--password-create {
   margin-bottom: 7px;
 }
 
-.bonus-programm--login .bonus-programm__content {
-  padding-top: 49px;
-  padding-left: 31px;
+.foods-section .bonus-programm--login .bonus-programm__content {
+  padding-top: 70px;
+  padding-left: 41px;
 }
 
-.bonus-programm--login .bonus-programm__content h2 {
+.foods-section .bonus-programm--login .bonus-programm__content h2 {
   font-size: 30px;
   font-weight: 300;
   line-height: 20px;
-  margin-bottom: 16px;
+  margin-bottom: 26px;
 }
 
-.bonus-programm--login .bonus-programm__content p {
-  font-size: 12px;
-  font-weight: 400;
+.foods-section .bonus-programm--login .bonus-programm__content p {
+  font-size: 13px;
   line-height: 20px;
-  margin-bottom: 8px;
+  margin-bottom: 77px;
+  color: #666;
 }
 
-.bonus-programm--login .bonus-programm__content strong {
-  font-size: 14px;
-  font-weight: 700;
+.foods-section .bonus-programm--login .bonus-programm__content strong {
+  font-family: "Museo Sans Cyrl900";
+  font-size: 15px;
+  color: #000;
 }
 
-.bonus-programm--login .bonus-programm__content button {
+.foods-section .bonus-programm--login .bonus-programm__content button {
   position: relative;
   display: inline-block;
-  vertical-align: top;
-  font-size: 10px;
-  font-weight: 700;
-  line-height: 24px;
-  text-transform: uppercase;
-  padding-left: 28px;
+  height: 40px;
+  font-family: "Museo Sans Cyrl900";
+  font-size: 14px;
+  line-height: 37px;
+  margin-right: 8px;
+  margin-bottom: 15px;
+  padding-left: 46px;
+  padding-right: 30px;
+  background-image: none;
+  background-color: transparent;
   color: #999;
-  border: none;
-  outline: none;
+  border: 1px solid #999;
+  border-radius: 20px;
+  box-shadow: none;
+  cursor: pointer;
 }
 
-.bonus-programm--login .bonus-programm__content button::before {
+.foods-section .bonus-programm--login .bonus-programm__content button::before {
   position: absolute;
-  top: 5px;
-  left: 3px;
+  top: 12px;
+  left: 20px;
   content: "";
   display: block;
   width: 17px;
   height: 14px;
-  background-image: url("../images/sprite.png");
-  background-position: -207px -322px;
+  background-image: url(../images/foods_sprite.fw.png);
+  background-position: -303px -8px;
 }
 
-.bonus-programm--login .bonus-programm__content button:hover {
-  color: #ffa800;
+.foods-section .bonus-programm--login .bonus-programm__content button:hover {
+  background-color: transparent;
+  color: #2e8231;
+  border: 1px solid #2e8231;
 }
 
-.bonus-programm--login .bonus-programm__content button:hover::before {
-  background-position: -208px -303px;
+.foods-section .bonus-programm--login .bonus-programm__content button:hover::before {
+  background-position: -324px -8px;
 }
 
-.bonus-programm__personal {
+.foods-section .bonus-programm--personal .bonus-programm__image, 
+.foods-section .bonus-programm--personal .bonus-programm__content {
+  margin-bottom: 0;
+}
+
+.foods-section .bonus-programm__personal {
   display: none;
 }
 
-.bonus-programm__personal--visible {
+.foods-section .bonus-programm__personal--visible {
   display: block;
   clear: both;
-  padding-top: 20px;
+  padding-top: 6px;
 }
 
-.bonus-programm--login .bonus-card__form {
+.foods-section .bonus-programm--login .bonus-card__form {
   overflow: hidden;
 }
 
-.bonus-programm--login .bonus-card__form h2 {
+.foods-section .bonus-programm--login .bonus-card__form h2 {
   font-size: 30px;
   font-weight: 300;
   line-height: 20px;
@@ -6564,169 +6586,159 @@ input.foods-popup__form-submit--password-create {
   padding-left: 17px;
 }
 
-.bonus-programm--login .bonus-card__form--left,
-.bonus-programm--login .bonus-card__form--right {
+.foods-section .bonus-programm--login .bonus-card__form--left,
+.foods-section .bonus-programm--login .bonus-card__form--right {
   float: left;
 }
 
-.bonus-programm--login .bonus-card__form--left {
-  margin-right: 38px;
+.foods-section .bonus-programm--login .bonus-card__form--left {
+  margin-right: 120px;
 }
 
-.bonus-programm--login .bonus-card__form--right {
-  width: 470px;
+.foods-section .bonus-programm--login .bonus-card__form--right {
+  width: 580px;
 }
 
-.bonus-programm--login .bonus-card__form label {
+.foods-section .bonus-programm--login .bonus-card__form label {
   display: block;
-  font-size: 12px;
-  font-weight: 400;
+  font-family: "Museo Sans Cyrl900";
+  font-size: 14px;
   margin-bottom: 6px;
-  padding-left: 18px;
-  color: #666;
+  color: #000;
 }
 
-.bonus-programm--login .bonus-card__form label > span {
+.foods-section .bonus-programm--login .bonus-card__form label > span {
   color: #ed1c24;
 }
 
-.bonus-programm--login .bonus-card__form input[type="text"] {
-  width: 470px;
-  max-width: 470px;
-  height: 60px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 54px;
-  margin-bottom: 22px;
+.foods-section .bonus-programm--login .bonus-card__form input[type="text"] {
+  width: 480px;
+  max-width: 480px;
+  height: 50px;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 14px;
+  line-height: 48px;
+  margin-bottom: 30px;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: #ededed;
+  background-color: #fff;
   color: #000;
-  border: 3px solid #ededed;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-.bonus-programm--login .bonus-card__form input[type="text"]:focus {
-  border: 3px solid #ff5a00;
+.foods-section .bonus-programm--login .bonus-card__form input[type="text"]:focus {
+  border: 1px solid #2e8231;
+  outline: none;
 }
 
-.bonus-programm--login .bonus-card__form .choose-gender {
-  padding-top: 21px;
+.foods-section .bonus-programm--login .bonus-card__form .choose-gender {
+  padding-top: 37px;
   padding-bottom: 20px;
 }
 
-.bonus-programm--login .bonus-card__form .choose-gender label,
-.bonus-programm--login .bonus-card__form .choose-gender input {
+.foods-section .bonus-programm--login .bonus-card__form .choose-gender label,
+.foods-section .bonus-programm--login .bonus-card__form .choose-gender input {
   display: inline-block;
   vertical-align: top;
 }
 
-.bonus-programm--login .bonus-card__form .choose-gender label {
+.foods-section .bonus-programm--login .bonus-card__form .choose-gender label {
   position: relative;
+  font-family: "Museo Sans Cyrl300";
   font-size: 18px;
-  font-weight: 400;
-  padding-left: 70px;
+  padding-left: 48px;
   color: #ccc;
   cursor: pointer;
 }
 
-.bonus-programm--login .bonus-card__form .choose-gender label.gender--female {
-  padding-left: 105px;
+.foods-section .bonus-programm--login .bonus-card__form .choose-gender label.gender--female {
+  padding-left: 81px;
 }
 
-.bonus-programm--login .bonus-card__form .choose-gender label::before {
+.foods-section .bonus-programm--login .bonus-card__form .choose-gender label::before {
   position: absolute;
-  top: -9px;
-  left: 13px;
+  top: 3px;
+  left: 9px;
   content: "";
   display: block;
-  width: 38px;
-  height: 39px;
-  background-image: url("../images/sprite.png");
+  width: 12px;
+  height: 12px;
+  background-color: #f4f4f4;
+  border-radius: 50%;
+  z-index: 2;
 }
 
-.bonus-programm--login .bonus-card__form .choose-gender label.gender--male::before {
-  width: 36px;
-  background-position: -132px -280px;
+.foods-section .bonus-programm--login .bonus-card__form .choose-gender label.gender--female::before {
+  left: 44px;
 }
 
-.bonus-programm--login .bonus-card__form .choose-gender label.gender--female::before {
-  left: 46px;
-  background-position: -56px -280px;
-}
-
-.bonus-programm--login .bonus-card__form .choose-gender label::after {
+.foods-section .bonus-programm--login .bonus-card__form .choose-gender label::after {
   position: absolute;
-  top: -21px;
+  top: -5px;
   left: 1px;
   content: "";
   display: block;
-  width: 58px;
-  height: 58px;
-  border: 2px solid #ccc;
+  width: 26px;
+  height: 26px;
+  border: 1px solid #e3e3e3;
   border-radius: 50%;
 }
 
-.bonus-programm--login .bonus-card__form .choose-gender label.gender--female::after {
+.foods-section .bonus-programm--login .bonus-card__form .choose-gender label.gender--female::after {
   left: 36px;
 }
 
-.bonus-programm--login .bonus-card__form input[type="radio"] {
+.foods-section .bonus-programm--login .bonus-card__form input[type="radio"] {
   display: none;
 }
 
-.bonus-programm--login .bonus-card__form input[type="radio"]:checked + label {
+.foods-section .bonus-programm--login .bonus-card__form input[type="radio"]:checked + label {
   color: #000;
 }
 
-.bonus-programm--login .bonus-card__form input[type="radio"]:checked + label::after {
-  border-color: #099342;
+.foods-section .bonus-programm--login .bonus-card__form input[type="radio"]:checked + label::after {
+  background-color: #28a42c;
+  border: 1px solid #28a42c;
 }
 
-.bonus-programm--login .bonus-card__form input[type="radio"]:checked + label.gender--male::before {
-  background-position: -168px -280px;
-}
-
-.bonus-programm--login .bonus-card__form input[type="radio"]:checked + label.gender--female::before {
-  background-position: -94px -280px;
-}
-
-.bonus-programm--login .bonus-card__form .submit,
-.bonus-programm--login .bonus-card__form .reset {
+.foods-section .bonus-programm--login .bonus-card__form .submit,
+.foods-section .bonus-programm--login .bonus-card__form .reset {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  height: 60px;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 52px;
-  text-transform: uppercase;
+  width: 220px;
+  height: 50px;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 18px;
+  line-height: 48px;
   text-decoration: none;
   margin: 0 auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  background-color: transparent;
+  margin-top: 23px;
+  margin-bottom: 46px;
   color: #000;
-  border-radius: 30px;
+  border: none;
+  border-radius: 25px;
   cursor: pointer;
 }
 
-.bonus-programm--login .bonus-card__form .submit {
-  margin-right: 25px;
-  padding: 0 64px;
-  border: 4px solid #ffa800;
+.foods-section .bonus-programm--login .bonus-card__form .submit {
+  background-color: #ffd33a;
+  box-shadow: 0 1px 0 #ba9101;
 }
 
-.bonus-programm--login .bonus-card__form .reset {
-  padding: 0 45px;
-  border: 4px solid #efece7;
+.foods-section .bonus-programm--login .bonus-card__form .reset {
+  margin-right: 39px;
+  background-color: #ebebed;
+  box-shadow: 0 1px 0 #cacaca;
 }
 
-.bonus-programm--login .bonus-card__form .submit:hover {
-  background-color: #ffa800;
+.foods-section .bonus-programm--login .bonus-card__form .submit:hover {
+  background-color: #ffb33a;
 }
 
-.bonus-programm--login .bonus-card__form .reset:hover {
-  background-color: #efece7;
+.foods-section .bonus-programm--login .bonus-card__form .reset:hover {
+  background-color: #dbdbdd;
 }
 
 

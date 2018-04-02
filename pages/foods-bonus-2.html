@@ -130,16 +130,44 @@
         </ul>
       </div>
 
+      <a href="#" class="exit-button exit-button--bonuses">Выход</a>
+
       <section class="foods-section">
         <h1>Бонусная программа</h1>
-        <div class="bonus-programm">
+        <div class="bonus-programm bonus-programm--login">
           <div class="bonus-programm__image">
-            <img src="../images/pages/openbonus/card--grey.png" alt="Бонусная карта">
-            <a href="#" class="button bonus-programm__button">Получить карту</a>
+            <img src="../images/pages/openbonus/card--black.png" alt="Бонусная карта">
+            <p class="bonus-programm__card-number">№ <span>000023</span></p>
+            <p class="bonus-programm__available-bonuses"><span>Накоплено бонусов</span><br> <span>1358.30</span> ₽</p>
           </div>
           <div class="bonus-programm__content">
-            <h3>Копите бонусы и оплачивайте ими покупки</h3>
-            <p>Копите бонусы и оплачивайте ими покупки Бонусная карта позволит вам копить бонусы, начисляемые после каждой покупки на вышу карту с индивидуальным номером. Количество накопленных бонусов, вы в любой момент сможете посмотреть в личном кабинете, в разделе «Бонусная программа»  Совершая покупку, вы сможете расплачиваться накопленными бонусами или продолжать их копить, для более выгодной скидки.</p>
+            <h2>Игорь Сибилев</h2>
+            <p>Телефон: <strong>+7 920 558-60-94</strong></p>
+            <button>Редактировать данные</button>
+          </div>
+          <div class="bonus-programm__personal">
+            <form name="bonus-card__form" method="POST" action="#" class="bonus-card__form">
+              <div class="bonus-card__form--left">
+                <label for="phone">Телефон <span>*</span></label>
+                <input type="text" name="phone" id="phone" placeholder="+7 920 558 60 94">
+                <label for="surname">Фамилия</label>
+                <input type="text" name="surname" id="surname" placeholder="Фамилия">
+                <div class="choose-gender">
+                  <input type="radio" name="gender" class="gender" id="gender--male" checked="checked">
+                  <label for="gender--male" class="gender--male">Я мужчина</label>
+                  <input type="radio" name="gender" class="gender" id="gender--female">
+                  <label for="gender--female" class="gender--female">Я женщина</label>
+                </div>
+              </div>
+              <div class="bonus-card__form--right">
+                <label for="name">Имя</label>
+                <input type="text" name="name" id="name" placeholder="Имя">
+                <label for="patronymic">Отчество</label>
+                <input type="text" name="patronymic" id="patronymic" placeholder="Отчество">
+                <input type="reset" name="reset" class="reset button" value="Отмена">                
+                <input type="submit" name="submit" class="submit button" value="Сохранить">
+              </div>
+            </form>
           </div>
         </div>
       </section>
