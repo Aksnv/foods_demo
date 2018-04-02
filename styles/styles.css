@@ -2996,7 +2996,10 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 
 .foods-cart__result-price,
 .foods-cart__result-discount,
-.foods-cart__result-discount-price {
+.foods-cart__result-discount-price,
+.foods-cart__result-delivery,
+.foods-cart__result-payment-method,
+.foods-cart__result-bonuses {
   display: inline-block;
   font-family: "Museo Sans Cyrl900";
   font-size: 24px;
@@ -3007,10 +3010,14 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 }
 
 .foods-cart__result--bonuses .foods-cart__result-price,
-.foods-cart__result--bonuses .foods-cart__result-discount {
+.foods-cart__result--bonuses .foods-cart__result-discount,
+.foods-cart__result--bonuses .foods-cart__result-delivery,
+.foods-cart__result--bonuses .foods-cart__result-payment-method,
+.foods-cart__result--bonuses .foods-cart__result-bonuses {
   min-width: 210px;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 25px;
+  margin-bottom: 0;
 }
 
 .foods-cart__result--bonuses .foods-cart__result-discount {
@@ -3020,6 +3027,10 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 .foods-cart__result--bonuses .foods-cart__result-discount-price {
   min-width: 210px;
   margin-bottom: 27px;
+}
+
+.foods-cart__result--bonuses .foods-cart__result-discount-price--bonuses {
+  margin-bottom: 0;
 }
 
 .foods-cart__result--bonuses .foods-cart__result-text {
@@ -3033,6 +3044,10 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 
 .foods-order .foods-cart__result-price {
   padding-right: 47px;
+}
+
+.foods-cart__result--bonuses {
+  margin-bottom: 35px;
 }
 
 .foods-cart__result-bonus {
@@ -4041,6 +4056,10 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   margin-bottom: 21px;
 }
 
+.confirmation__form .foods-cart__result--bonuses .foods-cart__result-price {
+  margin-bottom: 0;
+}
+
 .confirmation__form-address .personal__address {
   position: static;
 }
@@ -4135,9 +4154,9 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   font-size: 18px;
 }
 
-.confirmation__form-payment {
+/* .confirmation__form-payment {
   margin-bottom: 27px;
-}
+} */
 
 .confirmation__form-payment h3 {
   margin-bottom: 24px;
@@ -4166,7 +4185,8 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   line-height: 18px;
   text-align: right;
   margin-bottom: 5px;
-  padding-right: 43px;
+  /* padding-right: 43px; */
+  padding-right: 0;
   color: black;
 }
 
