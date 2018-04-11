@@ -318,6 +318,14 @@ input:focus {
   background-image: url("../images/foods_sprite.fw.png");
 }
 
+.foods-header__personal-item--messages::before {
+  top: 20px;
+  left: 12px;
+  width: 20px;
+  height: 15px;
+  background-position: -133px -360px;
+}
+
 .foods-header__personal-item--user-name::before {
   top: 17px;
   left: 15px;
@@ -3541,6 +3549,14 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 
 .personal__address-actions {
   margin-bottom: 32px;
+}
+
+/* Foods messages */
+
+.foods-content h1 > sup {
+  font-family: "Museo Sans Cyrl100";
+  font-size: 11px;
+  color: white;
 }
 
 /* Foods favorites */
