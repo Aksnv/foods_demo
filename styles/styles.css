@@ -3559,6 +3559,255 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   color: white;
 }
 
+.foods-messages {
+  margin-bottom: 48px;
+  padding-top: 20px;
+}
+
+.foods-messages__header {
+  overflow: hidden;
+  margin-bottom: 15px;
+  padding-top: 10px;
+}
+
+.foods-messages__header-button {
+  float: left;
+  position: relative;
+  display: inline-block;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 13px;
+  line-height: 30px;
+  padding-left: 59px;
+  background-image: none;
+  color: #333;
+}
+
+.foods-messages__header-button:hover {
+  color: #ffbc00;
+}
+
+.foods-messages__header-button::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url("../images/foods_sprite.fw.png");
+}
+
+.foods-messages__header-button--select-all::before {
+  top: 6px;
+  left: 21px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #ccc;
+}
+
+.foods-messages__header-button--mark-as-read,
+.foods-messages__header-button--delete-all {
+  padding-left: 64px;
+}
+
+.foods-messages__header-button--mark-as-read::before {
+  top: 6px;
+  left: 39px;
+  width: 16px;
+  height: 16px;
+  background-color: #ccc8c2;
+  border-radius: 50%;
+}
+
+.foods-messages__header-button--delete-all::before {
+  top: 6px;
+  left: 40px;
+  width: 15px;
+  height: 16px;
+  background-position: -195px -336px;
+}
+
+.foods-messages__header-button--new-message {
+  float: right;
+  top: -5px;
+  width: 224px;
+  height: 40px;
+  font-size: 18px;
+  line-height: 40px;
+  padding-left: 30px;
+  background-color: #ebebed;
+  color: black;
+}
+
+.foods-messages__header-button--new-message::before {
+  top: 12px;
+  left: 20px;
+  width: 20px;
+  height: 15px;
+  background-position: -109px -360px;
+}
+
+.foods-messages__content {
+  clear: both;
+}
+
+.foods-messages__item {
+  margin-bottom: 10px;
+  padding-top: 17px;
+  padding-bottom: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.foods-messages__item ul {
+  display: table;
+}
+
+.foods-messages__item li {
+  /* float: left; */
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.foods-messages__item li.foods-messages__item-flag {
+  vertical-align: top;
+}
+
+.foods-messages__item-flag {
+  width: 58px;
+}
+
+.foods-messages__item-flag input[type="checkbox"] {
+  display: none;
+}
+
+.foods-messages__item-flag label {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-left: 22px;
+  border: 1px solid #ccc;
+}
+
+.foods-messages__item-flag input[type="checkbox"]:checked + label {
+  position: relative;
+  background-color: #ffd33a;
+  border: none;
+}
+
+.foods-messages__item-flag input[type="checkbox"]:checked + label::before {
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  content: "";
+  display: block;
+  width: 9px;
+  height: 6px;
+  background-image: url(../images/foods_sprite.fw.png);
+  background-position: -142px -88px;
+}
+
+.item-information__name {
+  display: inline-block;
+  font-family: "Museo Sans Cyrl900";
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #000;
+}
+
+.item-information__date {
+  position: relative;
+  display: inline-block;
+  padding-left: 6px;
+  font-size: 12px;
+  color: #999;
+}
+
+.item-information__date::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "|";
+  font-size: 14px;
+  color: #ccc;
+}
+
+.foods-messages__item-information {
+  width: 992px;
+}
+
+.foods-messages__item-information h2 {
+  font-family: "Museo Sans Cyrl900";
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 0;
+  color: #2e8231;
+}
+
+.foods-messages__item-information h2 > span {
+  font-family: "Museo Sans Cyrl300";
+  font-size: 12px;
+  color: #999;
+}
+
+.foods-messages__item-information h2 > sup {
+  font-family: "Museo Sans Cyrl100";
+  font-size: 11px;
+  color: #fff;
+}
+
+.item-information__text {
+  font-size: 13px;
+  line-height: 20px;
+  color: #000;
+}
+
+.foods-messages__item-delete {
+  width: 130px;
+  padding-left: 85px;
+}
+
+.foods-messages__item-delete button {
+  position: relative;
+  display: block;
+  width: 15px;
+  height: 17px;
+  background-image: url("../images/foods_sprite.fw.png");
+  background-position: -176px -337px;
+}
+
+.foods-messages__item-delete button:hover {
+  background-position: -157px -336px;
+}
+
+.foods-messages__item-delete button:hover::before {
+  position: absolute;
+  top: 33px;
+  left: -101px;
+  content: "Удалить сообщение";
+  display: block;
+  min-width: 130px;
+  height: 30px;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  padding: 0 7px;
+  background-color: #ebebed;
+  color: #28282c;
+  border-radius: 5px;
+}
+
+.foods-messages__item-delete button:hover::after {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: #ebebed;
+  transform: rotate(45deg);
+}
+
+
 /* Foods favorites */
 
 .foods-goods--favorites {
