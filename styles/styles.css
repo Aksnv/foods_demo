@@ -3601,6 +3601,23 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   border: 1px solid #ccc;
 }
 
+.foods-messages__header-button--checked::before {
+  background-color: #ffd33a;
+  border: 1px solid #ffd33a;
+}
+
+.foods-messages__header-button--checked::after {
+  position: absolute;
+  top: 11px;
+  left: 25px;
+  content: "";
+  display: block;
+  width: 9px;
+  height: 6px;
+  background-image: url(../images/foods_sprite.fw.png);
+  background-position: -142px -88px;
+}
+
 .foods-messages__header-button--mark-as-read,
 .foods-messages__header-button--delete-all {
   padding-left: 64px;
@@ -3660,7 +3677,6 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 }
 
 .foods-messages__item li {
-  /* float: left; */
   display: table-cell;
   vertical-align: middle;
 }
@@ -3679,22 +3695,24 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 
 .foods-messages__item-flag label {
   display: inline-block;
-  width: 15px;
-  height: 15px;
+  width: 16px;
+  height: 16px;
   margin-left: 22px;
   border: 1px solid #ccc;
 }
 
-.foods-messages__item-flag input[type="checkbox"]:checked + label {
+.foods-messages__item-flag input[type="checkbox"]:checked + label,
+.foods-messages__item-flag input[checked="checked"] + label {
   position: relative;
   background-color: #ffd33a;
   border: none;
 }
 
-.foods-messages__item-flag input[type="checkbox"]:checked + label::before {
+.foods-messages__item-flag input[type="checkbox"]:checked + label::before,
+.foods-messages__item-flag input[checked="checked"] + label::before {
   position: absolute;
   top: 5px;
-  left: 3px;
+  left: 4px;
   content: "";
   display: block;
   width: 9px;
@@ -6047,11 +6065,12 @@ input[name="foods-footer__subscription-submit"]:hover {
 .foods-popup__close-button {
   position: absolute;
   top: -35px;
-  right: 22px;
+  right: 0;
   display: block;
   font-family: "Museo Sans Cyrl300";
   font-size: 14px;
   line-height: 20px;
+  padding-right: 22px;
   color: #a2a2a2;
   background-image: none;
 }
@@ -6059,7 +6078,7 @@ input[name="foods-footer__subscription-submit"]:hover {
 .foods-popup__close-button::after {
   position: absolute;
   top: 3px;
-  right: -22px;
+  right: 0;
   content: "";
   display: block;
   width: 12px;

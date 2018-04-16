@@ -490,6 +490,23 @@ $(document).click(function(e) {
 });
 
 
+/* Foods messages - Select all */
+
+$(".foods-messages__header-button--select-all").click(function() {
+  if ($(this).hasClass("foods-messages__header-button--checked")) {
+    $(this).removeClass("foods-messages__header-button--checked");
+    for (var i = 0; i < $(".foods-messages__item-flag input").length; i++) {
+      $($(".foods-messages__item-flag input")[i]).removeAttr("checked");
+    }
+  } else {
+    $(this).addClass("foods-messages__header-button--checked");
+    for (var i = 0; i < $(".foods-messages__item-flag input").length; i++) {
+      $($(".foods-messages__item-flag input")[i]).attr("checked", "checked");
+    }
+  }
+});
+
+
 /* jQuery Form Styler activation */
 
 (function($) {
