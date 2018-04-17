@@ -3559,6 +3559,10 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   color: white;
 }
 
+.foods-subsection--messages {
+  margin-bottom: 20px;
+}
+
 .foods-messages {
   margin-bottom: 48px;
   padding-top: 20px;
@@ -3833,11 +3837,16 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   transform: rotate(45deg);
 }
 
+.foods-messages__button-back {
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
 .foods-messages__button-back a {
   position: relative;
   display: inline-block;
   text-decoration: none;
-  padding-left: 30px;
+  padding-left: 25px;
   color: #333;
 }
 
@@ -3860,6 +3869,388 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 .foods-messages__button-back a:hover::before {
   background-position: -216px -359px;
 }
+
+.foods-message__header {
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+.foods-message__header button {
+  float: right;
+}
+
+.foods-message__header h2,
+.foods-message__form h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.foods-message__header h2 > span {
+  font-family: "Museo Sans Cyrl300";
+  font-size: 17px;
+  color: #999;
+}
+
+.foods-message__header h2 > sup {
+  font-family: "Museo Sans Cyrl100";
+  font-size: 11px;
+  color: white;
+}
+
+.foods-message__delete-button {
+  position: relative;
+  top: 6px;
+  display: block;
+  width: 15px;
+  height: 17px;
+  background-image: url("../images/foods_sprite.fw.png");
+  background-position: -176px -337px;
+}
+
+.foods-message__delete-button:hover {
+  background-position: -157px -336px;
+}
+
+.foods-message__delete-button:hover::before {
+  position: absolute;
+  top: 33px;
+  left: -101px;
+  content: "Удалить сообщения";
+  display: block;
+  min-width: 130px;
+  height: 30px;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  padding: 0 7px;
+  background-color: #ebebed;
+  color: #28282c;
+  border-radius: 5px;
+}
+
+.foods-message__delete-button:hover::after {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: #ebebed;
+  transform: rotate(45deg);
+}
+
+.foods-message__show-all-button {
+  position: relative;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 32px;
+  margin-right: 28px;
+  background-image: none;
+  color: #666;
+}
+
+.foods-message__show-all-button::before {
+  position: absolute;
+  top: 13px;
+  left: -16px;
+  content: "";
+  display: block;
+  width: 8px;
+  height: 5px;
+  background-image: url("../images/foods_sprite.fw.png");
+  background-position: -234px -336px;
+}
+
+.foods-message__show-all-button--close::before {
+  transform: rotate(180deg);
+}
+
+.foods-message__show-all-button:hover {
+  color: #ffbc00;
+}
+
+.foods-message__show-all-button:hover::before {
+  background-position: -246px -336px;
+}
+
+.foods-message__item,
+.foods-message__form {
+  margin-bottom: 10px;
+  padding-top: 17px;
+  padding-left: 18px;
+  padding-bottom: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.foods-message__item {
+  padding-bottom: 6px;
+  cursor: pointer;
+}
+
+.foods-message__item--open {
+  padding-bottom: 20px;
+  cursor: default;
+}
+
+.foods-message__item--user {
+  padding-left: 67px;
+}
+
+.foods-message__item ul {
+  display: table;
+}
+
+.foods-message__item li {
+  display: table-cell;
+}
+
+.foods-message__item article {
+  margin-right: 0;
+}
+
+.foods-message__item--open article {
+  width: 800px;
+  margin-right: 232px;
+}
+
+.foods-message__item--open.foods-message__item--user article {
+  margin-right: 183px;
+}
+
+.foods-message__item .item-information__name {
+  margin-bottom: 11px;
+}
+
+.item-information__new {
+  font-size: 11px;
+  line-height: 22px;
+  text-transform: uppercase;
+  margin-left: 15px;
+  padding: 5px 10px;
+  background-color: #cf453c;
+  color: white;
+  border-radius: 15px;
+}
+
+.foods-message__item--open header,
+.foods-message__item--open p {
+  display: block;
+}
+
+.foods-message__item--open header {
+  padding-top: 0;
+}
+
+.foods-message__item--open .item-information__text {
+  width: 100%;
+  padding-left: 0;
+}
+
+.foods-message__item--open .item-information__text::before {
+  display: none;
+}
+
+.foods-message__item header,
+.foods-message__item p {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.foods-message__item header {
+  padding-top: 1px;
+}
+
+.foods-message__item .item-information__text {
+  position: relative;
+  width: 785px;
+  height: 17px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 23px;
+}
+
+.foods-message__item .item-information__text::before {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  content: "-";
+  display: block;
+}
+
+.foods-message__item--open .item-information__text {
+  width: 100%;
+  height: auto;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  padding-left: 0;
+}
+
+.foods-message__item .foods-message__item-mark {
+  display: none;
+}
+
+.foods-message__item--open .foods-message__item-mark {
+  display: table-cell;
+  width: 102px;
+  vertical-align: middle;
+}
+
+.foods-message__item-mark input[type="checkbox"] {
+  display: none;
+}
+
+.foods-message__item-mark label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.foods-message__item-mark label::before {
+  position: absolute;
+  top: 9px;
+  left: -25px;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border: 3px solid #ccc8c2;
+  border-radius: 50%;
+}
+
+.foods-message__item-mark input[type="checkbox"]:checked + label::before {
+  background-color: #ccc8c2;
+}
+
+.foods-message__form {
+  overflow: hidden;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  padding-left: 30px;
+  padding-bottom: 26px;
+}
+
+.message__form--left,
+.message__form--right {
+  float: left;
+}
+
+.message__form--left {
+  margin-right: 20px;
+}
+
+.foods-message__form h2 {
+  margin-bottom: 20px;
+}
+
+.foods-message__form textarea {
+  width: 660px;
+  height: 126px;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 14px;
+  padding: 10px;
+  background-color: white;
+  color: #000;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+
+.foods-popup__form textarea::-webkit-input-placeholder {
+  font-family: "Museo Sans Cyrl300";
+  font-size: 14px;
+  color: #28282c;
+}
+
+.foods-popup__form textarea:-ms-input-placeholder {
+  font-family: "Museo Sans Cyrl300";
+  font-size: 14px;
+  color: #28282c;
+}
+
+.foods-popup__form textarea::-ms-input-placeholder {
+  font-family: "Museo Sans Cyrl300";
+  font-size: 14px;
+  color: #28282c;
+}
+
+.foods-message__form textarea:focus {
+  border: 1px solid #2e8231;
+  outline: none;
+}
+
+.foods-message__form input[type="submit"],
+.foods-message__form input[type="reset"] {
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  height: 50px;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.foods-message__form input[type="reset"] {
+  width: 200px;
+  margin-left: 17px;
+  background-color: #ebebed;
+  box-shadow: 0 1px 0 #cacaca;
+}
+
+.foods-message__form input[type="reset"]:hover {
+  background-color: #dbdbdd;
+}
+
+.foods-message__form-email {
+  position: relative;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 14px;
+  margin-top: 40px;
+  padding-left: 40px;
+  color: #28282c;
+}
+
+.foods-message__form-email label[for="message-email"]::before {
+  position: absolute;
+  top: -1px;
+  left: 15px;
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #ccc;
+}
+
+.foods-message__form-email input[type="checkbox"] {
+  display: none;
+}
+
+.foods-message__form-email input[type="checkbox"]:checked + label[for="message-email"]::before {
+  background-color: #ffd33a;
+  border: 1px solid #ffd33a;
+}
+
+.foods-message__form-email input[type="checkbox"]:checked + label[for="message-email"]::after {
+  position: absolute;
+  top: 4px;
+  left: 19px;
+  content: "";
+  display: block;
+  width: 9px;
+  height: 6px;
+  background-image: url(../images/foods_sprite.fw.png);
+  background-position: -142px -88px;
+}
+
 
 .foods-popup.messages-popup {
   position: absolute;

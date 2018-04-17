@@ -507,6 +507,45 @@ $(".foods-messages__header-button--select-all").click(function() {
 });
 
 
+/* Foods messages - Mark as read */
+
+$(".foods-message__item-mark label").click(function() {
+  if ($(this).hasClass("marked")) {
+    $(this).text("Отметить как не прочитанное");
+    $(this).removeClass("marked");
+  } else {
+    $(this).text("Отметить как прочитанное");
+    $(this).addClass("marked");
+  }
+});
+
+
+/* Foods messages - Show/close messages */
+
+$(".foods-message__item").click(function() {
+  $(this).toggleClass("foods-message__item--open");
+  $(".foods-message__show-all-button").removeClass("foods-message__show-all-button--close");
+  $(".foods-message__show-all-button").text("Свернуть все");
+});
+
+$(".foods-message__show-all-button").click(function() {
+  if ($(this).hasClass("foods-message__show-all-button--close")) {
+    for (var i = 0; i < $(".foods-message__item").length; i++) {
+      $($(".foods-message__item")[i]).addClass("foods-message__item--open");
+    }
+    $(this).removeClass("foods-message__show-all-button--close");
+    $(this).text("Свернуть все");
+  } else {
+    for (var i = 0; i < $(".foods-message__item").length; i++) {
+      $($(".foods-message__item")[i]).removeClass("foods-message__item--open");
+    }
+    $(this).addClass("foods-message__show-all-button--close");
+    $(this).text("Развернуть все");
+  }
+});
+
+
+
 /* jQuery Form Styler activation */
 
 (function($) {

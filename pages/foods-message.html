@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Foods - Личные данные</title>
+  <title>Foods - Сообщения</title>
   <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
   <link rel="stylesheet" type="text/css" href="../styles/jquery.formstyler.css">
   <link rel="stylesheet" type="text/css" href="../styles/jquery-ui.css">
@@ -133,7 +133,7 @@
 
       <section class="foods-section">
         <h1>Сообщения<sup class="circles-menu__num">32</sup></h1>
-        <div class="foods-subsection foods-subsection--mobile">
+        <div class="foods-subsection foods-subsection--mobile foods-subsection--messages">
           <ul>
             <li><a href="#" class="foods-subsection__item foods-subsection__item--personal">Личные данные</a></li>
             <li><a href="#" class="foods-subsection__item foods-subsection__item--cart">Корзина</a></li>
@@ -151,9 +151,9 @@
         
         <div class="foods-message">
           <div class="foods-message__header">
-            <button>Удалить</button>
-            <button>Развернуть все</button>
-            <h2>Обновление условий доставки и бонусной программы <span>(1)</span> <sup class="circles-menu__num">2</sup></h2>
+            <button class="foods-message__delete-button"></button>
+            <button class="foods-message__show-all-button foods-message__show-all-button--close">Развернуть все</button>
+            <h2>Плановые технические работы <span>(3)</span> <sup class="circles-menu__num">1</sup></h2>
           </div>
           <div class="foods-message__content">
             <div class="foods-message__item">
@@ -163,16 +163,16 @@
                     <header>
                       <p><strong class="item-information__name">Команда Pokupo</strong> <span class="item-information__date">сегодня в 21:32</span></p>
                     </header>
-                    <p class="item-information__text">Уважаемые пользователи Pokupo!<br> Завтра, 28.03.2018, с 04:00 до 11:00 по московскому времени серверы портала будут остановлены для проведения плановых технических работ.<br> Приносим извинения за возможные неудобства.<br><br> Следите за новостями на сайте, в группе <a href="#" class="inline-link">ВКонтакте</a> и на странице <a href="#" class="inline-link">Facebook</a>.<br> С уважением, команда Pokupo.ru</p>
+                    <p class="item-information__text">Уважаемые пользователи Pokupo! Завтра, 28.03.2018, с 04:00 до 11:00 по московскому времени серверы портала будут остановлены для проведения плановых технических работ. Приносим извинения за возможные неудобства.<br><br> Следите за новостями на сайте, в группе <a href="#" class="inline-link">ВКонтакте</a> и на странице <a href="#" class="inline-link">Facebook</a>.<br> С уважением, команда Pokupo.ru</p>
                   </article>
                 </li>
                 <li class="foods-message__item-mark">
-                  <input type="radio" name="foods-message__item-mark">
-                  <label>Отметить как прочитанное</label>
+                  <input type="checkbox" name="foods-message__item-mark" id="foods-message__item-mark--1">
+                  <label for="foods-message__item-mark--1">Отметить как не прочитанное</label>
                 </li>
               </ul>
             </div>
-            <div class="foods-message__item">
+            <div class="foods-message__item foods-message__item--user">
               <ul>
                 <li class="foods-message__item-information">
                   <article>
@@ -183,8 +183,8 @@
                   </article>
                 </li>
                 <li class="foods-message__item-mark">
-                  <input type="radio" name="foods-message__item-mark">
-                  <label>Отметить как прочитанное</label>
+                  <input type="checkbox" name="foods-message__item-mark" id="foods-message__item-mark--2">
+                  <label for="foods-message__item-mark--2">Отметить как не прочитанное</label>
                 </li>
               </ul>
             </div>
@@ -199,23 +199,26 @@
                   </article>
                 </li>
                 <li class="foods-message__item-mark">
-                  <input type="radio" name="foods-message__item-mark">
-                  <label>Отметить как прочитанное</label>
+                  <input type="checkbox" name="foods-message__item-mark" id="foods-message__item-mark--3" checked="checked">
+                  <label class="marked" for="foods-message__item-mark--3">Отметить как прочитанное</label>
                 </li>
               </ul>
             </div>
           </div>
 
           <div class="foods-message__form">
+            <h2>Ответить</h2>
             <form name="message__form" method="POST" action="#" class="message__form">
               <div class="message__form--left">
                 <textarea name="message-text" id="message-text" placeholder="Написать ответ"></textarea>
               </div>
               <div class="message__form--right">
-                <input type="submit" name="submit" class="button submit" value="Отправить">
-                <input type="reset" name="reset" class="button reset" value="Отмена">
-                <input type="checkbox" name="message-email" id="message-email">
-                <label for="message-email">Выслать копию на e-mail</label>
+                <input type="submit" name="submit" class="button" value="Отправить">
+                <input type="reset" name="reset" class="button" value="Отмена">
+                <div class="foods-message__form-email">
+                  <input type="checkbox" name="message-email" id="message-email">
+                  <label for="message-email">Выслать копию на e-mail</label>
+                </div>
               </div>
             </form>
           </div>
