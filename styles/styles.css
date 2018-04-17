@@ -4394,7 +4394,7 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   display: block;
   width: 430px;
   height: 50px;
-  font-family: "Museo Sans Cyrl900";
+  font-family: "Museo Sans Cyrl300";
   font-size: 18px;
   line-height: 50px;
   text-decoration: none;
