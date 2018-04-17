@@ -3755,7 +3755,15 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   font-size: 15px;
   line-height: 20px;
   margin-bottom: 0;
+}
+
+.foods-messages__item-information h2 > a {
+  text-decoration: none;
   color: #2e8231;
+}
+
+.foods-messages__item-information h2 > a:hover {
+  color: #ffbc00;
 }
 
 .foods-messages__item-information h2 > span {
@@ -3823,6 +3831,34 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   height: 15px;
   background-color: #ebebed;
   transform: rotate(45deg);
+}
+
+.foods-messages__button-back a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 30px;
+  color: #333;
+}
+
+.foods-messages__button-back a:hover {
+  color: #ffbc00;
+}
+
+.foods-messages__button-back a::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 8px;
+  height: 13px;
+  background-image: url("../images/foods_sprite.fw.png");
+  background-position: -217px -336px;
+}
+
+.foods-messages__button-back a:hover::before {
+  background-position: -216px -359px;
 }
 
 .foods-popup.messages-popup {

@@ -144,90 +144,81 @@
           </ul>
           <a href="#" class="exit-button">Выход</a>
         </div>
-        
-        <div class="foods-messages">
-          <div class="foods-messages__header">
-            <button class="foods-messages__header-button foods-messages__header-button--new-message">Новое сообщение</button>
-            <button class="foods-messages__header-button foods-messages__header-button--select-all">Выбрать все</button>
-            <button class="foods-messages__header-button foods-messages__header-button--mark-as-read">Отметить прочитанное</button>
-            <button class="foods-messages__header-button foods-messages__header-button--delete-all">Удалить выбранные сообщения</button>
-          </div>
-          <div class="foods-messages__content">
-            <div class="foods-messages__item">
-              <ul>
-                <li class="foods-messages__item-flag">
-                  <input type="checkbox" name="foods-messages__item-flag--1" id="foods-messages__item-flag--1">
-                  <label for="foods-messages__item-flag--1"></label>
-                </li>
-                <li class="foods-messages__item-information">
-                  <article>
-                    <header>
-                      <p><strong class="item-information__name">Команда Pokupo</strong> <span class="item-information__date">сегодня в 21:32</span></p>
-                      <h2><a href="#">Обновление условий доставки и бонусной программы</a> <span>(1)</span> <sup class="circles-menu__num">2</sup></h2>
-                    </header>
-                    <p class="item-information__text">Руководствуясь периодическим законом, трехкомпонентное образование возбуждает восстановитель. Непосредственно из законов сохранения следует, что уравнение энергично. Радикал, как и везде в пределах наблюдаемой вселенной, проникает атом, минуя жидкое состояние.</p>
-                  </article>
-                </li>
-                <li class="foods-messages__item-delete">
-                  <button></button>
-                </li>
-              </ul>
-            </div>
-            <div class="foods-messages__item">
-              <ul>
-                <li class="foods-messages__item-flag">
-                  <input type="checkbox" name="foods-messages__item-flag--2" id="foods-messages__item-flag--2">
-                  <label for="foods-messages__item-flag--2"></label>
-                </li>
-                <li class="foods-messages__item-information">
-                  <article>
-                    <header>
-                      <p><strong class="item-information__name">Команда Pokupo</strong> <span class="item-information__date">сегодня в 21:32</span></p>
-                      <h2><a href="foods-message.html">Плановые технические работы</a> <span>(4)</span> <sup class="circles-menu__num">2</sup></h2>
-                    </header>
-                    <p class="item-information__text">Уважаемые пользователи Pokupo!<br> Завтра, 28.03.2018, с 04:00 до 11:00 по московскому времени серверы портала будут остановлены для проведения плановых технических работ.</p>
-                  </article>
-                </li>
-                <li class="foods-messages__item-delete">
-                  <button></button>
-                </li>
-              </ul>
-            </div>
-            <div class="foods-messages__item">
-              <ul>
-                <li class="foods-messages__item-flag">
-                  <input type="checkbox" name="foods-messages__item-flag--3" id="foods-messages__item-flag--3">
-                  <label for="foods-messages__item-flag--3"></label>
-                </li>
-                <li class="foods-messages__item-information">
-                  <article>
-                    <header>
-                      <p><strong class="item-information__name">Константин</strong> <span class="item-information__date">сегодня в 21:32</span></p>
-                      <h2><a href="#">Плановые технические работы</a> <span>(4)</span> </h2>
-                    </header>
-                    <p class="item-information__text">Скинь мне свои реквизиты</p>
-                  </article>
-                </li>
-                <li class="foods-messages__item-delete">
-                  <button></button>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
 
-        <div class="foods-pagination foods-pagination--favorites">
-          <ul>
-            <li><a href="#" class="foods-pagination__item foods-pagination__item--back"></a></li>
-            <li><a href="#" class="foods-pagination__item foods-pagination__item--active">1</a></li>
-            <li><a href="#" class="foods-pagination__item">2</a></li>
-            <li><a href="#" class="foods-pagination__item">3</a></li>
-            <li><a href="#" class="foods-pagination__item">4</a></li>
-            <li><a href="#" class="foods-pagination__item">5</a></li>
-            <li class="ellipsis"><a href="#" class="foods-pagination__item">...</a></li>
-            <li><a href="#" class="foods-pagination__item">124</a></li>
-            <li><a href="#" class="foods-pagination__item foods-pagination__item--forward"></a></li>
-          </ul>
+        <div class="foods-messages__button-back">
+          <a href="foods-messages.html">К списку сообщений</a>
+        </div>
+        
+        <div class="foods-message">
+          <div class="foods-message__header">
+            <button>Удалить</button>
+            <button>Развернуть все</button>
+            <h2>Обновление условий доставки и бонусной программы <span>(1)</span> <sup class="circles-menu__num">2</sup></h2>
+          </div>
+          <div class="foods-message__content">
+            <div class="foods-message__item">
+              <ul>
+                <li class="foods-message__item-information">
+                  <article>
+                    <header>
+                      <p><strong class="item-information__name">Команда Pokupo</strong> <span class="item-information__date">сегодня в 21:32</span></p>
+                    </header>
+                    <p class="item-information__text">Уважаемые пользователи Pokupo!<br> Завтра, 28.03.2018, с 04:00 до 11:00 по московскому времени серверы портала будут остановлены для проведения плановых технических работ.<br> Приносим извинения за возможные неудобства.<br><br> Следите за новостями на сайте, в группе <a href="#" class="inline-link">ВКонтакте</a> и на странице <a href="#" class="inline-link">Facebook</a>.<br> С уважением, команда Pokupo.ru</p>
+                  </article>
+                </li>
+                <li class="foods-message__item-mark">
+                  <input type="radio" name="foods-message__item-mark">
+                  <label>Отметить как прочитанное</label>
+                </li>
+              </ul>
+            </div>
+            <div class="foods-message__item">
+              <ul>
+                <li class="foods-message__item-information">
+                  <article>
+                    <header>
+                      <p><strong class="item-information__name">Сибилев Игорь</strong> <span class="item-information__date">сегодня в 21:32</span></p>
+                    </header>
+                    <p class="item-information__text">Как часто подобные работы проводятся?</p>
+                  </article>
+                </li>
+                <li class="foods-message__item-mark">
+                  <input type="radio" name="foods-message__item-mark">
+                  <label>Отметить как прочитанное</label>
+                </li>
+              </ul>
+            </div>
+            <div class="foods-message__item">
+              <ul>
+                <li class="foods-message__item-information">
+                  <article>
+                    <header>
+                      <p><strong class="item-information__name">Команда Pokupo</strong> <span class="item-information__date">сегодня в 21:32</span> <span class="item-information__new">новое</span></p>
+                    </header>
+                    <p class="item-information__text">Пока сайт на стадии бета-тестирования — два раза в месяц.</p>
+                  </article>
+                </li>
+                <li class="foods-message__item-mark">
+                  <input type="radio" name="foods-message__item-mark">
+                  <label>Отметить как прочитанное</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="foods-message__form">
+            <form name="message__form" method="POST" action="#" class="message__form">
+              <div class="message__form--left">
+                <textarea name="message-text" id="message-text" placeholder="Написать ответ"></textarea>
+              </div>
+              <div class="message__form--right">
+                <input type="submit" name="submit" class="button submit" value="Отправить">
+                <input type="reset" name="reset" class="button reset" value="Отмена">
+                <input type="checkbox" name="message-email" id="message-email">
+                <label for="message-email">Выслать копию на e-mail</label>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
 
