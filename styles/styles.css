@@ -623,9 +623,27 @@ input:focus {
   background-color: #dbdbdd;
 }
 
+.foods-top__contact-information {
+  position: absolute;
+  top: 8px;
+  right: 35px;
+  text-align: right;
+}
+
+.contact-information__phone {
+  font-family: "Museo Sans Cyrl900";
+  font-size: 18px;
+  color: #000;
+}
+
+.contact-information__email {
+  font-size: 15px;
+}
+
 /* Foods top */
 
 .foods-top {
+  position: relative;
   min-height: 172px;
   margin-bottom: 33px;
   background-color: #fff;
