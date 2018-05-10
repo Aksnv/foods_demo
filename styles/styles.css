@@ -8672,94 +8672,6 @@ input.foods-popup__form-submit--password-create {
     left: 43px;
   }
 
-  .foods-messages__button-back {
-    margin-bottom: 31px;
-  }
-
-  .foods-message__header {
-    position: relative;
-  }
-
-  .foods-section--message h2 {
-    line-height: 24px;
-    margin-bottom: 41px;
-  }
-
-  .foods-message__delete-button {
-    position: absolute;
-    top: -49px;
-    right: 0;
-  }
-
-  .foods-message__show-all-button {
-    position: absolute;
-    top: 64px;
-    right: 0;
-    margin-right: 0;
-  }
-
-  .foods-message__item .item-information__text {
-    display: none;
-  }
-
-  .foods-message__item--open .item-information__text {
-    display: block;
-    width: 257px;
-  }
-
-  .item-information__new {
-    margin-left: 6px;
-  }
-
-  .foods-message__item--open article {
-    width: 257px;
-    margin-right: 45px;
-  }
-
-  .foods-message__form {
-    padding-top: 23px;
-    padding-left: 20px;
-    padding-bottom: 27px;
-  }
-
-  .foods-message__form h2 {
-    margin-bottom: 25px;
-  }
-
-  .foods-message__form textarea {
-    width: 280px;
-  }
-
-  .foods-message__form input[type="submit"], 
-  .foods-message__form input[type="reset"] {
-    width: 280px;
-    margin: 0 auto;
-  }
-
-  .foods-message__form input[type="submit"] {
-    margin-bottom: 10px;
-  }
-
-  .foods-message__item--open .foods-message__item-mark {
-    vertical-align: top;
-  }
-
-  .foods-message__item-mark label::before {
-    top: -17px;
-  }
-
-  .foods-message__item--user .item-information__text,
-  .foods-message__item--user article {
-    width: 238px;
-  }
-
-  .foods-message__item--open .item-information__new {
-    position: relative;
-    top: -3px;
-    margin-left: 0;
-  }
-
-
   /* Foods favorites */
 
   .foods-goods--favorites .foods-goods__product-item:nth-child(n),
@@ -9220,6 +9132,93 @@ input.foods-popup__form-submit--password-create {
 
   .foods-messages__item li.foods-messages__item-delete {
     vertical-align: bottom;
+  }
+
+  .foods-messages__button-back {
+    margin-bottom: 31px;
+  }
+
+  .foods-message__header {
+    position: relative;
+  }
+
+  .foods-section--message h2 {
+    line-height: 24px;
+    margin-bottom: 41px;
+  }
+
+  .foods-message__delete-button {
+    position: absolute;
+    top: -49px;
+    right: 0;
+  }
+
+  .foods-message__show-all-button {
+    position: absolute;
+    top: 64px;
+    right: 0;
+    margin-right: 0;
+  }
+
+  .foods-message__item .item-information__text {
+    display: none;
+  }
+
+  .foods-message__item--open .item-information__text {
+    display: block;
+    width: 257px;
+  }
+
+  .item-information__new {
+    margin-left: 6px;
+  }
+
+  .foods-message__item--open article {
+    width: 257px;
+    margin-right: 45px;
+  }
+
+  .foods-message__form {
+    padding-top: 23px;
+    padding-left: 20px;
+    padding-bottom: 27px;
+  }
+
+  .foods-message__form h2 {
+    margin-bottom: 25px;
+  }
+
+  .foods-message__form textarea {
+    width: 280px;
+  }
+
+  .foods-message__form input[type="submit"], 
+  .foods-message__form input[type="reset"] {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  .foods-message__form input[type="submit"] {
+    margin-bottom: 10px;
+  }
+
+  .foods-message__item--open .foods-message__item-mark {
+    vertical-align: top;
+  }
+
+  .foods-message__item-mark label::before {
+    top: -17px;
+  }
+
+  .foods-message__item--user .item-information__text,
+  .foods-message__item--user article {
+    width: 238px;
+  }
+
+  .foods-message__item--open .item-information__new {
+    position: relative;
+    top: -3px;
+    margin-left: 0;
   }
 
   /* Foods pagination */
