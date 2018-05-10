@@ -545,6 +545,28 @@ $(".foods-message__show-all-button").click(function() {
 });
 
 
+/* Foods messages - Content */
+
+$(window).resize(function() {
+  if ($(".foods-container").css("width") == "320px") {
+    $(".foods-messages__header-button--new-message").text("Новое");
+    $(".foods-messages__header-button--new-message").css("width", "120px");
+  } else {
+    $(".foods-messages__header-button--new-message").text("Новое сообщение");
+    $(".foods-messages__header-button--new-message").css("width", "224px");
+  }
+});
+
+$(document).ready(function() {
+  if ($(".foods-container").css("width") == "320px") {
+    $(".foods-messages__header-button--new-message").text("Новое");
+    $(".foods-messages__header-button--new-message").css("width", "120px");
+  } else {
+    $(".foods-messages__header-button--new-message").text("Новое сообщение");
+    $(".foods-messages__header-button--new-message").css("width", "224px");
+  }
+});
+
 
 /* jQuery Form Styler activation */
 

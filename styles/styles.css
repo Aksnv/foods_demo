@@ -8963,6 +8963,110 @@ input.foods-popup__form-submit--password-create {
     width: 320px;
   }
 
+  /* Foods breadcrumbs */
+
+  .foods-breadcrumbs {
+    display: none;
+  }
+
+  /* Foods subsection */
+
+  .foods-subsection--mobile .foods-subsection__item,
+  .foods-subsection--mobile .exit-button {
+    font-size: 0;
+  }
+
+  /* Foods messages */
+
+  .foods-section--messages h1 {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  .foods-messages__header-button--new-message {
+    top: 5px;
+  }
+
+  .foods-messages {
+    margin-bottom: 30px;
+    padding-top: 0;
+  }
+
+  .foods-messages__header {
+    margin-bottom: 19px;
+    padding-top: 3px;
+  }
+
+  .foods-messages__header-button {
+    float: none;
+    display: block;
+    padding-left: 28px;
+  }
+
+  .foods-messages__header-button--select-all::before,
+  .foods-messages__header-button--mark-as-read::before,
+  .foods-messages__header-button--delete-all::before {
+    left: 0;
+  }
+
+  .foods-messages__item-flag {
+    width: 38px;
+  }
+
+  .foods-messages__item-flag label {
+    margin-left: 10px;
+  }
+
+  .foods-messages__item-information {
+    position: relative;
+    width: 232px;
+  }
+
+  .item-information__name {
+    margin-bottom: 12px;
+  }
+
+  .foods-messages__item-information h2 > sup {
+    position: absolute;
+    top: -3px;
+    right: -33px;
+  }
+
+  .foods-messages__item-delete {
+    width: 30px;
+    padding-left: 15px;
+  }
+
+  .foods-messages__item li.foods-messages__item-delete {
+    vertical-align: bottom;
+  }
+
+  /* Foods pagination */
+
+  .foods-pagination--favorites {
+    width: 320px;
+    margin-bottom: 30px;
+  }
+
+  .foods-pagination--favorites li {
+    display: none;
+    margin-right: 0;
+  }
+
+  .foods-pagination--favorites li:nth-child(1),
+  .foods-pagination--favorites li:nth-child(2),
+  .foods-pagination--favorites li:nth-child(3),
+  .foods-pagination--favorites li:nth-child(4),
+  .foods-pagination--favorites li:nth-child(5),
+  .foods-pagination--favorites li:last-child {
+    display: inline-block;
+  }
+
+  .foods-pagination--favorites .foods-pagination__item {
+    width: 50px;
+  }
+
+
   /* Foods footer */
 
   .foods-footer {
