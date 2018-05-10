@@ -8556,6 +8556,29 @@ input.foods-popup__form-submit--password-create {
     margin-right: 30px;
   }
 
+  /* Foods messages */
+
+  .foods-section--messages h1,
+  .foods-section--messages h2 {
+    text-align: left;
+  }
+
+  .foods-messages__header-button--new-message {
+    float: none;
+    position: absolute;
+    top: 8px;
+    right: 0;
+    background-color: #fff;
+  }
+
+  .foods-messages__header {
+    margin-bottom: 23px;
+  }
+
+  .foods-messages__item-flag {
+    width: 84px;
+  }
+
   /* Foods favorites */
 
   .foods-goods--favorites .foods-goods__product-item:nth-child(n),
