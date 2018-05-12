@@ -9180,6 +9180,10 @@ input.foods-popup__form-submit--password-create {
     left: 0;
   }
 
+  .foods-messages__button-back {
+    padding-top: 55px;
+  }
+
   .foods-messages__item-flag {
     width: 38px;
   }
