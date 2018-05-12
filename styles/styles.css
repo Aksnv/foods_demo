@@ -8149,6 +8149,10 @@ input.foods-popup__form-submit--password-create {
     margin-bottom: 28px;
   }
 
+  .foods-subsection__item:hover {
+    border: none!important;
+  }
+
   .foods-subsection--mobile {
     position: absolute;
     top: -92px;
@@ -8166,6 +8170,10 @@ input.foods-popup__form-submit--password-create {
 
   .foods-subsection--mobile li {
     margin-right: 50px;
+  }
+
+  .foods-subsection--mobile li:last-child {
+    margin-right: 0;
   }
 
   .foods-subsection--mobile .foods-subsection__item {
@@ -8186,7 +8194,7 @@ input.foods-popup__form-submit--password-create {
 
   .foods-subsection--mobile .foods-subsection__item--personal:hover,
   .foods-subsection--mobile .foods-subsection__item--personal.foods-subsection__item--active {
-    background-position: -256px  -231px;
+    background-position: -256px -231px;
   }
 
   .foods-subsection--mobile .foods-subsection__item--cart {
@@ -8198,7 +8206,7 @@ input.foods-popup__form-submit--password-create {
 
   .foods-subsection--mobile .foods-subsection__item--cart:hover,
   .foods-subsection--mobile .foods-subsection__item--cart.foods-subsection__item--active {
-    background-position: -303px  -257px;
+    background-position: -303px -257px;
   }
 
   .foods-subsection--mobile .foods-subsection__item--subscription {
@@ -8210,7 +8218,7 @@ input.foods-popup__form-submit--password-create {
 
   .foods-subsection--mobile .foods-subsection__item--subscription:hover,
   .foods-subsection--mobile .foods-subsection__item--subscription.foods-subsection__item--active {
-    background-position: -212px  -258px;
+    background-position: -212px -258px;
   }
 
   .foods-subsection--mobile .foods-subsection__item--history {
@@ -8222,7 +8230,7 @@ input.foods-popup__form-submit--password-create {
 
   .foods-subsection--mobile .foods-subsection__item--history:hover,
   .foods-subsection--mobile .foods-subsection__item--history.foods-subsection__item--active {
-    background-position: -158px  -261px;
+    background-position: -158px -261px;
   }
 
   .foods-subsection--mobile .foods-subsection__item--favorites {
@@ -8234,7 +8242,20 @@ input.foods-popup__form-submit--password-create {
 
   .foods-subsection--mobile .foods-subsection__item--favorites:hover,
   .foods-subsection--mobile .foods-subsection__item--favorites.foods-subsection__item--active {
-    background-position: -135px  -262px;
+    background-position: -135px -262px;
+  }
+
+  .foods-subsection--mobile .foods-subsection__item--messages {
+    width: 20px;
+    height: 15px;
+    margin-top: 1px;
+    background-image: url("../images/foods_sprite.fw.png");
+    background-position: -180px -360px;
+  }
+
+  .foods-subsection--mobile .foods-subsection__item--messages:hover,
+  .foods-subsection--mobile .foods-subsection__item--messages.foods-subsection__item--active {
+    background-position: -156px -360px;
   }
 
   .foods-subsection--mobile .exit-button {
@@ -9056,6 +9077,35 @@ input.foods-popup__form-submit--password-create {
     width: 320px;
   }
 
+  /* Foods top */
+
+  .foods-top__search-form {
+    width: 300px;
+    margin-top: -52px;
+    z-index: 2;
+  }
+
+  .foods-top__search-form::after {
+    right: 17px;
+  }
+
+  input[name="foods-top__search-submit"] {
+    top: 18px;
+    right: 81px;
+  }
+
+  .foods-top--dark .foods-top__search-form--visible input[name="foods-top__search-submit"] {
+    right: -8px;
+  }
+
+  .foods-top--dark .foods-top__search-form--visible input[name="foods-top__search-reset"] {
+    right: 24px;
+  }
+
+  input[name="foods-top__search-field"] {
+    width: 320px;
+  }
+
   /* Foods breadcrumbs */
 
   .foods-breadcrumbs {
@@ -9064,12 +9114,34 @@ input.foods-popup__form-submit--password-create {
 
   /* Foods subsection */
 
-  .foods-subsection--mobile .foods-subsection__item,
-  .foods-subsection--mobile .exit-button {
+  .foods-subsection--mobile {
+    top: -24px;
+    background-color: transparent;
+  }
+
+  .foods-subsection--mobile li {
+    margin-right: 38px;
+  }
+
+  .foods-subsection--mobile .foods-subsection__item {
     font-size: 0;
   }
 
+  .exit-button {
+    top: -60px;
+    left: 0;
+    right: auto;
+  }
+
+  .foods-subsection--mobile .exit-button::after {
+    right: -155px;
+  }
+
   /* Foods messages */
+
+  .foods-section--messages {
+    padding-top: 36px;
+  }
 
   .foods-section--messages h1 {
     font-size: 20px;
@@ -9077,7 +9149,7 @@ input.foods-popup__form-submit--password-create {
   }
 
   .foods-messages__header-button--new-message {
-    top: 5px;
+    top: 41px;
   }
 
   .foods-messages {
@@ -9221,6 +9293,49 @@ input.foods-popup__form-submit--password-create {
     margin-left: 0;
   }
 
+  .foods-popup.messages-popup {
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .foods-popup .popup__close-button--top {
+    top: 2px;
+    right: 44px;
+    font-size: 0;
+  }
+
+  .foods-popup.messages-popup--2 .popup__close-button--top::before {
+    background-position: -57px -180px;
+  }
+
+  .foods-popup .popup__close-button--top::before {
+    top: 18px;
+    right: -18px;
+    left: auto;
+  }
+
+  .foods-popup.messages-popup .popup__bottom {
+    width: 320px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .foods-popup.messages-popup .popup__bottom input[type="text"], 
+  .foods-popup.messages-popup .popup__bottom textarea,
+  .foods-popup.messages-popup .submit {
+    width: 320px;
+  }
+
+  .foods-popup.messages-popup .popup__bottom label[for="message-email"]::before {
+    left: 66px;
+  }
+
+  .foods-popup.messages-popup .popup__bottom input[type="checkbox"]:checked + label[for="message-email"]::after {
+    left: 70px;
+  }
+
   /* Foods pagination */
 
   .foods-pagination--favorites {
@@ -9245,7 +9360,6 @@ input.foods-popup__form-submit--password-create {
   .foods-pagination--favorites .foods-pagination__item {
     width: 50px;
   }
-
 
   /* Foods footer */
 
@@ -9349,6 +9463,13 @@ input.foods-popup__form-submit--password-create {
   .foods-footer__copyrights {
     bottom: 20px;
     left: 49px;
+  }
+
+  /* Foods popup */
+
+  .foods-popup,
+  .foods-popup.messages-popup .popup__top {
+    border-radius: 0;
   }
 
 }

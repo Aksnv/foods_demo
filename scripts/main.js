@@ -51,7 +51,8 @@ $(".foods-top--dark .foods-top__search-submit").click(function(e) {
 
 $(document).click(function(e) {
   var searchForm = $(".foods-top__search-form--visible");
-  if ((!searchForm.is(e.target)) && (searchForm.has(e.target).length === 0) && ($(".foods-container").css("width") == "690px")) {
+  if ((!searchForm.is(e.target)) && (searchForm.has(e.target).length === 0) && 
+    ($(".foods-container").css("width") == "690px" || $(".foods-container").css("width") == "320px")) {
     $(searchForm).removeClass("foods-top__search-form--visible");
     $(".foods-top--dark .foods-top__search-form::after").hide();
     $(".foods-top--dark input[name='foods-top__search-field']").hide();
@@ -190,7 +191,8 @@ $(".add-review-form__reset").click(function() {
 /* Foods subsection - buttons */
 
 $(window).resize(function() {
-  if (($(".foods-container").css("width") == "690px") && ($(".foods-top").hasClass("foods-top--dark"))) {
+  if (($(".foods-container").css("width") == "690px") && ($(".foods-top").hasClass("foods-top--dark")) || 
+    ($(".foods-container").css("width") == "320px") && ($(".foods-top").hasClass("foods-top--dark"))) {
     $(".foods-subsection__item").text("");
     $(".exit-button").text("user@mail.com");
   } else {
@@ -199,12 +201,14 @@ $(window).resize(function() {
     $(".foods-subsection__item--subscription").text("Подписка на продукты");
     $(".foods-subsection__item--history").text("Прошлые покупки");
     $(".foods-subsection__item--favorites").text("Избранное");
+    $(".foods-subsection__item--messages").text("Сообщения");
     $(".exit-button").text("Выход");
   }
 });
 
 $(document).ready(function() {
-  if (($(".foods-container").css("width") == "690px") && ($(".foods-top").hasClass("foods-top--dark"))) {
+  if (($(".foods-container").css("width") == "690px") && ($(".foods-top").hasClass("foods-top--dark")) || 
+    ($(".foods-container").css("width") == "320px") && ($(".foods-top").hasClass("foods-top--dark"))) {
     $(".foods-subsection__item").text("");
     $(".exit-button").text("user@mail.com");
   } else {
@@ -213,6 +217,7 @@ $(document).ready(function() {
     $(".foods-subsection__item--subscription").text("Подписка на продукты");
     $(".foods-subsection__item--history").text("Прошлые покупки");
     $(".foods-subsection__item--favorites").text("Избранное");
+    $(".foods-subsection__item--messages").text("Сообщения");
     $(".exit-button").text("Выход");
   }
 });
