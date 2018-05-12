@@ -741,7 +741,7 @@ input[name="foods-top__search-field"] {
   font-size: 15px;
   margin-bottom: 17px;
   padding-left: 20px;
-  padding-right: 57px;
+  padding-right: 95px;
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -9077,6 +9077,12 @@ input.foods-popup__form-submit--password-create {
     width: 320px;
   }
 
+  /* Foods header */
+
+  .foods-header--search .foods-header__personal::before {
+    background-color: transparent;
+  }
+
   /* Foods top */
 
   .foods-top__search-form {
@@ -9086,7 +9092,7 @@ input.foods-popup__form-submit--password-create {
   }
 
   .foods-top__search-form::after {
-    right: 17px;
+    right: 30px;
   }
 
   input[name="foods-top__search-submit"] {
@@ -9095,11 +9101,11 @@ input.foods-popup__form-submit--password-create {
   }
 
   .foods-top--dark .foods-top__search-form--visible input[name="foods-top__search-submit"] {
-    right: -8px;
+    right: -3px;
   }
 
   .foods-top--dark .foods-top__search-form--visible input[name="foods-top__search-reset"] {
-    right: 24px;
+    right: 45px;
   }
 
   input[name="foods-top__search-field"] {

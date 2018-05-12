@@ -39,6 +39,7 @@ $(".foods-top--dark .foods-top__search-submit").click(function(e) {
     $(".foods-top__search-form").addClass("foods-top__search-form--visible");
     $(".foods-top--dark input[name='foods-top__search-field']").show();
     $(".foods-top--dark input[name='foods-top__search-reset']").show();
+    $(".foods-header").addClass("foods-header--search");
     $(this).removeClass("foods-top__search-submit--button");
   } else {
     setTimeout(submitForm, 100);
@@ -57,6 +58,7 @@ $(document).click(function(e) {
     $(".foods-top--dark .foods-top__search-form::after").hide();
     $(".foods-top--dark input[name='foods-top__search-field']").hide();
     $(".foods-top--dark input[name='foods-top__search-reset']").hide();
+    $(".foods-header").removeClass("foods-header--search");
     $(".foods-top__search-submit").addClass("foods-top__search-submit--button");
   }
 });
