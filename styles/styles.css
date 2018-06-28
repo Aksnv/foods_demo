@@ -5757,6 +5757,10 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   border-radius: 5px;
 }
 
+.store-select .jq-selectbox select {
+  width: 318px;
+}
+
 .store-select .jq-selectbox__select::before {
   position: absolute;
   top: 9px;
