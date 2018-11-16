@@ -112,6 +112,10 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-subm
   color: #f04f79;
 } 
 
+.foods-catalog__goods-item--active:hover {
+  color: #fff;
+}
+
 /* Foods slider */
 
 .foods-slider__gallery {

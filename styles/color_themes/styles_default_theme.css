@@ -105,12 +105,16 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-subm
 .foods-catalog__goods-item--active,
 .foods-catalog__goods-item--active::before, 
 .foods-catalog__goods-item--active::after {
-  bbackground-color: #ffd33a;
+  background-color: #ffd33a;
 }
 
 .foods-catalog__goods-item:hover {
   color: #ffd33a;
-} 
+}
+
+.foods-catalog__goods-item--active:hover {
+  color: #fff;
+}
 
 /* Foods slider */
 
