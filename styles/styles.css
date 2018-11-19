@@ -367,7 +367,7 @@ input:focus {
   line-height: 24px;
   text-align: center;
   margin-left: 2px;
-  background-color: #cf453c;
+  /* background-color: #cf453c; */
   border-radius: 50%;
 }
 
@@ -659,13 +659,10 @@ input:focus {
   background-color: #28a42c;
 } */
 
-.foods-menu__menu-item:hover,
+/* .foods-menu__menu-item:hover,
 .foods-menu__menu-item--active {
-  /* background-color: #fff; */
   color: #2e8231; 
-}
-
-
+} */
 
 /* Foods top */
 
@@ -763,7 +760,8 @@ input:focus {
 }
 
 input[name="foods-top__search-field"] {
-  width: 684px;
+  /* width: 684px; */
+  width: 910px;
   height: 52px;
   font-size: 15px;
   margin-bottom: 17px;
@@ -862,8 +860,7 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 
 .foods-top .advanced-search__button {
   position: relative;
-  display: inline-block;
-  vertical-align: top;
+  display: none;
   width: 216px;
   height: 52px;
   font-family: "Museo Sans Cyrl300";
@@ -876,6 +873,11 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   color: white;
   /* border: 1px solid #2e8231; */
   border-radius: 5px;
+}
+
+.foods-top .foods-top__search--advanced .advanced-search__button {
+  display: inline-block;
+  vertical-align: top;
 }
 
 .foods-top .advanced-search__button:hover {
@@ -898,6 +900,10 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 
 .foods-top .advanced-search__button:hover::before {
   background-position: -152px -175px;
+}
+
+.foods-top__search--advanced input[name="foods-top__search-field"] {
+  width: 684px;
 }
 
 .foods-top .advanced-search__form {
@@ -6836,13 +6842,13 @@ input[name="foods-footer__subscription-submit"]:hover {
   color: #28282c;
 }
 
-/*.foods-popup__form--enter {
-    display: none;
-}*/
-
 .foods-popup__form--enter {
-    display: block;
+    display: none;
 }
+
+/* .foods-popup__form--enter {
+    display: block;
+} */
 
 .foods-popup__form--registration p {
   font-family: "Museo Sans Cyrl300";

@@ -4,6 +4,10 @@
   color: #fc922c;
 }
 
+.inline-link:hover {
+  color: #a32b47;
+} 
+
 .button {
   background-color: #a32b47;
   color: #fff;
@@ -31,6 +35,10 @@
   background-color: #e2204d;
 }
 
+.circles-menu__num {
+  background-color: #fc922c;
+}
+
 .foods-header__personal-item--cart span + span {
   background-color: #fc922c;
 }
@@ -42,6 +50,11 @@
 
 .foods-header__cart .foods-cart__result-cart:hover {
   background-color: #7c2237;
+}
+
+.foods-menu__menu-item:hover,
+.foods-menu__menu-item--active {
+  color: #a32b47; 
 }
 
 /* Foods top */
@@ -430,6 +443,10 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-subm
 .foods-footer__copyrights a {
   color: #fc922c;
 }
+
+.foods-footer__block a:hover {
+  color: #a32b47;
+} 
 
 .foods-footer__subscription-form::before {
   background-position: -7px -279px;

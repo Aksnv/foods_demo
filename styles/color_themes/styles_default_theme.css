@@ -43,6 +43,10 @@
   background-color: #28a42c;
 }
 
+.circles-menu__num {
+  background-color: #cf453c;
+}
+
 .foods-header__personal-item--cart span + span {
   background-color: #cf453c;
 }
@@ -54,6 +58,11 @@
 
 .foods-header__cart .foods-cart__result-cart:hover {
   background-color: #ffb33a;
+}
+
+.foods-menu__menu-item:hover,
+.foods-menu__menu-item--active {
+  color: #2e8231; 
 }
 
 /* Foods top */
