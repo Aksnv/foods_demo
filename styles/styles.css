@@ -8156,6 +8156,16 @@ input.foods-popup__form-submit--password-create {
     margin-bottom: 32px;
   }
 
+  /* Foods news */
+
+  .foods-news__block:nth-child(n) {
+    margin-right: 8px;
+  }
+
+  .foods-news__block:nth-child(3n+3) {
+    margin-right: 0;
+  }
+
   /* Foods footer */
 
   .foods-footer {
@@ -9427,6 +9437,21 @@ input.foods-popup__form-submit--password-create {
 
   .foods-pagination--favorites .foods-pagination__item {
     width: 50px;
+  }
+
+  /* Foods news */
+
+  .foods-section {
+    text-align: center;
+  }
+
+  .foods-news__block:nth-child(n) {
+    margin-right: 0;
+  }
+
+  .foods-news__block time,
+  .foods-news__block p {
+    text-align: left;
   }
 
   /* Foods footer */
