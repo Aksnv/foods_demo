@@ -31,6 +31,21 @@ $(".foods-header__personal-item--cart").click(function(e) {
 });
 
 
+/* Foods menu */
+
+$(".foods-menu__menu-button").click(function() {
+  $(this).toggleClass("foods-menu__menu-button--close");
+  $(".foods-menu").toggleClass("foods-menu--active");
+  /*$(".foods-contact-information").toggleClass("foods-contact-information--invisible");
+  $(".foods-top").toggleClass("foods-top--invisible");*/
+  $(".foods-content--left").toggleClass("foods-content--active");
+  $(".foods-header").toggleClass("foods-header--active");
+  var catalogHeight = $(".foods-content--left.foods-content--active").css("height");
+  console.log(catalogHeight);
+  $(".foods-menu--active ul").css("top", catalogHeight);
+});
+
+
 /* Foods top - search */
 
 $(".foods-top--dark .foods-top__search-submit").click(function(e) {

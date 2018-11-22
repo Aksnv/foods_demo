@@ -65,6 +65,11 @@
   color: #2e8231; 
 }
 
+.foods-menu--active .foods-menu__menu-item:hover,
+.foods-menu--active .foods-menu__menu-item--active {
+  color: #ffd33a; 
+}
+
 /* Foods top */
 
 /* .foods-top__logo-image {
@@ -558,6 +563,10 @@ input.foods-popup__form-submit:hover {
 
   .foods-header {
     background-color: #fff;
+  }
+
+  .foods-header--active {
+    background-color: #f4f4f4;
   }
 
   .foods-header--dark,
