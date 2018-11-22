@@ -36,13 +36,19 @@ $(".foods-header__personal-item--cart").click(function(e) {
 $(".foods-menu__menu-button").click(function() {
   $(this).toggleClass("foods-menu__menu-button--close");
   $(".foods-menu").toggleClass("foods-menu--active");
-  /*$(".foods-contact-information").toggleClass("foods-contact-information--invisible");
-  $(".foods-top").toggleClass("foods-top--invisible");*/
   $(".foods-content--left").toggleClass("foods-content--active");
   $(".foods-header").toggleClass("foods-header--active");
   var catalogHeight = $(".foods-content--left.foods-content--active").css("height");
-  console.log(catalogHeight);
   $(".foods-menu--active ul").css("top", catalogHeight);
+});
+
+$(window).resize(function() {
+  if ($(".foods-container").css("width") == "1180px") {
+    $(".foods-menu__menu-button").removeClass("foods-menu__menu-button--close");
+    $(".foods-menu").removeClass("foods-menu--active");
+    $(".foods-content--left").removeClass("foods-content--active");
+    $(".foods-header").removeClass("foods-header--active");
+  }
 });
 
 

@@ -9253,17 +9253,48 @@ input.foods-popup__form-submit--password-create {
     width: 320px;
   }
 
+  .foods-section {
+    margin-bottom: 12px;
+  }
+
   /* Foods header */
+
+  .foods-header {
+    min-height: 110px;
+  }
+
+  .foods-header__personal-button {
+    right: 62px;
+  }
 
   .foods-header--search .foods-header__personal::before {
     background-color: transparent;
   }
 
+  /* Foods menu */
+
+  .foods-menu__menu-button {
+    right: 10px;
+  }
+
   /* Foods top */
 
+  .foods-top {
+    background-color: transparent;
+  }
+
+  .foods-top__logo {
+    margin-left: 10px;
+  }
+
+  .foods-top__search {
+    margin-bottom: 30px;
+  }
+
   .foods-top__search-form {
-    width: 300px;
-    margin-top: -52px;
+    width: 309px;
+    margin-top: 50px;
+    margin-right: 0;
     z-index: 2;
   }
 
@@ -9273,7 +9304,11 @@ input.foods-popup__form-submit--password-create {
 
   input[name="foods-top__search-submit"] {
     top: 18px;
-    right: 81px;
+    right: 42px;
+  }
+
+  input[name="foods-top__search-reset"] {
+    right: 4px;
   }
 
   .foods-top--dark .foods-top__search-form--visible input[name="foods-top__search-submit"] {
@@ -9286,6 +9321,79 @@ input.foods-popup__form-submit--password-create {
 
   input[name="foods-top__search-field"] {
     width: 320px;
+  }
+  
+  /* Foods promo */
+
+  .foods-promo {
+    margin-bottom: 10px;
+  }
+
+  .foods-promo .promo-text--description {
+    width: 100%;
+    padding-right: 30px;
+  }
+
+  .foods-promo__block--small .promo-text--header,
+  .foods-promo__block--small .foods-promo__product-price {
+    text-align: left;
+  }
+
+  /* Foods content */
+
+  .foods-content h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  /* Foods carousel */
+
+  .foods-carousel-button--left {
+    top: 4px;
+    right: 147px;
+  }
+
+  .foods-carousel-button--right {
+    top: 3px;
+    right: -147px;
+  }
+
+  /* Foods goods */
+  
+  .foods-goods__product-item {
+    width: 150px;
+    height: auto;
+    min-height: 312px;
+  }
+
+  .foods-goods__product-item:nth-child(n) {
+    margin-right: 18px;
+  }
+
+  .foods-goods__product-item:nth-child(2n+2) {
+    margin-right: 0;
+  }
+
+  .foods-goods__product-item:hover::before {
+    display: none;
+  }
+
+  .foods-goods__product-favorite {
+    top: 10px;
+    left: 9px;
+  }
+
+  .foods-goods__product-name {
+    min-height: 60px;
+  }
+
+  .foods-goods__product-status {
+    padding-bottom: 14px;
+  }
+
+  .foods-goods__product-buy {
+    right: 15px;
+    bottom: 13px;
   }
 
   /* Foods breadcrumbs */
