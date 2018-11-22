@@ -42,6 +42,11 @@
 .foods-header__personal-item:hover {
   background-color: #28a42c;
 }
+ 
+.foods-header__personal--active .foods-header__personal-item--active, 
+.foods-header__personal--active .foods-header__personal-item:hover {
+  background-color: #ffd33a;
+}
 
 .circles-menu__num {
   background-color: #cf453c;
