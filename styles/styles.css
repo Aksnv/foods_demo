@@ -9380,6 +9380,16 @@ input.foods-popup__form-submit--password-create {
     background-color: transparent;
   }
 
+  .foods-header__personal--active ul {
+    z-index: 3;
+  }
+
+  .foods-header__personal--active .foods-header__personal-item {
+    width: 320px;
+  }
+
+
+
   /* Foods menu */
 
   .foods-menu__menu-button {
