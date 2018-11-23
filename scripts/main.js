@@ -36,13 +36,16 @@ $(".foods-header__personal-item--cart").click(function(e) {
 $(".foods-header__personal-button").click(function() {
   $(this).toggleClass("foods-header__personal-button--close");
   $(".foods-header__personal").toggleClass("foods-header__personal--active");
+  var personalHeight = $(".foods-header__personal--active ul").css("height");
+  $(".foods-header__personal--active").css("height", personalHeight);
+});
 
-
-  /*$(".foods-menu").toggleClass("foods-menu--active");
-  $(".foods-content--left").toggleClass("foods-content--active");
-  $(".foods-header").toggleClass("foods-header--active");
-  var catalogHeight = $(".foods-content--left.foods-content--active").css("height");
-  $(".foods-menu--active ul").css("top", catalogHeight);*/
+$(window).resize(function() {
+  if ($(".foods-container").css("width") == "1180px") {
+    $(".foods-header__personal-button").removeClass("foods-header__personal-button--close");
+    $(".foods-header__personal").removeClass("foods-header__personal--active");
+    $(".foods-header__personal").css("height", "58px");
+  }
 });
 
 
