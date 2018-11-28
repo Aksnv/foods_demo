@@ -1984,6 +1984,7 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 }
 
 .foods-subsection__item {
+  position: relative;
   display: inline-block;
   vertical-align: top;
   height: 42px;
@@ -2010,6 +2011,24 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 /* .foods-subsection__item--active:hover {
   border: 1px solid #2e8231;
 } */
+
+.foods-subsection__item--arrow-to-top::before {
+  position: absolute;
+  top: -3px;
+  left: 5px;
+  content: "\2191";
+  font-size: 20px;
+  color: #666;
+}
+
+.foods-subsection__item--arrow-to-bottom::before {
+  position: absolute;
+  top: -3px;
+  left: 5px;
+  content: "\2193";
+  font-size: 20px;
+  color: #666;
+}
 
 /* Foods sorter */
 
