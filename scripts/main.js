@@ -33,11 +33,18 @@ $(".foods-header__personal-item--cart").click(function(e) {
 
 /* Foods header - personal menu */
 
-$(".foods-header__personal-button").click(function() {
+$(".foods-header--white .foods-header__personal-button").click(function() {
   $(this).toggleClass("foods-header__personal-button--close");
   $(".foods-header__personal").toggleClass("foods-header__personal--active");
   var personalHeight = $(".foods-header__personal--active ul").css("height");
   $(".foods-header__personal--active").css("height", personalHeight);
+  if ($(this).hasClass("foods-header__personal-button--close")) {
+    if ($(".foods-container").css("width") == "320px") {
+      $(".foods-header__personal").css("height", "110px");
+    } else if ($(".foods-container").css("width") == "690px") {
+      $(".foods-header__personal").css("height", "140px");
+    }
+  }
 });
 
 $(window).resize(function() {
@@ -58,6 +65,9 @@ $(".foods-menu__menu-button").click(function() {
   $(".foods-header").toggleClass("foods-header--active");
   var catalogHeight = $(".foods-content--left.foods-content--active").css("height");
   $(".foods-menu--active ul").css("top", catalogHeight);
+  if ($(".foods-container").css("width") == "690px") {
+    $(".foods-top--dark").toggleClass("foods-top--active");
+  }
 });
 
 $(window).resize(function() {
@@ -66,18 +76,55 @@ $(window).resize(function() {
     $(".foods-menu").removeClass("foods-menu--active");
     $(".foods-content--left").removeClass("foods-content--active");
     $(".foods-header").removeClass("foods-header--active");
+    $(".foods-top--dark").removeClass("foods-top--active");
   }
 });
 
 
 /* Foods top - search */
 
-$(".foods-top--dark .foods-top__search-submit").click(function(e) {
+$(window).resize(function() {
+  if ($(".foods-container").css("width") == "1180px") {
+    $(".foods-top__search-submit").removeClass("foods-top__search-submit--button");
+    $("input[name='foods-top__search-field']").show();
+    $("input[name='foods-top__search-reset']").show();
+  } else if ($(".foods-container").css("width") == "690px") {
+    if ($(".foods-top").hasClass("foods-top--dark")) {
+      $(".foods-top__search-submit").addClass("foods-top__search-submit--button");
+    } else {
+      $(".foods-top__search-submit").removeClass("foods-top__search-submit--button");
+      $("input[name='foods-top__search-field']").show();
+      $("input[name='foods-top__search-reset']").show();
+      $(".foods-header__personal").css("height", "140px");
+    }
+  } else if ($(".foods-container").css("width") == "320px") {
+    $(".foods-top__search-submit").addClass("foods-top__search-submit--button");
+    $("input[name='foods-top__search-field']").hide();
+    $("input[name='foods-top__search-reset']").hide();
+    $(".foods-header__personal").css("height", "110px");
+  }
+});
+
+$(document).ready(function() {
+  if ($(".foods-container").css("width") == "1180px") {
+    $(".foods-top__search-submit").removeClass("foods-top__search-submit--button");
+  } else if ($(".foods-container").css("width") == "690px") {
+    if ($(".foods-top").hasClass("foods-top--dark")) {
+      $(".foods-top__search-submit").addClass("foods-top__search-submit--button");
+    } else {
+      $(".foods-top__search-submit").removeClass("foods-top__search-submit--button");
+    }
+  } else if ($(".foods-container").css("width") == "320px") {
+    $(".foods-top__search-submit").addClass("foods-top__search-submit--button");
+  }
+});
+
+$(".foods-top__search-submit").click(function(e) {
   if ($(this).hasClass("foods-top__search-submit--button")) {
     e.preventDefault();
     $(".foods-top__search-form").addClass("foods-top__search-form--visible");
-    $(".foods-top--dark input[name='foods-top__search-field']").show();
-    $(".foods-top--dark input[name='foods-top__search-reset']").show();
+    $(".foods-top input[name='foods-top__search-field']").show();
+    $(".foods-top input[name='foods-top__search-reset']").show();
     $(".foods-header").addClass("foods-header--search");
     $(this).removeClass("foods-top__search-submit--button");
   } else {
@@ -91,12 +138,20 @@ $(".foods-top--dark .foods-top__search-submit").click(function(e) {
 
 $(document).click(function(e) {
   var searchForm = $(".foods-top__search-form--visible");
-  if ((!searchForm.is(e.target)) && (searchForm.has(e.target).length === 0) && 
-    ($(".foods-container").css("width") == "690px" || $(".foods-container").css("width") == "320px")) {
+  if ((!searchForm.is(e.target)) && (searchForm.has(e.target).length === 0) && ($(".foods-container").css("width") == "690px")) {
+    if ($(".foods-top").hasClass("foods-top--dark")) {
+      $(searchForm).removeClass("foods-top__search-form--visible");
+      $(".foods-top .foods-top__search-form::after").hide();
+      $(".foods-top input[name='foods-top__search-field']").hide();
+      $(".foods-top input[name='foods-top__search-reset']").hide();
+      $(".foods-header").removeClass("foods-header--search");
+      $(".foods-top__search-submit").addClass("foods-top__search-submit--button");
+    }
+  } else if ((!searchForm.is(e.target)) && (searchForm.has(e.target).length === 0) && ($(".foods-container").css("width") == "320px")) {
     $(searchForm).removeClass("foods-top__search-form--visible");
-    $(".foods-top--dark .foods-top__search-form::after").hide();
-    $(".foods-top--dark input[name='foods-top__search-field']").hide();
-    $(".foods-top--dark input[name='foods-top__search-reset']").hide();
+    $(".foods-top .foods-top__search-form::after").hide();
+    $(".foods-top input[name='foods-top__search-field']").hide();
+    $(".foods-top input[name='foods-top__search-reset']").hide();
     $(".foods-header").removeClass("foods-header--search");
     $(".foods-top__search-submit").addClass("foods-top__search-submit--button");
   }

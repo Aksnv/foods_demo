@@ -587,6 +587,10 @@ input.foods-popup__form-submit:hover {
 
 @media screen and (max-width: 749px) {
 
+  .foods-top--dark {
+    background-color: transparent;
+  }
+
   .product-card__tab--active {
     border-bottom: 4px solid #2e8231;
   }

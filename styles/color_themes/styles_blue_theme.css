@@ -561,3 +561,11 @@ input.foods-popup__form-submit:hover {
   }
 
 }
+
+@media screen and (max-width: 749px) {
+
+  .foods-top--dark {
+    background-color: transparent;
+  }
+
+}
