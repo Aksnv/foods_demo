@@ -7113,7 +7113,7 @@ input.foods-popup__form-submit--password-create {
 
 .foods-popup.openbonus-popup--1 {
   position: fixed;
-  top: calc(50% - 274px);
+  top: 100px;
   left: calc(50% - 310px);
   width: 620px;
   min-height: 548px;
@@ -7211,6 +7211,10 @@ input.foods-popup__form-submit--password-create {
   margin-bottom: 32px;
 }
 
+.foods-popup.openbonus-popup--1 .popup__bottom span.br {
+  display: block;
+}
+
 .foods-popup.openbonus-popup--1 .popup__button {
   position: relative;
   display: inline-block;
@@ -7261,7 +7265,7 @@ input.foods-popup__form-submit--password-create {
 .foods-popup.openbonus-popup--2 {
   position: absolute;
   /* position: fixed; */
-  top: 5%;
+  top: 100px;
   left: calc(50% - 265px);
   width: 530px;
   background-color: white;
@@ -10334,6 +10338,60 @@ input.foods-popup__form-submit--password-create {
   input.foods-popup__form-submit, 
   input.foods-popup__form-reset {
     margin-bottom: 10px;
+  }
+
+  /* Foods openbonus */
+
+  .foods-popup.openbonus-popup--1 {
+    left: calc(50% - 180px);
+    width: 360px;
+  }
+
+  .foods-popup.openbonus-popup--1 .popup__bottom p:first-child strong {
+    line-height: 36px;
+  }
+
+  .foods-popup.openbonus-popup--1 .popup__bottom {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .foods-popup.openbonus-popup--1 .popup__bottom span.br {
+    display: inline;
+  }
+
+  .foods-popup.openbonus-popup--2 {
+    left: calc(50% - 180px);
+    width: 360px;
+  }
+
+  .foods-popup.openbonus-popup--2 .popup__top {
+    border-radius: 0;
+  }
+
+  .foods-popup.openbonus-popup--2 .popup__bottom {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .foods-popup.openbonus-popup--2 .popup__bottom input[type="text"],
+  .foods-popup.openbonus-popup--2 .submit {
+    width: 320px;
+  }
+
+  .foods-popup.openbonus-popup--2 .choose-gender label,
+  .foods-popup.openbonus-popup--2 .choose-gender label.gender--female {
+    padding-left: 50px;
+  }
+
+  .foods-popup.openbonus-popup--2 .choose-gender label::after,
+  .foods-popup.openbonus-popup--2 .choose-gender label.gender--female::after {
+    left: 13px;
+  }
+
+  .foods-popup.openbonus-popup--2 .choose-gender label::before,
+  .foods-popup.openbonus-popup--2 .choose-gender label.gender--female::before {
+    left: 21px;
   }
 
 }
