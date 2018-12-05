@@ -1213,7 +1213,8 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   width: 20%;
 }
 
-.foods-container--dark .foods-content--left {
+.foods-container--dark .foods-content--left,
+.foods-container--content-page .foods-content--left {
   display: none;
 }
 
@@ -1230,7 +1231,7 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 
 .foods-content--left.foods-content--active {
   position: absolute;
-  top: -218px;
+  top: -228px;
   left: 0;
   display: block;
   width: 100%;
@@ -1239,6 +1240,10 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   padding-left: 18px;
   background-color: #fff;
   z-index: 11;
+}
+
+.foods-container--dark .foods-content--left.foods-content--active {
+  top: -300px;
 }
 
 .foods-content--left.foods-content--active::after {
@@ -7851,7 +7856,7 @@ input.foods-popup__form-submit--password-create {
   .foods-header {
     position: absolute;
     /*top: 0;*/
-    top: 48px;
+    top: 58px;
     left: 0;
     width: 100%;
     min-height: 140px;
@@ -8055,7 +8060,7 @@ input.foods-popup__form-submit--password-create {
   }
 
   .foods-menu__menu-button {
-    top: 100px;
+    top: 110px;
     display: block;
   }
 
@@ -8451,12 +8456,35 @@ input.foods-popup__form-submit--password-create {
 
   /* Foods news */
 
+  .foods-section--news ul {
+    margin-bottom: 0;
+  }
+
+  .foods-news__item {
+    background-color: transparent;
+  }
+
   .foods-news__block:nth-child(n) {
     margin-right: 8px;
   }
 
   .foods-news__block:nth-child(3n+3) {
     margin-right: 0;
+  }
+
+  .foods-news__item-image {
+    float: none;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .foods-news__item-content {
+    float: none;
+    clear: both;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   /* Foods footer */
@@ -9602,6 +9630,11 @@ input.foods-popup__form-submit--password-create {
     line-height: 24px;
   }
 
+  .foods-content h1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .foods-content h1 + p {
     font-size: 15px;
     line-height: 18px;
@@ -9674,6 +9707,10 @@ input.foods-popup__form-submit--password-create {
 
   .foods-breadcrumbs {
     margin-bottom: 20px;
+  }
+
+  .foods-breadcrumbs li {
+    line-height: 20px;
   }
 
   /*.foods-breadcrumbs {
@@ -10155,10 +10192,14 @@ input.foods-popup__form-submit--password-create {
   .foods-pagination--favorites li:nth-child(1),
   .foods-pagination--favorites li:nth-child(2),
   .foods-pagination--favorites li:nth-child(3),
-  .foods-pagination--favorites li:nth-child(4),
-  .foods-pagination--favorites li:nth-child(5),
+  .foods-pagination--favorites li.ellipsis,
+  .foods-pagination--favorites li:nth-last-child(2),
   .foods-pagination--favorites li:last-child {
     display: inline-block;
+  }
+
+  .foods-pagination--favorites li.ellipsis {
+    margin-right: 0;
   }
 
   .foods-pagination--favorites .foods-pagination__item {
@@ -10169,6 +10210,18 @@ input.foods-popup__form-submit--password-create {
 
   .foods-section {
     text-align: center;
+  }
+
+  .foods-text {
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .foods-text h3 {
+    font-size: 18px;
+    line-height: 22px;
   }
 
   /* .foods-content--dark .foods-section {
@@ -10187,6 +10240,24 @@ input.foods-popup__form-submit--password-create {
   .foods-news__block time,
   .foods-news__block p {
     text-align: left;
+  }
+
+  .foods-news__item-image {
+    padding-left: 10px;
+  }
+
+  .foods-news__item-content {
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+
+  .foods-news__item--page .foods-news__item-content {
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 0;
   }
 
   /* Foods footer */
