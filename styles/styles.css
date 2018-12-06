@@ -9725,6 +9725,10 @@ input.foods-popup__form-submit--password-create {
     background-color: transparent;
   }
 
+  .foods-subsection--messages {
+    top: 22px;
+  }
+
   .foods-subsection--mobile ul {
     padding-left: 6px;
     padding-right: 6px;
@@ -9732,7 +9736,7 @@ input.foods-popup__form-submit--password-create {
 
   .foods-subsection--mobile li {
     /* margin-right: 38px; */
-    margin-right: 50px;
+    margin-right: 35px;
   }
 
   .foods-subsection--mobile .foods-subsection__item {
@@ -9894,6 +9898,84 @@ input.foods-popup__form-submit--password-create {
     text-align: left;
   }
 
+  .foods-cart__item ul {
+    min-height: 150px;
+  }
+
+  .foods-cart__item li/* , 
+  .address-info__item li */ {
+    display: inline-block;
+  }
+
+  .foods-cart__item-image {
+    padding-left: 10px;
+  }
+
+  .foods-cart__item-image img {
+    max-width: 45px;
+    max-height: 45px;
+  }
+
+  .foods-cart__item-delete + .foods-cart__item-image {
+    width: 70px;
+    padding-top: 17px;
+  }
+
+  .foods-cart__item-product {
+    width: 150px;
+    padding-top: 16px;
+    padding-left: 0;
+  }
+
+  .foods-cart__item-delete {
+    top: 11px;
+    right: 13px;
+  }
+
+  .foods-cart__item-delivery {
+    width: auto;
+    padding-top: 4px;
+    padding-left: 20px;
+    padding-bottom: 64px;
+  }
+
+  .foods-cart__item-price {
+    position: absolute;
+    right: 20px;
+    bottom: 66px;
+    padding-left: 0;
+    padding-top: 0;
+  }
+
+  .foods-cart__item-favorites {
+    left: 20px;
+    bottom: 20px;
+  }
+
+  .foods-cart__item-subscription {
+    left: 58px;
+    bottom: 20px;
+  }
+
+  .foods-cart__item-quantity {
+    bottom: 13px;
+    right: 20px;
+    width: 110px;
+    padding-left: 0;
+  }
+
+  .foods-cart__result {
+    text-align: left;
+  }
+
+  .foods-cart__result-checkout {
+    width: 100%;
+  }
+
+  .foods-cart__result-checkout--without-bonuses {
+    margin-top: 10px;
+  }
+
   /* Foods certificate */
 
   .foods-certificate__outer {
@@ -9970,13 +10052,18 @@ input.foods-popup__form-submit--password-create {
 
   /* Foods messages */
 
-  .foods-section--messages {
+  /* .foods-section--messages {
     padding-top: 36px;
-  }
+  } */
 
   .foods-section--messages h1 {
     font-size: 20px;
     margin-bottom: 0;
+  }
+
+  .foods-section--message {
+    text-align: left;
+    padding-top: 50px;
   }
 
   .foods-messages__header-button--new-message {
@@ -9984,6 +10071,7 @@ input.foods-popup__form-submit--password-create {
   }
 
   .foods-messages {
+    text-align: left;
     margin-bottom: 30px;
     padding-top: 0;
   }
@@ -10208,7 +10296,7 @@ input.foods-popup__form-submit--password-create {
 
   /* Foods news */
 
-  .foods-section {
+  .foods-section--news {
     text-align: center;
   }
 
