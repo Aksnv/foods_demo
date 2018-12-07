@@ -427,6 +427,7 @@ $(".order-payment__form .foods-carousel-button--left").click(function(e) {
   }
 });
 
+
 /* Foods order - notes */
 
 $(window).resize(function() {
