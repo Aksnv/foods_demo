@@ -9962,11 +9962,13 @@ input.foods-popup__form-submit--password-create {
     min-height: 312px;
   }
 
-  .foods-goods__product-item:nth-child(n) {
+  .foods-goods__product-item:nth-child(n),
+  .foods-goods--favorites .foods-goods__product-item:nth-child(n) {
     margin-right: 18px;
   }
 
-  .foods-goods__product-item:nth-child(2n+2) {
+  .foods-goods__product-item:nth-child(2n+2),
+  .foods-goods--favorites .foods-goods__product-item:nth-child(2n+2) {
     margin-right: 0;
   }
 
@@ -10547,6 +10549,36 @@ input.foods-popup__form-submit--password-create {
 
 
   /* ***** Foods order ***** */
+
+  .foods-content--dark .foods-section--order h1 {
+    margin-bottom: 10px;
+  }
+
+  .order__tab {
+    font-size: 13px;
+  }
+
+  .order__form-action {
+    margin-bottom: 50px;
+  }
+
+  .confirmation__form-notes input[type="text"], 
+  .confirmation__form-authorization input[type="text"], 
+  .confirmation__form-notes textarea {
+    width: 320px;
+  }
+
+  .confirmation__form-authorization {
+    margin-bottom: 0;
+  }
+
+  .order__form-reset, 
+  .order__form-update, 
+  .order__form-submit {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 
 
   /* ***** Foods certificate ***** */
