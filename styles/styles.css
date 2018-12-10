@@ -10320,6 +10320,16 @@ input.foods-popup__form-submit--password-create {
     vertical-align: top;
   }
 
+  .address-info__item-delete button {
+    width: 10px;
+    height: 10px;
+    background-position: -88px -200px;
+  }
+
+  .address-info__item-delete button:hover {
+    background-position: -27px -200px;
+  }
+
   .foods-cart__item-image {
     padding-left: 10px;
   }
@@ -10400,6 +10410,7 @@ input.foods-popup__form-submit--password-create {
   }
 
   .address-info__item ul {
+    position: relative;
     padding: 26px 20px;
   }
 
@@ -10425,8 +10436,41 @@ input.foods-popup__form-submit--password-create {
 
   .address-info__item-delete {
     position: absolute;
-    top: 8px;
-    right: -7px;
+    top: 10px;
+    right: -5px;
+  }
+
+  .order-delivery__form .personal__address-edit {
+    margin-bottom: 150px;
+    padding-left: 0;
+  }
+
+  .personal__address-edit--left {
+    margin-right: 0;
+  }
+
+  .personal__address-edit--right .address-edit__form-action {
+    bottom: -110px;
+  }
+
+  .address-actions__action-button--add::before {
+    left: 90px;
+  }
+
+  .address-edit__form-submit, 
+  .address-edit__form-reset {
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .address-edit__form-reset {
+    margin-bottom: 10px;
+  }
+
+  /* .profile-actions__action-button, */ 
+  .address-actions__action-button {
+    width: 100%;
   }
 
 
@@ -10693,6 +10737,18 @@ input.foods-popup__form-submit--password-create {
     margin-bottom: 10px;
   }
 
+  .order-payment__form .foods-carousel-button--left {
+    left: -145px;
+  }
+
+  .order-payment__form .foods-carousel-button--right {
+    right: -145px;
+  }
+
+  .order-payment__method {
+    margin-bottom: 20px;
+  }
+
 
   /* ***** Foods certificate ***** */
 
@@ -10770,6 +10826,49 @@ input.foods-popup__form-submit--password-create {
 
 
   /* ***** Foods history ***** */
+
+  .foods-history {
+    padding-top: 0;
+  }
+
+  .foods-orders__item-order {
+    width: 200px;
+    margin-bottom: 0;
+  }
+
+  .foods-orders__item-seller {
+    padding-top: 10px;
+    padding-left: 38px;
+  }
+
+  .foods-orders__item-price {
+    width: 100%;
+    margin-bottom: 22px;
+    padding-left: 38px;
+  }
+
+  .foods-orders__item-status,
+  .foods-orders__item-payment {
+    width: 158px;
+    font-size: 12px;
+    margin-bottom: 27px;
+  }
+
+  .foods-orders__item-actions {
+    top: 0;
+    padding-left: 10px;
+  }
+
+  .foods-orders__item-actions span {
+    width: 45%;
+    margin-right: 13px;
+    margin-bottom: 10px;
+  }
+
+  .foods-orders__item-actions a.foods-orders__item-actions--delete {
+    top: -157px;
+    right: 13px;
+  }
 
 
   /* ***** Foods news ***** */
