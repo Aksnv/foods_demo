@@ -9731,7 +9731,7 @@ input.foods-popup__form-submit--password-create {
   /* ***** Foods footer ***** */
 
   .foods-footer {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     border-top: 1px solid #ccc;
   }
 
@@ -9741,7 +9741,8 @@ input.foods-popup__form-submit--password-create {
   }
 
   .foods-footer__block--1 {
-    width: 258px;
+    /*width: 258px;*/
+    width: 215px;
   }
 
   .foods-footer__block--2 {
@@ -9758,7 +9759,7 @@ input.foods-popup__form-submit--password-create {
 
   .foods-footer__copyrights {
     position: absolute;
-    bottom: 10px;
+    bottom: 0;
     left: 38px;
   }
 
@@ -10020,12 +10021,14 @@ input.foods-popup__form-submit--password-create {
 
   .foods-carousel-button--left {
     top: 4px;
-    right: 147px;
+    /* right: 147px; */
+    right: 0;
   }
 
   .foods-carousel-button--right {
     top: 3px;
-    right: -147px;
+    /* right: -147px; */
+    right: -294px;
   }
 
 
@@ -10771,8 +10774,13 @@ input.foods-popup__form-submit--password-create {
 
   /* ***** Foods news ***** */
 
-  .foods-section--news {
+  .foods-section--news,
+  .foods-news {
     text-align: center;
+  }
+
+  .foods-news {
+    padding-bottom: 10px;
   }
 
   .foods-news__block:nth-child(n) {
@@ -10806,11 +10814,12 @@ input.foods-popup__form-submit--password-create {
   /* ***** Foods footer ***** */
 
   .foods-footer {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
 
   .foods-footer .foods-container {
-    padding-top: 102px;
+    /*padding-top: 102px;*/
+    padding-top: 112px;
     padding-left: 9px;
     padding-bottom: 59px;
   }
@@ -10843,21 +10852,33 @@ input.foods-popup__form-submit--password-create {
     padding-left: 0;
   }
 
-  .foods-footer__social-link--vk {
-    margin-right: 20px;
+  .foods-footer__social-links ul {
+    position: relative;
+    width: 260px;
   }
 
+  /* .foods-footer__social-link--vk {
+    margin-right: 20px;
+  }
+  
   .foods-footer__social-link--fb {
     margin-right: 20px;
   }
-
+  
   .foods-footer__social-link--lj {
     margin-right: 23px;
+  } */
+
+  .foods-footer__social-link {
+    margin-right: 20px;
   }
 
   .foods-footer__subscription {
-    position: relative;
-    top: -32px;
+    /* position: relative;
+    top: -32px; */
+    position: absolute;
+    top: 31px;
+    right: 0;
     padding-left: 10px;
   }
 
@@ -10903,7 +10924,7 @@ input.foods-popup__form-submit--password-create {
   }
 
   .foods-footer__copyrights {
-    bottom: 20px;
+    bottom: 10px;
     left: 49px;
   }
 
