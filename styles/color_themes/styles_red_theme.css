@@ -440,6 +440,9 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-subm
 .foods-footer__link--email a,
 .foods-footer__link--skype a,
 .foods-footer__link--icq a,
+.foods-footer__link--viber a,
+.foods-footer__link--whatsup a,
+.foods-footer__link--telegram a,
 .foods-footer__copyrights a {
   color: #fc922c;
 }
