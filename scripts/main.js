@@ -464,6 +464,40 @@ $(".payment-instruction__button").click(function(e) {
 });
 
 
+/* Foods order - file & certificate hide */
+
+$(document).ready(function() {
+  if ($(".foods-container").css("width") == "320px") {
+    for (var i = 1; i <= $(".foods-cart__item").length; i++) {
+      if ($(".foods-cart__item--" + i + " .foods-cart__item-certificate").text() == "") {
+        $(".foods-cart__item--" + i + " .foods-cart__item-certificate").hide();
+      }
+      if ($(".foods-cart__item--" + i + " .foods-cart__item-file").text() == "") {
+        $(".foods-cart__item--" + i + " .foods-cart__item-file").hide();
+      }
+    }
+  } 
+});
+
+$(window).resize(function() {
+  if ($(".foods-container").css("width") == "320px") {
+    for (var i = 1; i <= $(".foods-cart__item").length; i++) {
+      if ($(".foods-cart__item--" + i + " .foods-cart__item-certificate").text() == "") {
+        $(".foods-cart__item--" + i + " .foods-cart__item-certificate").hide();
+      }
+      if ($(".foods-cart__item--" + i + " .foods-cart__item-file").text() == "") {
+        $(".foods-cart__item--" + i + " .foods-cart__item-file").hide();
+      }
+    }
+  } else {
+    for (var i = 1; i <= $(".foods-cart__item").length; i++) {
+      $(".foods-cart__item--" + i + " .foods-cart__item-certificate").show();
+      $(".foods-cart__item--" + i + " .foods-cart__item-file").show();
+    }
+  }
+});
+
+
 /* Foods - add/remove favorites button */
 
 $(".foods-goods__product-favorite").click(function(e) {
