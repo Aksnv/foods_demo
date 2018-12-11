@@ -10914,8 +10914,6 @@ input.foods-popup__form-submit--password-create {
   }
 
 
-
-
   /* ***** Foods certificate ***** */
 
   .foods-certificate__outer {
@@ -10988,6 +10986,64 @@ input.foods-popup__form-submit--password-create {
 
   .foods-certificate + .foods__product-card .product-card__tabs::before {
     display: none;
+  }
+
+  .confirmation__form-details {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+  }
+
+  .confirmation__form-details--left {
+    width: 100%;
+    padding-top: 26px;
+  }
+
+  .confirmation__form-details--right {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .payment-method__hint-icon {
+    right: -10px;
+  }
+
+  .payment-method__hint-text {
+    left: -5px;
+    width: 300px;
+  }
+
+  .payment-method__image {
+    padding-left: 0;
+  }
+
+  .payment-method__description {
+    width: 100%;
+    padding-left: 20px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .confirmation__form-details--left li {
+    margin-bottom: 14px;
+  }
+
+  .confirmation__form-details--left li > span {
+    display: block;
+    padding-top: 2px;
+  }
+
+  .foods-order__payment-instruction {
+    position: relative;
+    margin-top: 50px;
+    padding-left: 20px;
+  }
+
+  .payment-instruction__print {
+    position: absolute;
+    top: -30px;
+    left: 50px;
   }
 
 
