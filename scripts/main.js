@@ -102,6 +102,13 @@ $(window).resize(function() {
     $("input[name='foods-top__search-field']").hide();
     $("input[name='foods-top__search-reset']").hide();
     $(".foods-header__personal").css("height", "110px");
+    if ($(".foods-top__search").hasClass("foods-top__search--advanced")) {
+      $(".foods-header").addClass("foods-header--search");
+      $(".foods-top__search-form").addClass("foods-top__search-form--visible");
+      $(".foods-top__search-submit").removeClass("foods-top__search-submit--button");
+      $("input[name='foods-top__search-field']").show();
+      $("input[name='foods-top__search-reset']").show();
+    }
   }
 });
 
@@ -116,6 +123,13 @@ $(document).ready(function() {
     }
   } else if ($(".foods-container").css("width") == "320px") {
     $(".foods-top__search-submit").addClass("foods-top__search-submit--button");
+    if ($(".foods-top__search").hasClass("foods-top__search--advanced")) {
+      $(".foods-header").addClass("foods-header--search");
+      $(".foods-top__search-form").addClass("foods-top__search-form--visible");
+      $(".foods-top__search-submit").removeClass("foods-top__search-submit--button");
+      $("input[name='foods-top__search-field']").show();
+      $("input[name='foods-top__search-reset']").show();
+    }
   }
 });
 
@@ -137,9 +151,20 @@ $(".foods-top__search-submit").click(function(e) {
 });
 
 $(document).click(function(e) {
-  var searchForm = $(".foods-top__search-form--visible");
-  if ((!searchForm.is(e.target)) && (searchForm.has(e.target).length === 0) && ($(".foods-container").css("width") == "690px")) {
-    if ($(".foods-top").hasClass("foods-top--dark")) {
+  if ($(".foods-top__search").hasClass("foods-top__search--advanced")) {
+    e.preventDefault();
+  } else {
+    var searchForm = $(".foods-top__search-form--visible");
+    if ((!searchForm.is(e.target)) && (searchForm.has(e.target).length === 0) && ($(".foods-container").css("width") == "690px")) {
+      if ($(".foods-top").hasClass("foods-top--dark")) {
+        $(searchForm).removeClass("foods-top__search-form--visible");
+        $(".foods-top .foods-top__search-form::after").hide();
+        $(".foods-top input[name='foods-top__search-field']").hide();
+        $(".foods-top input[name='foods-top__search-reset']").hide();
+        $(".foods-header").removeClass("foods-header--search");
+        $(".foods-top__search-submit").addClass("foods-top__search-submit--button");
+      }
+    } else if ((!searchForm.is(e.target)) && (searchForm.has(e.target).length === 0) && ($(".foods-container").css("width") == "320px")) {
       $(searchForm).removeClass("foods-top__search-form--visible");
       $(".foods-top .foods-top__search-form::after").hide();
       $(".foods-top input[name='foods-top__search-field']").hide();
@@ -147,13 +172,6 @@ $(document).click(function(e) {
       $(".foods-header").removeClass("foods-header--search");
       $(".foods-top__search-submit").addClass("foods-top__search-submit--button");
     }
-  } else if ((!searchForm.is(e.target)) && (searchForm.has(e.target).length === 0) && ($(".foods-container").css("width") == "320px")) {
-    $(searchForm).removeClass("foods-top__search-form--visible");
-    $(".foods-top .foods-top__search-form::after").hide();
-    $(".foods-top input[name='foods-top__search-field']").hide();
-    $(".foods-top input[name='foods-top__search-reset']").hide();
-    $(".foods-header").removeClass("foods-header--search");
-    $(".foods-top__search-submit").addClass("foods-top__search-submit--button");
   }
 });
 
@@ -526,27 +544,15 @@ $(".foods-cart__item-favorites button").click(function() {
 
 $(".foods-top .advanced-search__button").click(function() {
   if ($(this).hasClass("advanced-search__button--active")) {
-    /*if ($(".foods-container").css("width") == "690px") {
-      $(".foods-top--search-results .advanced-search__form").slideUp();
-    } else {
-      $(".foods-top .advanced-search__form").slideUp();
-    }*/
     $(".foods-top .advanced-search__form").slideUp();
-
     $(this).removeClass("advanced-search__button--active");
     $(".foods-top__search").removeClass("foods-top__search--active");
-    $(".foods-content .foods-section--search-results:nth-of-type(1) .foods-search__results").removeClass("foods-search__results--active");
+    /*$(".foods-content .foods-section--search-results:nth-of-type(1) .foods-search__results").removeClass("foods-search__results--active");*/
   } else {
-    /*if ($(".foods-container").css("width") == "690px") {
-      $(".foods-top--search-results .advanced-search__form").slideDown();
-    } else {
-      $(".foods-top .advanced-search__form").slideDown();
-    }*/
     $(".foods-top .advanced-search__form").slideDown();
-    
     $(this).addClass("advanced-search__button--active");
     $(".foods-top__search").addClass("foods-top__search--active");
-    $(".foods-content .foods-section--search-results:nth-of-type(1) .foods-search__results").addClass("foods-search__results--active");
+    /*$(".foods-content .foods-section--search-results:nth-of-type(1) .foods-search__results").addClass("foods-search__results--active");*/
   } 
 });
 
