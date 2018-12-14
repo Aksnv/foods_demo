@@ -6689,37 +6689,41 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   position: relative;
   min-height: 21px;
   margin-top: 8px;
-  margin-bottom: 39px;
+  margin-bottom: 39px; 
+  /* margin-bottom: 78px; */
   padding-left: 34px;
 }
 
-.foods-footer__social-links ul {
+/* .foods-footer__social-links ul {
   position: absolute;
   top: 0;
   right: 0;
-  width: 342px;
-  text-align: right;
-}
+  width: 322px;
+  text-align: left;
+} */
 
 .foods-footer__social-links li {
   display: inline-block;
   vertical-align: middle;
+  width: 26px;
+  margin-right: 15px;
+  margin-bottom: 15px;
 }
 
 .foods-footer__social-links a {
   font-size: 0;
-  margin-bottom: 10px;
+  margin: 0 auto;
 }
 
 .foods-footer__social-link {
   display: block;
+  margin: 0 auto;
   background-image: url("../images/foods_sprite.fw.png");
 }
 
 .foods-footer__social-link--vk {
   width: 25px;
   height: 15px;
-  margin-right: 15px;
   background-position: -100px -128px;
 }
 
@@ -6730,7 +6734,6 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 .foods-footer__social-link--fb {
   width: 9px;
   height: 20px;
-  margin-right: 15px;
   background-position: -8px -125px;
 }
 
@@ -6741,7 +6744,6 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 .foods-footer__social-link--tw {
   width: 25px;
   height: 18px;
-  margin-right: 15px;
   background-position: -50px -125px;
 }
 
@@ -6752,7 +6754,6 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 .foods-footer__social-link--lj {
   width: 18px;
   height: 21px;
-  margin-right: 15px;
   background-position: -80px -125px;
 }
 
@@ -6763,7 +6764,6 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 .foods-footer__social-link--hh {
   width: 15px;
   height: 19px;
-  margin-right: 15px;
   background-position: -131px -125px;
 }
 
@@ -6774,7 +6774,6 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 .foods-footer__social-link--gp {
   width: 26px;
   height: 17px;
-  margin-right: 15px;
   background-position: -22px -125px;
 }
 
@@ -6785,7 +6784,6 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 .foods-footer__social-link--ok {
   width: 12px;
   height: 20px;
-  margin-right: 15px;
   background-position: -32px -432px;
 }
 
@@ -6796,7 +6794,6 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 .foods-footer__social-link--yt {
   width: 13px;
   height: 14px;
-  margin-right: 15px;
   background-position: -72px -432px;
 }
 
@@ -6807,7 +6804,6 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 .foods-footer__social-link--ig {
   width: 18px;
   height: 18px;
-  margin-right: 15px;
   background-position: -7px -431px;
 }
 
@@ -6823,6 +6819,76 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 
 .foods-footer__social-link--tg:hover {
   background-position: -51px -450px;
+}
+
+.foods-footer__social-link--am {
+  width: 18px;
+  height: 16px;
+  background-position: -259px -429px;
+}
+
+.foods-footer__social-link--am:hover {
+  background-position: -257px -450px;
+}
+
+.foods-footer__social-link--eb {
+  width: 18px;
+  height: 18px;
+  background-position: -281px -428px;
+}
+
+.foods-footer__social-link--eb:hover {
+  background-position: -280px -448px;
+}
+
+.foods-footer__social-link--ln {
+  width: 18px;
+  height: 17px;
+  background-position: -305px -427px;
+}
+
+.foods-footer__social-link--ln:hover {
+  background-position: -304px -447px;
+}
+
+.foods-footer__social-link--pt {
+  width: 14px;
+  height: 18px;
+  background-position: -329px -429px;
+}
+
+.foods-footer__social-link--pt:hover {
+  background-position: -328px -449px;
+}
+
+.foods-footer__social-link--rd {
+  width: 19px;
+  height: 17px;
+  background-position: -349px -429px;
+}
+
+.foods-footer__social-link--rd:hover {
+  background-position: -348px -448px;
+}
+
+.foods-footer__social-link--tm {
+  width: 10px;
+  height: 17px;
+  background-position: -375px -428px;
+}
+
+.foods-footer__social-link--tm:hover {
+  background-position: -375px -449px;
+}
+
+.foods-footer__social-link--xg {
+  width: 16px;
+  height: 19px;
+  background-position: -391px -428px;
+}
+
+.foods-footer__social-link--xg:hover {
+  background-position: -392px -449px;
 }
 
 .foods-footer__subscription p {
@@ -9869,15 +9935,15 @@ input.foods-popup__form-submit--password-create {
     display: none;
   }
 
-  .foods-footer__social-links {
+  /* .foods-footer__social-links {
     margin-bottom: 50px;
-  }
+  } */
 
-  .foods-footer__copyrights {
+  /* .foods-footer__copyrights {
     position: absolute;
     bottom: 0;
     left: 38px;
-  }
+  } */
 
 
   /* ***** Foods openbonus ***** */
@@ -11434,7 +11500,7 @@ input.foods-popup__form-submit--password-create {
 
   .foods-footer .foods-container {
     /*padding-top: 102px;*/
-    padding-top: 112px;
+    /* padding-top: 112px; */
     padding-left: 9px;
     padding-bottom: 59px;
   }
@@ -11452,24 +11518,28 @@ input.foods-popup__form-submit--password-create {
   }
 
   .foods-footer__block--4 {
+    clear: both;
     float: none;
-    position: absolute;
+    /* position: absolute;
     top: 0;
-    left: 0;
+    left: 0; */
+    position: relative;
     width: 100%;
     height: 100%;
   }
 
   .foods-footer__social-links {
-    margin-top: 42px;
-    margin-left: 11px;
+    /* margin-top: 42px; */
+    /*margin-left: 11px;*/
     margin-bottom: 0;
+    padding-top: 30px;
     padding-left: 0;
+    padding-bottom: 20px;
   }
 
   .foods-footer__social-links ul {
     position: relative;
-    width: 260px;
+    width: 264px;
     text-align: left;
   }
 
@@ -11493,7 +11563,7 @@ input.foods-popup__form-submit--password-create {
     /* position: relative;
     top: -32px; */
     position: absolute;
-    top: 31px;
+    top: 18px;
     right: 0;
     padding-left: 10px;
   }
@@ -11540,8 +11610,9 @@ input.foods-popup__form-submit--password-create {
   }
 
   .foods-footer__copyrights {
-    bottom: 10px;
-    left: 49px;
+    padding-left: 41px;
+    /* bottom: 10px;
+    left: 49px; */
   }
 
 
