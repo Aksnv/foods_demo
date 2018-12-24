@@ -404,7 +404,7 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-subm
 /* Foods certificate */
 
 .foods-certificate__outer {
-  background-image: url("../../images/pages/color_themes/certificate/foods-certificate__bg_red.png");
+  background-image: url("../../images/pages/certificate/color_themes/foods-certificate__bg_red.png");
 }
 
 .foods-certificate__action-buttons .product-card__action-favorite:hover::before {
@@ -492,7 +492,7 @@ input.foods-popup__form-submit:hover {
   }
 
   .foods-certificate__outer {
-    background-image: url("../../images/pages/color_themes/certificate/foods-certificate__bg_red-750.png");
+    background-image: url("../../images/pages/certificate/color_themes/foods-certificate__bg_red-750.png");
   }
 
 }
