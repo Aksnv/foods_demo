@@ -218,6 +218,25 @@ $(".foods-slider__pagination-button").click(function(e) {
 });
 
 
+/* Foods catalog */
+
+$(document).ready(function() {
+  
+  function catalogItemActiveArrow() {
+    var catalogItemHeight = $(".foods-catalog__goods-item--active").css("height").substr(0,2);
+    catalogItemHeight = +catalogItemHeight;
+    console.log(catalogItemHeight);
+    $(".foods-catalog__goods-item--active-arrow").css("width", catalogItemHeight*0.70);
+    $(".foods-catalog__goods-item--active-arrow").css("height", catalogItemHeight*0.70);
+    $(".foods-catalog__goods-item--active-arrow").css("right", -catalogItemHeight*0.70/2);
+    $(".foods-catalog__goods-item--active-arrow").css("top", (catalogItemHeight-catalogItemHeight*0.70)/2);
+  };
+
+  setTimeout(catalogItemActiveArrow, 500);
+  
+});
+
+
 /* Foods product card - tabs */
 
 $(".product-card__tab").click(function(e) {

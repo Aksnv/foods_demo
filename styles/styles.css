@@ -1316,13 +1316,17 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 /* ***** Foods catalog ***** */
 
 .foods-catalog__goods-item {
-  display: block;
+  /* display: block; */
+  display: table-cell;
+  vertical-align: middle;
   width: 211px;
   height: 41px;
   font-size: 13px;
-  line-height: 39px;
+  /* line-height: 39px; */
   text-decoration: none;
   padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   color: #666;
 }
 
@@ -1353,35 +1357,42 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   width: 197px;
   /* background-color: #ffd33a; */
   color: #fff;
-  box-shadow: 0 1px 0 white, inset 0 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 0 white, inset 0 1px 0 rgba(0, 0, 0, 0.3);
 }
 
 /* .foods-catalog__goods-item--active:hover {
   color: #fff;
 } */
 
-.foods-catalog__goods-item--active::before,
+/* .foods-catalog__goods-item--active::before, 
 .foods-catalog__goods-item--active::after {
   position: absolute;
   content: "";
   display: block;
   width: 33px;
-  height: 20px;
-  /* background-color: #ffd33a; */
-}
+  height: 20px; 
+  background-color: #ffd33a; 
+} */
 
-.foods-catalog__goods-item--active::before {
+/* .foods-catalog__goods-item--active::before {
   top: 0;
   right: -8px;
   transform: skew(36deg);
   box-shadow: 0 1px 0 white, inset 0 1px 1px rgba(0, 0, 0, 0.3);
-}
+} */
 
-.foods-catalog__goods-item--active::after {
+/* .foods-catalog__goods-item--active::after {
   height: 21px;
   top: 20px;
   right: -8px;
-  transform: skew(-36deg);
+  transform: skew(-36deg); 
+} */
+
+.foods-catalog__goods-item--active-arrow {
+  position: absolute;
+  display: block;
+  transform: rotate(45deg);   
+  z-index: -1;
 }
 
 
@@ -8806,8 +8817,12 @@ input.foods-popup__form-submit--password-create {
     display: none;
   }
 
-  .foods-content--left.foods-content--active .foods-catalog__goods-item--active::before,
+  /* .foods-content--left.foods-content--active .foods-catalog__goods-item--active::before, 
   .foods-content--left.foods-content--active .foods-catalog__goods-item--active::after {
+    display: none;
+  } */
+
+  .foods-content--left.foods-content--active .foods-catalog__goods-item--active-arrow {
     display: none;
   }
 

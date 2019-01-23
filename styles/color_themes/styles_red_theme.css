@@ -104,8 +104,9 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-subm
 /* Foods catalog */
 
 .foods-catalog__goods-item--active,
-.foods-catalog__goods-item--active::before, 
-.foods-catalog__goods-item--active::after {
+.foods-catalog__goods-item--active-arrow
+/* .foods-catalog__goods-item--active::before, 
+ .foods-catalog__goods-item--active::after */ {
   background-color: #fc922c;
 }
 
