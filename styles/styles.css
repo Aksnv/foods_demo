@@ -178,6 +178,10 @@ input:focus {
   color: #666;
 }
 
+.foods-subsection--order .exit-button {
+  top: -130px;
+}
+
 .exit-button::after {
   position: absolute;
   top: 14px;
@@ -2007,7 +2011,7 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   margin-bottom: 34px;
 }
 
-.foods-subsection--order {
+.foods-subsection--order ul {
   display: none;
 }
 
@@ -3194,14 +3198,16 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   font-size: 15px;
   line-height: 18px;
   margin-bottom: 7px;
-  padding-right: 43px;
+  /* padding-right: 43px; */
+  padding-right: 12px;
   color: black;
 }
 
 .foods-order .foods-cart__result-quantity {
   line-height: 18px;
   margin-bottom: 12px;
-  padding-right: 47px;
+  /* padding-right: 47px; */
+  padding-right: 12px;
 }
 
 .foods-cart__result-price,
@@ -3215,7 +3221,8 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   font-size: 24px;
   line-height: 26px;
   margin-bottom: 7px;
-  padding-right: 43px;
+  /* padding-right: 43px; */
+  padding-right: 12px;
   color: black;
 }
 
@@ -3253,7 +3260,8 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 }
 
 .foods-order .foods-cart__result-price {
-  padding-right: 47px;
+  /* padding-right: 43px; */
+  padding-right: 12px;
 }
 
 .foods-cart__result--bonuses {
@@ -3264,8 +3272,9 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   font-family: "Museo Sans Cyrl300";
   font-size: 15px;
   line-height: 18px;
-  margin-bottom: 28px;
-  padding-right: 43px;
+  /* margin-bottom: 28px; */
+  /* padding-right: 43px; */
+  padding-right: 12px;
   color: black;
 }
 
@@ -3277,6 +3286,7 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   font-size: 20px;
   line-height: 50px;
   /* margin-left: 37px; */
+  margin-top: 28px;
   padding: 0 24px;
   border-radius: 25px;
 }
@@ -4788,13 +4798,13 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 
 /* ***** Foods order ***** */
 
-.exit-button--order {
+/* .exit-button--order {
   padding-top: 7px;
 }
 
 .exit-button--order::after {
   top: 7px;
-}
+} */
 
 .foods-section--order h1 {
   text-align: center;
@@ -6358,6 +6368,9 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   background-color: #ebebed;
   color: #28282c;
   border-radius: 5px;
+  -webkit-box-shadow: 0 2px 5px #cccccc;
+  box-shadow: 0 2px 5px #cccccc;
+  z-index: 1;
 }
 
 .foods-orders__item-actions a:hover::after {
@@ -8271,6 +8284,10 @@ input.foods-popup__form-submit--password-create {
     margin-bottom: 22px;
   }
 
+  .foods-subsection--order .exit-button {
+    top: 0;
+  }
+
   /* ***** Foods header ***** */
 
   .foods-header {
@@ -8715,6 +8732,7 @@ input.foods-popup__form-submit--password-create {
   .foods-top__search--advanced + .advanced-search__form {
     margin-bottom: 41px;
     padding-top: 11px;
+    z-index: 2;
   }
 
   .foods-top__search--advanced + .advanced-search__form ul {
@@ -9124,7 +9142,7 @@ input.foods-popup__form-submit--password-create {
     right: 0px;
   }
 
-  .foods-subsection--order {
+  .foods-subsection--order ul {
     display: block;
   }
 
@@ -9134,6 +9152,10 @@ input.foods-popup__form-submit--password-create {
   .foods-sorter {
     text-align: center;
     padding-left: 0;
+  }
+
+  .foods-sorter__form .jq-selectbox__dropdown {
+    text-align: left;
   }
 
 
@@ -9806,9 +9828,18 @@ input.foods-popup__form-submit--password-create {
     padding-left: 0;
   }
 
-  .foods-order .foods-cart__result-quantity,
+  /* .foods-order .foods-cart__result-quantity,
   .foods-order .foods-cart__result-price {
     padding-right: 28px;
+  } */
+
+  .foods-order .foods-cart__result-quantity {
+    padding-right: 12px;
+  }
+
+  .foods-order .foods-cart__result-price {
+    /* padding-right: 28px; */
+    padding-right: 12px;
   }
 
   .confirmation__form-address .address-info__item-information {
@@ -9849,7 +9880,8 @@ input.foods-popup__form-submit--password-create {
   }
 
   .confirmation__form-total {
-    padding-right: 28px;
+    /* padding-right: 28px; */
+    padding-right: 12px;
   }
 
   .confirmation__form .foods-cart__result--bonuses .foods-cart__result-price,
@@ -10059,6 +10091,10 @@ input.foods-popup__form-submit--password-create {
 
   .foods-section .bonus-programm--login .bonus-programm__content button {
     margin-bottom: 90px;
+  }
+
+  .foods-section .bonus-programm--login .bonus-card__form .choose-gender {
+    padding-top: 10px;
   }
 
 }
@@ -10502,6 +10538,10 @@ input.foods-popup__form-submit--password-create {
     top: -54px;
     left: 0;
     right: auto;
+  }
+
+  .foods-subsection--order .exit-button {
+    top: -54px;
   }
 
   .foods-subsection--mobile .exit-button {
@@ -11220,6 +11260,15 @@ input.foods-popup__form-submit--password-create {
     margin-bottom: 10px;
   }
 
+  .order-delivery__form .address-edit__form-house label, 
+  .order-delivery__form .address-edit__form-building label, 
+  .order-delivery__form .address-edit__form-flat label, 
+  .order-delivery__form .address-edit__form-house input[type="text"], 
+  .order-delivery__form .address-edit__form-building input[type="text"], 
+  .order-delivery__form .address-edit__form-flat input[type="text"] {
+    width: 95px;
+  }
+
   .order-payment__form .foods-carousel-button--left {
     left: -145px;
   }
@@ -11373,6 +11422,7 @@ input.foods-popup__form-submit--password-create {
 
   .confirmation__form-total {
     margin-bottom: 48px;
+    padding-right: 12px;
   }
 
 
@@ -11865,9 +11915,9 @@ input.foods-popup__form-submit--password-create {
     margin-bottom: 20px;
   }
 
-  .foods-section .bonus-programm--login .bonus-card__form .choose-gender {
+  /* .foods-section .bonus-programm--login .bonus-card__form .choose-gender {
     padding-top: 10px;
-  }
+  } */
 
   .foods-section .bonus-programm--login .bonus-card__form .submit, 
   .foods-section .bonus-programm--login .bonus-card__form .reset {
