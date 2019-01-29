@@ -487,6 +487,10 @@ input.foods-popup__form-submit:hover {
     background-color: #fff;
   }
 
+  .foods-header--active {
+    background-color: #f4f4f4;
+  }
+
   .foods-header--dark,
   .foods-top--dark {
     background-color: #a32b47;
@@ -494,6 +498,10 @@ input.foods-popup__form-submit:hover {
 
   .foods-certificate__outer {
     background-image: url("../../images/pages/certificate/color_themes/foods-certificate__bg_red-750.png");
+  }
+
+  .foods-content--left.foods-content--active .foods-catalog__goods-item--active::before {
+    background-color: #fc922c;
   }
 
 }

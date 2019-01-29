@@ -587,6 +587,10 @@ input.foods-popup__form-submit:hover {
     background-image: url("../../images/pages/certificate/foods-certificate__bg-750.png");
   }
 
+  .foods-content--left.foods-content--active .foods-catalog__goods-item--active::before {
+    background-color: #ffd33a;
+  }
+
 }
 
 @media screen and (max-width: 749px) {

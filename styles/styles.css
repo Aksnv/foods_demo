@@ -1254,6 +1254,10 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   z-index: 11;
 }
 
+.foods-content--left.foods-content--active.foods-content--advanced-search {
+  top: -301px;
+}
+
 .foods-container--dark .foods-content--left.foods-content--active {
   top: -300px;
 }
@@ -1336,8 +1340,9 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 
 .foods-content--left.foods-content--active .foods-catalog__goods-item {
   width: 240px;
+  height: 50px;
   font-size: 16px;
-  line-height: 39px;
+  /* line-height: 39px; */
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -1347,9 +1352,21 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 
 .foods-content--left.foods-content--active .foods-catalog__goods-item--active {
   width: 690px;
-  left: -18px;
+  /* left: -18px; */
   top: -1px;
-  padding-left: 38px;
+  /* padding-left: 38px; */
+}
+
+.foods-content--left.foods-content--active .foods-catalog__goods-item--active::before {
+  position: absolute;
+  top: 0;
+  left: -18px;
+  content: "";
+  display: block;
+  width: 18px;
+  height: 100%;
+  border-bottom: 1px solid #e5e5e5;
+  box-shadow: 0 1px 0 white, inset 0 1px 0 rgba(0, 0, 0, 0.3);
 }
 
 /* .foods-catalog__goods-item:hover {
@@ -8284,6 +8301,10 @@ input.foods-popup__form-submit--password-create {
     margin-bottom: 22px;
   }
 
+  .foods-section--message {
+    margin-top: 92px;
+  }
+
   .foods-subsection--order .exit-button {
     top: 0;
   }
@@ -8334,7 +8355,8 @@ input.foods-popup__form-submit--password-create {
     left: 0;
     width: 100%;
     height: auto;
-    z-index: 3;
+    /* z-index: 3; */
+    z-index: 11;
   }
   
   .foods-header__personal ul {
@@ -9560,7 +9582,8 @@ input.foods-popup__form-submit--password-create {
   }
 
   .order-delivery__form .personal__address-edit {
-    margin-bottom: 107px;
+    /* margin-bottom: 107px; */
+    margin-bottom: 165px;
     padding-left: 10px;
   }
 
@@ -10108,6 +10131,10 @@ input.foods-popup__form-submit--password-create {
 
   .foods-section {
     margin-bottom: 12px;
+  }
+
+  .foods-section--message {
+    margin-top: 0;
   }
 
   /* ***** Foods header ***** */
@@ -10927,7 +10954,8 @@ input.foods-popup__form-submit--password-create {
   }
 
   .order-delivery__form .personal__address-edit {
-    margin-bottom: 150px;
+    /* margin-bottom: 150px; */
+    margin-bottom: 37px;
     padding-left: 0;
   }
 
