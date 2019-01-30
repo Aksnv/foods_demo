@@ -22,7 +22,7 @@
 }
 
 .exit-button:hover::after {
-  background-position: -165px -105px;
+  background-position: -121px -481px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -47,6 +47,14 @@
   background-color: #f04f79;
 }
 
+.foods-header__personal-button {
+  background-position: -199px -479px;
+}
+
+.foods-header__personal-button:hover {
+  background-position: -138px -479px;
+}
+
 .foods-header__personal-item--cart span + span {
   background-color: #f04f79;
 }
@@ -59,6 +67,16 @@
 .foods-header__cart .foods-cart__result-cart:hover {
   background-color: #c24062;
 }
+
+/* Foods menu */
+
+.foods-menu__menu-button {
+  background-position: -63px -480px;
+}
+
+.foods-menu__menu-button:hover {
+  background-position: -93px -480px;
+} 
 
 .foods-menu__menu-item:hover,
 .foods-menu__menu-item--active {
@@ -81,6 +99,16 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 
 input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-submit"] {
   background-position: -200px -280px;
+}
+
+input[name="foods-top__search-submit"]:hover,
+input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-submit"]:hover {
+  background-position: -33px -480px;
+}
+
+input[name="foods-top__search-reset"]:hover,
+input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-reset"]:hover {
+  background-position: -34px -503px;
 }
 
 .foods-top .advanced-search__button {
@@ -107,6 +135,12 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-subm
 
 .foods-top .advanced-search__form input[name="advanced-search__submit"]:hover {
   background-color: #c24062;
+}
+
+/* Foods content */
+
+.foods-content--left.foods-content--active::after {
+  background-color: #f04f79;
 }
 
 /* Foods catalog */
@@ -439,6 +473,16 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-subm
   background-position: -312px -306px;
 }
 
+.payment-method__hint-icon {
+  color: #7fc2df;
+  border: 1px solid #7fc2df;
+}
+
+.payment-method__hint-icon:hover {
+  background-color: #7fc2df;
+  color: #fff;
+}
+
 /* Foods certificate */
 
 .foods-certificate__outer {
@@ -469,12 +513,12 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-subm
 }
 
 .pagination_main a:hover::before {
-  background-position: -303px -48px;
+  background-position: -411px -11px;
 }
 
 .foods-pagination--favorites .foods-pagination__item:hover {
   background-color: #f04f79;
-  color: #fff;
+  color: #000000;
 }
 
 /* Foods - Search results */
@@ -559,9 +603,43 @@ input.foods-popup__form-submit:hover {
     background-color: #f4f4f4;
   }
 
+  .foods-header__personal--active ul {
+    background-color: #7fc2df;
+  }
+
   .foods-header--dark,
   .foods-top--dark {
     background-color: #7fc2df;
+  }
+
+  .foods-header--dark .foods-header__personal-button:hover {
+    background-position: -199px -479px;
+  }
+
+  .foods-header--dark + .foods-container .foods-menu__menu-button:hover {
+    background-position: -63px -480px;
+  } 
+
+  .foods-top--dark input[name="foods-top__search-submit"]:hover {
+    background-position: -200px -280px;
+  }
+
+  .foods-top--dark .foods-top__search-form--visible input[name="foods-top__search-submit"]:hover {
+    background-position: -33px -480px;
+  }
+
+  .foods-header--dark + .foods-container .foods-menu__menu-button,
+  .foods-header--dark + .foods-container .foods-menu__menu-button:hover {
+    background-position: -333px -234px;
+  }
+
+  .foods-header--dark + .foods-container .foods-menu__menu-button--close,
+  .foods-header--dark + .foods-container .foods-menu__menu-button--close:hover {
+    background-position: -234px -349px;
+  }
+
+  .foods-menu--active ul {
+    background-color: #f04f79;
   }
 
   .foods-certificate__outer {
@@ -572,12 +650,49 @@ input.foods-popup__form-submit:hover {
     background-color: #7fc2df;
   }
 
+  .foods-subsection--mobile .exit-button:hover {
+    color: #f04f79;
+  }
+
+  .foods-subsection--mobile .foods-subsection__item--personal:hover,
+  .foods-subsection--mobile .foods-subsection__item--personal.foods-subsection__item--active {
+    background-position: -199px -479px;
+  }
+
+  .foods-subsection--mobile .foods-subsection__item--cart:hover,
+  .foods-subsection--mobile .foods-subsection__item--cart.foods-subsection__item--active {
+    background-position: -223px -493px;
+  }
+
+  .foods-subsection--mobile .foods-subsection__item--subscription:hover,
+  .foods-subsection--mobile .foods-subsection__item--subscription.foods-subsection__item--active {
+    background-position: -250px -470px;
+  }
+
+  .foods-subsection--mobile .foods-subsection__item--history:hover,
+  .foods-subsection--mobile .foods-subsection__item--history.foods-subsection__item--active {
+    background-position: -273px -472px;
+  }
+
+  .foods-subsection--mobile .foods-subsection__item--favorites:hover,
+  .foods-subsection--mobile .foods-subsection__item--favorites.foods-subsection__item--active {
+    background-position: -303px -472px;
+  }
+
 }
 
 @media screen and (max-width: 749px) {
 
   .foods-top--dark {
     background-color: transparent;
+  }
+
+  input[name="foods-top__search-submit"] {
+    background-position: -200px -280px;
+  }
+
+  .foods-top__search-form--visible input[name="foods-top__search-submit"]:hover {
+    background-position: -33px -480px;
   }
 
 }

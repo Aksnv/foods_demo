@@ -254,16 +254,11 @@ input:focus {
   width: 16px;
   height: 20px;
   background-image: url("../images/foods_sprite.fw.png");
-  background-position: -256px -231px;
   z-index: 1;
 }
 
-.foods-header__personal-button:hover {
-  background-position: -308px -231px;
-}
-
-.foods-header__personal-button--close,
-.foods-header__personal-button--close:hover {
+.foods-header__personal-button.foods-header__personal-button--close,
+.foods-header__personal-button.foods-header__personal-button--close:hover {
   background-position: -234px -372px;
 }
 
@@ -642,22 +637,17 @@ input:focus {
   width: 20px;
   height: 14px;
   background-image: url("../images/foods_sprite.fw.png");
-  background-position: -230px -234px;
   z-index: 1;
 }
 
-.foods-menu__menu-button:hover {
-  background-position: -280px -234px;
-} 
-
-.foods-menu__menu-button--close {
+.foods-menu__menu-button.foods-menu__menu-button--close {
   width: 16px;
   height: 16px;
   background-position: -234px -349px;
   z-index: 12;
 }
 
-.foods-menu__menu-button--close:hover {
+.foods-menu__menu-button.foods-menu__menu-button--close:hover {
   background-position: -234px -349px;
 } 
 
@@ -863,10 +853,10 @@ input[name="foods-top__search-submit"] {
   background-position: -8px -176px;
 }
 
-input[name="foods-top__search-submit"]:hover,
+/* input[name="foods-top__search-submit"]:hover,
 input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-submit"]:hover {
   background-position: -31px -176px;
-}
+} */
 
 /* input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-submit"] {
   background-position: -114px -59px;
@@ -879,11 +869,6 @@ input[name="foods-top__search-reset"] {
   width: 12px;
   height: 12px;
   background-position: -57px -180px;
-}
-
-input[name="foods-top__search-reset"]:hover,
-input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-reset"]:hover {
-  background-position: -76px -180px;
 }
 
 /* input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-reset"] {
@@ -1172,6 +1157,7 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 .foods-top .advanced-search__form input[name="advanced-search__reset"] {
   width: 220px;
   background-color: #ebebed;
+  color: #000000;
   box-shadow: 0 1px 0 #9d9999;
 }
 
@@ -1270,7 +1256,6 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   display: block;
   width: 100%;
   height: 10px;
-  background-color: #2e8231;
 }
 
 .foods-content--left.foods-content--active h3 {
@@ -5515,14 +5500,7 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
   line-height: 18px;
   text-decoration: none;
   text-align: center;
-  color: #2e8231;
-  border: 1px solid #2e8231;
   border-radius: 50%;
-}
-
-.payment-method__hint-icon:hover {
-  background-color: #2e8231;
-  color: #fff;
 }
 
 .payment-method__hint-text {
@@ -8372,7 +8350,6 @@ input.foods-popup__form-submit--password-create {
     padding-top: 100px;
     padding-left: 36px;
     padding-bottom: 218px;
-    background-color: #2e8231;
     -webkit-box-shadow: 0 0 10px #666;
     box-shadow: 0 0 10px #666;
     z-index: 2;
@@ -8402,7 +8379,7 @@ input.foods-popup__form-submit--password-create {
     font-size: 18px;
     line-height: 26px;
     text-decoration: none;
-    color: #97c198;
+    color: rgba(255,255,255,0.5);
   }
 
   .foods-header__personal--active .foods-header__personal-exit-button::before {
@@ -8429,7 +8406,7 @@ input.foods-popup__form-submit--password-create {
   }
 
   .foods-header__personal--active .foods-header__personal-exit-button:hover {
-    color: #fff;
+    color: #ffffff;
   }
 
   .foods-header__personal--active .foods-header__personal-exit-button:hover::after {
@@ -8473,7 +8450,6 @@ input.foods-popup__form-submit--password-create {
   }
 
   .foods-header--dark .foods-header__personal-button:hover {
-    background-position: -256px -231px;
     cursor: default;
   }
 
@@ -8510,7 +8486,6 @@ input.foods-popup__form-submit--password-create {
     width: 100%;
     padding-left: 39px;
     padding-bottom: 20px;
-    background-color: #2e8231;
     -webkit-box-shadow: 0 0 10px #666;
     box-shadow: 0 0 10px #666;
     z-index: 3;
@@ -8528,20 +8503,6 @@ input.foods-popup__form-submit--password-create {
   .foods-menu__menu-button--close {
     top: 42px;
     right: 31px;
-  }
-
-  .foods-header--dark + .foods-container .foods-menu__menu-button,
-  .foods-header--dark + .foods-container .foods-menu__menu-button:hover {
-    background-position: -333px -234px;
-  }
-
-  .foods-header--dark + .foods-container .foods-menu__menu-button:hover {
-    background-position: -280px -234px;
-  } 
-
-  .foods-header--dark + .foods-container .foods-menu__menu-button--close,
-  .foods-header--dark + .foods-container .foods-menu__menu-button--close:hover {
-    background-position: -234px -349px;
   }
 
     
@@ -8630,10 +8591,6 @@ input.foods-popup__form-submit--password-create {
     background-position: -328px -257px;
   }
 
-  .foods-top--dark input[name="foods-top__search-submit"]:hover {
-    background-position: -31px -176px;
-  }
-
   .foods-top--dark .foods-top__search-form--visible::after,
   .foods-top--dark .foods-top__search-form--visible input[name="foods-top__search-field"],
   .foods-top--dark .foods-top__search-form--visible input[name="foods-top__search-reset"] {
@@ -8647,10 +8604,6 @@ input.foods-popup__form-submit--password-create {
   .foods-top--dark .foods-top__search-form--visible input[name="foods-top__search-submit"] {
     right: 68px;
     background-position: -8px -176px;
-  }
-
-  .foods-top--dark .foods-top__search-form--visible input[name="foods-top__search-submit"]:hover {
-    background-position: -31px -176px;
   }
 
   .foods-top .advanced-search__button {
@@ -9077,21 +9030,11 @@ input.foods-popup__form-submit--password-create {
     background-position: -256px -256px;
   }
 
-  .foods-subsection--mobile .foods-subsection__item--personal:hover,
-  .foods-subsection--mobile .foods-subsection__item--personal.foods-subsection__item--active {
-    background-position: -256px -231px;
-  }
-
   .foods-subsection--mobile .foods-subsection__item--cart {
     width: 20px;
     height: 19px;
     background-image: url("../images/foods_sprite.fw.png");
     background-position: -278px -257px;
-  }
-
-  .foods-subsection--mobile .foods-subsection__item--cart:hover,
-  .foods-subsection--mobile .foods-subsection__item--cart.foods-subsection__item--active {
-    background-position: -303px -257px;
   }
 
   .foods-subsection--mobile .foods-subsection__item--subscription {
@@ -9101,11 +9044,6 @@ input.foods-popup__form-submit--password-create {
     background-position: -234px -258px;
   }
 
-  .foods-subsection--mobile .foods-subsection__item--subscription:hover,
-  .foods-subsection--mobile .foods-subsection__item--subscription.foods-subsection__item--active {
-    background-position: -212px -258px;
-  }
-
   .foods-subsection--mobile .foods-subsection__item--history {
     width: 22px;
     height: 18px;
@@ -9113,21 +9051,11 @@ input.foods-popup__form-submit--password-create {
     background-position: -185px -259px;
   }
 
-  .foods-subsection--mobile .foods-subsection__item--history:hover,
-  .foods-subsection--mobile .foods-subsection__item--history.foods-subsection__item--active {
-    background-position: -158px -261px;
-  }
-
   .foods-subsection--mobile .foods-subsection__item--favorites {
     width: 18px;
     height: 17px;
     background-image: url("../images/foods_sprite.fw.png");
     background-position: -113px -262px;
-  }
-
-  .foods-subsection--mobile .foods-subsection__item--favorites:hover,
-  .foods-subsection--mobile .foods-subsection__item--favorites.foods-subsection__item--active {
-    background-position: -135px -262px;
   }
 
   .foods-content--dark .foods-subsection__item:hover {
@@ -9153,10 +9081,6 @@ input.foods-popup__form-submit--password-create {
     padding-top: 18px;
     padding-right: 33px;
     color: #333;
-  }
-
-  .foods-subsection--mobile .exit-button:hover {
-    color: #ffb33a;
   }
 
   .foods-subsection--mobile .exit-button::after {
@@ -10244,16 +10168,11 @@ input.foods-popup__form-submit--password-create {
   input[name="foods-top__search-submit"] {
     top: 18px;
     right: 100px;
-    background-position: -114px -59px;
   }
 
   .foods-top__search-form--visible input[name="foods-top__search-submit"] {
     right: 45px;
     background-position: -8px -176px;
-  }
-
-  .foods-top__search-form--visible input[name="foods-top__search-submit"]:hover {
-    background-position: -31px -176px;
   }
 
   .foods-top__search-form--visible::after {
