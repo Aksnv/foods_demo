@@ -5675,11 +5675,22 @@ input[name="foods-top__search-reset"] {
 
 .foods-certificate__inner {
   overflow: hidden;
+  position: relative;
   width: 840px;
   min-height: 620px;
   margin: 0 auto;
   background-color: white;
   border-radius: 5px;
+}
+
+.foods-certificate__inner::after {
+  position: absolute;
+  right: 13px;
+  bottom: 14px;
+  content: "Сертификат*";
+  font-size: 13px;
+  line-height: 20px;
+  color: #666;
 }
 
 .foods-certificate__inner h1 {
