@@ -4941,31 +4941,56 @@ input[name="foods-top__search-reset"] {
   margin-top: 22px;
 }
 
+.order-payment__form {
+  position: relative;
+}
+
 .order-payment__form h3 {
   margin-bottom: 35px;
   padding-left: 0;
 }
 
 .order-payment__form .foods-carousel {
-  display: none;
+  /* display: none; */
+  width: 100%;
+} 
+
+.order-payment__form .foods-carousel-button--left {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  right: auto;
 }
 
-.order-payment__method {
+.order-payment__form .foods-carousel-button--right {
+  position: absolute;
+  top: 12px;
+  left: auto;
+  right: 0;
+}
+
+.order-payment__methods {
+  overflow: hidden;
+  height: 137px;
   margin-bottom: 80px;
   border-bottom: 1px solid #ccc;
 }
 
-.order-payment__method li {
+.order-payment__method {
+  display: none;
+}
+
+.order-payment__method--visible {
   display: inline-block;
   vertical-align: top;
-  margin-right: 16px;
+  margin-right: 13px;
 }
 
-.order-payment__method li:last-child {
+/* .order-payment__method li:last-child {
   margin-right: 0;
-}
+} */
 
-.order-payment__method a {
+.order-payment__methods a {
   display: block;
   width: 152px;
   height: 137px;
@@ -4974,7 +4999,7 @@ input[name="foods-top__search-reset"] {
   opacity: 0.5;
 }
 
-.order-payment__method a.order-payment__method-item--active {
+.order-payment__methods a.order-payment__method-item--active {
   /* border-bottom: 4px solid #2e8231; */
   opacity: 1;
 }
@@ -4999,14 +5024,14 @@ input[name="foods-top__search-reset"] {
   top: 4px;
 }
 
-.order-payment__method p {
+.order-payment__methods p {
   width: 152px;
   font-family: "Museo Sans Cyrl900";
   font-size: 14px;
   text-align: center;
 }
 
-.order-payment__method p:first-child {
+.order-payment__methods p:first-child {
   display: table-cell;
   vertical-align: middle;
   height: 53px;
@@ -5014,13 +5039,13 @@ input[name="foods-top__search-reset"] {
   margin-bottom: 20px;
 }
 
-.order-payment__method p:nth-child(2) {
+.order-payment__methods p:nth-child(2) {
   line-height: 18px;
   padding-top: 12px;
   padding-bottom: 15px;
 }
 
-.order-payment__method img {
+.order-payment__methods img {
   vertical-align: middle;
   width: auto;
   max-height: 53px;

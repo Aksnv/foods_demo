@@ -453,33 +453,56 @@ $(".order-payment__method-item").click(function(e) {
   $(this).addClass("order-payment__method-item--active");
 });
 
+var n, m;
+if (($(".foods-container").css("width") == "1180px") && ($(".order-payment__method").length <= 7)) {
+  $(".order-payment__form .foods-carousel-button--right").addClass("foods-carousel-button--disabled");
+}
+    
 $(".order-payment__form .foods-carousel-button--right").click(function(e) {
-  e.preventDefault();
-  if ($(".foods-container").css("width") == "690px") {
-    $(this).addClass("foods-carousel-button--disabled");
-    $(".order-payment__form .foods-carousel-button--left").removeClass("foods-carousel-button--disabled");
-    $(".order-payment__method li.order-payment__method--1").hide();
-    $(".order-payment__method li.order-payment__method--2").hide();
-    $(".order-payment__method li.order-payment__method--3").hide();
-    $(".order-payment__method li.order-payment__method--4").hide();
-    $(".order-payment__method li.order-payment__method--5").css("display", "inline-block");
-    $(".order-payment__method li.order-payment__method--6").css("display", "inline-block");
-    $(".order-payment__method li.order-payment__method--7").css("display", "inline-block");
+  if ($(".order-payment__form .foods-carousel-button--left").hasClass("foods-carousel-button--disabled")) {
+    n = $(".order-payment__method").length - $(".order-payment__method--visible").length;
+    m = 0;
+  }
+  if (!$(this).hasClass("foods-carousel-button--disabled")) {
+    e.preventDefault();
+    if (($(".foods-container").css("width") == "1180px") && ($(".order-payment__method").length > 7)) {
+      $(".order-payment__form .foods-carousel-button--left").removeClass("foods-carousel-button--disabled");
+      $($(".order-payment__method--visible")[0]).removeClass("order-payment__method--visible");
+      $($(".order-payment__method--visible")[$(".order-payment__method--visible").length - 1]).next().addClass("order-payment__method--visible");
+      n--;
+      m++;
+      if (n === 0) {
+        $(".order-payment__form .foods-carousel-button--right").addClass("foods-carousel-button--disabled");
+      }
+    }
+  } else {
+    e.preventDefault();
+    n = 0;
+    m = $(".order-payment__method").length - $(".order-payment__method--visible").length;
   }
 });
 
 $(".order-payment__form .foods-carousel-button--left").click(function(e) {
-  e.preventDefault();
-  if ($(".foods-container").css("width") == "690px") {
-    $(this).addClass("foods-carousel-button--disabled");
-    $(".order-payment__form .foods-carousel-button--right").removeClass("foods-carousel-button--disabled");
-    $(".order-payment__method li.order-payment__method--5").hide();
-    $(".order-payment__method li.order-payment__method--6").hide();
-    $(".order-payment__method li.order-payment__method--7").hide();
-    $(".order-payment__method li.order-payment__method--1").css("display", "inline-block");
-    $(".order-payment__method li.order-payment__method--2").css("display", "inline-block");
-    $(".order-payment__method li.order-payment__method--3").css("display", "inline-block");
-    $(".order-payment__method li.order-payment__method--4").css("display", "inline-block");
+  if ($(".order-payment__form .foods-carousel-button--right").hasClass("foods-carousel-button--disabled")) {
+    n = 0;
+    m = $(".order-payment__method").length - $(".order-payment__method--visible").length;
+  }
+  if (!$(this).hasClass("foods-carousel-button--disabled")) {
+    e.preventDefault();
+    if (($(".foods-container").css("width") == "1180px") && ($(".order-payment__method").length > 7)) {
+      $(".order-payment__form .foods-carousel-button--right").removeClass("foods-carousel-button--disabled");
+      $($(".order-payment__method--visible")[$(".order-payment__method--visible").length - 1]).removeClass("order-payment__method--visible");
+      $($(".order-payment__method--visible")[0]).prev().addClass("order-payment__method--visible");
+     m--;
+     n++;
+      if (m === 0) {
+        $(".order-payment__form .foods-carousel-button--left").addClass("foods-carousel-button--disabled");
+      }
+    }
+  } else {
+    e.preventDefault();
+    n = $(".order-payment__method").length - $(".order-payment__method--visible").length;
+    m = 0;
   }
 });
 

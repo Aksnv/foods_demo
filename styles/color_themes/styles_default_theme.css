@@ -185,7 +185,7 @@ input[name="foods-top__search-field"]:focus ~ input[name="foods-top__search-rese
 /* Foods carousel */
 
 .foods-carousel-button {
-  background-position: -140px -34px;
+  background-position: -140px -35px;
 }
 
 .foods-carousel-button--left:hover,
