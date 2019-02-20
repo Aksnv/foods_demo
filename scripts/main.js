@@ -453,10 +453,67 @@ $(".order-payment__method-item").click(function(e) {
   $(this).addClass("order-payment__method-item--active");
 });
 
+/*$(window).resize(function() {
+  for (var i = 0; i < $(".order-payment__method").length; i++) {
+    $($(".order-payment__method")[i]).removeClass("order-payment__method--visible");
+  }
+
+  if ($(".foods-container").css("width") == "1180px") {
+    for (var i = 0; i < 7; i++) {
+      $($(".order-payment__method")[i]).addClass("order-payment__method--visible");
+    }
+  } else if ($(".foods-container").css("width") == "690px") {
+    for (var i = 0; i < 4; i++) {
+      $($(".order-payment__method")[i]).addClass("order-payment__method--visible");
+    }
+  } else if ($(".foods-container").css("width") == "320px") {
+    for (var i = 0; i < 1; i++) {
+      $($(".order-payment__method")[i]).addClass("order-payment__method--visible");
+    }
+  }
+
+  if (($(".foods-container").css("width") == "1180px") && ($(".order-payment__method").length <= 7)) {
+    $(".order-payment__form .foods-carousel-button--right").addClass("foods-carousel-button--disabled");
+  }
+  if (($(".foods-container").css("width") == "690px") && ($(".order-payment__method").length <= 4)) {
+    $(".order-payment__form .foods-carousel-button--right").addClass("foods-carousel-button--disabled");
+  }
+  if (($(".foods-container").css("width") == "320px") && ($(".order-payment__method").length <= 1)) {
+    $(".order-payment__form .foods-carousel-button--right").addClass("foods-carousel-button--disabled");
+  }
+});*/
+
+$(document).ready(function() {
+  for (var i = 0; i < $(".order-payment__method").length; i++) {
+    $($(".order-payment__method")[i]).removeClass("order-payment__method--visible");
+  }
+
+  if ($(".foods-container").css("width") == "1180px") {
+    for (var i = 0; i < 7; i++) {
+      $($(".order-payment__method")[i]).addClass("order-payment__method--visible");
+    }
+  } else if ($(".foods-container").css("width") == "690px") {
+    for (var i = 0; i < 4; i++) {
+      $($(".order-payment__method")[i]).addClass("order-payment__method--visible");
+    }
+  } else if ($(".foods-container").css("width") == "320px") {
+    for (var i = 0; i < 1; i++) {
+      $($(".order-payment__method")[i]).addClass("order-payment__method--visible");
+    }
+  }
+
+  if (($(".foods-container").css("width") == "1180px") && ($(".order-payment__method").length <= 7)) {
+    $(".order-payment__form .foods-carousel-button--right").addClass("foods-carousel-button--disabled");
+  }
+  if (($(".foods-container").css("width") == "690px") && ($(".order-payment__method").length <= 4)) {
+    $(".order-payment__form .foods-carousel-button--right").addClass("foods-carousel-button--disabled");
+  }
+  if (($(".foods-container").css("width") == "320px") && ($(".order-payment__method").length <= 1)) {
+    $(".order-payment__form .foods-carousel-button--right").addClass("foods-carousel-button--disabled");
+  }
+});
+
 var n, m;
-if (($(".foods-container").css("width") == "1180px") && ($(".order-payment__method").length <= 7)) {
-  $(".order-payment__form .foods-carousel-button--right").addClass("foods-carousel-button--disabled");
-}
     
 $(".order-payment__form .foods-carousel-button--right").click(function(e) {
   if ($(".order-payment__form .foods-carousel-button--left").hasClass("foods-carousel-button--disabled")) {
@@ -465,7 +522,7 @@ $(".order-payment__form .foods-carousel-button--right").click(function(e) {
   }
   if (!$(this).hasClass("foods-carousel-button--disabled")) {
     e.preventDefault();
-    if (($(".foods-container").css("width") == "1180px") && ($(".order-payment__method").length > 7)) {
+    /*if (($(".foods-container").css("width") == "1180px") && ($(".order-payment__method").length > 7)) {*/
       $(".order-payment__form .foods-carousel-button--left").removeClass("foods-carousel-button--disabled");
       $($(".order-payment__method--visible")[0]).removeClass("order-payment__method--visible");
       $($(".order-payment__method--visible")[$(".order-payment__method--visible").length - 1]).next().addClass("order-payment__method--visible");
@@ -474,7 +531,7 @@ $(".order-payment__form .foods-carousel-button--right").click(function(e) {
       if (n === 0) {
         $(".order-payment__form .foods-carousel-button--right").addClass("foods-carousel-button--disabled");
       }
-    }
+    /*}*/
   } else {
     e.preventDefault();
     n = 0;
@@ -489,7 +546,7 @@ $(".order-payment__form .foods-carousel-button--left").click(function(e) {
   }
   if (!$(this).hasClass("foods-carousel-button--disabled")) {
     e.preventDefault();
-    if (($(".foods-container").css("width") == "1180px") && ($(".order-payment__method").length > 7)) {
+    /*if (($(".foods-container").css("width") == "1180px") && ($(".order-payment__method").length > 7)) {*/
       $(".order-payment__form .foods-carousel-button--right").removeClass("foods-carousel-button--disabled");
       $($(".order-payment__method--visible")[$(".order-payment__method--visible").length - 1]).removeClass("order-payment__method--visible");
       $($(".order-payment__method--visible")[0]).prev().addClass("order-payment__method--visible");
@@ -498,7 +555,7 @@ $(".order-payment__form .foods-carousel-button--left").click(function(e) {
       if (m === 0) {
         $(".order-payment__form .foods-carousel-button--left").addClass("foods-carousel-button--disabled");
       }
-    }
+    /*}*/
   } else {
     e.preventDefault();
     n = $(".order-payment__method").length - $(".order-payment__method--visible").length;

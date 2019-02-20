@@ -9575,22 +9575,22 @@ input.foods-popup__form-submit--password-create {
     display: block;
   }
 
-  .order-payment__form .foods-carousel-button--left {
+  /* .order-payment__form .foods-carousel-button--left {
     top: 5px;
     left: -332px;
     right: auto;
   }
-
+  
   .order-payment__form .foods-carousel-button--right {
     top: 5px;
     right: -332px;
-  }
+  } */
 
-  .order-payment__method li.order-payment__method--5,
+  /* .order-payment__method li.order-payment__method--5,
   .order-payment__method li.order-payment__method--6,
   .order-payment__method li.order-payment__method--7 {
     display: none;
-  }
+  } */
 
   .foods-orders {
     padding-top: 28px;
