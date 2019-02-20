@@ -4957,14 +4957,14 @@ input[name="foods-top__search-reset"] {
 
 .order-payment__form .foods-carousel-button--left {
   position: absolute;
-  top: 12px;
+  top: 5px;
   left: 0;
   right: auto;
 }
 
 .order-payment__form .foods-carousel-button--right {
   position: absolute;
-  top: 12px;
+  top: 5px;
   left: auto;
   right: 0;
 }
@@ -11252,13 +11252,13 @@ input.foods-popup__form-submit--password-create {
     width: 95px;
   }
 
-  .order-payment__form .foods-carousel-button--left {
+  /* .order-payment__form .foods-carousel-button--left {
     left: -145px;
   }
-
+  
   .order-payment__form .foods-carousel-button--right {
     right: -145px;
-  }
+  } */
 
   .order-payment__method {
     margin-bottom: 20px;

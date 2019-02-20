@@ -524,8 +524,13 @@ $(".order-payment__form .foods-carousel-button--right").click(function(e) {
     e.preventDefault();
     /*if (($(".foods-container").css("width") == "1180px") && ($(".order-payment__method").length > 7)) {*/
       $(".order-payment__form .foods-carousel-button--left").removeClass("foods-carousel-button--disabled");
-      $($(".order-payment__method--visible")[0]).removeClass("order-payment__method--visible");
-      $($(".order-payment__method--visible")[$(".order-payment__method--visible").length - 1]).next().addClass("order-payment__method--visible");
+      if ($(".foods-container").css("width") == "320px") {
+        $($(".order-payment__method--visible")[$(".order-payment__method--visible").length - 1]).next().addClass("order-payment__method--visible");
+        $($(".order-payment__method--visible")[0]).removeClass("order-payment__method--visible");
+      } else {
+        $($(".order-payment__method--visible")[0]).removeClass("order-payment__method--visible");
+        $($(".order-payment__method--visible")[$(".order-payment__method--visible").length - 1]).next().addClass("order-payment__method--visible");
+      }
       n--;
       m++;
       if (n === 0) {
@@ -548,8 +553,13 @@ $(".order-payment__form .foods-carousel-button--left").click(function(e) {
     e.preventDefault();
     /*if (($(".foods-container").css("width") == "1180px") && ($(".order-payment__method").length > 7)) {*/
       $(".order-payment__form .foods-carousel-button--right").removeClass("foods-carousel-button--disabled");
-      $($(".order-payment__method--visible")[$(".order-payment__method--visible").length - 1]).removeClass("order-payment__method--visible");
-      $($(".order-payment__method--visible")[0]).prev().addClass("order-payment__method--visible");
+      if ($(".foods-container").css("width") == "320px") {
+        $($(".order-payment__method--visible")[0]).prev().addClass("order-payment__method--visible");
+        $($(".order-payment__method--visible")[$(".order-payment__method--visible").length - 1]).removeClass("order-payment__method--visible"); 
+      } else {
+        $($(".order-payment__method--visible")[$(".order-payment__method--visible").length - 1]).removeClass("order-payment__method--visible");
+        $($(".order-payment__method--visible")[0]).prev().addClass("order-payment__method--visible");
+      }
      m--;
      n++;
       if (m === 0) {
