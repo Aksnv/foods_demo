@@ -97,6 +97,17 @@
     font-style: normal;
 }  */
 
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot');
+  src: url('../fonts/fontello.eot') format('embedded-opentype'),
+       url('../fonts/fontello.woff2') format('woff2'),
+       url('../fonts/fontello.woff') format('woff'),
+       url('../fonts/fontello.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 /* ***** All styles ***** */
 
@@ -229,6 +240,46 @@ input:focus {
 } */
 
 
+/* ***** Icon font ***** */
+
+[class*="--icon-font"]:before/* ,
+.btn-search-click--icon-font + label:before,
+.btn-menu-click--icon-font + label:before */  {
+  font-family: "fontello";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  height: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: none!important;
+  color: #ffffff;
+}
+
+[class*="--icon-font"]:hover:before,
+[class*="--icon-font"]:focus:before,
+/* [class*="--icon-font"].active:before,
+   a#cart_dropdown__trigger.icon__cart--icon-font:hover:before,
+   a#cart_dropdown__trigger.icon__cart--icon-font:focus:before,
+   a#cart_dropdown__trigger.icon__cart--icon-font.active:before,
+   .btn-search-click--icon-font + label:hover:before,
+   .btn-search-click--icon-font + label:focus:before,
+   .btn-menu-click--icon-font + label:hover:before,
+   .btn-menu-click--icon-font + label:focus:before */   {
+  background: none!important;
+  color: #cf453c;
+}
+
+
 /* ***** Foods header ***** */
 
 .foods-header {
@@ -295,12 +346,21 @@ input:focus {
   background-position: -133px -360px;
 }
 
+.foods-header__personal-item--messages--icon-font::before {
+  content: '\f0e0'!important;
+  top: 17px;
+}
+
 .foods-header__personal-item--user-name::before {
   top: 17px;
   left: 15px;
   width: 16px;
   height: 20px;
   background-position: -140px -8px;
+}
+
+.foods-header__personal-item--user-name--icon-font::before {
+  content: '\e801'!important;
 }
 
 .foods-header__personal-item--bonuses::before {
@@ -311,12 +371,20 @@ input:focus {
   background-position: -104px -336px;
 }
 
+.foods-header__personal-item--bonuses--icon-font::before {
+  content: '\f295'!important;
+}
+
 .foods-header__personal-item--bonuses-registered::before {
   top: 19px;
   left: 8px;
   width: 22px;
   height: 17px;
   background-position: -131px -337px;
+}
+
+.foods-header__personal-item--bonuses-registered--icon-font::before {
+  content: '\f283'!important;
 }
 
 .foods-header__personal-item--subscription::before {
@@ -327,12 +395,21 @@ input:focus {
   background-position: -114px -34px;
 }
 
+.foods-header__personal-item--subscription--icon-font::before {
+  content: '\e804'!important;
+  top: 18px;
+}
+
 .foods-header__personal-item--favorites::before {
   top: 19px;
   left: 10px;
   width: 19px;
   height: 17px;
   background-position: -159px -11px;
+}
+
+.foods-header__personal-item--favorites--icon-font::before {
+  content: '\e802'!important;
 }
 
 /*.foods-header__personal-item--cart {
@@ -345,6 +422,11 @@ input:focus {
   width: 20px;
   height: 19px;
   background-position: -112px -8px;
+}
+
+.foods-header__personal-item--cart--icon-font::before {
+  content: '\e803'!important;
+  top: 18px;
 }
 
 /* .foods-header__personal-item--cart span + span {
